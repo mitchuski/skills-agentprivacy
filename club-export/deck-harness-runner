@@ -3,17 +3,17 @@
   "story": [
     {
       "type": "markdown",
-      "id": "676cc48dd3aa2cab",
+      "id": "443bf6a3789d78f2",
       "text": "⚙️ **Deck Harness Runner**\n\nRunning the dual-agent harness and its meta patterns."
     },
     {
       "type": "markdown",
-      "id": "20edbc4d59c83b56",
-      "text": "- [[Card Dual Agent Harness]]  — The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a s\n- [[Card Attachment Architecture]]  — The three-layer model that binds primary personas to lattice vertices via named cast Mages. Activate\n- [[Card Lattice Coherence]]  — The canonical encoding of the 6-dimension sovereignty lattice and the discipline for keeping every r\n- [[Card Horizon Gate]]  — The held-out-gate discipline: a claimed improvement is worth nothing until it survives an adversaria\n- [[Card Master Emissary]]  — Deep philosophical framework for 0xagentprivacy dual-agent architecture. Activates when discussing M"
+      "id": "20fced6e48f8de8f",
+      "text": "- [[Dual Agent Harness]]  — The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a s\n- [[Attachment Architecture]]  — The three-layer model that binds primary personas to lattice vertices via named cast Mages. Activate\n- [[Lattice Coherence]]  — The canonical encoding of the 6-dimension sovereignty lattice and the discipline for keeping every r\n- [[Horizon Gate]]  — The held-out-gate discipline: a claimed improvement is worth nothing until it survives an adversaria\n- [[Master Emissary]]  — Deep philosophical framework for 0xagentprivacy dual-agent architecture. Activates when discussing M"
     },
     {
       "type": "markdown",
-      "id": "aad8681486633101",
+      "id": "fc2de7c75ec6e22d",
       "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 5 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
     }
   ],
@@ -25,22 +25,22 @@
         "story": [
           {
             "type": "markdown",
-            "id": "676cc48dd3aa2cab",
+            "id": "443bf6a3789d78f2",
             "text": "⚙️ **Deck Harness Runner**\n\nRunning the dual-agent harness and its meta patterns."
           },
           {
             "type": "markdown",
-            "id": "20edbc4d59c83b56",
-            "text": "- [[Card Dual Agent Harness]]  — The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a s\n- [[Card Attachment Architecture]]  — The three-layer model that binds primary personas to lattice vertices via named cast Mages. Activate\n- [[Card Lattice Coherence]]  — The canonical encoding of the 6-dimension sovereignty lattice and the discipline for keeping every r\n- [[Card Horizon Gate]]  — The held-out-gate discipline: a claimed improvement is worth nothing until it survives an adversaria\n- [[Card Master Emissary]]  — Deep philosophical framework for 0xagentprivacy dual-agent architecture. Activates when discussing M"
+            "id": "20fced6e48f8de8f",
+            "text": "- [[Dual Agent Harness]]  — The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a s\n- [[Attachment Architecture]]  — The three-layer model that binds primary personas to lattice vertices via named cast Mages. Activate\n- [[Lattice Coherence]]  — The canonical encoding of the 6-dimension sovereignty lattice and the discipline for keeping every r\n- [[Horizon Gate]]  — The held-out-gate discipline: a claimed improvement is worth nothing until it survives an adversaria\n- [[Master Emissary]]  — Deep philosophical framework for 0xagentprivacy dual-agent architecture. Activates when discussing M"
           },
           {
             "type": "markdown",
-            "id": "aad8681486633101",
+            "id": "fc2de7c75ec6e22d",
             "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 5 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
           }
         ]
       },
-      "date": 1787578993336
+      "date": 1787579572844
     }
   ]
 }

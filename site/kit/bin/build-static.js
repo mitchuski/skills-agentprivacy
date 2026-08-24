@@ -23,6 +23,7 @@ fs.mkdirSync(path.join(SITE, 'data'), { recursive: true });
 
 // --- data: catalog (cards+briefs), decks, gardens, baked leaderboard ---
 fs.copyFileSync(path.join(ROOT, 'registry', 'catalog-full.json'), path.join(SITE, 'data', 'catalog.json'));
+try { fs.copyFileSync(path.join(ROOT, 'registry', 'page-slugs.json'), path.join(SITE, 'data', 'page-slugs.json')); } catch (e) {}
 const decks = fs.readdirSync(path.join(ROOT, 'loadouts')).filter(f => f.endsWith('.json'))
   .map(f => JSON.parse(fs.readFileSync(path.join(ROOT, 'loadouts', f), 'utf8')));
 fs.writeFileSync(path.join(SITE, 'data', 'decks.json'), JSON.stringify(decks, null, 2));
@@ -85,7 +86,8 @@ const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'catalog.json
   // (Workers static assets honour Pages-style _headers).
   try {
     const chart = JSON.parse(fs.readFileSync(path.join(SITE, 'data', 'starchart.json'), 'utf8'));
-    const slugOf = Object.fromEntries(chart.stars.map(s => [s.name, 'card-' + s.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')]));
+    // page slugs come from the shelf builder (bare titles + collision guard)
+    const slugOf = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'page-slugs.json'), 'utf8'));
     const linkMap = {};
     for (const e of chart.edges) {
       (linkMap[e.a] = linkMap[e.a] || {})[slugOf[e.b]] = e.w;
@@ -221,7 +223,7 @@ const TAILNET_SHELF='http://skills.mitch.private.fish';
 const onFarm=/skills[.]mitch[.]private[.]fish|skillsync[.]localhost/.test(location.host);
 const SHELF=onFarm?location.origin:TAILNET_SHELF;
 const LIBS=['http://pi5:4242','http://127.0.0.1:4242'];
-let LIVE=false,LIB=null,ALL=[],byName={};
+let LIVE=false,LIB=null,ALL=[],byName={},SLUGS={};
 const KEY='starpath-current',WHO='starpath-member'; // shared with wiki-plugin-starpath
 const loadPath=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'null')||{path:[]}}catch(e){return{path:[]}}};
 const savePath=p=>{try{localStorage.setItem(KEY,JSON.stringify(p))}catch(e){}};
@@ -279,7 +281,7 @@ function drawGrid(){
   '<div class="acts">'+
    '<button class="abtn pth'+(inPath?' on':'')+'">'+(inPath?'⭐ on path':'☆ path')+'</button>'+
    (LIB?'<button class="abtn adopt">✓ adopt</button><button class="abtn attest">⚡ attest</button>':'')+
-   (LIVE?'<a class="abtn" href="'+SHELF+'/view/card-'+esc(p.title.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'" target="_blank">wiki card</a>':'')+
+   (LIVE?'<a class="abtn" href="'+SHELF+'/view/'+esc(SLUGS[p.name]||p.title.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'" target="_blank">wiki page</a>':'')+
    '<a class="abtn" href="assets/'+encodeURIComponent(p.name)+'/SKILL.md" target="_blank">SKILL.md</a>'+
   '</div></div>';}).join('')||'<p class="note">nothing matches</p>';
 }
@@ -374,6 +376,7 @@ async function drawGardens(){
  $('invToggle').onclick=()=>$('inv').classList.toggle('open');
  document.addEventListener('keydown',e=>{if(e.key==='Escape')$('inv').classList.remove('open');});
  drawWho();drawTray();
+ SLUGS=await jget('data/page-slugs.json').catch(()=>({}));
  await detect();
  if(!ALL.length){try{ALL=(await jget('data/catalog.json')).packets;}catch(e){ALL=[];}}
  byName=Object.fromEntries(ALL.map(p=>[p.name,p]));

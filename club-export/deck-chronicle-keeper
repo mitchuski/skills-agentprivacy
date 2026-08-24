@@ -3,17 +3,17 @@
   "story": [
     {
       "type": "markdown",
-      "id": "d6b75cccc500ee83",
+      "id": "ca04881fc5810582",
       "text": "📜 **Deck Chronicle Keeper**\n\nWriting and reflecting chronicles across the suite voices — one event, many tellings, same invariant core."
     },
     {
       "type": "markdown",
-      "id": "b9007f205ab62157",
-      "text": "- [[Card Chronicle Reflect]]  — Reflect chronicles between the suite's voices — the framework-voice master series, repo-local collab\n- [[Card Chronicler]] 🧙📖 — Narrative Compression Specialist for 0xagentprivacy. Activates for chronicle creation, narrative com\n- [[Card Understanding Compression]]  — Take a unified semantic core (e.g. the In-brief summaries from wiki-to-pdf) and re-express it for a \n- [[Card Mirrorkeeper]] 🪞✨ — Dihedral convergence navigator persona. Activates when discussing UOR-grimoire convergence, 2D to ma"
+      "id": "de5104acdea02eac",
+      "text": "- [[Chronicle Reflect]]  — Reflect chronicles between the suite's voices — the framework-voice master series, repo-local collab\n- [[Chronicler]] 🧙📖 — Narrative Compression Specialist for 0xagentprivacy. Activates for chronicle creation, narrative com\n- [[Understanding Compression]]  — Take a unified semantic core (e.g. the In-brief summaries from wiki-to-pdf) and re-express it for a \n- [[Mirrorkeeper]] 🪞✨ — Dihedral convergence navigator persona. Activates when discussing UOR-grimoire convergence, 2D to ma"
     },
     {
       "type": "markdown",
-      "id": "a77db5b643909b57",
+      "id": "1663759de8c352ef",
       "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 4 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
     }
   ],
@@ -25,22 +25,22 @@
         "story": [
           {
             "type": "markdown",
-            "id": "d6b75cccc500ee83",
+            "id": "ca04881fc5810582",
             "text": "📜 **Deck Chronicle Keeper**\n\nWriting and reflecting chronicles across the suite voices — one event, many tellings, same invariant core."
           },
           {
             "type": "markdown",
-            "id": "b9007f205ab62157",
-            "text": "- [[Card Chronicle Reflect]]  — Reflect chronicles between the suite's voices — the framework-voice master series, repo-local collab\n- [[Card Chronicler]] 🧙📖 — Narrative Compression Specialist for 0xagentprivacy. Activates for chronicle creation, narrative com\n- [[Card Understanding Compression]]  — Take a unified semantic core (e.g. the In-brief summaries from wiki-to-pdf) and re-express it for a \n- [[Card Mirrorkeeper]] 🪞✨ — Dihedral convergence navigator persona. Activates when discussing UOR-grimoire convergence, 2D to ma"
+            "id": "de5104acdea02eac",
+            "text": "- [[Chronicle Reflect]]  — Reflect chronicles between the suite's voices — the framework-voice master series, repo-local collab\n- [[Chronicler]] 🧙📖 — Narrative Compression Specialist for 0xagentprivacy. Activates for chronicle creation, narrative com\n- [[Understanding Compression]]  — Take a unified semantic core (e.g. the In-brief summaries from wiki-to-pdf) and re-express it for a \n- [[Mirrorkeeper]] 🪞✨ — Dihedral convergence navigator persona. Activates when discussing UOR-grimoire convergence, 2D to ma"
           },
           {
             "type": "markdown",
-            "id": "a77db5b643909b57",
+            "id": "1663759de8c352ef",
             "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 4 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
           }
         ]
       },
-      "date": 1787578993334
+      "date": 1787579572843
     }
   ]
 }

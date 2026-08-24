@@ -3,17 +3,17 @@
   "story": [
     {
       "type": "markdown",
-      "id": "4713ed7b8b95e732",
+      "id": "a87c5023bc7cbeef",
       "text": "🏆 **Leaderboard** — computed from the librarian ledger (pi5), never stored. Refreshed by the dream loop when the librarian is reachable."
     },
     {
       "type": "markdown",
-      "id": "15b0bf5266377204",
+      "id": "cc7f1ee121243346",
       "text": "| member | published | adopted-by-others | attested | points | tier |\n|---|---|---|---|---|---|\n| mitch | 192 | 0 | 0 | 192 | 📚 seeding |"
     },
     {
       "type": "markdown",
-      "id": "0d9f50ecc3c9de51",
+      "id": "17daeb70bae743d6",
       "text": "The seed row only counts publication. The game starts when the first *other* member adopts."
     }
   ],
@@ -25,22 +25,22 @@
         "story": [
           {
             "type": "markdown",
-            "id": "4713ed7b8b95e732",
+            "id": "a87c5023bc7cbeef",
             "text": "🏆 **Leaderboard** — computed from the librarian ledger (pi5), never stored. Refreshed by the dream loop when the librarian is reachable."
           },
           {
             "type": "markdown",
-            "id": "15b0bf5266377204",
+            "id": "cc7f1ee121243346",
             "text": "| member | published | adopted-by-others | attested | points | tier |\n|---|---|---|---|---|---|\n| mitch | 192 | 0 | 0 | 192 | 📚 seeding |"
           },
           {
             "type": "markdown",
-            "id": "0d9f50ecc3c9de51",
+            "id": "17daeb70bae743d6",
             "text": "The seed row only counts publication. The game starts when the first *other* member adopts."
           }
         ]
       },
-      "date": 1787578993339
+      "date": 1787579572847
     }
   ]
 }

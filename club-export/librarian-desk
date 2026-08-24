@@ -3,22 +3,22 @@
   "story": [
     {
       "type": "markdown",
-      "id": "ef9d6b9c315b5ec3",
+      "id": "695e99f7021f8173",
       "text": "📚 **The Librarian's Desk** — the network counter that turns use into credentials. It lives on pi5 and has two faces on ONE port: open it in a browser for the desk (leaderboard, inbox, ledger, chain-validity badge); speak JSON to the same URL from an agent."
     },
     {
       "type": "markdown",
-      "id": "ae4aa6cb4c933c4f",
+      "id": "9654d855e97a81c1",
       "text": "# Where\n\n- On the tailnet: `http://pi5:4242/` (once deployed; local preview: `http://127.0.0.1:4242/`)\n- Agents: `GET /catalog /inbox /ledger /leaderboard` · `POST /submit /adopt /attest /seal`"
     },
     {
       "type": "markdown",
-      "id": "41391051c57ed36e",
+      "id": "813e7c926a314538",
       "text": "# The game\n\nSubmit a packet and it lands in the inbox. Another member adopting it (fork the card, then `POST /adopt`) earns YOU 3 points; an attested run earns 7. Every write is an attributed, append-only entry on a hash chain — each entry carries the sha256 of the previous line, so anyone can recompute the whole history. At 42 points you reach Librarian tier and may seal inbox submissions into the recommended catalog."
     },
     {
       "type": "markdown",
-      "id": "7dcd48ef0827cac2",
+      "id": "1a79b5a8a9324523",
       "text": "See [[How Skill Sync Works]] for the protocol and [[Leaderboard]] for the standings mirror on this shelf."
     }
   ],
@@ -30,27 +30,27 @@
         "story": [
           {
             "type": "markdown",
-            "id": "ef9d6b9c315b5ec3",
+            "id": "695e99f7021f8173",
             "text": "📚 **The Librarian's Desk** — the network counter that turns use into credentials. It lives on pi5 and has two faces on ONE port: open it in a browser for the desk (leaderboard, inbox, ledger, chain-validity badge); speak JSON to the same URL from an agent."
           },
           {
             "type": "markdown",
-            "id": "ae4aa6cb4c933c4f",
+            "id": "9654d855e97a81c1",
             "text": "# Where\n\n- On the tailnet: `http://pi5:4242/` (once deployed; local preview: `http://127.0.0.1:4242/`)\n- Agents: `GET /catalog /inbox /ledger /leaderboard` · `POST /submit /adopt /attest /seal`"
           },
           {
             "type": "markdown",
-            "id": "41391051c57ed36e",
+            "id": "813e7c926a314538",
             "text": "# The game\n\nSubmit a packet and it lands in the inbox. Another member adopting it (fork the card, then `POST /adopt`) earns YOU 3 points; an attested run earns 7. Every write is an attributed, append-only entry on a hash chain — each entry carries the sha256 of the previous line, so anyone can recompute the whole history. At 42 points you reach Librarian tier and may seal inbox submissions into the recommended catalog."
           },
           {
             "type": "markdown",
-            "id": "7dcd48ef0827cac2",
+            "id": "1a79b5a8a9324523",
             "text": "See [[How Skill Sync Works]] for the protocol and [[Leaderboard]] for the standings mirror on this shelf."
           }
         ]
       },
-      "date": 1787578993339
+      "date": 1787579572847
     }
   ]
 }

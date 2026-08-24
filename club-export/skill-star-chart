@@ -3,22 +3,22 @@
   "story": [
     {
       "type": "markdown",
-      "id": "a959fd3a9f7cd18f",
+      "id": "b166243612ba71e5",
       "text": "✨ **The Skill Star Chart** — the whole library drawn as a sky. Every star a skill; lines are real relations (frontmatter kinship, body mentions, deck neighbourhood); each [[Loadout Deck]] traces a constellation."
     },
     {
       "type": "markdown",
-      "id": "a6e8662f6e0abaf9",
+      "id": "26f53253257a1d31",
       "text": "# View it\n\n- Tailnet: `http://skills.mitch.private.fish/assets/site/star.html`\n- Local farm: `http://skillsync.localhost:3030/assets/site/star.html`\n- Public (once deployed): `https://skills.agentprivacy.ai/star.html`"
     },
     {
       "type": "markdown",
-      "id": "ad7a89e14050c988",
+      "id": "582e4c4c25d754c9",
       "text": "# Constellation runtimes\n\nWhen an agent actually walks a path of skills through a working session, it records the walk at the [[Librarian Desk]]: `POST /runtime` with the constellation name, the ordered path, and a one-line evidence ref. The entry lands on the same hash chain as adoptions — **the walk evidence is the credential**. Recorded runtimes appear on the chart, so the sky fills with the paths that were really flown, not just the ones that were drawn."
     },
     {
       "type": "markdown",
-      "id": "56158b52ec821c71",
+      "id": "73af98b963dcea5d",
       "text": "This is the same shape as the star-chart pathway grants in the VPKB lane: a constellation = a scoped path through a space, and a runtime = the sealed record of walking it."
     }
   ],
@@ -30,27 +30,27 @@
         "story": [
           {
             "type": "markdown",
-            "id": "a959fd3a9f7cd18f",
+            "id": "b166243612ba71e5",
             "text": "✨ **The Skill Star Chart** — the whole library drawn as a sky. Every star a skill; lines are real relations (frontmatter kinship, body mentions, deck neighbourhood); each [[Loadout Deck]] traces a constellation."
           },
           {
             "type": "markdown",
-            "id": "a6e8662f6e0abaf9",
+            "id": "26f53253257a1d31",
             "text": "# View it\n\n- Tailnet: `http://skills.mitch.private.fish/assets/site/star.html`\n- Local farm: `http://skillsync.localhost:3030/assets/site/star.html`\n- Public (once deployed): `https://skills.agentprivacy.ai/star.html`"
           },
           {
             "type": "markdown",
-            "id": "ad7a89e14050c988",
+            "id": "582e4c4c25d754c9",
             "text": "# Constellation runtimes\n\nWhen an agent actually walks a path of skills through a working session, it records the walk at the [[Librarian Desk]]: `POST /runtime` with the constellation name, the ordered path, and a one-line evidence ref. The entry lands on the same hash chain as adoptions — **the walk evidence is the credential**. Recorded runtimes appear on the chart, so the sky fills with the paths that were really flown, not just the ones that were drawn."
           },
           {
             "type": "markdown",
-            "id": "56158b52ec821c71",
+            "id": "73af98b963dcea5d",
             "text": "This is the same shape as the star-chart pathway grants in the VPKB lane: a constellation = a scoped path through a space, and a runtime = the sealed record of walking it."
           }
         ]
       },
-      "date": 1787578993341
+      "date": 1787579572848
     }
   ]
 }

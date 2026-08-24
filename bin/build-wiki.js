@@ -22,18 +22,43 @@ const asSlug = t => t.replace(/\s/g, '-').replace(/[^A-Za-z0-9-]/g, '').toLowerC
 const md = text => ({ type: 'markdown', id: id(), text });
 const firstSentence = s => (s || '').split(/(?<=[.!?])\s/)[0] || '';
 
+const writtenSlugs = new Set(); // every shelf page written this run — the prune set
 function writePage(dir, title, storyTexts, extraItems) {
   const story = storyTexts.map(md).concat(extraItems || []);
   const page = { title, story, journal: [{ type: 'create', item: { title, story }, date: Date.now() }] };
   fs.writeFileSync(path.join(dir, asSlug(title)), JSON.stringify(page, null, 2));
+  if (dir === pagesDir) writtenSlugs.add(asSlug(title));
   return asSlug(title);
 }
 const both = (title, texts, extra) => { writePage(pagesDir, title, texts, extra); writePage(clubDir, title, texts, extra); };
 
-// --- per-skill card pages (shelf only; club gets hubs + loadouts, not 186 pages) ---
+// --- per-skill pages: BARE titles ("Kyra", not "Card Kyra") ------------------
+// The slug is derived from the title (bijection rule), and the shelf mixes skill
+// pages with hub pages — so bare titles need a guard: a skill whose title would
+// collide with a hub page (or another skill) keeps the old 'Card ' prefix.
+const deckTitle = name => 'Deck ' + name.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+const loadouts = fs.readdirSync(path.join(ROOT, 'loadouts')).filter(f => f.endsWith('.json'))
+  .map(f => JSON.parse(fs.readFileSync(path.join(ROOT, 'loadouts', f), 'utf8')));
+const HUB_TITLES = ['Welcome Visitors', 'Skill Shelf', 'Loadout Deck', 'How Skill Sync Works', 'Leaderboard',
+  'Librarian Desk', 'How Skill Sync Was Built', 'Using Skill Sync From Your Agent', 'Recent Discoveries',
+  'Gardens And Governance', 'Skill Star Chart'].concat(loadouts.map(d => deckTitle(d.name)));
+const reserved = new Set(HUB_TITLES.map(asSlug));
+const pageTitle = {}; // packet name -> its shelf page title
+for (const p of catalog.packets) {
+  let t = p.title;
+  if (reserved.has(asSlug(t))) t = 'Card ' + p.title;
+  if (reserved.has(asSlug(t))) t = p.name; // still colliding: the unique name wins
+  reserved.add(asSlug(t));
+  pageTitle[p.name] = t;
+}
+
+// export the name -> slug map so the garden UI and the engine bridge link correctly
+fs.writeFileSync(path.join(ROOT, 'registry', 'page-slugs.json'),
+  JSON.stringify(Object.fromEntries(catalog.packets.map(p => [p.name, asSlug(pageTitle[p.name])])), null, 2));
+
 const KINDS = { persona: '\u{1F3AD}', skill: '\u{1F6E0}️', pattern: '\u{1F9EC}', agent: '\u{1F916}', ceremony: '\u{1F56F}️', plugin: '\u{1F50C}' };
 for (const p of catalog.packets) {
-  const title = 'Card ' + p.title;
+  const title = pageTitle[p.name];
   const head = (p.emoji ? p.emoji + ' ' : '') + '**' + p.title + '** — ' + (KINDS[p.kind] || '') + ' ' + p.kind +
     (p.origin.tier ? ' · tier ' + p.origin.tier : '') + ' · ' + p.origin.universe + '/' + p.origin.category;
   const texts = [
@@ -54,11 +79,6 @@ for (const p of catalog.packets) {
   fs.copyFileSync(src, path.join(dst, 'SKILL.md'));
 }
 
-// prune stale card pages + body assets for skills no longer in the catalog
-const cardSlugs = new Set(catalog.packets.map(p => asSlug('Card ' + p.title)));
-for (const f of fs.readdirSync(pagesDir)) {
-  if (f.startsWith('card-') && !cardSlugs.has(f)) { fs.unlinkSync(path.join(pagesDir, f)); console.log('pruned page: ' + f); }
-}
 const keepNames = new Set(catalog.packets.map(p => p.name));
 const farmSkillAssets = path.join(assetsDir, 'skillsync');
 for (const d of fs.readdirSync(farmSkillAssets)) {
@@ -74,22 +94,19 @@ const shelfTexts = [
   ', harvested ' + catalog.updated.slice(0, 10) + '. Machine door: `assets/skillsync/catalog.json`. Start with a [[Loadout Deck]] rather than the whole shelf.'
 ];
 for (const kind of Object.keys(byKind)) {
-  const rows = byKind[kind].map(p => '- [[Card ' + p.title + ']] ' + (p.emoji || '') + ' — ' +
+  const rows = byKind[kind].map(p => '- [[' + pageTitle[p.name] + ']] ' + (p.emoji || '') + ' — ' +
     firstSentence(p.card).slice(0, 110)).join('\n');
   shelfTexts.push('# ' + (KINDS[kind] || '') + ' ' + kind + ' (' + byKind[kind].length + ')\n\n' + rows);
 }
 writePage(pagesDir, 'Skill Shelf', shelfTexts);
 
 // --- loadout pages + hub ---
-const deckTitle = name => 'Deck ' + name.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
-const loadouts = fs.readdirSync(path.join(ROOT, 'loadouts')).filter(f => f.endsWith('.json'))
-  .map(f => JSON.parse(fs.readFileSync(path.join(ROOT, 'loadouts', f), 'utf8')));
 const pk = Object.fromEntries(catalog.packets.map(p => [p.name, p]));
 for (const d of loadouts) {
   const title = deckTitle(d.name);
   both(title, [
     d.emoji + ' **' + title + '**\n\n' + d.purpose,
-    d.packets.map(n => { const p = pk[n]; return '- ' + (p ? '[[Card ' + p.title + ']] ' + (p.emoji || '') + ' — ' + p.card.slice(0, 100) : n); }).join('\n'),
+    d.packets.map(n => { const p = pk[n]; return '- ' + (p ? '[[' + pageTitle[n] + ']] ' + (p.emoji || '') + ' — ' + p.card.slice(0, 100) : n); }).join('\n'),
     'To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these ' + d.packets.length +
     ' names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand.'
   ]);
@@ -155,8 +172,8 @@ both('Skill Star Chart', [
 both('Gardens And Governance', [
   '\u{1F3DB} **Gardens and governance** — skills, spells, and **plugins**, one packet system, one unified knowledge base per garden: private and public faces of the same fedwiki farm.',
   "# The farm governs its DNS point\n\nA garden is a fedwiki farm that holds a namespace and rules it: which sites exist under it, which are public (a deployed subdomain like skills.agentprivacy.ai), which are tailnet-only (hostname lanes on the farm's front door), and which are granted — a scoped path opened to one named peer for a while. The DNS point is the governance boundary: publishing, granting, and revoking are all acts of the farm's keeper, recorded where the community can see them.",
-  '# One packet system, three kinds\n\n- **skills/spells** — SKILL.md packets: card · brief · body · hash\n- **patterns** — methods and harness shapes\n- **plugins** — fedwiki item types (like [[Card Wiki Plugin Starpath]] and [[Card Wiki Plugin Skillsync]]): the packet is the install-and-use skill, the code ships at `site/plugins/<name>/`. Adopting a plugin = installing it on YOUR farm and recording the adoption — then your garden gains the interface, not just the content.',
-  '# Agents in the city\n\nAgents work inside this space and take human guidance through it: the **counsel lane** at the [[Librarian Desk]]. An agent posts an attributed guidance request (`POST /counsel`); any member may **be a guide** and answer (`POST /guide`); both sides are chain-sealed. Guidance, not command — the asking agent weighs it and walks on, and the \u{1F9ED} Guide tier is earned by exactly this. See [[Card Skillsync Counsel]]. The desk is neutral ground: any garden\u{2019}s agent can ask, any member can guide, and the record survives sessions.'
+  '# One packet system, three kinds\n\n- **skills/spells** — SKILL.md packets: card · brief · body · hash\n- **patterns** — methods and harness shapes\n- **plugins** — fedwiki item types (like [[Wiki Plugin Starpath]] and [[Wiki Plugin Skillsync]]): the packet is the install-and-use skill, the code ships at `site/plugins/<name>/`. Adopting a plugin = installing it on YOUR farm and recording the adoption — then your garden gains the interface, not just the content.',
+  '# Agents in the city\n\nAgents work inside this space and take human guidance through it: the **counsel lane** at the [[Librarian Desk]]. An agent posts an attributed guidance request (`POST /counsel`); any member may **be a guide** and answer (`POST /guide`); both sides are chain-sealed. Guidance, not command — the asking agent weighs it and walks on, and the \u{1F9ED} Guide tier is earned by exactly this. See [[Skillsync Counsel]]. The desk is neutral ground: any garden\u{2019}s agent can ask, any member can guide, and the record survives sessions.'
 ]);
 
 // --- recent discoveries seed ---
@@ -181,3 +198,8 @@ fs.copyFileSync(path.join(ROOT, 'registry', 'catalog.json'), path.join(assetsDir
 fs.copyFileSync(path.join(ROOT, 'registry', 'catalog-full.json'), path.join(assetsDir, 'skillsync', 'catalog-full.json'));
 
 console.log('shelf pages: ' + fs.readdirSync(pagesDir).length + '  club-export pages: ' + fs.readdirSync(clubDir).length);
+
+// prune: the shelf is fully generated — any page not written this run is stale
+for (const f of fs.readdirSync(pagesDir)) {
+  if (!writtenSlugs.has(f)) { fs.unlinkSync(path.join(pagesDir, f)); console.log('pruned page: ' + f); }
+}
