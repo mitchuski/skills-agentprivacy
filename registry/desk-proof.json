@@ -1,30 +1,31 @@
 {
   "spec": "desk-proof/0.1",
-  "attested_at": "2026-08-24T14:27:01.050Z",
+  "attested_at": "2026-08-24T16:04:48.804Z",
   "desk": "the librarian of the agentprivacy skill sync",
   "chain": {
-    "head": "f404ec58943b15bc3e45a1d8415392ec9e26c46ef0d697b6718ec47bb27d3b5a",
-    "entries": 18,
+    "head": "fe59c8c6451f98f86fec099a914dde81d730e87a9f7bb2815de9df0a0ef6f507",
+    "entries": 21,
     "by_type": {
       "publish": 3,
-      "runtime": 7,
+      "runtime": 9,
       "constellation": 2,
       "counsel": 1,
       "guide": 1,
-      "garden": 4
+      "garden": 4,
+      "attest": 1
     }
   },
   "digests": {
-    "leaderboard": "81949fe32f26b270042ed447ac2dc0179a9ec2f1bbcdfc97c04d67d9b29867ab",
-    "gardens": "5b976fbfbd218ac706ae07f217ca66eab6ffd3bee10e55c93ccbc23a006069b1",
+    "leaderboard": "ce17fdd8cdc20ef34363e2da8639e44ce74d76dd3ab1c1c59301cfedfbe3b76f",
+    "gardens": "2045adafcd574387443418e7a88ef05306d0d9a3edd2b998982b2b4616b7dae9",
     "constellations": "07ebd17a2da4240b371e729a0103976e44d46616f9baa03f3c5ae6c172580210",
-    "runtimes": "45672be5bb94635b454ae8adeef34390f391377473d16f7e9322d9bc56cb4fc0"
+    "runtimes": "f4416514b5118c79a14e3c246f05c66b91aa98c739914780bace8ccedf1be527"
   },
   "counts": {
     "members": 1,
     "gardens": 3,
     "constellations": 2,
-    "runtimes": 7
+    "runtimes": 9
   },
   "verify": "On the tailnet: GET the detail from the librarian, canonicalize (sorted keys), sha256, compare. The chain head = sha256 of the last ledger line; each entry.prev = sha256 of the previous line, so the head commits to the whole history."
 }

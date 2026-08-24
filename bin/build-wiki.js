@@ -207,7 +207,8 @@ for (const [src, name] of [
   ['AGENT_ORIENTATION.md', 'AGENT_ORIENTATION.md'],
   ['MOUSE_HOUSE_SKILL_SYNC.md', 'MOUSE_HOUSE_SKILL_SYNC.md'],
   ['SPEC.md', 'SPEC.md'],
-  ['README.md', 'SKILL_SYNC_README.md']
+  ['README.md', 'SKILL_SYNC_README.md'],
+  ['registry/assets/skillsync-herald/SKILL.md', 'SKILLSYNC_HERALD.md']
 ]) { try { fs.copyFileSync(path.join(ROOT, src), path.join(dl, name)); } catch (e) {} }
 try { for (const f of fs.readdirSync(path.join(ROOT, 'artefacts'))) if (f.endsWith('.md')) fs.copyFileSync(path.join(ROOT, 'artefacts', f), path.join(dl, 'artefact-' + f)); } catch (e) {}
 

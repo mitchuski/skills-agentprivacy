@@ -57,5 +57,8 @@ async function call(method, p, bodyObj) {
   if (cmd === 'counsels') return call('GET', '/counsel');
   if (cmd === 'garden') return call('POST', '/garden', { member: cfg.member, url: name, note: flag('--note') || '' });
   if (cmd === 'gardens') return call('GET', '/gardens');
-  console.log('usage: status | submit <name> | adopt <name> [--from a] | attest <name> --from a --run "ref" | runtime <constellation> --path a,b,c --run "ref" | runtimes | leaderboard');
+  if (cmd === 'name') return call('POST', '/name', { member: cfg.member, name, zone: flag('--zone'), target: flag('--target') || '', note: flag('--note') || '' });
+  if (cmd === 'grant') return call('POST', '/grant', { member: cfg.member, request: name, status: flag('--status') || 'granted', target: flag('--target') || '', note: flag('--note') || '' });
+  if (cmd === 'names') return call('GET', '/names');
+  console.log('usage: status | submit <name> | adopt <name> [--from a] | attest <name> --from a --run "ref" | runtime <constellation> --path a,b,c --run "ref" | runtimes | leaderboard | name <label> [--zone private.fish] [--target host] [--note "…"] | names | grant <request-id> --status granted|declined');
 })().catch(e => { console.error('librarian unreachable: ' + e.message); process.exit(1); });

@@ -1,8 +1,8 @@
 {
   "spec": "skill-catalog/0.1",
   "member": "mitch",
-  "updated": "2026-08-24T14:26:24.235Z",
-  "count": 193,
+  "updated": "2026-08-24T16:04:30.036Z",
+  "count": 194,
   "packets": [
     {
       "spec": "skill-packet/0.1",
@@ -4756,6 +4756,32 @@
       "hash": "db2a083a9e402c1b30e63d93e1c90b768da1dee55360ce697a95d145ea69f738",
       "published": "2026-08-24T11:48:18.787Z",
       "listing": "featured",
+      "requires": [],
+      "trust": {
+        "adoptions": 0,
+        "attested_runs": 0
+      }
+    },
+    {
+      "spec": "skill-packet/0.1",
+      "name": "skillsync-herald",
+      "kind": "skill",
+      "title": "Skillsync Herald",
+      "emoji": "",
+      "card": "The herald's own sync-and-publish run — for the agent living on the pi4 (marvin) or any always-on machine that carries the network's ntfy voice. Run the dream loop on a cadence with a self-growing roster from the garden registry, herald every discovery through local ntfy, keep t…",
+      "body_ref": "assets/skillsync-herald/SKILL.md",
+      "origin": {
+        "author": "mitch",
+        "universe": "workbench",
+        "category": "skillsync",
+        "tier": "",
+        "version": "0.1",
+        "alignment": "",
+        "source_path": "~/skill sync/skill/skillsync-herald/SKILL.md"
+      },
+      "hash": "677bcdeb5b97fc153c9f3019f74e4141515d35803bee96b1edb41b923a596d6b",
+      "published": "2026-08-24T15:55:51.946Z",
+      "listing": "listed",
       "requires": [],
       "trust": {
         "adoptions": 0,

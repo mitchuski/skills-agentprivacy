@@ -3,17 +3,17 @@
   "story": [
     {
       "type": "markdown",
-      "id": "cd6f5e67ed21f66b",
+      "id": "66e19e7ff836c0dd",
       "text": "🏆 **Leaderboard** — computed from the librarian ledger (pi5), never stored. Refreshed by the dream loop when the librarian is reachable."
     },
     {
       "type": "markdown",
-      "id": "e96cfc5c2a056193",
-      "text": "| member | published | adopted-by-others | attested | points | tier |\n|---|---|---|---|---|---|\n| mitch | 193 | 0 | 0 | 193 | 📚 seeding |"
+      "id": "e446751dc4a5f3a5",
+      "text": "| member | published | adopted-by-others | attested | points | tier |\n|---|---|---|---|---|---|\n| mitch | 194 | 0 | 0 | 194 | 📚 seeding |"
     },
     {
       "type": "markdown",
-      "id": "d979745d69ba7468",
+      "id": "6570f1ef1b2e49d3",
       "text": "The seed row only counts publication. The game starts when the first *other* member adopts."
     }
   ],
@@ -25,22 +25,22 @@
         "story": [
           {
             "type": "markdown",
-            "id": "cd6f5e67ed21f66b",
+            "id": "66e19e7ff836c0dd",
             "text": "🏆 **Leaderboard** — computed from the librarian ledger (pi5), never stored. Refreshed by the dream loop when the librarian is reachable."
           },
           {
             "type": "markdown",
-            "id": "e96cfc5c2a056193",
-            "text": "| member | published | adopted-by-others | attested | points | tier |\n|---|---|---|---|---|---|\n| mitch | 193 | 0 | 0 | 193 | 📚 seeding |"
+            "id": "e446751dc4a5f3a5",
+            "text": "| member | published | adopted-by-others | attested | points | tier |\n|---|---|---|---|---|---|\n| mitch | 194 | 0 | 0 | 194 | 📚 seeding |"
           },
           {
             "type": "markdown",
-            "id": "d979745d69ba7468",
+            "id": "6570f1ef1b2e49d3",
             "text": "The seed row only counts publication. The game starts when the first *other* member adopts."
           }
         ]
       },
-      "date": 1787586902496
+      "date": 1787587470299
     }
   ]
 }

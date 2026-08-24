@@ -21,6 +21,8 @@ const names = packets.map(p => p.name);
 // --- positions: category sectors around the sky, deterministic per name ---
 const cats = [...new Set(packets.map(p => p.origin.category))].sort();
 const hash = s => parseInt(crypto.createHash('sha256').update(s).digest('hex').slice(0, 8), 16);
+let slugMap = {};
+try { slugMap = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'page-slugs.json'), 'utf8')); } catch (e) {}
 const stars = packets.map(p => {
   const ci = cats.indexOf(p.origin.category);
   const a0 = (ci / cats.length) * Math.PI * 2, a1 = ((ci + 1) / cats.length) * Math.PI * 2;
@@ -29,7 +31,7 @@ const stars = packets.map(p => {
   const rad = 160 + h2 * 320; // ring band
   return {
     name: p.name, title: p.title, emoji: p.emoji, kind: p.kind, cat: p.origin.category,
-    tier: p.origin.tier || '', card: p.card,
+    tier: p.origin.tier || '', card: p.card, slug: slugMap[p.name] || '',
     x: Math.round(500 + rad * Math.cos(ang)), y: Math.round(500 + rad * Math.sin(ang)),
     m: p.kind === 'persona' ? 5 : p.kind === 'pattern' ? 4.5 : 3.5 // magnitude
   };
@@ -129,19 +131,36 @@ function page() {
 <svg id="chart" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet"></svg>
 <div class="hud" id="title"><h1>\u{2728} THE SKILL STAR CHART</h1><p>every star a skill · lines are real relations (frontmatter kinship, body mentions, deck neighbours) · constellations are decks and recorded runtimes</p><p><a href="index.html">\u{2190} the garden</a></p></div>
 <div class="hud" id="cons"><h2>Constellations</h2><div id="decklist"></div><h2 style="margin-top:.6rem">Runtimes</h2><div id="rtlist"><span style="color:var(--dim)">none recorded yet — an agent walks a path and records it at the Librarian:<br><code>POST /runtime {path:[...]}</code></span></div></div>
-<div class="hud" id="legend"><h2>Reading the sky</h2><div id="leg"></div><div style="color:var(--dim);margin-top:.3rem">brightness = kind (personas burn brightest) · drag to pan · wheel to zoom · hover a star for its card · <b>click a star to open it in the garden</b></div></div>
+<div class="hud" id="legend"><h2>Reading the sky</h2><div id="leg"></div><div style="color:var(--dim);margin-top:.3rem">brightness = kind (personas burn brightest) · drag to pan · wheel to zoom · hover a star for its card · <b>click a star to open its panel — collect it into your walk without leaving the sky</b></div></div>
+<div class="hud" id="detail" style="display:none;bottom:1rem;right:1rem;max-width:320px;font-size:.85rem"></div>
 <div class="hud" id="tip"></div>
 <script>
 const S=document.getElementById('chart'),NS='http://www.w3.org/2000/svg';
 const el=(t,at)=>{const n=document.createElementNS(NS,t);for(const k in at)n.setAttribute(k,at[k]);return n};
 const KC={persona:'var(--gold)',skill:'#cfd8ee',pattern:'var(--vio)',agent:'var(--teal)',ceremony:'var(--rose)',plugin:'#6ad06a'};
 let D=null,active=null;
+// your walk lives HERE too — same localStorage as the garden tray and the wiki
+// starpath button. Clicking stars on the chart updates the walk constellation live.
+const KEY='starpath-current';
+const loadPath=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'null')||{path:[]}}catch(e){return{path:[]}}};
+const savePath=p=>{try{localStorage.setItem(KEY,JSON.stringify(p))}catch(e){}};
+const onFarm=/skills[.]mitch[.]private[.]fish|skillsync[.]localhost/.test(location.host);
+function syncWalk(){
+ const names=loadPath().path.map(e=>e.skill);
+ const i=D.constellations.findIndex(c=>c.kind==='walk');
+ if(i>-1)D.constellations.splice(i,1);
+ if(names.length)D.constellations.unshift({name:'your walk',emoji:'\u{1F463}',path:names,kind:'walk'});
+ else if(active==='your walk')active=null;
+}
 fetch('data/starchart.json').then(r=>r.json()).then(d=>{
  D=d;
- // a walked path arriving via the hash (#path=a,b,c — from the starpath plugin)
+ // a walked path arriving via the hash (#path=a,b,c) SEEDS the walk; otherwise
+ // the walk comes straight from localStorage — one walk, three doors
  const hm=location.hash.match(/path=([^&]+)/);
  if(hm){const p=hm[1].split(',').map(decodeURIComponent).filter(Boolean);
-  if(p.length){D.constellations.unshift({name:'your walk',emoji:'\u{1F463}',path:p,kind:'walk'});active='your walk';}}
+  if(p.length){const st=loadPath();for(const n of p)if(!st.path.some(e=>e.skill===n))st.path.push({skill:n,at:new Date().toISOString(),page:'chart-hash'});savePath(st);active='your walk';}}
+ syncWalk();
+ if(loadPath().path.length&&!active)active='your walk';
  draw();
  // #star=<name> (from a garden card or a wiki page): fly to that star and ring it
  const sm=location.hash.match(/star=([^&]+)/);
@@ -177,7 +196,7 @@ function draw(){
   const c=el('circle',{cx:s.x,cy:s.y,r:s.m*.9,fill:KC[s.kind]||'#fff',opacity:.92});
   c.style.cursor='pointer';
   c.addEventListener('mouseenter',ev=>tip(s,ev));c.addEventListener('mouseleave',()=>{document.getElementById('tip').style.display='none'});
-  c.addEventListener('click',()=>{location.href='index.html#'+encodeURIComponent(s.name)});
+  c.addEventListener('click',ev=>{ev.stopPropagation();showDetail(s);});
   sg.append(c);
   if(s.kind==='persona'){sg.append(el('circle',{cx:s.x,cy:s.y,r:s.m*2.2,fill:'none',stroke:KC.persona,opacity:.25}));}
  }
@@ -211,6 +230,30 @@ function draw(){
   for(const n of c.path){const s=P[n];if(!s)continue;cg.append(el('circle',{cx:s.x,cy:s.y,r:s.m*1.9,fill:'none',stroke:'var(--gold)','stroke-width':1,opacity:.9}));}
  }
 }
+// the star panel: clicking stays ON the sky — collect into your walk here;
+// the garden and the wiki are explicit doors that open in a NEW tab
+function showDetail(s){
+ const d=document.getElementById('detail');
+ const inWalk=loadPath().path.some(e=>e.skill===s.name);
+ d.innerHTML='<div style="display:flex;justify-content:space-between;gap:.5rem"><b style="color:var(--gold)">'+(s.emoji||'')+' '+s.title+'</b><span style="cursor:pointer;color:var(--dim)" id="dx">✕</span></div>'+
+  '<div style="color:var(--dim);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em">'+s.kind+' · '+s.cat+(s.tier?' · tier '+s.tier:'')+'</div>'+
+  '<p style="margin:.4rem 0">'+s.card+'</p>'+
+  '<div style="display:flex;gap:.4rem;flex-wrap:wrap">'+
+  '<button id="dwalk" class="cbtn" style="width:auto">'+(inWalk?'⭐ on your walk — remove':'☆ add to your walk')+'</button>'+
+  '<a class="cbtn" style="width:auto;text-decoration:none" href="index.html#'+encodeURIComponent(s.name)+'" target="_blank">\u{1F331} garden ↗</a>'+
+  (onFarm&&s.slug?'<a class="cbtn" style="width:auto;text-decoration:none" href="/view/'+s.slug+'" target="_blank">\u{1F4D6} wiki ↗</a>':'')+
+  '</div>';
+ d.style.display='block';
+ document.getElementById('dx').onclick=()=>d.style.display='none';
+ document.getElementById('dwalk').onclick=()=>{
+  const st=loadPath();const i=st.path.findIndex(e=>e.skill===s.name);
+  if(i>-1)st.path.splice(i,1);else st.path.push({skill:s.name,at:new Date().toISOString(),page:'chart'});
+  savePath(st);syncWalk();
+  if(loadPath().path.length&&(active===null||active==='your walk'))active='your walk';
+  draw();showDetail(s);
+ };
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('detail').style.display='none'});
 function tip(s,ev){
  const t=document.getElementById('tip');
  t.innerHTML='<span class="k">'+s.kind+' · '+s.cat+(s.tier?' · tier '+s.tier:'')+'</span><br><b>'+(s.emoji||'')+' '+s.title+'</b><br>'+s.card.slice(0,160);
