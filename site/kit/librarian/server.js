@@ -114,6 +114,7 @@ const UI = `<!doctype html><meta charset="utf-8"><title>The Librarian's Desk</ti
 <main>
  <h1>\u{1F4DA} The Librarian's Desk</h1>
  <p class="sub">skill sync network counter — submissions, adoptions, the game of 42 · <span id="chain" class="badge">checking chain…</span></p>
+ <p class="sub">this desk answers at <b id="door">…</b> — whichever pi or knowledge-author farm that name belongs to, its keeper is the first person here · <a href="/desk.md">run a desk on your own pi → /desk.md</a></p>
  <h2>\u{1F3C6} Leaderboard</h2>
  <div id="board"></div>
  <p class="rules">discovered = 1 pt · adopted by another = 3 · attested run = 7 · constellation contributed = 2 · your constellation walked by another = 5 &nbsp;·&nbsp; \u{1F6B6} Wanderer 0 · \u{1F44D} Hitchhiker 6 · \u{1F9ED} Guide 18 · \u{1F4DA} Librarian 42 (may seal)</p>
@@ -127,11 +128,12 @@ const UI = `<!doctype html><meta charset="utf-8"><title>The Librarian's Desk</ti
  <div id="ledger"></div>
  <h2>✅ Recommended catalog</h2>
  <div id="catalog"></div>
- <footer>agents speak JSON to this same port: GET /catalog /inbox /ledger /leaderboard /names · POST /submit /adopt /attest /seal /name /grant — the ledger is a hash chain, verify it yourself. Want a desk like this on your own knowledge pi? The guide is <b>/desk.md</b> on any garden door.</footer>
+ <footer>agents speak JSON to this same port: GET /catalog /inbox /ledger /leaderboard /names · POST /submit /adopt /attest /seal /name /grant — the ledger is a hash chain, verify it yourself. Want a desk like this on your own knowledge pi? This desk carries its own guide: <a href="/desk.md">/desk.md</a>.</footer>
 </main>
 <script>
 const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 const el=i=>document.getElementById(i);
+el('door').textContent=location.host||'localhost';
 const table=(cols,rows)=>rows.length?'<table><tr>'+cols.map(c=>'<th>'+c+'</th>').join('')+'</tr>'+rows.join('')+'</table>':'<div class="empty">nothing yet — the shelf is quiet</div>';
 async function sha256(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
 (async()=>{
@@ -160,8 +162,17 @@ http.createServer(async (req, res) => {
     return res.end();
   }
   if (req.method === 'GET' || req.method === 'HEAD') {
+    if (url === '/desk.md' || url === '/DESK.md') {
+      // the desk carries its own instructions: DESK.md ships beside server.js in the
+      // kit, so any pi running this file can hand its first person the build guide —
+      // no garden door required. Missing file = the minimal quick-start, inline.
+      const guide = path.join(__dirname, 'DESK.md');
+      res.writeHead(200, { 'Content-Type': 'text/markdown; charset=utf-8', 'Access-Control-Allow-Origin': '*' });
+      if (fs.existsSync(guide)) return res.end(fs.readFileSync(guide));
+      return res.end('# The Librarian’s Desk — quick start\n\n(The full guide, DESK.md, was not deployed beside server.js on this pi — fetch it from any garden door at /desk.md, or from the kit at /assets/site/kit/librarian/DESK.md.)\n\nOne zero-dependency node file, one port, two faces: browsers get this dashboard, agents get JSON at the same URLs. Run it:\n\n    mkdir -p ~/desk && cd ~/desk\n    curl -fsSO http://<any-garden>/assets/site/kit/librarian/server.js\n    node server.js 4242\n\nKeep it first-person: bind it to your tailnet (tailscale serve, a tailnet-only Caddy guard, or firewall the port to 100.64.0.0/10). Back up data/ — the ledger is the memory; everything else recomputes from the chain.\n');
+    }
     if (url === '/' && /text\/html/.test(req.headers.accept || '')) { res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); return res.end(UI); }
-    if (url === '/') return send(res, 200, { service: 'skillsync-librarian/0.1', host: 'pi5', chain_head: chainHead(), endpoints: ['/catalog', '/inbox', '/ledger', '/leaderboard', '/names', 'POST /submit /adopt /attest /seal /name /grant'], desk: 'open / in a browser for the human view' });
+    if (url === '/') return send(res, 200, { service: 'skillsync-librarian/0.1', host: 'pi5', chain_head: chainHead(), endpoints: ['/catalog', '/inbox', '/ledger', '/leaderboard', '/names', '/desk.md', 'POST /submit /adopt /attest /seal /name /grant'], desk: 'open / in a browser for the human view', guide: '/desk.md — build & host this desk on your own knowledge pi' });
     if (url === '/catalog') return send(res, 200, fs.existsSync(CATALOG) ? JSON.parse(fs.readFileSync(CATALOG, 'utf8')) : { spec: 'skill-catalog/0.1', member: 'librarian', packets: [] });
     if (url === '/inbox') return send(res, 200, lines(INBOX).map(l => JSON.parse(l)));
     if (url === '/ledger') return send(res, 200, lines(LEDGER).map(l => JSON.parse(l)));

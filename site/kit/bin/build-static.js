@@ -433,7 +433,7 @@ async function drawGardens(){
    const label=(prompt('The name you want (one DNS label, e.g. mage):')||'').trim().toLowerCase();if(!label)return;
    const note=(prompt('One line: what will live at '+label+'.private.fish?')||'').trim();
    try{const j=await lib('/name',{member:w,name:label,note:note});
-    alert(j.ok?('requested '+j.fqdn+' — id '+j.id+(j.resolves?'\n(already resolves to '+j.address+' — wildcard or taken; the keeper decides)':'')+'\nthe zone keeper answers at the desk'):'error: '+(j.error||'?'));
+    alert(j.ok?('requested '+j.fqdn+' — id '+j.id+(j.resolves?'\\n(already resolves to '+j.address+' — wildcard or taken; the keeper decides)':'')+'\\nthe zone keeper answers at the desk'):'error: '+(j.error||'?'));
    }catch(e){alert('librarian unreachable');}};}
 }
 

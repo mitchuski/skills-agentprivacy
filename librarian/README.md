@@ -33,8 +33,9 @@ are default-deny on the pi, open TCP 2586 to the tailnet.
 ## pi5 — the librarian
 
 ```bash
-# from this machine
-scp "librarian/server.js" opn@pi5:~/skillsync-librarian/server.js
+# from this machine — DESK.md rides along so the desk serves its own build
+# guide at /desk.md (see DESK.md: the desk on any knowledge pi)
+scp "librarian/server.js" "librarian/DESK.md" opn@pi5:~/skillsync-librarian/
 
 # on pi5
 sudo tee /etc/systemd/system/skillsync-librarian.service >/dev/null <<'UNIT'
