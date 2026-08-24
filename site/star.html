@@ -84,6 +84,8 @@ function draw(){
  figure();
  if(D.runtimes.length){
   document.getElementById('rtlist').innerHTML=D.runtimes.slice(-8).reverse().map(r=>'<div class="rt"><b>'+r.member+'</b> walked <b>'+r.constellation+'</b> ('+r.path.length+' skills)'+(r.run?'<br>'+r.run:'')+'</div>').join('');
+ }else if(D.runtimesProof&&D.runtimesProof.count){
+  document.getElementById('rtlist').innerHTML='<div class="rt">🔒 <b>'+D.runtimesProof.count+' runtimes sealed</b> at the desk — the walks themselves live on the tailnet</div>';
  }
  // live runtimes when on the tailnet
  fetch('http://pi5:4242/runtimes',{signal:AbortSignal.timeout(2500)}).then(r=>r.json()).then(rs=>{

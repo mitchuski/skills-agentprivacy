@@ -1,8 +1,8 @@
 {
   "spec": "skill-catalog/0.1",
   "member": "mitch",
-  "updated": "2026-08-24T13:43:13.104Z",
-  "count": 192,
+  "updated": "2026-08-24T14:14:55.365Z",
+  "count": 193,
   "packets": [
     {
       "spec": "skill-packet/0.1",
@@ -4652,6 +4652,32 @@
       "hash": "0ac025d63ee7e9cdbf1199c761a12729e413c533b24bad7305e2a3ccd6e8e238",
       "published": "2026-08-24T13:09:13.409Z",
       "listing": "featured",
+      "requires": [],
+      "trust": {
+        "adoptions": 0,
+        "attested_runs": 0
+      }
+    },
+    {
+      "spec": "skill-packet/0.1",
+      "name": "skillsync-attest-publish",
+      "kind": "skill",
+      "title": "Skillsync Attest Publish",
+      "emoji": "",
+      "card": "The keeper's release rite for the skill garden — attest the librarian's desk into a hash-chain proof, rebuild every surface (registry, shelf, sky, site), audit for PII and leaks, review what changed, and publish to the public domain only when the keeper chooses. The cloud gets c…",
+      "body_ref": "assets/skillsync-attest-publish/SKILL.md",
+      "origin": {
+        "author": "mitch",
+        "universe": "workbench",
+        "category": "skillsync",
+        "tier": "",
+        "version": "0.1",
+        "alignment": "",
+        "source_path": "~/skill sync/skill/skillsync-attest-publish/SKILL.md"
+      },
+      "hash": "0a76e2a5e1967eba69eb3bb1388765b6a910813543b56fc95597121372951ca9",
+      "published": "2026-08-24T14:14:37.602Z",
+      "listing": "listed",
       "requires": [],
       "trust": {
         "adoptions": 0,

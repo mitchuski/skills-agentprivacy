@@ -1,0 +1,27 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "skillsync-attest-publish",
+  "kind": "skill",
+  "title": "Skillsync Attest Publish",
+  "emoji": "",
+  "card": "The keeper's release rite for the skill garden — attest the librarian's desk into a hash-chain proof, rebuild every surface (registry, shelf, sky, site), audit for PII and leaks, review what changed, and publish to the public domain only when the keeper chooses. The cloud gets c…",
+  "brief": "The keeper's release rite for the skill garden — attest the librarian's desk into a hash-chain proof, rebuild every surface (registry, shelf, sky, site), audit for PII and leaks, review what changed, and publish to the public domain only when the keeper chooses. The cloud gets commitments; the tailnet keeps the detail. Use when the user says \"publish the garden\", \"attest the desk\", \"push the skills site\", \"release the latest state\", or when local skill-sync work has accumulated and should reach skills.agentprivacy.ai.\n\nPublishing is a chosen act, not a side effect. The tailnet is always current; the cloud updates when the keeper says so — and what it gets is **proof, not detail** (`public_desk: \"proof\"` in the config).\n\n1. **Attest the desk** — `node bin/attest-desk.js`    Seals the moment: chain head (commits to the whole ledger), entry counts by    type, canonical sha256 digests of leaderboard / gardens / constellations /    runtimes. Writes `registry/desk-proof.json`. Skipping this ships a STALE proof. 2. **Rebuild the surfaces** —    `node bin/harvest.js && node bin/build-wiki.js && node bin/build-starchart.js && node bin/build-static.js`    Harvest re-scans sources (leak scan…",
+  "body_ref": "assets/skillsync-attest-publish/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "skillsync",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/skill/skillsync-attest-publish/SKILL.md"
+  },
+  "hash": "0a76e2a5e1967eba69eb3bb1388765b6a910813543b56fc95597121372951ca9",
+  "published": "2026-08-24T14:14:37.602Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

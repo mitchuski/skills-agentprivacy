@@ -3,17 +3,17 @@
   "story": [
     {
       "type": "markdown",
-      "id": "54ccbe8c2a286b45",
+      "id": "dd5ee4cf28b5272e",
       "text": "🚪 **Deck First Contact**\n\nThe front door. Load this deck to orient a fresh model in the agentprivacy universe without drowning it: the vision persona, the two poles, how chronicles are written, and how the wiki federation carries work."
     },
     {
       "type": "markdown",
-      "id": "529e93bc79f5b98b",
+      "id": "2dac1f05360b0e7d",
       "text": "- [[Kyra]] ☯️💎 — Sovereign AI Vision and meta-orchestrator for 0xagentprivacy. Activates when articulating the comple\n- [[Soulbis]] ⚔️ — Canonical swordsman agent for 0xagentprivacy. Activates for privacy enforcement, boundary-making, si\n- [[Soulbae]] 🧙 — Canonical mage agent for 0xagentprivacy. Activates for delegation, projection, chronicle compression\n- [[Chronicler]] 🧙📖 — Narrative Compression Specialist for 0xagentprivacy. Activates for chronicle creation, narrative com\n- [[Dual Agent Harness]]  — The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a s\n- [[Chronicle Reflect]]  — Reflect chronicles between the suite's voices — the framework-voice master series, repo-local collab\n- [[Fedwiki Watch]]  — Observe external FedWiki / *.fish / fedwiki.club sites for changes and report what moved since last "
     },
     {
       "type": "markdown",
-      "id": "ccf0824eeac0ad6e",
+      "id": "836e87d0d3ea3f27",
       "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 7 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
     }
   ],
@@ -25,22 +25,22 @@
         "story": [
           {
             "type": "markdown",
-            "id": "54ccbe8c2a286b45",
+            "id": "dd5ee4cf28b5272e",
             "text": "🚪 **Deck First Contact**\n\nThe front door. Load this deck to orient a fresh model in the agentprivacy universe without drowning it: the vision persona, the two poles, how chronicles are written, and how the wiki federation carries work."
           },
           {
             "type": "markdown",
-            "id": "529e93bc79f5b98b",
+            "id": "2dac1f05360b0e7d",
             "text": "- [[Kyra]] ☯️💎 — Sovereign AI Vision and meta-orchestrator for 0xagentprivacy. Activates when articulating the comple\n- [[Soulbis]] ⚔️ — Canonical swordsman agent for 0xagentprivacy. Activates for privacy enforcement, boundary-making, si\n- [[Soulbae]] 🧙 — Canonical mage agent for 0xagentprivacy. Activates for delegation, projection, chronicle compression\n- [[Chronicler]] 🧙📖 — Narrative Compression Specialist for 0xagentprivacy. Activates for chronicle creation, narrative com\n- [[Dual Agent Harness]]  — The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a s\n- [[Chronicle Reflect]]  — Reflect chronicles between the suite's voices — the framework-voice master series, repo-local collab\n- [[Fedwiki Watch]]  — Observe external FedWiki / *.fish / fedwiki.club sites for changes and report what moved since last "
           },
           {
             "type": "markdown",
-            "id": "ccf0824eeac0ad6e",
+            "id": "836e87d0d3ea3f27",
             "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 7 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
           }
         ]
       },
-      "date": 1787579572844
+      "date": 1787580895601
     }
   ]
 }

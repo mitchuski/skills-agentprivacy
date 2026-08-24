@@ -10,6 +10,7 @@ const crypto = require('crypto');
 
 const ROOT = path.join(__dirname, '..');
 const catalog = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'catalog-full.json'), 'utf8'));
+const cfg2 = JSON.parse(fs.readFileSync(path.join(ROOT, 'skillsync.config.json'), 'utf8'));
 const SITE = path.join(ROOT, 'site');
 fs.mkdirSync(path.join(SITE, 'data'), { recursive: true });
 
@@ -81,7 +82,8 @@ const edgeList = [...edges.values()].sort((x, y) => y.w - x.w).slice(0, 600);
     edges: edgeList,
     constellations: decks.map(d => ({ name: d.name, emoji: d.emoji, path: d.packets, kind: 'deck' }))
       .concat(contributed.map(c => ({ name: c.name, emoji: c.emoji || '\u{2B50}', path: c.path, kind: 'contributed', member: c.member, purpose: c.purpose }))),
-    runtimes: runtimes.map(r => ({ member: r.member, constellation: r.constellation, path: r.path, run: r.run, at: r.at }))
+    runtimes: cfg2.public_desk === 'proof' ? [] : runtimes.map(r => ({ member: r.member, constellation: r.constellation, path: r.path, run: r.run, at: r.at })),
+    runtimesProof: cfg2.public_desk === 'proof' ? { count: runtimes.length, note: 'runtimes sealed at the desk - detail lives on the tailnet' } : undefined
   };
   fs.writeFileSync(path.join(SITE, 'data', 'starchart.json'), JSON.stringify(data));
   fs.writeFileSync(path.join(SITE, 'star.html'), page());
@@ -184,6 +186,8 @@ function draw(){
  figure();
  if(D.runtimes.length){
   document.getElementById('rtlist').innerHTML=D.runtimes.slice(-8).reverse().map(r=>'<div class="rt"><b>'+r.member+'</b> walked <b>'+r.constellation+'</b> ('+r.path.length+' skills)'+(r.run?'<br>'+r.run:'')+'</div>').join('');
+ }else if(D.runtimesProof&&D.runtimesProof.count){
+  document.getElementById('rtlist').innerHTML='<div class="rt">\u{1F512} <b>'+D.runtimesProof.count+' runtimes sealed</b> at the desk — the walks themselves live on the tailnet</div>';
  }
  // live runtimes when on the tailnet
  fetch('http://pi5:4242/runtimes',{signal:AbortSignal.timeout(2500)}).then(r=>r.json()).then(rs=>{

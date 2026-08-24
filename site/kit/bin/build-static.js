@@ -36,18 +36,32 @@ fs.writeFileSync(path.join(SITE, 'data', 'decks.json'), JSON.stringify(decks, nu
     if (r.ok) gardens = await r.json();
   } catch (e) { /* desk closed */ }
   if (!gardens || !gardens.length) gardens = cfg.roster.map(m => ({ member: m.member, url: m.url, note: m.owner === 'self' ? 'the source garden' : '', standing: '', verified: false }));
+  // public-desk proof mode: standing stays (it is the listing), raw points do not
+  if (cfg.public_desk === 'proof') gardens = gardens.map(g => ({ ...g, points: undefined, tier: undefined }));
   fs.writeFileSync(path.join(SITE, 'data', 'gardens.json'), JSON.stringify({ updated: new Date().toISOString(), gardens }, null, 2));
 })();
 
 // baked leaderboard: from the live librarian if reachable, else a publication seed
 const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'catalog.json'), 'utf8'));
 (async () => {
-  let board = [{ member: cat.member, published: cat.count, adopted_by_others: 0, attested: 0, points: cat.count, tier: 'seeding' }];
-  try {
-    const r = await fetch('http://127.0.0.1:4242/leaderboard', { signal: AbortSignal.timeout(3000) });
-    if (r.ok) board = await r.json();
-  } catch (e) { /* librarian not running locally — keep the seed */ }
-  fs.writeFileSync(path.join(SITE, 'data', 'leaderboard.json'), JSON.stringify({ baked: new Date().toISOString(), board }, null, 2));
+  // public desk: in proof mode the cloud gets a COMMITMENT (bin/attest-desk.js),
+  // never the rows — the keeper chooses when to attest; the tailnet keeps detail
+  let baked;
+  if (cfg.public_desk === 'proof') {
+    let proof = null;
+    try { proof = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'desk-proof.json'), 'utf8')); } catch (e) {}
+    baked = { mode: 'proof', proof: proof || { note: 'no attestation yet — run bin/attest-desk.js' } };
+    if (proof) console.log('desk bake: PROOF of ' + proof.chain.entries + ' entries, attested ' + proof.attested_at.slice(0, 16));
+    else console.warn('desk bake: proof mode but no desk-proof.json — run bin/attest-desk.js');
+  } else {
+    let board = [{ member: cat.member, published: cat.count, adopted_by_others: 0, attested: 0, points: cat.count, tier: 'seeding' }];
+    try {
+      const r = await fetch('http://127.0.0.1:4242/leaderboard', { signal: AbortSignal.timeout(3000) });
+      if (r.ok) board = await r.json();
+    } catch (e) { /* librarian not running locally — keep the seed */ }
+    baked = { mode: 'detail', board };
+  }
+  fs.writeFileSync(path.join(SITE, 'data', 'leaderboard.json'), JSON.stringify({ baked: new Date().toISOString(), ...baked }, null, 2));
 
   // full bodies — rebuilt fresh so pruned skills never linger on the public site
   const bodiesSrc = path.join(ROOT, 'registry', 'assets');
@@ -339,13 +353,25 @@ function drawTray(){
 }
 
 /* ===== decks / leaderboard / counsel / gardens ===== */
-function drawDecks(ds){$('decks').innerHTML=ds.map(d=>'<div class="deck"><b>'+esc(d.emoji)+' '+esc(d.name)+'</b> — '+esc(d.purpose)+'<br><span class="note">'+d.packets.map(esc).join(' · ')+'</span>'+(LIVE?'<div class="row"><button class="abtn walkdeck" data-d="'+esc(d.name)+'">⭐ walk this deck</button></div>':'')+'</div>').join('');
+function drawDecks(ds){$('decks').innerHTML=ds.map(d=>'<div class="deck"><b>'+esc(d.emoji)+' '+esc(d.name)+'</b> — '+esc(d.purpose)+'<br><span class="note">'+d.packets.map(esc).join(' · ')+'</span>'+'<div class="row"><button class="abtn walkdeck" data-d="'+esc(d.name)+'">⭐ walk this deck</button></div>'+'</div>').join('');
  $('decks').querySelectorAll('.walkdeck').forEach(b=>b.onclick=()=>{const d=ds.find(x=>x.name===b.dataset.d);const st=loadPath();
   for(const n of d.packets)if(!st.path.some(e=>e.skill===n))st.path.push({skill:n,at:new Date().toISOString(),page:'deck:'+d.name});
   savePath(st);drawTray();drawGrid();window.scrollTo({top:0,behavior:'smooth'});});}
 function drawBoard(rows,live){$('board').innerHTML='<table><tr><th>member</th><th class="pts">published</th><th class="pts">adopted</th><th class="pts">attested</th><th class="pts">constellations</th><th class="pts">walked</th><th class="pts">points</th><th>tier</th></tr>'+
  rows.map(r=>'<tr><td><b>'+esc(r.member)+'</b></td><td class="pts">'+r.published+'</td><td class="pts">'+r.adopted_by_others+'</td><td class="pts">'+r.attested+'</td><td class="pts">'+(r.constellations||0)+'</td><td class="pts">'+(r.walked_by_others||0)+'</td><td class="pts"><b>'+r.points+'</b></td><td>'+esc(r.tier)+'</td></tr>').join('')+'</table>'+(live?'':'<p class="note">snapshot — live at the desk on the tailnet</p>');}
 async function drawBoardLive(){if(!LIB)return;try{drawBoard(await lib('/leaderboard'),true);}catch(e){}}
+// the public cloud carries a PROOF of the desk, not the rows: the chain head commits
+// to the whole ledger; a tailnet member holding the detail can recompute every digest
+function drawProof(p){
+ if(!p||!p.chain){$('board').innerHTML='<p class="note">no desk attestation published yet</p>';return;}
+ $('board').innerHTML='<div class="deck" style="border-left-color:#4a5d7e">'+
+  '<b>\u{1F512} Proof of the Librarian\u{2019}s Desk</b> <span class="note">attested '+esc(p.attested_at.slice(0,16))+'</span>'+
+  '<br><span class="note">chain head</span> <code>'+esc(p.chain.head.slice(0,24))+'\u{2026}</code> <span class="note">over '+p.chain.entries+' sealed entries ('+
+  Object.entries(p.chain.by_type).map(([k,v])=>v+' '+k).join(' · ')+')</span>'+
+  '<br><span class="note">'+Object.entries(p.counts).map(([k,v])=>v+' '+k).join(' · ')+'</span>'+
+  '<br><span class="note">digests — leaderboard <code>'+esc(p.digests.leaderboard.slice(0,12))+'</code> · gardens <code>'+esc(p.digests.gardens.slice(0,12))+'</code> · constellations <code>'+esc(p.digests.constellations.slice(0,12))+'</code> · runtimes <code>'+esc(p.digests.runtimes.slice(0,12))+'</code></span>'+
+  '<br><span class="note">The detail lives on the tailnet; this commitment lets any member check the cloud told the truth. The keeper chooses when to attest.</span></div>';
+}
 async function drawCounsel(){
  if(!LIB){$('counsel').innerHTML='<p class="note">the desk is tailnet-side — guidance requests and answers appear in live mode</p>';return;}
  try{const qs=await lib('/counsel');
@@ -362,16 +388,31 @@ async function drawCounsel(){
 }
 
 /* ===== gardens: the public registry, standing from the leaderboard ===== */
-function gardenRow(g){
- return '<div class="garden"><span><b>'+esc(g.member)+'</b> '+esc(g.standing||'')+(g.verified?' <span class="ok" title="catalog fetched and valid at registration">✓ verified'+(g.packets?' · '+g.packets+' packets':'')+'</span>':' <span class="note">unverified</span>')+
-  (g.note?'<br><span class="note">'+esc(g.note)+'</span>':'')+'</span>'+
-  '<span><a href="'+esc(g.url)+'">'+esc(g.url)+'</a>'+(g.points!=null?' <span class="note">'+g.points+' pts · '+esc(g.tier||'')+'</span>':'')+'</span></div>';
+// this page never lists ITSELF in the roster — it is the viewer, not an entry
+const SELF_HOSTS=['skills-agentprivacy.privacymage.workers.dev','skills.agentprivacy.ai'];
+const isSelf=u=>SELF_HOSTS.some(h=>String(u||'').includes(h));
+// one CARD per member-garden, its urls grouped as DOORS (public / tailnet)
+function gardenCards(rows){
+ const byMember={};
+ for(const g of rows){ if(isSelf(g.url))continue;
+  const m=(byMember[g.member]=byMember[g.member]||{member:g.member,standing:g.standing||'',points:g.points,tier:g.tier,notes:[],doors:[]});
+  if(g.note&&!m.notes.includes(g.note))m.notes.push(g.note);
+  if(g.standing)m.standing=g.standing;
+  m.doors.push({url:g.url,verified:!!g.verified,packets:g.packets||0});
+ }
+ const doorKind=u=>/^https:/.test(u)?'public':'tailnet';
+ return Object.values(byMember).map(m=>
+  '<div class="deck" style="border-left-color:#5a7d4a"><b>'+esc(m.standing)+' '+esc(m.member)+'</b>'+
+  (m.points!=null?' <span class="note">'+m.points+' pts · '+esc(m.tier||'')+'</span>':'')+
+  (m.notes.length?'<br><span class="note">'+esc(m.notes[0])+'</span>':'')+
+  '<div class="row">'+m.doors.map(d=>'<a class="abtn" href="'+esc(d.url)+'">'+doorKind(d.url)+' door'+(d.verified?' ✓'+(d.packets?' '+d.packets+'pk':''):'')+'</a>').join('')+'</div></div>').join('');
 }
 async function drawGardens(){
  let rows=null,live=false;
  if(LIB){try{rows=await lib('/gardens');live=true;}catch(e){}}
  if(!rows){try{rows=(await jget('data/gardens.json')).gardens;}catch(e){rows=[];}}
- $('gardens').innerHTML=(rows.length?rows.map(gardenRow).join(''):'<p class="note">no gardens registered yet — be the first</p>')+(live?'':'<p class="note">snapshot — the live registry answers on the tailnet</p>');
+ const cards=gardenCards(rows);
+ $('gardens').innerHTML=(cards||'<p class="note">no gardens registered yet — be the first</p>')+(live?'':'<p class="note">snapshot — the live registry answers on the tailnet</p>');
  if(LIB){$('gardenPub').innerHTML='<button class="abtn" id="pubGarden">\u{1F331} publish your garden</button>';
   $('pubGarden').onclick=async()=>{const w=needMe();if(!w)return;
    const url=(prompt('Your garden URL (serves assets/skillsync/catalog.json):','https://')||'').trim();if(!url)return;
@@ -397,7 +438,7 @@ async function drawGardens(){
  $('q').addEventListener('input',()=>{if($('q').value&&$('listing').value==='curated')$('listing').value='';}); // searching implies the whole shelf
  drawGrid();drawTray();
  const ds=await jget('data/decks.json').catch(()=>[]);drawDecks(ds);
- try{const l=await jget('data/leaderboard.json');drawBoard(l.board,false);}catch(e){}
+ try{const l=await jget('data/leaderboard.json');if(l.mode==='proof')drawProof(l.proof);else drawBoard(l.board,false);}catch(e){}
  drawBoardLive();
  drawCounsel();
  await drawGardens();

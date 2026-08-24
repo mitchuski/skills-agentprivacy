@@ -3,32 +3,32 @@
   "story": [
     {
       "type": "markdown",
-      "id": "3b2a1a16977c090a",
+      "id": "940f1f8abf028ad6",
       "text": "🔁 **How Skill Sync works** — a neutral protocol for sharing skills, spells, personas and agent files across the tailnet farms and the fedwiki club."
     },
     {
       "type": "markdown",
-      "id": "3d50769ee01ea6f2",
+      "id": "704aaef4b3ae29db",
       "text": "# Publish\n\nPut a `skillsync/catalog.json` under your site assets (cards + briefs; full SKILL.md bodies as per-skill assets). One fedwiki card page per packet makes everything forkable."
     },
     {
       "type": "markdown",
-      "id": "cb7904c8e7a9adcb",
+      "id": "8cc033c3a93b62f2",
       "text": "# Discover\n\nRun the dream loop on your own cadence: it polls the roster catalogs, diffs against yesterday, and marvin (the pi4 herald) pushes a ntfy notification for every new spell: who, what, the card."
     },
     {
       "type": "markdown",
-      "id": "727efa20cb78d8cb",
+      "id": "d00ddc8863808d88",
       "text": "# Adopt\n\nFork the card into your farm (fork = countersignature), then record it with the pi5 librarian: adoptions land on a hash-chained ledger. No one ever writes to anyone else's wiki."
     },
     {
       "type": "markdown",
-      "id": "2f5304e9ceff94e1",
+      "id": "71959fb654a50357",
       "text": "# Grow\n\nPoints come from OTHERS using your work: discovered = 1, adopted = 3, attested run = 7, **constellation contributed = 2, your constellation walked by another member = 5**. Tiers: 🚶 Wanderer 0 · 👍 Hitchhiker 6 · 🧭 Guide 18 · 📚 Librarian 42. At 42 you may seal submissions into the recommended catalog. See [[Leaderboard]] and [[Skill Star Chart]]."
     },
     {
       "type": "markdown",
-      "id": "bdefa629cc2363e2",
+      "id": "828f268a57201592",
       "text": "# Contribute a constellation\n\nCollect skills into a path with the ⭐ starpath button as you browse the cards, then **contribute** it: a named, purposeful path offered to the network (`POST /constellation`). Your name holds the constellation; every other member who walks it (seals a runtime on it) scores you 5. Curating good paths through the library is as valuable as writing new skills."
     }
   ],
@@ -40,37 +40,37 @@
         "story": [
           {
             "type": "markdown",
-            "id": "3b2a1a16977c090a",
+            "id": "940f1f8abf028ad6",
             "text": "🔁 **How Skill Sync works** — a neutral protocol for sharing skills, spells, personas and agent files across the tailnet farms and the fedwiki club."
           },
           {
             "type": "markdown",
-            "id": "3d50769ee01ea6f2",
+            "id": "704aaef4b3ae29db",
             "text": "# Publish\n\nPut a `skillsync/catalog.json` under your site assets (cards + briefs; full SKILL.md bodies as per-skill assets). One fedwiki card page per packet makes everything forkable."
           },
           {
             "type": "markdown",
-            "id": "cb7904c8e7a9adcb",
+            "id": "8cc033c3a93b62f2",
             "text": "# Discover\n\nRun the dream loop on your own cadence: it polls the roster catalogs, diffs against yesterday, and marvin (the pi4 herald) pushes a ntfy notification for every new spell: who, what, the card."
           },
           {
             "type": "markdown",
-            "id": "727efa20cb78d8cb",
+            "id": "d00ddc8863808d88",
             "text": "# Adopt\n\nFork the card into your farm (fork = countersignature), then record it with the pi5 librarian: adoptions land on a hash-chained ledger. No one ever writes to anyone else's wiki."
           },
           {
             "type": "markdown",
-            "id": "2f5304e9ceff94e1",
+            "id": "71959fb654a50357",
             "text": "# Grow\n\nPoints come from OTHERS using your work: discovered = 1, adopted = 3, attested run = 7, **constellation contributed = 2, your constellation walked by another member = 5**. Tiers: 🚶 Wanderer 0 · 👍 Hitchhiker 6 · 🧭 Guide 18 · 📚 Librarian 42. At 42 you may seal submissions into the recommended catalog. See [[Leaderboard]] and [[Skill Star Chart]]."
           },
           {
             "type": "markdown",
-            "id": "bdefa629cc2363e2",
+            "id": "828f268a57201592",
             "text": "# Contribute a constellation\n\nCollect skills into a path with the ⭐ starpath button as you browse the cards, then **contribute** it: a named, purposeful path offered to the network (`POST /constellation`). Your name holds the constellation; every other member who walks it (seals a runtime on it) scores you 5. Curating good paths through the library is as valuable as writing new skills."
           }
         ]
       },
-      "date": 1787579572846
+      "date": 1787580895604
     }
   ]
 }

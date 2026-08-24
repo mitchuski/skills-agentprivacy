@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T14:10:15.489Z",
+  "updated": "2026-08-24T14:14:56.235Z",
   "gardens": [
     {
       "member": "mitch",
@@ -8,8 +8,6 @@
       "verified": false,
       "packets": 0,
       "at": "2026-08-24T13:41:31.012Z",
-      "points": 7,
-      "tier": "👍 Hitchhiker",
       "standing": "🌱 rooted"
     },
     {
@@ -19,8 +17,6 @@
       "verified": true,
       "packets": 192,
       "at": "2026-08-24T13:41:31.231Z",
-      "points": 7,
-      "tier": "👍 Hitchhiker",
       "standing": "🌱 rooted"
     }
   ]

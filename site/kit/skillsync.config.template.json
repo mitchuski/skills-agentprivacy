@@ -65,5 +65,10 @@
     "^toffoli-reduction$",
     "^reversible-circuit-validation$",
     "^benchmark-frontier-archaeology$"
+  ],
+  "public_desk": "proof",
+  "self_urls": [
+    "skills-agentprivacy.privacymage.workers.dev",
+    "skills.agentprivacy.ai"
   ]
 }

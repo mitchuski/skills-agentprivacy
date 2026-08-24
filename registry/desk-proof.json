@@ -1,0 +1,30 @@
+{
+  "spec": "desk-proof/0.1",
+  "attested_at": "2026-08-24T14:14:54.845Z",
+  "desk": "the librarian of the agentprivacy skill sync",
+  "chain": {
+    "head": "fd9900988d5d900eac6a5f6b2b04c488bbe5aa86a5ab7c7a7d03810b11619bbf",
+    "entries": 15,
+    "by_type": {
+      "publish": 3,
+      "runtime": 6,
+      "constellation": 2,
+      "counsel": 1,
+      "guide": 1,
+      "garden": 2
+    }
+  },
+  "digests": {
+    "leaderboard": "81949fe32f26b270042ed447ac2dc0179a9ec2f1bbcdfc97c04d67d9b29867ab",
+    "gardens": "81f1e1636d85020f77d332cf85e26709ec02c9cbb51b2a756b64e33d6a965261",
+    "constellations": "07ebd17a2da4240b371e729a0103976e44d46616f9baa03f3c5ae6c172580210",
+    "runtimes": "1546a22cb74ae996d197dea322b0221ad541b7232b9d1ce6261ebc0e9ea0d879"
+  },
+  "counts": {
+    "members": 1,
+    "gardens": 2,
+    "constellations": 2,
+    "runtimes": 6
+  },
+  "verify": "On the tailnet: GET the detail from the librarian, canonicalize (sorted keys), sha256, compare. The chain head = sha256 of the last ledger line; each entry.prev = sha256 of the previous line, so the head commits to the whole history."
+}
