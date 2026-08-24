@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-consent-infrastructure",
+  "kind": "skill",
+  "title": "Consent Infrastructure",
+  "emoji": "",
+  "card": "Consent infrastructure and IEEE 7012 MyTerms integration for 0xagentprivacy. Activates when discussing bilateral consent, cookie-slashing, consent receipts, Customer Commons, MyTerms Alliance, or how P·C·Σ creates enforceable consent rather than checkbox compliance.",
+  "brief": "Consent infrastructure and IEEE 7012 MyTerms integration for 0xagentprivacy. Activates when discussing bilateral consent, cookie-slashing, consent receipts, Customer Commons, MyTerms Alliance, or how P·C·Σ creates enforceable consent rather than checkbox compliance.\n\n**Source:** Privacy Value Model V4 + IEEE 7012 (MyTerms) + Customer Commons + First Person Spellbook **Target context:** Consent UX designers, IEEE 7012 implementers, Customer Commons contributors, browser agent builders **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe legal-technical bridge. Consent is where privacy architecture meets the real world — where mathematical guarantees translate into actual human agreements about data use. This skill covers the MyTerms standard (IEEE 7012), the Customer Commons framework, and how the Swordsman browser agent implements consent as a bilateral protocol rather than a checkbox.",
+  "body_ref": "assets/agentprivacy-consent-infrastructure/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-consent-infrastructure/SKILL.md"
+  },
+  "hash": "637409261eb89f0ddba08132392255e21982bdb2be27350ce74c7b30df4724b9",
+  "published": "2026-04-22T13:39:43.351Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

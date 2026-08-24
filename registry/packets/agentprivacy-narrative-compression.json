@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-narrative-compression",
+  "kind": "skill",
+  "title": "Narrative Compression",
+  "emoji": "",
+  "card": "Narrative compression methodology for 0xagentprivacy spellbook system. Activates when discussing 70:1-125:1 compression ratios, story-as-documentation, proverb extraction, symbolic notation, emoji spell encoding, or how complex cryptographic concepts compress into regenerative n…",
+  "brief": "Narrative compression methodology for 0xagentprivacy spellbook system. Activates when discussing 70:1-125:1 compression ratios, story-as-documentation, proverb extraction, symbolic notation, emoji spell encoding, or how complex cryptographic concepts compress into regenerative narrative.\n\n**Source:** Privacy Value Model V4 + First Person Spellbook (24 Acts) + Compression Theory   **Target context:** Knowledge compression system builders, educational infrastructure designers, AI-readable documentation architects, narrative-to-formal methodology researchers   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe First Person Spellbook is a 24-act narrative that compresses the entire 0xagentprivacy architecture — information theory, zero-knowledge proofs, dual-agent separation, network economics, sovereignty geometry — into story form with compression ratios between 70:1 and 125:1. Act XXIV reveals that this compression was not deliberate. The spellbook was a derivation that did not know it was a derivation. Every act contributed a term to the Privacy Value Model. Every proverb en…",
+  "body_ref": "assets/agentprivacy-narrative-compression/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-narrative-compression/SKILL.md"
+  },
+  "hash": "8d8b01ab625012b04bf10b42430dbc762c8385bfcd1ac75d4caa96c52ab9537c",
+  "published": "2026-06-21T14:53:46.503Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

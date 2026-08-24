@@ -1,0 +1,14 @@
+{
+  "name": "wiki-plugin-starpath",
+  "version": "0.1.0",
+  "description": "Federated Wiki - collect your walk through the skill space: a like-shaped button that adds the page skill to your star path, visualises it on the star chart, and seals it as a constellation runtime.",
+  "keywords": [
+    "wiki",
+    "federated wiki",
+    "plugin",
+    "starpath",
+    "skills"
+  ],
+  "author": "the keeper",
+  "license": "MIT"
+}

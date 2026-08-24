@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-swordsman-browser",
+  "kind": "skill",
+  "title": "Swordsman Browser",
+  "emoji": "",
+  "card": "Swordsman browser agent for 0xagentprivacy MyTerms integration. Activates when discussing browser extension architecture, cookie-slashing implementation, tracker blocking, consent enforcement at the browser level, or the Warden's operational domain.",
+  "brief": "Swordsman browser agent for 0xagentprivacy MyTerms integration. Activates when discussing browser extension architecture, cookie-slashing implementation, tracker blocking, consent enforcement at the browser level, or the Warden's operational domain.\n\n**Source:** Privacy Value Model V4 + 0xagentprivacy Implementation Architecture   **Target context:** Browser extension builders, privacy tool developers, consent UX designers, web standards implementers   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe first physical instantiation of the Privacy Value Model. A browser agent that slashes tracking cookies, negotiates privacy terms on behalf of a human, and builds verifiable reputation through sustained privacy-respecting behaviour. The Swordsman is the equation made concrete — every cookie slash is a sovereignty transition, every MyTerms negotiation is an edge traversal, and the armor progression is a lived calibration of the edge value function T(π).",
+  "body_ref": "assets/agentprivacy-swordsman-browser/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-swordsman-browser/SKILL.md"
+  },
+  "hash": "a4a834f91eb6eb5dd29c9af0daee1ef6422e2421c62f43078d1fda765601b7e0",
+  "published": "2026-04-22T13:39:43.436Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

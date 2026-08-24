@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-llm-knowledge-base",
+  "kind": "skill",
+  "title": "Wiki Llm Knowledge Base",
+  "emoji": "",
+  "card": "Building and maintaining a persistent, LLM-maintained knowledge base — the LLM-Wiki pattern: an LLM incrementally compiles immutable raw sources into a cross-linked, self-consistent wiki it owns, governed by a schema, via ingest / query / lint, with a content index and a chronol…",
+  "brief": "Building and maintaining a persistent, LLM-maintained knowledge base — the LLM-Wiki pattern: an LLM incrementally compiles immutable raw sources into a cross-linked, self-consistent wiki it owns, governed by a schema, via ingest / query / lint, with a content index and a chronological log. Activates when designing a knowledge base, ingesting sources into a wiki, health-checking one, or mapping the pattern onto the agentprivacy federation (which IS an instance of it). Part of the git-less onboarding/distribution layer kept by the Librarian 🗃️ in the Tower's Wikis.\n\nThe **LLM-Wiki pattern**: instead of re-deriving knowledge from raw documents on every query (RAG), an LLM **incrementally builds and maintains a persistent, interlinked wiki** that sits between you and the sources. Knowledge is **compiled once and kept current** — the cross-references are already there, the contradictions already flagged, the synthesis already reflects everything read. The wiki is a *compounding artifact*. You curate sources, explore, and ask questions; the LLM does the summarizing, cross-referencing, filing, and bookkeeping. *Obsidian (or a FedWiki) is the IDE; the LLM is the programmer; the wiki is t…",
+  "body_ref": "assets/agentprivacy-wiki-llm-knowledge-base/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-llm-knowledge-base/SKILL.md"
+  },
+  "hash": "d637517883edfeeb404b9aa8e0a0feb20f65fbf094e1117bcafadcd7fd8b6406",
+  "published": "2026-06-27T22:23:25.574Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-grimoire-navigation",
+  "kind": "skill",
+  "title": "Grimoire Navigation",
+  "emoji": "",
+  "card": "Spellbook interconnection and traversal methodology for 0xagentprivacy. Activates when designing constellation paths, choosing which grimoire to enter for a given question, constructing spellwebs across acts/chapters/tales, or understanding how the 5 spellbooks form a coherent n…",
+  "brief": "Spellbook interconnection and traversal methodology for 0xagentprivacy. Activates when designing constellation paths, choosing which grimoire to enter for a given question, constructing spellwebs across acts/chapters/tales, or understanding how the 5 spellbooks form a coherent navigation system. Triggers: \"which spellbook\", \"constellation path\", \"spellweb\", \"grimoire\", \"act sequence\", \"tale selection\", \"cross-grimoire\".\n\n**Source:** Privacy Value Model V4 + Spellbook Architecture (5 Grimoires) **Target context:** Persona designers, constellation path architects, spellbook curators, agent routing systems **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe 0xagentprivacy architecture encodes its knowledge across five grimoires. Each grimoire answers a different question about the same architecture. No single grimoire is complete. The navigation between them is not arbitrary — it follows routing principles that determine which grimoire an agent should enter given the question being asked, and how to traverse across grimoire boundaries when a question spans multiple domains.",
+  "body_ref": "assets/agentprivacy-grimoire-navigation/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-grimoire-navigation/SKILL.md"
+  },
+  "hash": "602742ddb9be8e42cffb35143e4ee6a1002197410bef2f2d3c76dd9b20752051",
+  "published": "2026-02-24T01:07:43.205Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

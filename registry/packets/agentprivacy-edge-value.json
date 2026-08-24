@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-edge-value",
+  "kind": "skill",
+  "title": "Edge Value",
+  "emoji": "",
+  "card": "Edge value and trajectory dynamics for sovereignty transitions in 0xagentprivacy. Activates when discussing T(π) trajectory terms, sovereignty lattice transitions (64-vertex {0,1}⁶), Yoneda lemma applications, vertical vs lateral sovereignty movement, or edge weight functions. U…",
+  "brief": "Edge value and trajectory dynamics for sovereignty transitions in 0xagentprivacy. Activates when discussing T(π) trajectory terms, sovereignty lattice transitions (64-vertex {0,1}⁶), Yoneda lemma applications, vertical vs lateral sovereignty movement, or edge weight functions. Use for sovereignty path optimisation and transition analysis.\n\n**Source:** Privacy Value Model V4 **Target context:** All agents, category theorists, agent trajectory designers, lattice navigation systems **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe V4 insight that what an agent *does* matters more than what it *is*. The sovereignty lattice has 64 vertices and 192 edges. There are three times as many transitions as states. T(π) measures the value of an agent's path through the lattice — its trajectory π — not just its current position.",
+  "body_ref": "assets/agentprivacy-edge-value/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-edge-value/SKILL.md"
+  },
+  "hash": "0e4e4876d44a448862b2aba82f4a0c4ab1d143dbc5b7c68cf1c7ad128611bcb9",
+  "published": "2026-04-22T13:39:43.312Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

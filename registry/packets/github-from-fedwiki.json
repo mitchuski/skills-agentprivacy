@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "github-from-fedwiki",
+  "kind": "skill",
+  "title": "Github From Fedwiki",
+  "emoji": "",
+  "card": "Mirror a federated wiki site to a GitHub wiki, translating fedwiki page JSON into GitHub-flavoured markdown. Use when the user says \"mirror this wiki to GitHub\", \"create a GitHub wiki from the fedwiki\", \"export the wiki site to a GitHub wiki\", \"sync legacy.h2g2.localhost to the…",
+  "brief": "Mirror a federated wiki site to a GitHub wiki, translating fedwiki page JSON into GitHub-flavoured markdown. Use when the user says \"mirror this wiki to GitHub\", \"create a GitHub wiki from the fedwiki\", \"export the wiki site to a GitHub wiki\", \"sync legacy.h2g2.localhost to the repo wiki\", \"translate fedwiki markdown to GitHub markdown\", or wants a repo's GitHub wiki generated from a fedwiki site's pages.\n\nMirrors a federated wiki site (a farm domain folder of page JSON) into a GitHub wiki (the `{repo}.wiki.git` git repo), translating fedwiki markdown into GitHub-flavoured markdown. One fedwiki page → one wiki page; `welcome-visitors` → `Home`. The mirror is **one-way**: re-running overwrites GitHub-side edits.\n\n- **Source site**: a farm domain, e.g. `legacy.h2g2.localhost`. Resolve its   farm dir per `fedwiki-page` (private `~/Music/Guides/Private/{domain}`,   public `~/Nextcloud/fedwiki/{domain}`). - **Target repo**: `owner/repo` on GitHub. The wiki lives at   `https://github.com/{owner}/{repo}.wiki.git`.",
+  "body_ref": "assets/github-from-fedwiki/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "workbench",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/h2g2_mage/h2g2-legacy/.claude/skills/github-from-fedwiki/SKILL.md"
+  },
+  "hash": "676d6316997f1e47aa04d9c01dae8615f5760eb13824652b7e03a3ef47634ff5",
+  "published": "2026-07-29T10:53:54.004Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

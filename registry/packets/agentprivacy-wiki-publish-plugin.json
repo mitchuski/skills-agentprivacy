@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-publish-plugin",
+  "kind": "skill",
+  "title": "Wiki Publish Plugin",
+  "emoji": "",
+  "card": "End-to-end release of a Federated Wiki plugin update — docs, version bump, GitHub commit/tag, npm publish, and help/catalog pages. Activates when shipping a new version of a fedwiki plugin. Kept by the Librarian 🗃️ in the Tower's Wikis.",
+  "brief": "End-to-end release of a Federated Wiki plugin update — docs, version bump, GitHub commit/tag, npm publish, and help/catalog pages. Activates when shipping a new version of a fedwiki plugin. Kept by the Librarian 🗃️ in the Tower's Wikis.\n\n> **Note:** the upstream page `publish-plugin-update-skill` was unreachable (HTTP 404) when this skill was materialized on 2026-06-21. This body is reconstructed from the sitemap synopsis (\"End-to-end plugin release: docs, versioning, GitHub, npm, and help pages\") and cross-references. Refresh it with `agentprivacy-wiki-to-skill` once the upstream page resolves.\n\nThe `publish-plugin-update` skill runs the end-to-end release of a Federated Wiki plugin update — covering documentation, versioning, GitHub, npm, and the help/catalog pages, so a new version is shipped and discoverable in one pass.\n\n1. **Docs** — update the plugin's `README.md` and refresh its catalog page on `plugin.fedwiki.club` (`agentprivacy-wiki-document-plugin`). 2. **Version** — bump the version in `package.json` (`npm version patch|minor|major`), following semver. 3. **GitHub** — commit the changes, tag the release, and push (commit + tag + push origin). Create a GitHub release…",
+  "body_ref": "assets/agentprivacy-wiki-publish-plugin/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-publish-plugin/SKILL.md"
+  },
+  "hash": "9ee8273e969e0df77cc677adf0f7ccd703a7a4d63f5b837aeaf85e6955cab2ca",
+  "published": "2026-06-21T14:53:46.490Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

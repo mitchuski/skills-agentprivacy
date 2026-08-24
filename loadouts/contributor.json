@@ -1,0 +1,13 @@
+{
+  "spec": "skill-loadout/0.1",
+  "name": "contributor",
+  "emoji": "🤝",
+  "purpose": "The base default constellation: how to join and contribute to the skill network itself. Publish your garden, dream the roster, adopt properly, and walk + contribute constellations. Every new member starts here.",
+  "packets": [
+    "skillsync-publish-garden",
+    "skillsync-dreamloop",
+    "skillsync-adopt",
+    "skillsync-constellation",
+    "spell-search"
+  ]
+}

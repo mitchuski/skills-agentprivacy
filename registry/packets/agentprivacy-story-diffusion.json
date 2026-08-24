@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-story-diffusion",
+  "kind": "skill",
+  "title": "Story Diffusion",
+  "emoji": "",
+  "card": "Story fracture and principle convergence methodology for 0xagentprivacy idea propagation. Activates when discussing how a single technical concept appears as different narratives across grimoires, designing multi-frame explanations for the same principle, or building organic tru…",
+  "brief": "Story fracture and principle convergence methodology for 0xagentprivacy idea propagation. Activates when discussing how a single technical concept appears as different narratives across grimoires, designing multi-frame explanations for the same principle, or building organic trust graph formation through narrative variation. Triggers: \"story fracture\", \"principle convergence\", \"narrative variation\", \"multi-frame\", \"idea propagation\", \"diffusion strategy\", \"different audiences\". V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V4 + Constellation Method + Proverbiogenesis Lifecycle **Target context:** Idea propagators, privacy advocates, technical communicators, movement builders, narrative infrastructure designers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai",
+  "body_ref": "assets/agentprivacy-story-diffusion/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-story-diffusion/SKILL.md"
+  },
+  "hash": "9451457ef7c17763d6e556faaa2b49fa7aba3f06f813561c489e1aefa3e789ed",
+  "published": "2026-06-10T18:44:38.276Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

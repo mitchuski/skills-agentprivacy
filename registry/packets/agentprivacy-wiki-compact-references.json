@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-compact-references",
+  "kind": "skill",
+  "title": "Wiki Compact References",
+  "emoji": "",
+  "card": "Compacting a page's reference-item section by replacing forked reference items with compact `[[wikilink]]` bullets inside a `# See` markdown item. Activates when tidying a page heavy with forked reference items. Part of the git-less onboarding/distribution layer kept by the Libr…",
+  "brief": "Compacting a page's reference-item section by replacing forked reference items with compact `[[wikilink]]` bullets inside a `# See` markdown item. Activates when tidying a page heavy with forked reference items. Part of the git-less onboarding/distribution layer kept by the Librarian 🗃️ in the Tower's Wikis.\n\nThe **fedwiki-compact-references** skill — Compact the reference-item section of a federated wiki page by replacing forked reference items with compact `wikilink` bullets inside a `# See` markdown item. Only promotes references that have been forked to the origin site. Non-forked references remain as reference items.\n\nUse when the user says \"compact references\", \"tidy up the references\", \"convert references to see-links\", or \"compact the see section\" on a wiki page.\n\n- Variant A — Local File Access (preferred) - Variant B — DevTools / Live Fetch (fallback) - Common Steps - Output to User - Edge Cases",
+  "body_ref": "assets/agentprivacy-wiki-compact-references/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-compact-references/SKILL.md"
+  },
+  "hash": "dac1b7bf4b98ca088d5045527d88b9cb76c2a2d0cd84d23b705274bf8d50bf56",
+  "published": "2026-06-27T13:51:43.031Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

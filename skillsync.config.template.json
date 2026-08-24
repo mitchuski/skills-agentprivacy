@@ -1,0 +1,69 @@
+{
+  "member": "<your-handle>",
+  "sources": [
+    {
+      "root": "<path-to-your-skills>",
+      "dirs": [
+        "."
+      ],
+      "universe": "<your-universe>",
+      "kind_by_dir": {
+        ".": "skill"
+      }
+    }
+  ],
+  "shelf": {
+    "site": "skillsync.localhost",
+    "farm_pages": "C:/Users/mitch/.wiki/skillsync.localhost/pages",
+    "farm_assets": "C:/Users/mitch/.wiki/skillsync.localhost/assets",
+    "full_page_site": "skill.localhost"
+  },
+  "roster": [
+    {
+      "member": "mitch",
+      "url": "http://skillsync.localhost:3030",
+      "site": "skillsync.localhost",
+      "owner": "self"
+    },
+    {
+      "member": "skill.fedwiki.club",
+      "url": "https://skill.fedwiki.club",
+      "owner": "external"
+    },
+    {
+      "member": "david.self.fish",
+      "url": "https://david.self.fish",
+      "owner": "external"
+    },
+    {
+      "member": "radio.myth.garden",
+      "url": "https://radio.myth.garden",
+      "owner": "external"
+    }
+  ],
+  "marvin": {
+    "host": "02-pi4",
+    "ntfy": "http://02-pi4:2586",
+    "topic": "skillsync-discoveries"
+  },
+  "librarian": {
+    "host": "pi5",
+    "url": "http://pi5:4242"
+  },
+  "leak_patterns": [
+    "BEGIN [A-Z ]*PRIVATE KEY",
+    "api[_-]?key\\s*[:=]\\s*['\"]?[A-Za-z0-9_\\-]{16}",
+    "secret\\s*[:=]\\s*['\"][A-Za-z0-9_\\-]{8}",
+    "wikiSession=[A-Za-z0-9%]{8}",
+    "ykn_[A-Za-z0-9]{8}"
+  ],
+  "exclude_patterns": [
+    "^ecdsafail",
+    "^hilbert-cli$",
+    "^yukon-cli$",
+    "^peak-qubit-reduction$",
+    "^toffoli-reduction$",
+    "^reversible-circuit-validation$",
+    "^benchmark-frontier-archaeology$"
+  ]
+}

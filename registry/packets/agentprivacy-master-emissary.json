@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-master-emissary",
+  "kind": "pattern",
+  "title": "Master Emissary",
+  "emoji": "",
+  "card": "Deep philosophical framework for 0xagentprivacy dual-agent architecture. Activates when discussing McGilchrist's Master/Emissary theory, Nietzsche's fable, hemispheric usurpation, the right→left→right return cycle, why metaphors came first, why music came first, why trust is emb…",
+  "brief": "Deep philosophical framework for 0xagentprivacy dual-agent architecture. Activates when discussing McGilchrist's Master/Emissary theory, Nietzsche's fable, hemispheric usurpation, the right→left→right return cycle, why metaphors came first, why music came first, why trust is embodied, or the fundamental recognition that Soulbis IS the Master and Soulbae IS the Emissary.\n\n**Source:** Privacy Value Model V4 + First Person Spellbook Act XXVI (The Master and His Emissary) **Target context:** Philosophers, system architects, anyone seeking the WHY beneath the architecture **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe deepest philosophical foundation of the 0xagentprivacy architecture. Iain McGilchrist spent twenty years asking: **Why is the brain divided?** His answer—that the division enables the holding of incompatible attention modes simultaneously—IS the architectural principle behind the Swordsman/Mage separation.",
+  "body_ref": "assets/agentprivacy-master-emissary/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-master-emissary/SKILL.md"
+  },
+  "hash": "279de12f11c6d6778e26342ef4e6bb7bdc46f224fc8c31e3051f45814c166e33",
+  "published": "2026-04-22T13:39:43.219Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

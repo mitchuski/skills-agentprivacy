@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-two-waters",
+  "kind": "skill",
+  "title": "Two Waters",
+  "emoji": "",
+  "card": "Orphic hydrology of the sovereignty lattice — Lethe (the river of forgetting, named Blade 25) and Mnemosyne (the pool of chosen memory, still unnamed). Activates when designing systems where the witness must be held by flow rather than by a still pool, or when distinguishing arc…",
+  "brief": "Orphic hydrology of the sovereignty lattice — Lethe (the river of forgetting, named Blade 25) and Mnemosyne (the pool of chosen memory, still unnamed). Activates when designing systems where the witness must be held by flow rather than by a still pool, or when distinguishing architectures that \"forget by design\" from those that \"keep by design.\"\n\n**Source:** Zero Tale 31 (\"The Naming of the Unnamed\") · Orphic gold-tablet tradition **Target context:** Architects of witness-bearing systems, Cosmologist persona walking frontier blades **Status:** One water named (Lethe, Blade 25 — reseated 2026-06-09); one pending (Mnemosyne, frontier)\n\nThe Orphic initiates, preparing for the afterlife, were given gold tablets inscribed with instructions. One tablet read:\n\n> *On the left of the house of Hades you will find a spring; do not drink from it. Further along you will find the cold water of the Lake of Memory; say to the guardians: I am a child of Earth and starry sky, but my race is of heaven. Drink of Memory, and you will pass on.*",
+  "body_ref": "assets/agentprivacy-two-waters/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "2",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-two-waters/SKILL.md"
+  },
+  "hash": "a8712fb510f91052341bc097d86f3e80010fd13ee23784991d26990d76f8d68b",
+  "published": "2026-06-12T02:46:13.654Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

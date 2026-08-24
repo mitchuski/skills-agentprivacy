@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-sovereignty-economics",
+  "kind": "skill",
+  "title": "Sovereignty Economics",
+  "emoji": "",
+  "card": "Sovereignty economics and P^1.5 superlinearity for 0xagentprivacy. Activates when discussing the superlinear returns of protection, sovereignty gap quantification (17×-12,000×), V_sovereign/V_surveillance ratios, or the mathematical proof that privacy creates exponentially more…",
+  "brief": "Sovereignty economics and P^1.5 superlinearity for 0xagentprivacy. Activates when discussing the superlinear returns of protection, sovereignty gap quantification (17×-12,000×), V_sovereign/V_surveillance ratios, or the mathematical proof that privacy creates exponentially more value than surveillance.\n\n**Source:** Privacy Value Model V4 + \"Privacy is Normal and the Path to Value in an Agentic Everything Era\" (Oct 2025) **Target context:** Protocol economists, DeFi architects, privacy pool designers, regulatory analysts **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe applied economics of the Privacy Value Model. Not the theoretical equation but the practical demonstration: when you run the numbers, high privacy is not incrementally better than low privacy. It is categorically different. ZK proofs don't give 2× the value of basic encryption. They give 20–30×. And if you try to split privacy between intelligence and tokens, the flow consistency factor kills the value before the exponent even applies.",
+  "body_ref": "assets/agentprivacy-sovereignty-economics/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-sovereignty-economics/SKILL.md"
+  },
+  "hash": "efa6a0a236a0d6b895b5aeda0d7159a536ac8135e8fe6c632a0e774bf10ed1dc",
+  "published": "2026-04-22T13:39:43.429Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

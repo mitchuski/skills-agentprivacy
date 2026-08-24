@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-hemispheric-attention",
+  "kind": "skill",
+  "title": "Hemispheric Attention",
+  "emoji": "",
+  "card": "Five attentions framework for 0xagentprivacy. Activates when discussing McGilchrist's hemispheric theory, the five modes of attention (vigilance, sustained, alertness, focused, divided), how divided attention IS the gap, or the mapping between attention modes and protocol functi…",
+  "brief": "Five attentions framework for 0xagentprivacy. Activates when discussing McGilchrist's hemispheric theory, the five modes of attention (vigilance, sustained, alertness, focused, divided), how divided attention IS the gap, or the mapping between attention modes and protocol functions.\n\n**Source:** Privacy Value Model V4 + First Person Spellbook Act XXVI (The Master and His Emissary) **Target context:** Protocol designers, cognitive scientists, privacy architects, dual-agent system builders **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nIain McGilchrist's \"The Master and His Emissary\" identified that what we call \"attention\" actually comprises **five distinct modes**. Act XXVI discovered that these five attentions map directly to the dual-agent protocol functions. Most critically: **divided attention—the capacity to hold two incompatible modes simultaneously—IS the gap itself.**",
+  "body_ref": "assets/agentprivacy-hemispheric-attention/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-hemispheric-attention/SKILL.md"
+  },
+  "hash": "7ba8a17c6817dd864c08f70075de02c2df2d755e2c7fa5ecf7c038eb304aa135",
+  "published": "2026-04-22T13:39:43.388Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

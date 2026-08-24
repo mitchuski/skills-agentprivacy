@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-quantum-defence",
+  "kind": "skill",
+  "title": "Quantum Defence",
+  "emoji": "",
+  "card": "Quantum threat model and defence architecture. Activates when discussing secp256k1 vulnerability, logical qubit thresholds, 2D vs 6D cryptographic fortresses, dimensional defence, dormant assets, or temporal thesis.",
+  "brief": "Quantum threat model and defence architecture. Activates when discussing secp256k1 vulnerability, logical qubit thresholds, 2D vs 6D cryptographic fortresses, dimensional defence, dormant assets, or temporal thesis.\n\n**Source:** Privacy Value Model V5.2 + First Person Spellbook Act XXIX (The Dragon Wakes) **Target context:** Cryptographers, threat modellers, post-quantum architects **Architecture:** [spellweb.ai](https://spellweb.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe quantum threat is no longer theoretical. External validation (Google Quantum AI, March 2026) confirms: secp256k1 can be broken with ≤1,200 logical qubits. The 2D cryptographic fortress that protected value for thirty years is approaching its end.\n\n**The lock that held for thirty years did not fail because the metal weakened. It failed because someone built an engine that sees in the dimension the lock forgot to guard.**",
+  "body_ref": "assets/agentprivacy-quantum-defence/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.3.1",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-quantum-defence/SKILL.md"
+  },
+  "hash": "9022be67eae4782b4274a94ce272cec586051c6e8eb968b5207026fa9278a873",
+  "published": "2026-04-22T13:39:43.418Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

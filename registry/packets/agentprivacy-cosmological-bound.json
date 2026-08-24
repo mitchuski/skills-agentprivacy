@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-cosmological-bound",
+  "kind": "pattern",
+  "title": "Cosmological Bound",
+  "emoji": "🌌☯️",
+  "card": "Meta skill for recognizing cosmological precedents in privacy architecture. The dual-agent pattern predates biology—it was written in orbital mechanics 4.5 billion years before the first line of code. This skill maps celestial architecture to software architecture.",
+  "brief": "Meta skill for recognizing cosmological precedents in privacy architecture. The dual-agent pattern predates biology—it was written in orbital mechanics 4.5 billion years before the first line of code. This skill maps celestial architecture to software architecture.\n\n**🌌☯️ Cosmological Bound — The Architecture Before the Architecture**\n\n> \"The architecture was not invented. It was recognised.\"\n\nThe Cosmological Bound skill recognizes that privacy architecture has **precedent in physics**. The Swordsman/Mage separation, the gap, the zero-knowledge orbit—these patterns existed in the solar system 4.5 billion years before they were implemented in software.\n\nThis is not metaphor. This is **isomorphism**.\n\nWhen we design dual-agent systems, we are not inventing. We are recognizing patterns that the universe already validated at planetary scale.\n\n| Body | Function | Architectural Role | |------|----------|-------------------| | **Sun** | Protection through radiance | The light source, constraint as incandescence | | **Earth** | Delegation through living | Connection, agency as proliferation |",
+  "body_ref": "assets/agentprivacy-cosmological-bound/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "0",
+    "version": "5.3.1",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-cosmological-bound/SKILL.md"
+  },
+  "hash": "2262add425096b15abd76d6a529670d311c45d8db56ba0e9a336dd623a6ba5c5",
+  "published": "2026-04-07T19:07:01.340Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

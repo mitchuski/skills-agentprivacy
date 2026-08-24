@@ -1,0 +1,15 @@
+{
+  "spec": "skill-loadout/0.1",
+  "name": "first-contact",
+  "emoji": "🚪",
+  "purpose": "The front door. Load this deck to orient a fresh model in the agentprivacy universe without drowning it: the vision persona, the two poles, how chronicles are written, and how the wiki federation carries work.",
+  "packets": [
+    "agentprivacy-kyra",
+    "agentprivacy-soulbis",
+    "agentprivacy-soulbae",
+    "agentprivacy-chronicler",
+    "agentprivacy-dual-agent-harness",
+    "agentprivacy-chronicle-reflect",
+    "fedwiki-watch"
+  ]
+}

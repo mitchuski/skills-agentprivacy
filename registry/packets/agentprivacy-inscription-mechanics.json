@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-inscription-mechanics",
+  "kind": "skill",
+  "title": "Inscription Mechanics",
+  "emoji": "",
+  "card": "Operational mechanics of the three inscription paths (Shadow, Guarded, Open) for 0xagentprivacy trust commitments. Activates when designing how bilateral proverbs get committed onchain, choosing inscription visibility levels, implementing ceremony outputs as verifiable credentia…",
+  "brief": "Operational mechanics of the three inscription paths (Shadow, Guarded, Open) for 0xagentprivacy trust commitments. Activates when designing how bilateral proverbs get committed onchain, choosing inscription visibility levels, implementing ceremony outputs as verifiable credentials, or building the infrastructure that turns understanding into persistent trust records. Triggers: \"inscription path\", \"Shadow inscription\", \"Guarded inscription\", \"Open inscription\", \"onchain commitment\", \"ceremony output\", \"bilateral proverb commitment\", \"trust record\".\n\n**Source:** Privacy Value Model V4 + VRC Identity System + Ceremony Architecture **Target context:** Trust infrastructure builders, verifiable credential implementers, onchain identity architects, ceremony designers, bilateral agreement systems **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai",
+  "body_ref": "assets/agentprivacy-inscription-mechanics/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-inscription-mechanics/SKILL.md"
+  },
+  "hash": "de8aa5687490c3cee87b4cda5afa5e8e5a0f80ffbfcaf1691d2a733effaba377",
+  "published": "2026-02-24T01:07:43.235Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

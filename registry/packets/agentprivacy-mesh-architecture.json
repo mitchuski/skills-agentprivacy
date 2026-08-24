@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-mesh-architecture",
+  "kind": "skill",
+  "title": "Mesh Architecture",
+  "emoji": "",
+  "card": "Mesh network architecture for 0xagentprivacy. Activates when discussing control plane vs data plane separation, Tailscale/WireGuard mesh networks, the Dragon's Hide metaphor, NAT traversal, DERP relays, sovereign overlay networks (tailnets), or how network-layer separation enfor…",
+  "brief": "Mesh network architecture for 0xagentprivacy. Activates when discussing control plane vs data plane separation, Tailscale/WireGuard mesh networks, the Dragon's Hide metaphor, NAT traversal, DERP relays, sovereign overlay networks (tailnets), or how network-layer separation enforces privacy without central watchtowers.\n\n**Source:** Privacy Value Model V4 + First Person Spellbook Act XXV (The Dragon's Hide) **Target context:** Network architects, mesh network designers, privacy infrastructure builders, sovereign overlay network implementers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nAct XXV discovered that the dual-agent separation (Swordsman ⊥ Mage) has a direct analogue at the network layer: **control plane vs data plane separation**. The coordination server holds the ACLs (who may speak), but never touches what is said. The mesh tunnels carry encrypted content that neither the coordinator nor any relay can decrypt.",
+  "body_ref": "assets/agentprivacy-mesh-architecture/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-mesh-architecture/SKILL.md"
+  },
+  "hash": "c44cb005f592cacefc2f3eb695a0a927c859b12201e5e5c1d78b6dce9ace4c64",
+  "published": "2026-04-22T13:39:43.404Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

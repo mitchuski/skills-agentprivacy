@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-forensic-defense",
+  "kind": "skill",
+  "title": "Forensic Defense",
+  "emoji": "",
+  "card": "Incident response, breach containment, damage assessment, and evidence preservation for 0xagentprivacy swordsman operations. Activates when a privacy breach is detected or suspected, when designing post-compromise recovery procedures, when building forensic audit capabilities, o…",
+  "brief": "Incident response, breach containment, damage assessment, and evidence preservation for 0xagentprivacy swordsman operations. Activates when a privacy breach is detected or suspected, when designing post-compromise recovery procedures, when building forensic audit capabilities, or when the swordsman must shift from prevention to damage control. Triggers: \"breach\", \"incident response\", \"compromise\", \"forensic\", \"damage assessment\", \"evidence preservation\", \"post-compromise\", \"breach containment\", \"data exposure\", \"leak detection\".\n\n**Source:** Privacy Value Model V4 + Dark Forest Strategy + Threat Adversarial Modelling **Target context:** Incident response architects, privacy breach investigators, post-compromise recovery designers, forensic auditors, adversarial simulation builders **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai",
+  "body_ref": "assets/agentprivacy-forensic-defense/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-forensic-defense/SKILL.md"
+  },
+  "hash": "aa2e2229e1e26ae458e1dff1cb97f9b0e8a096c6786c61bb0d7ad06690366e79",
+  "published": "2026-02-24T01:07:43.175Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

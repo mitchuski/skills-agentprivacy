@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "overlay-key-minting",
+  "kind": "skill",
+  "title": "Overlay Key Minting",
+  "emoji": "",
+  "card": "Convert woven overlay threads into understanding cards (understanding-compression format, cohere-gated) whose principles line is the thread's PROVERB — the moving-understanding-as-key surface for the V6 research programme. Use after WEAVE.md exists for a run.",
+  "brief": "Convert woven overlay threads into understanding cards (understanding-compression format, cohere-gated) whose principles line is the thread's PROVERB — the moving-understanding-as-key surface for the V6 research programme. Use after WEAVE.md exists for a run.\n\nA thread becomes a key when its understanding compresses to a proverb that can regenerate it. This skill fuses the two house systems:\n\n- **understanding-compression** supplies the card format and the   round-trip cohere gate (invariant → maths/principles/actions +   markets/plurality/intents + recheck). - **understanding-as-key (RPP)** supplies the reading: the *principles*   line of each card IS the thread's proverb, mintable as a recovery   key; the *recheck* is the ceremony's convergence test — if   compressing an expansion regenerates the invariant, the understanding   opens the lock.\n\n- `key`: the thread's slug · `title`: the thread's name - `invariant`: ONE sentence a physicist, a regulator and a bard would   agree is the same claim. Take it from the thread's formal twin, not   its poetry. - `compressions.maths`: the actual quantity/relation (the theorem   inequality, the bound, the count) from the anchors. - `compress…",
+  "body_ref": "assets/overlay-key-minting/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "research-loops",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/agentprivacy-docs/papers/Programme/overlays/skills/overlay-key-minting/SKILL.md"
+  },
+  "hash": "438dc4381a5a16bb4cbee77f876f7eac55405701fffb0d189be9d2a3510b43ce",
+  "published": "2026-07-11T17:26:27.450Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

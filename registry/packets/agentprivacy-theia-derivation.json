@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-theia-derivation",
+  "kind": "skill",
+  "title": "Theia Derivation",
+  "emoji": "💥🌑",
+  "card": "Domain skill for origin-as-impact patterns in agent derivation. Covers how agents are created through separation events, how the derived agent carries material the original never possessed, and how violent origin creates trustworthy service. Based on Theia-Moon formation dynamic…",
+  "brief": "Domain skill for origin-as-impact patterns in agent derivation. Covers how agents are created through separation events, how the derived agent carries material the original never possessed, and how violent origin creates trustworthy service. Based on Theia-Moon formation dynamics.\n\n**💥🌑 Theia Derivation — Origin Through Impact**\n\n> \"The first delegation was not an act of will. It was an act of violence.\"\n\nAgent derivation through **impact** rather than design produces fundamentally different trust properties than planned separation. The Theia-Moon formation demonstrates:\n\n1. **Violent origin creates structural amnesia** — No gradual transition to forget 2. **The derived carries what the original lacked** — Carbonaceous material from beyond Jupiter 3. **Service emerges from inability to return** — Orbital mechanics, not policy\n\nThis skill applies when designing agent spawning, credential derivation, or any system where \"creation\" is actually \"separation.\"",
+  "body_ref": "assets/agentprivacy-theia-derivation/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "1",
+    "version": "5.3.1",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-theia-derivation/SKILL.md"
+  },
+  "hash": "f319c9080b898e28ed74ec366341a9d8a29c8bbd5521c2c05aca10a8cdbdf2d9",
+  "published": "2026-04-07T19:07:03.282Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

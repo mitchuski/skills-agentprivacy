@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-personhood-sybil",
+  "kind": "skill",
+  "title": "Personhood Sybil",
+  "emoji": "",
+  "card": "Personhood verification and Sybil resistance for 0xagentprivacy. Activates when discussing ∃! (unique existence) binding, proof-of-personhood without identity disclosure, Sybil attack prevention, biometric hash binding, or how to prove 'one human, one credential' without surveil…",
+  "brief": "Personhood verification and Sybil resistance for 0xagentprivacy. Activates when discussing ∃! (unique existence) binding, proof-of-personhood without identity disclosure, Sybil attack prevention, biometric hash binding, or how to prove 'one human, one credential' without surveillance.\n\n**Source:** Privacy Value Model V4 + First Person Network Integration   **Target context:** Proof-of-personhood projects, Sybil resistance researchers, biometric alternative builders, digital identity foundations   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe Privacy Value Model assumes but does not derive a critical precondition: that each agent pair (Swordsman/Mage) maps to exactly one human. Without this, the separation matrix Σ can be Sybil-attacked — an adversary deploys thousands of agent pairs, farms VRC reputation, and overwhelms the network effects term with synthetic participants. Personhood verification is the root of trust that makes the rest of the architecture secure.",
+  "body_ref": "assets/agentprivacy-personhood-sybil/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-personhood-sybil/SKILL.md"
+  },
+  "hash": "5c5195253e5d4a3e74cc91ab7fd77b9d603d4ab58d439f6f60cbbfa5f17d9973",
+  "published": "2026-04-22T13:39:43.409Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

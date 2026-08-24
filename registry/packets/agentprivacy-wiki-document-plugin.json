@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-document-plugin",
+  "kind": "skill",
+  "title": "Wiki Document Plugin",
+  "emoji": "",
+  "card": "Publish documentation for a Federated Wiki plugin as wiki pages on plugin.fedwiki.club (the curated plugin-catalog wiki). Activates when documenting a fedwiki plugin or adding it to the catalog. The inverse of fedwiki-to-skill. Kept by the Librarian 🗃️ in the Wikis.",
+  "brief": "Publish documentation for a Federated Wiki plugin as wiki pages on plugin.fedwiki.club (the curated plugin-catalog wiki). Activates when documenting a fedwiki plugin or adding it to the catalog. The inverse of fedwiki-to-skill. Kept by the Librarian 🗃️ in the Wikis.\n\n> **Note:** the upstream page `document-wiki-plugin-skill` was unreachable (HTTP 404) when this skill was materialized on 2026-06-21. This body is reconstructed from the sitemap synopsis and cross-references (the `fedwiki-to-skill` page names this skill as its inverse; `searching-for-plugins` names `plugin.fedwiki.club` as the curated plugin-documentation catalog). Refresh it with `agentprivacy-wiki-to-skill` once the upstream page resolves.\n\nThe `document-wiki-plugin` skill publishes documentation for a Federated Wiki plugin as wiki pages on **`plugin.fedwiki.club`** — the curated catalog wiki where plugin docs are treated as authoritative. It is the inverse direction of `fedwiki-to-skill`: there a page *becomes* a skill; here a plugin *becomes* a documentation page.",
+  "body_ref": "assets/agentprivacy-wiki-document-plugin/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-document-plugin/SKILL.md"
+  },
+  "hash": "485e2dbd0039212d7f95ab2be30c4cb459f3d672420efec708238be0efa0d82e",
+  "published": "2026-06-21T14:53:46.487Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-agent-interop",
+  "kind": "skill",
+  "title": "Agent Interop",
+  "emoji": "",
+  "card": "Agent interoperability protocols for 0xagentprivacy multi-agent systems. Activates when discussing M(u,y) matching functions, agent-to-agent communication, ERC-8004 trustless agent identity, cross-agent coordination, or how swordsman and mage agents interact across boundaries.",
+  "brief": "Agent interoperability protocols for 0xagentprivacy multi-agent systems. Activates when discussing M(u,y) matching functions, agent-to-agent communication, ERC-8004 trustless agent identity, cross-agent coordination, or how swordsman and mage agents interact across boundaries.\n\n**Source:** Privacy Value Model V4 + SKILL.md Format Spec + agentskills.io **Target context:** Agent platform builders, skill file authors, cross-platform compatibility architects, community deployers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe agentprivacy architecture is designed to produce portable skill files, not platform-locked configurations. A SKILL.md generated through the spellbook process works on any skills-compatible agent runtime: Claude, Copilot, Codex, Goose, OpenClaw. This skill defines how portability works, what the SKILL.md format guarantees, and how the \"launchpad\" concept enables communities to deploy their own privacy-first agent configurations.",
+  "body_ref": "assets/agentprivacy-agent-interop/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-agent-interop/SKILL.md"
+  },
+  "hash": "e2be542727aa715f142e6c381efb47ba3f63c19be119e56ca8965562aac36e26",
+  "published": "2026-04-22T13:39:43.339Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

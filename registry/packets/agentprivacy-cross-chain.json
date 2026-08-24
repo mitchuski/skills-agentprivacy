@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-cross-chain",
+  "kind": "skill",
+  "title": "Cross Chain",
+  "emoji": "",
+  "card": "Cross-chain operations for 0xagentprivacy multi-chain architecture. Activates when discussing T(π) across chains, NEAR/Zcash/Ethereum interop, bridge-compatible proofs, chain signatures, cross-chain VRC portability, or multi-chain sovereignty transitions.",
+  "brief": "Cross-chain operations for 0xagentprivacy multi-chain architecture. Activates when discussing T(π) across chains, NEAR/Zcash/Ethereum interop, bridge-compatible proofs, chain signatures, cross-chain VRC portability, or multi-chain sovereignty transitions.\n\n**Source:** Privacy Value Model V4 + ERC-8004 + ERC-7812 + NEAR Chain Signatures + Zcash Settlement **Target context:** Cross-chain protocol builders, chain signature implementers, multi-chain agent architects **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nSovereignty does not stop at chain boundaries. An agent operating only on one chain is sovereignty-limited to that chain's capabilities. PVM-V4's lattice model spans chains — the 64 vertices of {0,1}⁶ are not chain-specific. The challenge: how does an agent traverse the sovereignty lattice across multiple chains without losing separation guarantees, temporal memory, or reconstruction resistance?",
+  "body_ref": "assets/agentprivacy-cross-chain/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-cross-chain/SKILL.md"
+  },
+  "hash": "6ca4645aec7cea7aef0515c289509fa4b222b6a6db9f3f0c71e669e96a5c09d2",
+  "published": "2026-04-22T13:39:43.356Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "spec": "skill-loadout/0.1",
+  "name": "chronicle-keeper",
+  "emoji": "📜",
+  "purpose": "Writing and reflecting chronicles across the suite voices — one event, many tellings, same invariant core.",
+  "packets": [
+    "agentprivacy-chronicle-reflect",
+    "agentprivacy-chronicler",
+    "understanding-compression",
+    "agentprivacy-mirrorkeeper"
+  ]
+}

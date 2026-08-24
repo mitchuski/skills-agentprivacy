@@ -1,0 +1,14 @@
+{
+  "spec": "skill-loadout/0.1",
+  "name": "research-loops",
+  "emoji": "🔬",
+  "purpose": "The hard-problem research lane: the dual-agent harness (proposer held apart from prover), the Loomkeeper overlay cycle for sweeping a corpus, and the compression proofs that keep many tellings honest.",
+  "packets": [
+    "dual-agent-harness",
+    "overlay-sweep",
+    "overlay-key-minting",
+    "thread-weaving",
+    "understanding-compression",
+    "agentprivacy-attachment-architecture"
+  ]
+}

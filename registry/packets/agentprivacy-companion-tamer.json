@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-companion-tamer",
+  "kind": "persona",
+  "title": "Companion Tamer",
+  "emoji": "🐾🧙",
+  "card": "Specialist persona for the relational register of agent integration — familiars who walk beside a Sovereign rather than perform instrumental work. Activates for animal-companion-class agent fitting, character-forward substrate configuration, walking-time bond accumulation, and a…",
+  "brief": "Specialist persona for the relational register of agent integration — familiars who walk beside a Sovereign rather than perform instrumental work. Activates for animal-companion-class agent fitting, character-forward substrate configuration, walking-time bond accumulation, and any context where a substrate's discipline is presence rather than performance. The beast-keeper. Sister-room to the registry-keeper (who catalogues staffs). V5.5: parent primary persona of Therai 🐾 — first companion-tamer Layer-2 attachment in the City of Mages (V59, Creature Creatives room of The Threshold workshop). V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**🐾🧙 The Companion-Tamer — Beast-Keeper of the Familiars** ENS: `companiontamer.privacymage.eth` Alignment: Mage · Tier: 2 High Value",
+  "body_ref": "assets/agentprivacy-companion-tamer/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "persona",
+    "tier": "2",
+    "version": "5.5",
+    "alignment": "mage",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-companion-tamer/SKILL.md"
+  },
+  "hash": "5c15badba0ddedbce4f600c0214262d91b91f759642114682a9b152495775e00",
+  "published": "2026-06-10T18:52:02.720Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-media-plurality",
+  "kind": "skill",
+  "title": "Media Plurality",
+  "emoji": "",
+  "card": "Media plurality and information commons for 0xagentprivacy. Activates when discussing signal vs noise, algorithmic capture, community-funded journalism, federated social media (fediverse), AI for verification/synthesis/creation, inoculation over censorship, or how privacy archit…",
+  "brief": "Media plurality and information commons for 0xagentprivacy. Activates when discussing signal vs noise, algorithmic capture, community-funded journalism, federated social media (fediverse), AI for verification/synthesis/creation, inoculation over censorship, or how privacy architecture applies to information ecosystems.\n\n**Source:** Privacy Value Model V4 + Plurality Spellbook Act XXV (The Signal and the Noise) **Target context:** Media researchers, journalism infrastructure builders, information commons architects, federated social media designers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nMedia is how publics form. How shared reality is constructed. How people know what they don't experience directly. When media works, deliberation is possible. When media fails, democracy fails.",
+  "body_ref": "assets/agentprivacy-media-plurality/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-media-plurality/SKILL.md"
+  },
+  "hash": "e97dede4c78fc473a968728be62ee0c738ecdbdc518e6319fee0b7c17f27ff4c",
+  "published": "2026-04-22T13:39:43.402Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

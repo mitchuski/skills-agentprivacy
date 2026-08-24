@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "understanding-compression",
+  "kind": "skill",
+  "title": "Understanding Compression",
+  "emoji": "",
+  "card": "Take a unified semantic core (e.g. the In-brief summaries from wiki-to-pdf) and re-express it for a plurality of communities, while proving every re-expression compresses back to the SAME invariant. Use when the same content must be told different ways to different audiences (de…",
+  "brief": "Take a unified semantic core (e.g. the In-brief summaries from wiki-to-pdf) and re-express it for a plurality of communities, while proving every re-expression compresses back to the SAME invariant. Use when the same content must be told different ways to different audiences (developers, funders, artists, institutions) without drifting in meaning - turning one truth into many tellings and back. Compressions: maths / principles / actions. Expansions: markets / plurality / intents.\n\nOne meaning, many tellings, provably the same. This skill formalises a recursion:\n\n- **Compressions** discard audience and surface; they keep only what is invariant -   expressed as a *number/formula* (maths), a *law/axiom* (principles), or a *minimal doable*   (actions). - **Expansions** add audience back: a *value/incentive* framing (markets), a set of   *community-specific tellings* (plurality, >=2), and the *goals/why* (intents). - The loop **closes** with a re-compression check: take one expansion, compress it again,   and assert the recovered invariant matches the original. That round-trip IS the coherence   test for meaning - the semantic sibling of `fedwiki-cohere-sync`'s page-level checker.",
+  "body_ref": "assets/understanding-compression/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "workbench",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/.claude/skills/understanding-compression/SKILL.md"
+  },
+  "hash": "8ae9b38952860c5b025603a61098193e6699bf7f6e0fcfdbd0db5ea87d49224f",
+  "published": "2026-06-28T13:58:50.621Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

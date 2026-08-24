@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-armor-progression",
+  "kind": "skill",
+  "title": "Armor Progression",
+  "emoji": "",
+  "card": "Armor progression system (Blade→Light→Heavy→Full Plate→Dragon) for 0xagentprivacy. Activates when discussing progressive privacy tiers, user onboarding through increasing protection levels, P(progressive) scaling, or how privacy capability evolves with understanding.",
+  "brief": "Armor progression system (Blade→Light→Heavy→Full Plate→Dragon) for 0xagentprivacy. Activates when discussing progressive privacy tiers, user onboarding through increasing protection levels, P(progressive) scaling, or how privacy capability evolves with understanding.\n\n**Source:** Privacy Value Model V4 + First Person Spellbook **Target context:** Browser agent designers, progressive trust architects, capability gating systems, Sybil resistance engineers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe four-tier trust escalation protocol: Blade → Light → Heavy → Dragon. Not a feature unlock system. A conditional promise chain where each tier requires demonstrated sovereignty behaviour before the next becomes available. The progression itself is a trajectory through the sovereignty lattice — vertical transitions that activate new dimensions.",
+  "body_ref": "assets/agentprivacy-armor-progression/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-armor-progression/SKILL.md"
+  },
+  "hash": "e7fd725095e72561aecbd099947b784bed995b33aec8de8e453ea2d545c62065",
+  "published": "2026-04-22T13:39:43.342Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

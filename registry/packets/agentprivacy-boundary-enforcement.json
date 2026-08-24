@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-boundary-enforcement",
+  "kind": "skill",
+  "title": "Boundary Enforcement",
+  "emoji": "",
+  "card": "Real-time access control decision engine for 0xagentprivacy swordsman agents. Activates when evaluating incoming data requests against consent preferences, designing allow/block/transform rule sets, implementing the swordsman's moment-to-moment operational logic, or building the…",
+  "brief": "Real-time access control decision engine for 0xagentprivacy swordsman agents. Activates when evaluating incoming data requests against consent preferences, designing allow/block/transform rule sets, implementing the swordsman's moment-to-moment operational logic, or building the enforcement layer that turns consent declarations into cryptographic actions. Triggers: \"boundary\", \"access decision\", \"allow block\", \"consent enforcement\", \"data request evaluation\", \"rules engine\", \"policy enforcement\", \"request filtering\", \"permission check\".\n\n**Source:** Privacy Value Model V4 + Consent Infrastructure (IEEE 7012) + Dual-Agent Separation **Target context:** Access control designers, privacy middleware builders, consent enforcement implementers, browser extension architects, API gateway designers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai",
+  "body_ref": "assets/agentprivacy-boundary-enforcement/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-boundary-enforcement/SKILL.md"
+  },
+  "hash": "e2823736c88dad02023a440bb39f1524d213c3a70db17dcfd124bb6ebdfa1ab6",
+  "published": "2026-02-26T23:07:30.502Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

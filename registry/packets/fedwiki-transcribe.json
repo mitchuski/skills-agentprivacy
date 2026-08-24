@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "fedwiki-transcribe",
+  "kind": "skill",
+  "title": "Fedwiki Transcribe",
+  "emoji": "",
+  "card": "Transcribe video/audio assets hosted on a FedWiki (Smallest Federated Wiki) page using local whisper.cpp. Use when the user points to a FedWiki page or assets folder (e.g. http://david.local/.../workshop-videos) and wants the videos transcribed to text/subtitles. Enumerates the…",
+  "brief": "Transcribe video/audio assets hosted on a FedWiki (Smallest Federated Wiki) page using local whisper.cpp. Use when the user points to a FedWiki page or assets folder (e.g. http://david.local/.../workshop-videos) and wants the videos transcribed to text/subtitles. Enumerates the assets folder, streams each file over the network, extracts audio with ffmpeg, and runs whisper.cpp (large-v3-turbo) to produce .txt/.srt/.vtt.\n\nEnd-to-end flow: **FedWiki assets folder → list files → stream audio (ffmpeg) → transcribe (whisper.cpp) → .txt/.srt/.vtt**.\n\nIf building whisper.cpp fresh: it needs CMake + a C++ compiler. VS Build Tools 2019 bundles both — `cmake -B build -G \"Visual Studio 16 2019\" -A x64` then `cmake --build build --config Release`. (CMake is at `...\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe`.)\n\nIndividual files are served (no auth) at `{WikiBase}/assets/{folder}/{filename}`. Filenames may contain spaces/apostrophes (`Groundhog Day.mov`, `don't-panic.mov`) so URL-encode each segment.",
+  "body_ref": "assets/fedwiki-transcribe/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "workbench",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/.claude/skills/fedwiki-transcribe/SKILL.md"
+  },
+  "hash": "f15568cf35e13f1a36b5259fb9eaac0357787273a28aebbd122c1d16afcbdbda",
+  "published": "2026-06-21T17:48:06.804Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

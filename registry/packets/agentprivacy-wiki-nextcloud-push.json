@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-nextcloud-push",
+  "kind": "skill",
+  "title": "Wiki Nextcloud Push",
+  "emoji": "",
+  "card": "Upload a federated-wiki page file directly to the remote Nextcloud server via WebDAV when the desktop sync client fails or deletes newly written files. Activates when a public wiki page is written locally but never reaches the live site (broken links / stuck sync). Kept by the L…",
+  "brief": "Upload a federated-wiki page file directly to the remote Nextcloud server via WebDAV when the desktop sync client fails or deletes newly written files. Activates when a public wiki page is written locally but never reaches the live site (broken links / stuck sync). Kept by the Librarian 🗃️ in the Tower's Wikis.\n\n`nextcloud-push` is a shell script at `~/bin/nextcloud-push` that uploads a single file from the local Nextcloud folder directly to the remote Nextcloud server via WebDAV. It was created to solve a recurring problem: the Nextcloud desktop sync client occasionally fails to upload new wiki page files written by Claude Code, leaving links broken on the live site.\n\nWhen Claude Code writes a new page file to `~/Nextcloud/fedwiki/{domain}/pages/`, the Nextcloud desktop client should detect the new file and upload it automatically. This works most of the time. But the sync client has a bug: it occasionally reports `An unexpected error occurred` even when the server returns HTTP 201 (success), and marks the file as stuck in an error backoff state.",
+  "body_ref": "assets/agentprivacy-wiki-nextcloud-push/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-nextcloud-push/SKILL.md"
+  },
+  "hash": "a71ddaecaf215d38bb66b718de1c54d09d7510650608b7b16576ac07c0935e46",
+  "published": "2026-06-21T14:53:46.489Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

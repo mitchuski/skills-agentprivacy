@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-perimeter-hardening",
+  "kind": "skill",
+  "title": "Perimeter Hardening",
+  "emoji": "",
+  "card": "Device security, OS hardening, network configuration, and physical security for 0xagentprivacy swordsman infrastructure. Activates when securing the execution environment beneath the cryptographic layer, designing supply chain integrity checks, hardening operating systems for ag…",
+  "brief": "Device security, OS hardening, network configuration, and physical security for 0xagentprivacy swordsman infrastructure. Activates when securing the execution environment beneath the cryptographic layer, designing supply chain integrity checks, hardening operating systems for agent execution, or building the physical and logical security foundation that cryptography assumes but does not provide. Triggers: \"device security\", \"OS hardening\", \"supply chain\", \"firmware\", \"boot integrity\", \"network hardening\", \"physical security\", \"attack surface reduction\", \"secure boot\", \"endpoint hardening\".\n\n**Source:** Privacy Value Model V4 + Dark Forest Strategy + Defense-in-Depth Architecture **Target context:** Endpoint security architects, device provisioning engineers, operational security practitioners, infrastructure hardening teams, supply chain security analysts **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai",
+  "body_ref": "assets/agentprivacy-perimeter-hardening/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-perimeter-hardening/SKILL.md"
+  },
+  "hash": "3ed15f65a176f5b699427f4c32357020061b29301dbcb9df8e1207e3fc35f5f2",
+  "published": "2026-02-24T01:08:00.678Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

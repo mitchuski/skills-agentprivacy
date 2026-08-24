@@ -1,0 +1,19 @@
+{
+  "replacements": [
+    [
+      "<your-name-regex>",
+      "g",
+      "the Keeper"
+    ],
+    [
+      "<your-email-regex>",
+      "gi",
+      "the keeper"
+    ],
+    [
+      "<your-home-path-regex>",
+      "gi",
+      "~"
+    ]
+  ]
+}

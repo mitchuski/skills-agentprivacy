@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-watch",
+  "kind": "skill",
+  "title": "Wiki Watch",
+  "emoji": "🛰️",
+  "card": "Observe the external FedWiki federation you draw on as sources (ide.earth, self.fish, skill.fedwiki.club, radio.myth.garden, neighbour vision wikis) and report what pages moved since last check. Use to monitor other people's wikis for changes, get a digest of new/updated/removed…",
+  "brief": "Observe the external FedWiki federation you draw on as sources (ide.earth, self.fish, skill.fedwiki.club, radio.myth.garden, neighbour vision wikis) and report what pages moved since last check. Use to monitor other people's wikis for changes, get a digest of new/updated/removed pages, add a site to the watchlist, or set up recurring monitoring. Read-only — never writes to any wiki.\n\nA change monitor for the external FedWiki federation the agentprivacy work draws on as **sources**. Every Smallest-Federated-Wiki site publishes `GET /system/sitemap.json` — a public, no-auth array of `{slug, title, date, synopsis}` where `date` is each page's last-modified epoch-ms. This skill polls that feed per site, diffs it against a stored snapshot, and reports what changed.\n\n**Read-only.** Public GETs only — it never pushes, forks, or logs in, so no cookies are needed. It is the *observe* counterpart to `agentprivacy-wiki-resync` (project) and the fedwiki-cohere-sync skill (*write*). The live twin runs from `~/.claude/skills/fedwiki-watch/`.",
+  "body_ref": "assets/agentprivacy-wiki-watch/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/.wiki/skill-fedwiki/assets/wiki-watch/SKILL.md"
+  },
+  "hash": "937fe8fd76970e9095e2be4236bb6c1c961e8be158f626fa1f5c131ad88bc4f8",
+  "published": "2026-07-13T20:47:37.860Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

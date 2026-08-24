@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-three-axis-separation",
+  "kind": "skill",
+  "title": "Three Axis Separation",
+  "emoji": "",
+  "card": "Three-axis separation model for 0xagentprivacy V5. Activates when discussing Φ_agent · Φ_data · Φ_inference, multiplicative separation, Generator-Solver split, provider fragmentation, why collapse on any axis collapses total value, or the orthogonal axes of the sovereignty archi…",
+  "brief": "Three-axis separation model for 0xagentprivacy V5. Activates when discussing Φ_agent · Φ_data · Φ_inference, multiplicative separation, Generator-Solver split, provider fragmentation, why collapse on any axis collapses total value, or the orthogonal axes of the sovereignty architecture. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V5 + First Person Spellbook Act XXIV (The Holographic Bound) **Target context:** System architects, privacy engineers, dual-agent implementers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nV8 measured separation as a single 4×4 matrix Σ encoding four forces (Protect, Project, Reflect, Connect). V41 recognises that separation operates on **three orthogonal axes**:",
+  "body_ref": "assets/agentprivacy-three-axis-separation/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-three-axis-separation/SKILL.md"
+  },
+  "hash": "c3585847ed2b40b731edf256a290338325b9d73757a1427e19b01559bd0ef7a0",
+  "published": "2026-06-10T19:42:54.509Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

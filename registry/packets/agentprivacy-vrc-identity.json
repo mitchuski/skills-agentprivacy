@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-vrc-identity",
+  "kind": "skill",
+  "title": "Vrc Identity",
+  "emoji": "",
+  "card": "Verifiable Relationship Credential (VRC) identity system for 0xagentprivacy. Activates when discussing A(τ) bilateral trust, VRC issuance/verification/revocation, Relationship Proverb Protocol (RPP), trust flow mechanics, ceremony-to-credential pipeline, or how identity is expre…",
+  "brief": "Verifiable Relationship Credential (VRC) identity system for 0xagentprivacy. Activates when discussing A(τ) bilateral trust, VRC issuance/verification/revocation, Relationship Proverb Protocol (RPP), trust flow mechanics, ceremony-to-credential pipeline, or how identity is expressed through relationships rather than attributes. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V4 + 0xagentprivacy VRC Protocol   **Target context:** Decentralised identity builders, KERI/DID implementers, IIW community, verifiable credential toolchains, trust framework architects   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nVerifiable Relationship Credentials are the temporal memory term A(τ) made concrete. They are cryptographic proofs of bilateral trust — not identity documents but relationship documents. A VRC does not say \"Alice is trustworthy.\" It says \"Alice and Bob have a demonstrated relationship of this qual…",
+  "body_ref": "assets/agentprivacy-vrc-identity/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-vrc-identity/SKILL.md"
+  },
+  "hash": "89e7a1d9c4f70d5c1e878e1c51c14dc0ccc7264eb0e812d66a33e2d3c7e7a619",
+  "published": "2026-06-10T18:49:59.850Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

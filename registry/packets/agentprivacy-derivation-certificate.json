@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-derivation-certificate",
+  "kind": "skill",
+  "title": "Derivation Certificate",
+  "emoji": "",
+  "card": "VRC as content-addressed derivation chain. Activates when discussing forging history, derivation paths, bilateral witness certificates, path-as-witness, content-addressed proofs of traversal, or how VRCs bind forging history to blade identity.",
+  "brief": "VRC as content-addressed derivation chain. Activates when discussing forging history, derivation paths, bilateral witness certificates, path-as-witness, content-addressed proofs of traversal, or how VRCs bind forging history to blade identity.\n\n**Source:** UOR Framework + Privacy Value Model V5.2 + Understanding-as-Key Protocol **Target context:** Ceremony architects, proof designers, VRC implementers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nA derivation certificate is a content-addressed record of how a blade was forged. It captures the path through the lattice—the sequence of inscriptions traversed, the understanding demonstrated, the witnesses present. The certificate binds to the blade but is not required to verify the blade's properties.\n\n**The path is the witness. The vertex is the statement. The certificate proves you walked the path without revealing which steps you took.**",
+  "body_ref": "assets/agentprivacy-derivation-certificate/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.2",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-derivation-certificate/SKILL.md"
+  },
+  "hash": "61ecdf1085ec41a64c5d8cd85f7d5dee27cbf3fddc9930de1c5b3a649017fcf3",
+  "published": "2026-04-22T13:39:43.365Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

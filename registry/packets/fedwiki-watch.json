@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "fedwiki-watch",
+  "kind": "skill",
+  "title": "Fedwiki Watch",
+  "emoji": "",
+  "card": "Observe external FedWiki / *.fish / fedwiki.club sites for changes and report what moved since last check. Use when the user wants to monitor the wikis they've used as sources (ide.earth federation, self.fish, skill.fedwiki.club, radio.myth.garden, neighbours like david/max/henr…",
+  "brief": "Observe external FedWiki / *.fish / fedwiki.club sites for changes and report what moved since last check. Use when the user wants to monitor the wikis they've used as sources (ide.earth federation, self.fish, skill.fedwiki.club, radio.myth.garden, neighbours like david/max/henry), see recent changes across the federation, get a digest of new/updated/removed pages, add a site to the watchlist, or set up recurring monitoring. Read-only — never writes to any wiki.\n\nA change monitor for the external FedWiki federation the Keeper draws on as sources. Every Smallest-Federated-Wiki site publishes `GET /system/sitemap.json` — a public, no-auth array of `{slug, title, date, synopsis}` where `date` is the page's last-modified epoch-ms. This skill polls that feed per site, diffs it against a stored snapshot, and reports what changed.\n\n**Read-only.** It only issues public GETs. It never pushes, forks, or logs in — no cookies needed. Distinct from `fedwiki-cohere-sync` (which *writes* pages) and `fedwiki-transcribe`.",
+  "body_ref": "assets/fedwiki-watch/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "workbench",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/.claude/skills/fedwiki-watch/SKILL.md"
+  },
+  "hash": "c207e7aa8571e2ba3387a8fbfaa9a7c656aeb174c8bef40ae8232bc3521ea244",
+  "published": "2026-07-13T19:54:29.455Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

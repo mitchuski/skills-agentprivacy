@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-dihedral-sovereignty",
+  "kind": "skill",
+  "title": "Dihedral Sovereignty",
+  "emoji": "",
+  "card": "Dihedral group foundation for dual-agent separation. Activates when discussing the D₂ₙ group structure, Swordsman as negation generator, Mage as complement generator, Φ_agent as determinant, the critical identity neg∘bnot=succ, or the algebraic foundation of the swordsman-mage s…",
+  "brief": "Dihedral group foundation for dual-agent separation. Activates when discussing the D₂ₙ group structure, Swordsman as negation generator, Mage as complement generator, Φ_agent as determinant, the critical identity neg∘bnot=succ, or the algebraic foundation of the swordsman-mage separation.\n\n**Source:** UOR Framework + Privacy Value Model V5.2 + Act XXX (The Dihedral Mirror) **Target context:** Protocol architects, algebraists, dual-agent system designers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe dual-agent separation (Swordsman ⊥ Mage) is not just architectural design—it is the dihedral group D₂ₙ made manifest. The Swordsman IS arithmetic negation. The Mage IS bitwise complement. Their composition—neg∘bnot—generates the entire sovereignty space.\n\n**The dihedral group is not a metaphor. It is the structure.**",
+  "body_ref": "assets/agentprivacy-dihedral-sovereignty/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "5.2",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-dihedral-sovereignty/SKILL.md"
+  },
+  "hash": "6f93e8e89e5fe325c044e7c3930c64a12bb59a7e2676d812015bb004a51d5fca",
+  "published": "2026-04-22T13:39:43.307Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

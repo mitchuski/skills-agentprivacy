@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "fedwiki-cohere-sync",
+  "kind": "skill",
+  "title": "Fedwiki Cohere Sync",
+  "emoji": "",
+  "card": "Sync per-session answer pages from a source-of-truth FedWiki out to milestone subdomains with a coherence check, and broker owner cookies so agents get delegated, host-scoped write permission without ever seeing the raw credential. Use when distributing/updating FedWiki pages ac…",
+  "brief": "Sync per-session answer pages from a source-of-truth FedWiki out to milestone subdomains with a coherence check, and broker owner cookies so agents get delegated, host-scoped write permission without ever seeing the raw credential. Use when distributing/updating FedWiki pages across a federation of subdomains (e.g. *.timeline.ide.earth) from a local source, or when an agent needs to push to a FedWiki it owns without the cookie leaking into context.\n\nTwo cooperating pieces:\n\n- **`sync.js`** — the *what*: rewrite source-of-truth answer pages into the canonical per-subdomain shape, **coherence-check every page**, and push (or stage). - **`broker.js`** — the *how it's allowed*: hold owner cookies on disk, hand agents **scoped** write access per host, keep the secret out of agent context.\n\nA FedWiki has no folders; a page's only address is its slug. In this federation the **source of truth** is one local farm host (`~/.wiki/mitch.vision.localhost/pages/`) holding compact answer pages named `<card>-<session>` (e.g. `who-cares-agm-2027`). Each **milestone subdomain** (`agm.timeline.ide.earth`, …) is \"where the real wiki lives per session\" and should carry that one session's five answers…",
+  "body_ref": "assets/fedwiki-cohere-sync/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "workbench",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/.claude/skills/fedwiki-cohere-sync/SKILL.md"
+  },
+  "hash": "26cd14a03a0c1dc0e5830c06c6425694d5f41a71b4c7944991f1ec55871abe70",
+  "published": "2026-06-23T01:33:44.288Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

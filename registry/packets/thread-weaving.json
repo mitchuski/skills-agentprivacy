@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "thread-weaving",
+  "kind": "skill",
+  "title": "Thread Weaving",
+  "emoji": "",
+  "card": "Weave the four overlay sweeps (proverbs, protocols, spells, sci-fi concepts) into the relationship map WEAVE.md — cross-dimension threads plus the casting-forward directions. Use after all four overlay-sweep outputs exist for a run.",
+  "brief": "Weave the four overlay sweeps (proverbs, protocols, spells, sci-fi concepts) into the relationship map WEAVE.md — cross-dimension threads plus the casting-forward directions. Use after all four overlay-sweep outputs exist for a run.\n\nFour inventories in, one fabric out.\n\nA thread is a line through ALL FOUR dimensions (or honestly fewer, stated): a sci-fi concept that a proverb compresses, that a protocol operationalises, that a spell seals. Example shape:\n\n> moving ceiling R(t) (F) → \"the ceiling moves; the floor is proven\" > (P) → GR-7 in-passage conditioning (R) → T∫ tracer glyph (S)\n\n1. Read the four sweeps. Build the candidate threads from their    `threads:` cross-references; confirm or cut each (?) guess against    the anchors — a thread inherits the WEAKEST evidence of its links. 2. Write each confirmed thread as a section: the four (or fewer) beads    named, the anchors carried over, one paragraph of weave (poetic    register), and its **casting-forward direction** — stated as a    choosable act: a paper, an instrument, a ceremony, a post. 3. Orphans matter: items no thread claims go in an \"unwoven\" table at    the end. An unwoven proverb is a key without a lock — future s…",
+  "body_ref": "assets/thread-weaving/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "research-loops",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/agentprivacy-docs/papers/Programme/overlays/skills/thread-weaving/SKILL.md"
+  },
+  "hash": "8566da20d7cfc40cf1d74b755641df512b9cad75a1541df86c38fb685ece0bbf",
+  "published": "2026-07-11T17:25:47.558Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

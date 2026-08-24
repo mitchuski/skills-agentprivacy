@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-chronicle-reflect",
+  "kind": "skill",
+  "title": "Chronicle Reflect",
+  "emoji": "",
+  "card": "Reflect chronicles between the suite's voices — the framework-voice master series, repo-local collaborator chronicles (e.g. dtgwg-zkp-mage/chronicles/), spellweb DREAM records (KG voice), cityofmages cargo-lap dreams, agentprivacy-docs family-B chronicles, and tome acts — one ev…",
+  "brief": "Reflect chronicles between the suite's voices — the framework-voice master series, repo-local collaborator chronicles (e.g. dtgwg-zkp-mage/chronicles/), spellweb DREAM records (KG voice), cityofmages cargo-lap dreams, agentprivacy-docs family-B chronicles, and tome acts — one event, many tellings, same invariant core. Use when writing a new chronicle, publishing chronicles into a public repo for collaborators (with runtime-trace headers), running a dream-loop sync across the suite, adding a voice/destination, or auditing that a reflection still compresses back to its source. Encodes the type registry, the provenance-header format, the signed-before-public gate, path translation and leak scan, and the per-repo publication rules (pushes = the Keeper; dtgwg-zkp-mage pushes ride the G.1 proverb rite).\n\nA **chronicle** is the narrative working record of a significant day: what moved, in what order, and why the ordering is the method. The suite keeps several chronicle *voices*, and a chronicle travels between them by **reflection**: rewritten to match the destination's register while compressing back to the same facts. The discipline is [[understanding-compression]]'s: every re-expression mu…",
+  "body_ref": "assets/agentprivacy-chronicle-reflect/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "workbench",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/.claude/skills/agentprivacy-chronicle-reflect/SKILL.md"
+  },
+  "hash": "9ac93595b828f545e9d0d6ede3c9bf4893ade925f708f7659c5f512a334b320b",
+  "published": "2026-08-14T15:06:45.895Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

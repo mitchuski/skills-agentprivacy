@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-dragon",
+  "kind": "skill",
+  "title": "Dragon",
+  "emoji": "",
+  "card": "Root equation and complete Privacy Value Model V6 overview for 0xagentprivacy. Activates when discussing V(π,t), the sovereignty value equation, proven bounds (reconstruction ceiling, Proven in the conditional regime; time-indexed as R(t) with shelf life t* at V6), conjectured p…",
+  "brief": "Root equation and complete Privacy Value Model V6 overview for 0xagentprivacy. Activates when discussing V(π,t), the sovereignty value equation, proven bounds (reconstruction ceiling, Proven in the conditional regime; time-indexed as R(t) with shelf life t* at V6), conjectured properties (golden ratio φ optimality), or any foundational question about how privacy creates measurable value. Use when the user needs the complete model, equation term definitions, or version lineage. V4 is the lineage stage this skill was first written against; V6 is current. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n> *The Dragon is the Drake that learned it contained geometry.*\n\nA formal economic model that prices privacy as infrastructure, not preference. It answers: *what is a unit of privacy-preserving data worth compared to a unit of surveilled data, and why?*",
+  "body_ref": "assets/agentprivacy-dragon/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "6.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-dragon/SKILL.md"
+  },
+  "hash": "af8f2f2ee0d24069287ea7ec6e7561a271b70d6fe13714684734e4955c469a35",
+  "published": "2026-06-10T19:36:40.848Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

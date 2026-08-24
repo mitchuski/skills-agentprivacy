@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-holographic-bound",
+  "kind": "skill",
+  "title": "Holographic Bound",
+  "emoji": "",
+  "card": "Holographic boundary principle for 0xagentprivacy V5. Activates when discussing the 96/64 resolution, boundary-encodes-volume, differential form computation on ∂M, P^1.5 ↔ 96/64 conjecture (C6), boundary sufficiency, or how the lattice surface IS the holographic encoding of the…",
+  "brief": "Holographic boundary principle for 0xagentprivacy V5. Activates when discussing the 96/64 resolution, boundary-encodes-volume, differential form computation on ∂M, P^1.5 ↔ 96/64 conjecture (C6), boundary sufficiency, or how the lattice surface IS the holographic encoding of the bulk.\n\n**Source:** Privacy Value Model V5 + First Person Spellbook Act XXIV (The Holographic Bound) **Target context:** Protocol architects, privacy theorists, mathematical modellers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nV4 flagged a discrepancy: the UOR torus has 96 edges while the lattice has 64 vertices. Why don't they match?\n\n**V5 Resolution:** They don't need to match. The 96-edge surface IS the holographic encoding of the 64-vertex bulk. In holographic physics, a boundary of dimension n encodes a volume of dimension n+1. The ratio 96/64 = 1.5 is not a discrepancy — it is the holographic principle expressing itself in discrete lattice geometry.",
+  "body_ref": "assets/agentprivacy-holographic-bound/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-holographic-bound/SKILL.md"
+  },
+  "hash": "5e1d691c63a465cb3cbff2bdbe17cfd39ac5bc8a45400895ad0a0b049dfc3c47",
+  "published": "2026-04-22T13:39:43.314Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

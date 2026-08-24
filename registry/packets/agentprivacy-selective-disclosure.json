@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-selective-disclosure",
+  "kind": "skill",
+  "title": "Selective Disclosure",
+  "emoji": "",
+  "card": "Selective disclosure and Privacy Pool mechanics for 0xagentprivacy. Activates when discussing R(d) minimum disclosure, stratum-weighted anonymity, pool entry/exit, disclosure set calculation, or how to prove properties without revealing underlying data.",
+  "brief": "Selective disclosure and Privacy Pool mechanics for 0xagentprivacy. Activates when discussing R(d) minimum disclosure, stratum-weighted anonymity, pool entry/exit, disclosure set calculation, or how to prove properties without revealing underlying data.\n\n**Source:** Privacy Value Model V4 + FPS Act 10 (Topology of Revelation) + ZK Spellbook (Privacy Pools) **Target context:** Privacy Pool designers, association set architects, compliance/disclosure protocol builders **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe mechanics of revealing exactly enough and no more. Selective disclosure unifies two halves of the agentprivacy architecture: the dark forest strategy (what to reveal, when, to whom) and the ZKP machinery (prove the claim without revealing the data). This skill bridges them — the geometry of minimum disclosure as an optimisation problem.",
+  "body_ref": "assets/agentprivacy-selective-disclosure/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.3.2",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-selective-disclosure/SKILL.md"
+  },
+  "hash": "90413a15f65870084d109952661f0dac5b3c5b45428ceedb560bf5df1f0941ed",
+  "published": "2026-04-22T13:39:43.425Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

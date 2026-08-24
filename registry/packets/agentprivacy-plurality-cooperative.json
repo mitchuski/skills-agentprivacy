@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-plurality-cooperative",
+  "kind": "skill",
+  "title": "Plurality Cooperative",
+  "emoji": "",
+  "card": "Plurality and cooperative technology (⿻) for 0xagentprivacy. Activates when discussing quadratic voting/funding/voice, intersectional identity, Audrey Tang / Glen Weyl lineage, cross-difference collaboration, or how privacy preserves the difference that plurality requires.",
+  "brief": "Plurality and cooperative technology (⿻) for 0xagentprivacy. Activates when discussing quadratic voting/funding/voice, intersectional identity, Audrey Tang / Glen Weyl lineage, cross-difference collaboration, or how privacy preserves the difference that plurality requires.\n\n**Source:** Privacy Value Model V4 + Plurality Spellbook (Weyl & Tang adaptation, 30 Acts)   **Target context:** Plural technology researchers, quadratic mechanism designers, intersectional identity builders, collaborative governance innovators, RadicalxChange community   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe Plurality Spellbook is the third volume in a trilogy. The First Person Spellbook teaches HOW to protect (🗡️🧙‍♂️). The Parallel Society Spellbook teaches WHY to exit (🏰→🔗). The Plurality Spellbook teaches WHERE to go together (⿻). PVM-V4 is the mathematical bridge between protection and destination — it quantifies why privacy-preserving architectures are prerequisites for cooperative technology, not competitors to it.",
+  "body_ref": "assets/agentprivacy-plurality-cooperative/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-plurality-cooperative/SKILL.md"
+  },
+  "hash": "0ab4b631d0773dafaf92f26fa305af401b861bc44347d6a645e9e06579dddcc4",
+  "published": "2026-04-22T13:39:43.411Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

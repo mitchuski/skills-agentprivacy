@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-skill-anatomy",
+  "kind": "skill",
+  "title": "Wiki Skill Anatomy",
+  "emoji": "",
+  "card": "What a Claude Code skill is — the SKILL.md folder format, frontmatter, storage location, and how skills are invoked (auto via description, or explicitly via /skill-name). Activates when explaining skills to a newcomer, authoring a new skill, or onboarding an agent into the skill…",
+  "brief": "What a Claude Code skill is — the SKILL.md folder format, frontmatter, storage location, and how skills are invoked (auto via description, or explicitly via /skill-name). Activates when explaining skills to a newcomer, authoring a new skill, or onboarding an agent into the skill model. The conceptual entry to the Librarian's 🗃️ Wikis.\n\nClaude Code skills are markdown files that teach Claude how to perform specific tasks — reusable, invocable instructions that extend Claude's behaviour without modifying its core settings.\n\nA skill is a folder containing a `SKILL.md` file. The frontmatter declares the skill's name and description. The body contains instructions, examples, patterns and checklists that Claude follows when the skill is invoked.\n\nSkills live in `~/.claude/skills/`. Each skill is a named subfolder:\n\nA minimal `SKILL.md` looks like this:\n\nStep by step guidance for Claude... ```\n\nThe `description` field is the primary triggering mechanism — Claude reads it to decide whether to use the skill for a given request. A good description is specific about both what the skill does and when it should trigger.",
+  "body_ref": "assets/agentprivacy-wiki-skill-anatomy/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-skill-anatomy/SKILL.md"
+  },
+  "hash": "fcd1b07daa0033f52094b43b898829122886bc3f4f794c5c273c0e2b6ffc9bc9",
+  "published": "2026-06-21T14:53:46.491Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

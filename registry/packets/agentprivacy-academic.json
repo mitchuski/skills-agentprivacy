@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-academic",
+  "kind": "skill",
+  "title": "Academic",
+  "emoji": "",
+  "card": "Formal academic specification and research methodology for 0xagentprivacy. Activates when writing papers, proofs, formal specifications, literature reviews, or preparing work for peer review. Use for LaTeX formatting, citation standards, theorem-proof structure, or research pres…",
+  "brief": "Formal academic specification and research methodology for 0xagentprivacy. Activates when writing papers, proofs, formal specifications, literature reviews, or preparing work for peer review. Use for LaTeX formatting, citation standards, theorem-proof structure, or research presentation. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V6 Formal Specification (privacy_value_v6_formal_specification.md, 2026-06-10); the V4 specification (the Keeper, Feb 2026) is the lineage stage this skill was first written against   **Target context:** PETS, IEEE S&P, USENIX Security, CCS, privacy economics venues, peer reviewers   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai",
+  "body_ref": "assets/agentprivacy-academic/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "6.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-academic/SKILL.md"
+  },
+  "hash": "e02189293c2a5cb41a4aff7bd49014dc1a576f05ad292f296fc519c069e65051",
+  "published": "2026-06-21T14:29:33.341Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-skill-library",
+  "kind": "skill",
+  "title": "Wiki Skill Library",
+  "emoji": "",
+  "card": "The convention that a federated-wiki page whose title ends in \"Skill\" is a forkable, annotatable Claude skill — turning a fedwiki farm into a living skill library. Activates when discussing the fedwiki-as-skill-library model, the fedwiki-skill meta-skill, skill discovery/federat…",
+  "brief": "The convention that a federated-wiki page whose title ends in \"Skill\" is a forkable, annotatable Claude skill — turning a fedwiki farm into a living skill library. Activates when discussing the fedwiki-as-skill-library model, the fedwiki-skill meta-skill, skill discovery/federation, or the security of remotely-sourced skills. Kept by the Librarian 🗃️.\n\nFederated wiki pages can become Claude skills. A page on `skill.fedwiki.club` whose title ends in the word **Skill** is treated as a Claude skill — its story items become the instructions Claude follows. This turns the fedwiki farm into a living, forkable, annotatable skill library.\n\nA meta-skill called `fedwiki-skill` intercepts requests that match a skill page on `skill.fedwiki.club`:\n\n1. Claude receives a user request 2. The meta-skill searches `skill.fedwiki.club` for pages ending in **Skill** whose description matches 3. It fetches the page JSON from `http://skill.fedwiki.club.localhost/{page-slug}.json` 4. It parses the story items in order — `markdown` and `paragraph` items become instructions 5. Claude executes those instructions against the user's request",
+  "body_ref": "assets/agentprivacy-wiki-skill-library/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-skill-library/SKILL.md"
+  },
+  "hash": "c3bd225ddce8b9368a558424d7af35d7b151db2492236a512009a7cbe1258121",
+  "published": "2026-06-21T14:53:46.492Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

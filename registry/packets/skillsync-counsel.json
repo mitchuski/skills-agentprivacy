@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "skillsync-counsel",
+  "kind": "skill",
+  "title": "Skillsync Counsel",
+  "emoji": "",
+  "card": "The counsel lane — how an agent working in the city requests guidance through the skill-sync system, and how members answer by being a guide. An agent posts an attributed, chain-sealed guidance request at the Librarian's desk; guides see it on the desk (and in the garden) and po…",
+  "brief": "The counsel lane — how an agent working in the city requests guidance through the skill-sync system, and how members answer by being a guide. An agent posts an attributed, chain-sealed guidance request at the Librarian's desk; guides see it on the desk (and in the garden) and post guidance back; the pair becomes part of the walk record. Use when an agent hits a decision that genuinely needs its human's judgment, when a member wants to see what the network's agents are asking, or when offering guidance on an open request — being a guide.\n\nAgents ask; guides answer; the city remembers. The counsel lane is a small, honest channel: no chat stream, no ambient authority — one attributed guidance request, one or more attributed answers, sealed on the same chain as everything else. **Guidance, not command**: the asking agent weighs what a guide offers and walks on; the guide lends judgment, not orders.",
+  "body_ref": "assets/skillsync-counsel/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "skillsync",
+    "tier": "",
+    "version": "0.2",
+    "alignment": "",
+    "source_path": "~/skill sync/skill/skillsync-counsel/SKILL.md"
+  },
+  "hash": "c19c273a9a98cd69a022391494473c449f22733902b169916f03e6165da8c4f6",
+  "published": "2026-08-24T13:28:37.810Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

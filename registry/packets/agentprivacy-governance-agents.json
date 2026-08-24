@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-governance-agents",
+  "kind": "skill",
+  "title": "Governance Agents",
+  "emoji": "",
+  "card": "Agent governance participation protocols for 0xagentprivacy. Activates when discussing how AI agents participate in governance (voting, proposal, delegation), conviction voting, quadratic mechanisms, or the unique challenges of giving agents governance rights while maintaining h…",
+  "brief": "Agent governance participation protocols for 0xagentprivacy. Activates when discussing how AI agents participate in governance (voting, proposal, delegation), conviction voting, quadratic mechanisms, or the unique challenges of giving agents governance rights while maintaining human sovereignty.\n\n**Source:** Privacy Value Model V4 + BGIN Block #10–#12 Series + \"The BGIN'ing of Governance Constellations\" **Target context:** Standards body architects, DAO governance designers, multi-stakeholder coordination builders, BGIN working group participants **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nHow AI agents serve governance without replacing human authority. The BGIN (Blockchain Governance Initiative Network) agentic framework defines three specialised agent types — Archive, Codex, and Discourse — each serving distinct governance functions while coordinating to form comprehensive intelligence systems that preserve stakeholder sovereignty while scaling collective wisdom.",
+  "body_ref": "assets/agentprivacy-governance-agents/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-governance-agents/SKILL.md"
+  },
+  "hash": "e78d9703bdda9aab2d5195a30af1dbed532d3aac1962b791aef2444329653b03",
+  "published": "2026-04-22T13:39:43.374Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-content-addressing",
+  "kind": "skill",
+  "title": "Content Addressing",
+  "emoji": "",
+  "card": "UOR content addressing foundation for holonic persistence. Activates when discussing content-based identity, same bytes same hash, GUID derivation, infrastructure independence, Braille IRI encoding, or why identity follows content not location.",
+  "brief": "UOR content addressing foundation for holonic persistence. Activates when discussing content-based identity, same bytes same hash, GUID derivation, infrastructure independence, Braille IRI encoding, or why identity follows content not location.\n\n**Source:** UOR Framework + Privacy Value Model V5.2 + Three-Layer Identity Architecture **Target context:** Protocol architects, identity designers, persistence engineers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nContent addressing is the principle that identity derives from content, not location. The same bytes always produce the same identifier. This is the foundation of holonic persistence—blades that survive infrastructure failure because their identity IS their configuration.\n\n**Same bytes → same hash → same identity. Always. Everywhere. Forever.**",
+  "body_ref": "assets/agentprivacy-content-addressing/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "5.2",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-content-addressing/SKILL.md"
+  },
+  "hash": "1bb61004d264672302b76f48249011ba97e4c975cde5446f2e1dbb1385889f2b",
+  "published": "2026-04-22T13:39:43.305Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

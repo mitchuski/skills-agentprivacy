@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-to-skill",
+  "kind": "skill",
+  "title": "Wiki To Skill",
+  "emoji": "",
+  "card": "The fork desk / inclusion engine — converts a federated-wiki page into a Claude Code SKILL.md. Activates when materializing a fedwiki skill, exporting a wiki page to ~/.claude/skills, or pulling a skill from skill.fedwiki.club into a repo. This is the git-less clone: the wiki st…",
+  "brief": "The fork desk / inclusion engine — converts a federated-wiki page into a Claude Code SKILL.md. Activates when materializing a fedwiki skill, exporting a wiki page to ~/.claude/skills, or pulling a skill from skill.fedwiki.club into a repo. This is the git-less clone: the wiki stays source of truth, the SKILL.md is a fork (a copy that remembers its origin). The Librarian's 🗃️ core forking act in the Tower's Wikis.\n\nThe **fedwiki-to-skill** skill converts a federated wiki page (page-json) into a Claude Code `SKILL.md` file. Author a skill as an ordinary wiki page, then export it to `~/.claude/skills/{slug}/SKILL.md` where Claude Code can load and invoke it. It is the inverse direction of the document-plugin skill — here the page itself *becomes* the skill.\n\nA fedwiki page has a `title` and a `story` array of items, each with a `type` and a `text`. The converter maps each item type to markdown:",
+  "body_ref": "assets/agentprivacy-wiki-to-skill/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-to-skill/SKILL.md"
+  },
+  "hash": "91aa4d911f05bc41f07e6704a9049c076c2d4efebfc9b619dc199ffbeffffd54",
+  "published": "2026-06-21T14:53:46.493Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

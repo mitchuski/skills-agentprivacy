@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-holonic-identity",
+  "kind": "skill",
+  "title": "Holonic Identity",
+  "emoji": "",
+  "card": "Identity-independent data structures where GUIDs outlive any single backend. Activates when discussing three-layer identity (data GUID / VRC / DID), ProviderUniqueStorageKey as commitment map, immutable vs versioned holons, identity separation at the data layer, or any design re…",
+  "brief": "Identity-independent data structures where GUIDs outlive any single backend. Activates when discussing three-layer identity (data GUID / VRC / DID), ProviderUniqueStorageKey as commitment map, immutable vs versioned holons, identity separation at the data layer, or any design requiring persistent data identity that survives provider migrations.\n\n**Source:** Privacy Value Model V4 + OASIS Holonic Architecture Whitepaper v1.2 **Target context:** Identity architects, DID implementers, credential designers, data model architects **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe 0xagentprivacy model handles relationship identity (VRCs) and principal identity (DIDs/ERC-8004). But the data itself — agent memory, reasoning graphs, credential stores — lacks a universal identity that survives backend changes. Holonic identity provides the missing layer: identity-independent data structures where GUIDs are not assigned by any provider and remain immutable across migrations.",
+  "body_ref": "assets/agentprivacy-holonic-identity/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-holonic-identity/SKILL.md"
+  },
+  "hash": "82ff693449eb81ddfa98decb523b9e24c72c132a52cabdd944dfc9864666e49c",
+  "published": "2026-04-22T13:39:43.393Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

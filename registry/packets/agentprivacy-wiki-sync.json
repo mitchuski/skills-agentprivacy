@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-sync",
+  "kind": "skill",
+  "title": "Wiki Sync",
+  "emoji": "",
+  "card": "Sync the agentprivacy canon into the federated guide wiki — guide.agentprivacy.ai plus sibling subdomain sites (skill / tomes / research / atlas), served locally as ~/.wiki farm hosts. Use when projecting a canon directory into forkable wiki pages, adding a new area to the feder…",
+  "brief": "Sync the agentprivacy canon into the federated guide wiki — guide.agentprivacy.ai plus sibling subdomain sites (skill / tomes / research / atlas), served locally as ~/.wiki farm hosts. Use when projecting a canon directory into forkable wiki pages, adding a new area to the federation, re-syncing a site after a repo change, wiring cross-site links, or auditing coverage and leaks. Encodes the distribution gates G0–G7, the manifest-first G1 discipline, the per-source builders, the verification recipes, and the full registry of every area to sync (done + gaps).\n\nProject the agentprivacy canon (many git repos) into a **federated, forkable wiki**: a guide hub (`guide.agentprivacy.ai`) that rosters one sibling subdomain wiki per canon source. Built local-first as `~/.wiki/<host>/` farm hosts; going public is just forking the host up (or DNS-mapping the farm) — `localhost` → the agentprivacy domain, no structural change.",
+  "body_ref": "assets/agentprivacy-wiki-sync/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/.wiki/skill-fedwiki/assets/wiki-sync/SKILL.md"
+  },
+  "hash": "b64555bb65c5b424dcfa7135e072242bc12c6fc8c8102f475a66c982012fd507",
+  "published": "2026-08-18T11:58:20.670Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

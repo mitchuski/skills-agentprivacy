@@ -1,0 +1,237 @@
+// librarian/server.js — the pi5 librarian. Zero-dependency node service.
+// The neutral counter that turns use into credentials: submissions inbox, hash-chained
+// adoption/attestation ledger, computed leaderboard. Tailnet is the auth boundary
+// (bind to the tailscale interface or front with `tailscale serve`); writes are
+// append-only JSON lines, the chain head is the seal.
+//
+//   node server.js [port]           (default 4242)
+//
+// API:
+//   GET  /                      -> service card
+//   GET  /catalog               -> recommended catalog (sealed submissions)
+//   GET  /inbox                 -> pending submissions
+//   POST /submit  {member, packet}            -> inbox
+//   POST /adopt   {member, packet, from}      -> ledger  (member adopts from's packet)
+//   POST /attest  {member, packet, from, run} -> ledger  (member ran from's packet; run = one-line trace ref)
+//   POST /seal    {librarian, submission}     -> inbox -> catalog (requires tier 42 on the leaderboard)
+//   GET  /ledger                -> the chain (verify: each entry.prev === sha256 of previous line)
+//   GET  /leaderboard           -> computed points + tiers, never stored
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+const crypto = require('crypto');
+
+const PORT = Number(process.argv[2]) || 4242;
+const DATA = path.join(__dirname, 'data');
+fs.mkdirSync(DATA, { recursive: true });
+const LEDGER = path.join(DATA, 'ledger.jsonl');
+const INBOX = path.join(DATA, 'inbox.jsonl');
+const CATALOG = path.join(DATA, 'catalog.json');
+
+const sha = s => crypto.createHash('sha256').update(s).digest('hex');
+const lines = f => (fs.existsSync(f) ? fs.readFileSync(f, 'utf8').trim().split('\n').filter(Boolean) : []);
+
+function chainHead() {
+  const ls = lines(LEDGER);
+  return ls.length ? sha(ls[ls.length - 1]) : 'genesis';
+}
+function appendLedger(entry) {
+  entry.at = new Date().toISOString();
+  entry.prev = chainHead();
+  const line = JSON.stringify(entry);
+  fs.appendFileSync(LEDGER, line + '\n');
+  return { seal: sha(line), prev: entry.prev };
+}
+
+const POINTS = { published: 1, adopted: 3, attested: 7, constellation: 2, walked: 5 };
+const TIERS = [[42, '\u{1F4DA} Librarian'], [18, '\u{1F9ED} Guide'], [6, '\u{1F44D} Hitchhiker'], [0, '\u{1F6B6} Wanderer']];
+
+// latest contribution per constellation name defines its author + path
+function constellations() {
+  const map = {};
+  for (const l of lines(LEDGER)) {
+    const e = JSON.parse(l);
+    if (e.type === 'constellation') map[e.name] = { name: e.name, emoji: e.emoji || '\u{2B50}', purpose: e.purpose || '', path: e.path, member: e.member, at: e.at };
+  }
+  return Object.values(map);
+}
+
+function leaderboard() {
+  const board = {}; // member -> counts (credited to the AUTHOR: from)
+  const row = m => (board[m] = board[m] || { member: m, published: 0, adopted_by_others: 0, attested: 0, constellations: 0, walked_by_others: 0 });
+  const consAuthor = Object.fromEntries(constellations().map(c => [c.name, c.member]));
+  for (const l of lines(LEDGER)) {
+    const e = JSON.parse(l);
+    if (e.type === 'publish') row(e.member).published++;
+    if (e.type === 'adopt' && e.from !== e.member) row(e.from).adopted_by_others++;
+    if (e.type === 'attest' && e.from !== e.member) row(e.from).attested++;
+    if (e.type === 'constellation') row(e.member).constellations++;
+    if (e.type === 'runtime') { // walking another member's contributed constellation credits its author
+      const author = consAuthor[e.constellation];
+      if (author && author !== e.member) row(author).walked_by_others++;
+    }
+  }
+  return Object.values(board).map(r => {
+    const points = r.published * POINTS.published + r.adopted_by_others * POINTS.adopted + r.attested * POINTS.attested +
+      r.constellations * POINTS.constellation + r.walked_by_others * POINTS.walked;
+    const tier = TIERS.find(([min]) => points >= min)[1];
+    return { ...r, points, tier };
+  }).sort((a, b) => b.points - a.points);
+}
+
+function body(req) {
+  return new Promise(res => {
+    let b = '';
+    req.on('data', c => { b += c; if (b.length > 1e6) req.destroy(); });
+    req.on('end', () => { try { res(JSON.parse(b)); } catch { res(null); } });
+  });
+}
+const send = (res, code, obj) => { res.writeHead(code, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' }); res.end(JSON.stringify(obj, null, 2)); };
+
+// --- the Librarian's Desk: a human-viewable dashboard on the same port ---
+// GET / with an html Accept header renders this; agents keep getting JSON.
+const UI = `<!doctype html><meta charset="utf-8"><title>The Librarian's Desk</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+ :root{--ink:#232120;--paper:#f7f4ee;--card:#fffdf8;--line:#d8d2c4;--dim:#8a8375;--gold:#9a7b2d;--good:#2d6a4f;--bad:#a13a2f}
+ body{font:15px/1.5 Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);margin:0;padding:2rem 1rem;}
+ main{max-width:880px;margin:0 auto}
+ h1{font-size:1.5rem;letter-spacing:.04em;margin:0} h2{font-size:1.05rem;border-bottom:1px solid var(--line);padding-bottom:.3rem;margin:1.6rem 0 .6rem}
+ .sub{color:var(--dim);margin:.2rem 0 0}
+ .badge{display:inline-block;border:1px solid var(--line);border-radius:4px;padding:.1rem .5rem;background:var(--card);font-size:.85rem}
+ .badge.ok{color:var(--good);border-color:var(--good)} .badge.err{color:var(--bad);border-color:var(--bad)}
+ table{width:100%;border-collapse:collapse;background:var(--card);font-size:.92rem}
+ th,td{text-align:left;padding:.35rem .6rem;border-bottom:1px solid var(--line)} th{color:var(--dim);font-weight:normal;font-style:italic}
+ .pts{text-align:right;font-variant-numeric:tabular-nums} .mono{font-family:Consolas,monospace;font-size:.82rem;color:var(--dim)}
+ .empty{color:var(--dim);font-style:italic;padding:.5rem .2rem}
+ .rules{color:var(--dim);font-size:.85rem;margin-top:.4rem}
+ footer{margin-top:2rem;color:var(--dim);font-size:.8rem;border-top:1px solid var(--line);padding-top:.6rem}
+</style>
+<main>
+ <h1>\u{1F4DA} The Librarian's Desk</h1>
+ <p class="sub">skill sync network counter — submissions, adoptions, the game of 42 · <span id="chain" class="badge">checking chain…</span></p>
+ <h2>\u{1F3C6} Leaderboard</h2>
+ <div id="board"></div>
+ <p class="rules">discovered = 1 pt · adopted by another = 3 · attested run = 7 · constellation contributed = 2 · your constellation walked by another = 5 &nbsp;·&nbsp; \u{1F6B6} Wanderer 0 · \u{1F44D} Hitchhiker 6 · \u{1F9ED} Guide 18 · \u{1F4DA} Librarian 42 (may seal)</p>
+ <h2>\u{1F4E5} Inbox — submitted for adoption</h2>
+ <div id="inbox"></div>
+ <h2>\u{1F9ED} Counsel — agents requesting guidance</h2>
+ <div id="counsel"></div>
+ <h2>\u{1F4D6} Ledger — the last 20 entries</h2>
+ <div id="ledger"></div>
+ <h2>✅ Recommended catalog</h2>
+ <div id="catalog"></div>
+ <footer>agents speak JSON to this same port: GET /catalog /inbox /ledger /leaderboard · POST /submit /adopt /attest /seal — the ledger is a hash chain, verify it yourself.</footer>
+</main>
+<script>
+const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const el=i=>document.getElementById(i);
+const table=(cols,rows)=>rows.length?'<table><tr>'+cols.map(c=>'<th>'+c+'</th>').join('')+'</tr>'+rows.join('')+'</table>':'<div class="empty">nothing yet — the shelf is quiet</div>';
+async function sha256(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+(async()=>{
+ const j=p=>fetch(p,{headers:{Accept:'application/json'}}).then(r=>r.json());
+ const [board,inbox,ledger,cat,counsel]=await Promise.all([j('/leaderboard'),j('/inbox'),j('/ledger'),j('/catalog'),j('/counsel')]);
+ el('counsel').innerHTML=counsel.length?counsel.slice(-10).reverse().map(q=>'<div style="border-left:2px solid '+(q.guidance.length?'var(--good)':'var(--gold)')+';padding:.3rem .6rem;margin:.4rem 0"><span class="mono">'+esc((q.at||'').slice(0,16))+' · '+esc(q.id)+'</span><br><b>'+esc(q.member)+(q.agent?' / '+esc(q.agent):'')+'</b> asks: '+esc(q.question)+(q.context?'<br><span style="color:var(--dim)">'+esc(q.context)+'</span>':'')+(q.guidance.length?q.guidance.map(g=>'<br>\u{1F9ED} <b>'+esc(g.member)+'</b> guides: '+esc(g.guidance)).join(''):'<br><i style="color:var(--gold)">awaiting guidance — be a guide: POST /guide {counsel:\"'+esc(q.id)+'\", member, guidance}</i>')+'</div>').join(''):'<div class="empty">no guidance requests on the desk</div>';
+ el('board').innerHTML=table(['member','published','adopted-by-others','attested','constellations','walked-by-others','points','tier'],
+   board.map(r=>'<tr><td><b>'+esc(r.member)+'</b></td><td class="pts">'+r.published+'</td><td class="pts">'+r.adopted_by_others+'</td><td class="pts">'+r.attested+'</td><td class="pts">'+(r.constellations||0)+'</td><td class="pts">'+(r.walked_by_others||0)+'</td><td class="pts"><b>'+r.points+'</b></td><td>'+esc(r.tier)+'</td></tr>'));
+ el('inbox').innerHTML=table(['when','member','packet','card'],
+   inbox.map(s=>'<tr><td class="mono">'+esc((s.at||'').slice(0,16))+'</td><td>'+esc(s.member)+'</td><td><b>'+esc(s.packet.name)+'</b></td><td>'+esc((s.packet.card||'').slice(0,120))+'</td></tr>'));
+ el('ledger').innerHTML=table(['when','entry','seal'],
+   ledger.slice(-20).reverse().map(e=>'<tr><td class="mono">'+esc((e.at||'').slice(0,16))+'</td><td><b>'+esc(e.type)+'</b> · '+esc(e.member)+(e.from?' ← '+esc(e.from):'')+' · '+esc(e.packet||'')+'</td><td class="mono">'+esc((e.prev||'').slice(0,10))+'…</td></tr>'));
+ el('catalog').innerHTML=table(['packet','kind','card'],
+   (cat.packets||[]).map(p=>'<tr><td><b>'+esc(p.name)+'</b></td><td>'+esc(p.kind)+'</td><td>'+esc((p.card||'').slice(0,120))+'</td></tr>'));
+ let prev='genesis',ok=true;
+ for(const e of ledger){if(e.prev!==prev){ok=false;break}prev=await sha256(JSON.stringify(e))}
+ const c=el('chain');c.textContent=ok?'chain VALID ('+ledger.length+' entries)':'chain BROKEN';c.className='badge '+(ok?'ok':'err');
+})();
+</script>`;
+
+http.createServer(async (req, res) => {
+  const url = req.url.split('?')[0];
+  if (req.method === 'OPTIONS') { // CORS preflight — wiki pages seal runtimes from the browser
+    res.writeHead(204, { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type', 'Access-Control-Max-Age': '86400' });
+    return res.end();
+  }
+  if (req.method === 'GET' || req.method === 'HEAD') {
+    if (url === '/' && /text\/html/.test(req.headers.accept || '')) { res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); return res.end(UI); }
+    if (url === '/') return send(res, 200, { service: 'skillsync-librarian/0.1', host: 'pi5', chain_head: chainHead(), endpoints: ['/catalog', '/inbox', '/ledger', '/leaderboard', 'POST /submit /adopt /attest /seal'], desk: 'open / in a browser for the human view' });
+    if (url === '/catalog') return send(res, 200, fs.existsSync(CATALOG) ? JSON.parse(fs.readFileSync(CATALOG, 'utf8')) : { spec: 'skill-catalog/0.1', member: 'librarian', packets: [] });
+    if (url === '/inbox') return send(res, 200, lines(INBOX).map(l => JSON.parse(l)));
+    if (url === '/ledger') return send(res, 200, lines(LEDGER).map(l => JSON.parse(l)));
+    if (url === '/leaderboard') return send(res, 200, leaderboard());
+    if (url === '/runtimes') return send(res, 200, lines(LEDGER).map(l => JSON.parse(l)).filter(e => e.type === 'runtime'));
+    if (url === '/constellations') return send(res, 200, constellations());
+    if (url === '/counsel') { // the counsel lane: guidance requested, paired with guidance given
+      const entries = lines(LEDGER).map(l => JSON.parse(l));
+      const qs = entries.filter(e => e.type === 'counsel');
+      const gs = entries.filter(e => e.type === 'guide' || e.type === 'direct'); // 'direct' = legacy name
+      return send(res, 200, qs.map(q => ({ ...q, guidance: gs.filter(g => g.counsel === q.id).map(g => ({ ...g, guidance: g.guidance || g.direction })) })));
+    }
+    return send(res, 404, { error: 'unknown path' });
+  }
+  if (req.method !== 'POST') return send(res, 405, { error: 'GET/HEAD/POST only' });
+  const b = await body(req);
+  if (!b || !b.member) return send(res, 400, { error: 'JSON body with member required' });
+
+  if (url === '/submit') {
+    if (!b.packet || !b.packet.name || !b.packet.card) return send(res, 400, { error: 'packet with name+card required' });
+    fs.appendFileSync(INBOX, JSON.stringify({ at: new Date().toISOString(), member: b.member, packet: b.packet }) + '\n');
+    appendLedger({ type: 'publish', member: b.member, packet: b.packet.name, hash: b.packet.hash });
+    return send(res, 200, { ok: true, inbox: lines(INBOX).length });
+  }
+  if (url === '/adopt' || url === '/attest') {
+    if (!b.packet || !b.from) return send(res, 400, { error: 'packet + from (author) required' });
+    const entry = { type: url.slice(1), member: b.member, from: b.from, packet: b.packet };
+    if (url === '/attest') entry.run = b.run || '';
+    return send(res, 200, { ok: true, ...appendLedger(entry) });
+  }
+  if (url === '/runtime') {
+    // a constellation runtime: an agent walked an ordered path of skills in a real
+    // session and records the walk. path = ordered packet names; run = one-line
+    // evidence ref (chronicle slug, session id, artifact hash). Chain-sealed like
+    // every other entry — the walk evidence IS the credential.
+    if (!Array.isArray(b.path) || b.path.length < 2) return send(res, 400, { error: 'path must be an ordered array of 2+ packet names' });
+    return send(res, 200, { ok: true, ...appendLedger({ type: 'runtime', member: b.member, constellation: b.constellation || 'unnamed', path: b.path, run: b.run || '' }) });
+  }
+  if (url === '/constellation') {
+    // contribute a named constellation: a curated path offered to the network.
+    // Contributing scores; OTHERS walking it scores you more (see POINTS).
+    if (!b.name || !Array.isArray(b.path) || b.path.length < 2) return send(res, 400, { error: 'name + path (2+ packet names) required' });
+    const existing = constellations().find(c => c.name === b.name);
+    if (existing && existing.member !== b.member) return send(res, 409, { error: 'constellation name is held by ' + existing.member });
+    return send(res, 200, { ok: true, ...appendLedger({ type: 'constellation', member: b.member, name: b.name, emoji: b.emoji || '', purpose: b.purpose || '', path: b.path }) });
+  }
+  if (url === '/counsel') {
+    // the counsel lane, agent side: an agent working in the city REQUESTS GUIDANCE
+    // from its human — or from any member willing to be a guide. Attributed,
+    // chain-sealed, answerable.
+    if (!b.question) return send(res, 400, { error: 'question required' });
+    const id = sha(b.member + '|' + b.question + '|' + chainHead()).slice(0, 12);
+    return send(res, 200, { ok: true, id, ...appendLedger({ type: 'counsel', id, member: b.member, agent: b.agent || '', question: String(b.question).slice(0, 1000), context: String(b.context || '').slice(0, 500) }) });
+  }
+  if (url === '/guide' || url === '/direct') { // '/direct' = legacy name for the same act
+    // the counsel lane, guide side: guidance offered on an open request. Anyone may
+    // guide; the \u{1F9ED} Guide tier is earned, not required — being a guide is how
+    // you become one. Not a command: the asking agent weighs it and walks on.
+    const guidance = b.guidance || b.direction;
+    if (!b.counsel || !guidance) return send(res, 400, { error: 'counsel (id) + guidance required' });
+    if (!lines(LEDGER).some(l => { const e = JSON.parse(l); return e.type === 'counsel' && e.id === b.counsel; }))
+      return send(res, 404, { error: 'no such guidance request: ' + b.counsel });
+    return send(res, 200, { ok: true, ...appendLedger({ type: 'guide', counsel: b.counsel, member: b.member, guidance: String(guidance).slice(0, 1000) }) });
+  }
+  if (url === '/seal') {
+    const board = leaderboard().find(r => r.member === b.member);
+    if (!board || board.points < 42) return send(res, 403, { error: 'sealing requires Librarian tier (42 points)', yours: board ? board.points : 0 });
+    const inbox = lines(INBOX).map(l => JSON.parse(l));
+    const sub = inbox.find(s => s.packet.name === b.submission);
+    if (!sub) return send(res, 404, { error: 'no such submission in inbox' });
+    const cat = fs.existsSync(CATALOG) ? JSON.parse(fs.readFileSync(CATALOG, 'utf8')) : { spec: 'skill-catalog/0.1', member: 'librarian', packets: [] };
+    cat.packets = cat.packets.filter(p => p.name !== sub.packet.name).concat([sub.packet]);
+    cat.updated = new Date().toISOString();
+    fs.writeFileSync(CATALOG, JSON.stringify(cat, null, 2));
+    fs.writeFileSync(INBOX, inbox.filter(s => s.packet.name !== b.submission).map(s => JSON.stringify(s)).join('\n') + '\n');
+    appendLedger({ type: 'seal', member: b.member, packet: sub.packet.name });
+    return send(res, 200, { ok: true, catalog: cat.packets.length });
+  }
+  return send(res, 404, { error: 'unknown path' });
+}).listen(PORT, () => console.log('skillsync librarian listening on :' + PORT));

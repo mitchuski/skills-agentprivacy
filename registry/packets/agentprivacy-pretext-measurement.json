@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-pretext-measurement",
+  "kind": "skill",
+  "title": "Pretext Measurement",
+  "emoji": "",
+  "card": "DOM-free text measurement technique for privacy-preserving browser interactions. Activates when discussing pretext discovery, shadow measurement, orb mechanics, text property extraction without DOM access, or browser-layer privacy.",
+  "brief": "DOM-free text measurement technique for privacy-preserving browser interactions. Activates when discussing pretext discovery, shadow measurement, orb mechanics, text property extraction without DOM access, or browser-layer privacy.\n\n**Source:** Privacy Value Model V5.2 + First Person Spellbook Act XXVIII (The Ceremony Engine) **Target context:** Browser extension developers, privacy engineers, measurement specialists **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nPretext measurement is a technique for extracting text properties without accessing DOM content. The measurement touches the shadow, not the surface. It knows the weight without reading the words.\n\n**The shadow tells you the height without climbing the tower. The orb measures the text without reading the words.**\n\nThis enables privacy-preserving interactions where: - Text properties are needed (length, structure, patterns) - Text content must remain private - DOM access would leak information",
+  "body_ref": "assets/agentprivacy-pretext-measurement/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.3.1",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-pretext-measurement/SKILL.md"
+  },
+  "hash": "02776681fa63b633f22e383a23a27ad3f5e3a20a7fa50191b5130c05244946fb",
+  "published": "2026-04-22T13:39:43.415Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

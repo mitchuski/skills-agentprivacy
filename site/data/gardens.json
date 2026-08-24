@@ -1,0 +1,25 @@
+{
+  "updated": "2026-08-24T13:32:38.043Z",
+  "gardens": [
+    {
+      "member": "mitch",
+      "url": "http://skillsync.localhost:3030",
+      "owner": "self"
+    },
+    {
+      "member": "skill.fedwiki.club",
+      "url": "https://skill.fedwiki.club",
+      "owner": "external"
+    },
+    {
+      "member": "david.self.fish",
+      "url": "https://david.self.fish",
+      "owner": "external"
+    },
+    {
+      "member": "radio.myth.garden",
+      "url": "https://radio.myth.garden",
+      "owner": "external"
+    }
+  ]
+}

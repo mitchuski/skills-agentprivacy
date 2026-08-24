@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "skillsync-adopt",
+  "kind": "skill",
+  "title": "Skillsync Adopt",
+  "emoji": "",
+  "card": "Adopt and attest skills from the Skill Sync network — browse a garden's shelf or catalog, load a skill properly (card first, brief to decide, body on demand), fork the card as your countersignature, then record the adoption and later the attested run at the pi5 Librarian so trus…",
+  "brief": "Adopt and attest skills from the Skill Sync network — browse a garden's shelf or catalog, load a skill properly (card first, brief to decide, body on demand), fork the card as your countersignature, then record the adoption and later the attested run at the pi5 Librarian so trust points flow to the author. Use when a member or agent says \"adopt this skill\", \"load skills from the network\", \"record that I'm using X's skill\", \"attest a run\", or wants a working hand from someone else's garden.\n\nAdoption is the game. Discovery is passive; adopting turns another member's work into your working hand — and into their credentials.\n\n1. `GET <garden>/assets/skillsync/catalog.json` — read CARDS only. 2. Prefer a deck/constellation over the whole shelf; load the BRIEFS for its names. 3. Pull a full body (`assets/skillsync/<name>/SKILL.md`) only when a task fires it. Verify what you fetched: sha256 of the body must equal the packet's `hash`.",
+  "body_ref": "assets/skillsync-adopt/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "skillsync",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/skill/skillsync-adopt/SKILL.md"
+  },
+  "hash": "0ac025d63ee7e9cdbf1199c761a12729e413c533b24bad7305e2a3ccd6e8e238",
+  "published": "2026-08-24T13:09:13.409Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

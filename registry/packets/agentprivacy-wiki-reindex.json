@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-reindex",
+  "kind": "skill",
+  "title": "Wiki Reindex",
+  "emoji": "",
+  "card": "Rebuild the sitemap and search index for a local federated-wiki domain after writing page JSON to disk directly (the server caches status/ indexes and won't notice file writes). Activates after creating/editing/bulk-importing pages, or when the page list or search looks stale. M…",
+  "brief": "Rebuild the sitemap and search index for a local federated-wiki domain after writing page JSON to disk directly (the server caches status/ indexes and won't notice file writes). Activates after creating/editing/bulk-importing pages, or when the page list or search looks stale. Merges the reindex-fedwiki-skill variant. Kept by the Librarian 🗃️.\n\nThe `fedwiki-reindex` skill rebuilds the sitemap and search index for a local federated wiki domain. It is needed because the wiki server caches these indexes in each domain's `status/` folder and does not detect when Claude Code writes page JSON files directly to disk.\n\nWhen a page is created or edited through the wiki browser UI, the server updates its index automatically. When Claude writes a page file directly to `~/Music/Guides/Private/{domain}/pages/`, the server doesn't know — two cached files in the `status/` folder go stale:\n\n- `sitemap.json` — the page list used for navigation and federation neighbourhood - `site-index.json` — the full-text search index",
+  "body_ref": "assets/agentprivacy-wiki-reindex/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-reindex/SKILL.md"
+  },
+  "hash": "4aeff86268ffcdf5888c23691a49929d67795fc28c0a685fac0c6a2ed085c41d",
+  "published": "2026-06-21T14:53:46.490Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

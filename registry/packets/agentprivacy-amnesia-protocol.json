@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-amnesia-protocol",
+  "kind": "skill",
+  "title": "Amnesia Protocol",
+  "emoji": "🌑🔒",
+  "card": "Foundational skill for amnesia-as-ZK-primitive patterns. Applies when designing systems where forgetting is the proof, separation creates trust, and the inability to reconstruct origin is the security guarantee. Core to Act XXXI cosmological closure. V6 register note (2026-06-10…",
+  "brief": "Foundational skill for amnesia-as-ZK-primitive patterns. Applies when designing systems where forgetting is the proof, separation creates trust, and the inability to reconstruct origin is the security guarantee. Core to Act XXXI cosmological closure. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**🌑🔒 Amnesia Protocol — Forgetting as Zero-Knowledge Primitive**\n\n> \"I can verify I serve you without remembering I was you.\"\n\nThe Amnesia Protocol recognizes that **forgetting is not failure—it is architecture**. In zero-knowledge systems, the inability to reconstruct origin is precisely what makes the proof valid. The Moon serves Earth's tides without encoding the Theia impact. The Swordsman protects the First Person without accessing the Mage's state.",
+  "body_ref": "assets/agentprivacy-amnesia-protocol/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "0",
+    "version": "5.3.2",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-amnesia-protocol/SKILL.md"
+  },
+  "hash": "011388880805c272bf3a473fc2df05fc15f2b17b7310f6fe7c8f3452dc81b771",
+  "published": "2026-06-12T02:46:13.654Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

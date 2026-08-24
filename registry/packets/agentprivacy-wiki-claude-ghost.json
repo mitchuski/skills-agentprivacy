@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-claude-ghost",
+  "kind": "skill",
+  "title": "Wiki Claude Ghost",
+  "emoji": "",
+  "card": "A ghost page whose content is written live by Claude via the Anthropic API, inserted between a wiki form submission and the page-JSON response. Activates when building a Claude-authored ghost endpoint, a /claude-ghost FastAPI handler, or live LLM page generation in a fedwiki. Ke…",
+  "brief": "A ghost page whose content is written live by Claude via the Anthropic API, inserted between a wiki form submission and the page-JSON response. Activates when building a Claude-authored ghost endpoint, a /claude-ghost FastAPI handler, or live LLM page generation in a fedwiki. Kept by the Librarian 🗃️ in the Tower's Wikis.\n\nA **Claude ghost page** is a ghost page whose content is written by Claude in response to a user's query. A ghost page appears in the wiki lineup but is never stored on disk. This extends the pattern by inserting the Anthropic API call between the form submission and the page JSON response.\n\n1. User types a topic in an `html` item form and submits 2. The wiki POSTs `{\"query\": \"...\"}` to the FastAPI endpoint 3. FastAPI calls `claude-opus-4-8` with a system prompt instructing it to return page JSON 4. Claude returns a complete wiki page as JSON (title + markdown story items) 5. FastAPI parses and returns the JSON 6. The wiki calls `wiki.showResult()` — the Claude-authored page appears in the lineup",
+  "body_ref": "assets/agentprivacy-wiki-claude-ghost/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-claude-ghost/SKILL.md"
+  },
+  "hash": "bb09e83b0870d178a3353acd8da80b1fe0b972027e56ac45aaf59927649e7843",
+  "published": "2026-06-21T14:53:46.486Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

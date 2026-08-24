@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "skillsync-constellation",
+  "kind": "skill",
+  "title": "Skillsync Constellation",
+  "emoji": "",
+  "card": "Walk, seal, and contribute constellations in the Skill Sync sky — collect an ordered path of skills with the starpath button (or by hand), visualise it on the star chart, seal the walk as a chain-sealed constellation runtime at the Librarian, and contribute good paths as named c…",
+  "brief": "Walk, seal, and contribute constellations in the Skill Sync sky — collect an ordered path of skills with the starpath button (or by hand), visualise it on the star chart, seal the walk as a chain-sealed constellation runtime at the Librarian, and contribute good paths as named constellations the network can adopt. Use when someone says \"record my path\", \"seal this runtime\", \"contribute a constellation\", \"map a path through the skills\", or an agent finishes a session and should record which skills it actually flew.\n\nA constellation = a named, ordered path of skills. A runtime = the sealed record of actually walking one. The star chart draws both: the sky fills with paths that were really flown, not just drawn.\n\n- Browsing: tap ⭐ on card pages (the starpath plugin) — order of taps = the path.   The homepage tray shows it forming; \"visualise\" opens `star.html#path=a,b,c`. - Agent-side: at session end, list the skills the session ACTUALLY used, in the   order they fired. That list is a walked path — don't pad it.",
+  "body_ref": "assets/skillsync-constellation/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "skillsync",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/skill/skillsync-constellation/SKILL.md"
+  },
+  "hash": "d1535da1afdbec7cbeb7ee32831190f1250ee4541c75785de07f569e7a29e0b9",
+  "published": "2026-08-24T13:09:28.053Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

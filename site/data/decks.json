@@ -1,0 +1,97 @@
+[
+  {
+    "spec": "skill-loadout/0.1",
+    "name": "chronicle-keeper",
+    "emoji": "📜",
+    "purpose": "Writing and reflecting chronicles across the suite voices — one event, many tellings, same invariant core.",
+    "packets": [
+      "agentprivacy-chronicle-reflect",
+      "agentprivacy-chronicler",
+      "understanding-compression",
+      "agentprivacy-mirrorkeeper"
+    ]
+  },
+  {
+    "spec": "skill-loadout/0.1",
+    "name": "contributor",
+    "emoji": "🤝",
+    "purpose": "The base default constellation: how to join and contribute to the skill network itself. Publish your garden, dream the roster, adopt properly, and walk + contribute constellations. Every new member starts here.",
+    "packets": [
+      "skillsync-publish-garden",
+      "skillsync-dreamloop",
+      "skillsync-adopt",
+      "skillsync-constellation",
+      "spell-search"
+    ]
+  },
+  {
+    "spec": "skill-loadout/0.1",
+    "name": "first-contact",
+    "emoji": "🚪",
+    "purpose": "The front door. Load this deck to orient a fresh model in the agentprivacy universe without drowning it: the vision persona, the two poles, how chronicles are written, and how the wiki federation carries work.",
+    "packets": [
+      "agentprivacy-kyra",
+      "agentprivacy-soulbis",
+      "agentprivacy-soulbae",
+      "agentprivacy-chronicler",
+      "agentprivacy-dual-agent-harness",
+      "agentprivacy-chronicle-reflect",
+      "fedwiki-watch"
+    ]
+  },
+  {
+    "spec": "skill-loadout/0.1",
+    "name": "harness-runner",
+    "emoji": "⚙️",
+    "purpose": "Running the dual-agent harness and its meta patterns.",
+    "packets": [
+      "agentprivacy-dual-agent-harness",
+      "agentprivacy-attachment-architecture",
+      "agentprivacy-lattice-coherence",
+      "agentprivacy-horizon-gate",
+      "agentprivacy-master-emissary"
+    ]
+  },
+  {
+    "spec": "skill-loadout/0.1",
+    "name": "persona-core",
+    "emoji": "🎭",
+    "purpose": "The persona backbone: the balanced orchestrator plus the strongest mage and swordsman voices, for dual-agent work.",
+    "packets": [
+      "agentprivacy-kyra",
+      "agentprivacy-soulbae",
+      "agentprivacy-soulbis",
+      "agentprivacy-gatekeeper",
+      "agentprivacy-sentinel",
+      "agentprivacy-herald"
+    ]
+  },
+  {
+    "spec": "skill-loadout/0.1",
+    "name": "research-loops",
+    "emoji": "🔬",
+    "purpose": "The hard-problem research lane: the dual-agent harness (proposer held apart from prover), the Loomkeeper overlay cycle for sweeping a corpus, and the compression proofs that keep many tellings honest.",
+    "packets": [
+      "dual-agent-harness",
+      "overlay-sweep",
+      "overlay-key-minting",
+      "thread-weaving",
+      "understanding-compression",
+      "agentprivacy-attachment-architecture"
+    ]
+  },
+  {
+    "spec": "skill-loadout/0.1",
+    "name": "wiki-worker",
+    "emoji": "🗃️",
+    "purpose": "Everything needed to build, sync, watch and publish in the FedWiki federation.",
+    "packets": [
+      "fedwiki-watch",
+      "fedwiki-cohere-sync",
+      "fedwiki-transcribe",
+      "tile-from-page",
+      "wiki-to-pdf",
+      "understanding-compression"
+    ]
+  }
+]

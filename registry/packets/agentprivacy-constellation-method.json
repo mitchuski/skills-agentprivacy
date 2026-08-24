@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-constellation-method",
+  "kind": "skill",
+  "title": "Constellation Method",
+  "emoji": "",
+  "card": "Constellation identity method for 0xagentprivacy. Activates when discussing identity-as-constellation (different facets visible to different relationships), VRC constellation graphs, multi-guild identity resolution, or how privacy enables richer identity expression than surveill…",
+  "brief": "Constellation identity method for 0xagentprivacy. Activates when discussing identity-as-constellation (different facets visible to different relationships), VRC constellation graphs, multi-guild identity resolution, or how privacy enables richer identity expression than surveillance-based profiles.\n\n**Source:** Privacy Value Model V4 + \"Gave myself a Cape, Wrote a Spellbook and Promise you Proverbs\" (Jan 2026) **Target context:** Knowledge architects, personal knowledge management builders, AI memory designers, narrative infrastructure **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe design philosophy behind the agentprivacy documentation architecture: scatter intentionally, because the pattern that emerges when you connect the fragments yourself is different from the pattern someone else would see. That's not a bug — that's the protocol.",
+  "body_ref": "assets/agentprivacy-constellation-method/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-constellation-method/SKILL.md"
+  },
+  "hash": "2a61d833fdc034c8fb338ca3089ee6c78840f952f841ed8189d18d07f09e095c",
+  "published": "2026-04-22T13:39:43.354Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

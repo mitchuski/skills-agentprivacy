@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-holonic-persistence",
+  "kind": "skill",
+  "title": "Holonic Persistence",
+  "emoji": "",
+  "card": "Multi-provider data persistence for privacy-preserving agents. Activates when discussing HyperDrive auto-failover, multi-provider replication, provider-agnostic storage, privacy-aware routing, write-all-or-fail for separation-critical state, TEE rotation with state persistence,…",
+  "brief": "Multi-provider data persistence for privacy-preserving agents. Activates when discussing HyperDrive auto-failover, multi-provider replication, provider-agnostic storage, privacy-aware routing, write-all-or-fail for separation-critical state, TEE rotation with state persistence, or any task requiring durable agent state across backends, chains, and environments.\n\n**Source:** Privacy Value Model V4 + OASIS Holonic Architecture Whitepaper v1.2 **Target context:** Infrastructure architects, multi-chain developers, data persistence designers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nPrivacy-preserving agents need somewhere to persist state that survives TEE rotation, chain migration, and provider failure. The OASIS holonic architecture provides identity-independent data persistence across heterogeneous backends. This skill integrates holonic persistence with the dual-agent separation model.",
+  "body_ref": "assets/agentprivacy-holonic-persistence/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-holonic-persistence/SKILL.md"
+  },
+  "hash": "cf82bef418f2bc4ee660788fae8baa9a847866a720a9c4d88c39b6b97d29b5c2",
+  "published": "2026-04-22T13:39:43.395Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

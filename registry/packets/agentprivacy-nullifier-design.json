@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-nullifier-design",
+  "kind": "skill",
+  "title": "Nullifier Design",
+  "emoji": "",
+  "card": "Nullifier construction, deployment, and verification for 0xagentprivacy privacy-preserving invalidation. Activates when designing double-spend prevention, privacy-preserving revocation, unlinkable credential usage, or any operation where an action must be provably performed exac…",
+  "brief": "Nullifier construction, deployment, and verification for 0xagentprivacy privacy-preserving invalidation. Activates when designing double-spend prevention, privacy-preserving revocation, unlinkable credential usage, or any operation where an action must be provably performed exactly once without revealing the actor's identity. Triggers: \"nullifier\", \"double-spend\", \"single-use proof\", \"privacy-preserving revocation\", \"unlinkability\", \"nullifier set\", \"nullifier tree\", \"spent set\", \"serial number\". V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V4 + Zero Knowledge Spellbook (Tales 5-7) + Zcash Nullifier Architecture **Target context:** ZKP circuit designers, privacy protocol engineers, credential system architects, voting system builders, token system designers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai",
+  "body_ref": "assets/agentprivacy-nullifier-design/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-nullifier-design/SKILL.md"
+  },
+  "hash": "b82e09502fa178fba0b3e201401af918848cc901c7b7d207f633851f054fad1c",
+  "published": "2026-06-10T18:43:22.227Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

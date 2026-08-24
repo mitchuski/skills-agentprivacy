@@ -1,0 +1,14 @@
+{
+  "spec": "skill-loadout/0.1",
+  "name": "wiki-worker",
+  "emoji": "🗃️",
+  "purpose": "Everything needed to build, sync, watch and publish in the FedWiki federation.",
+  "packets": [
+    "fedwiki-watch",
+    "fedwiki-cohere-sync",
+    "fedwiki-transcribe",
+    "tile-from-page",
+    "wiki-to-pdf",
+    "understanding-compression"
+  ]
+}

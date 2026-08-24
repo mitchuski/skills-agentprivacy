@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-cryptographic-durability",
+  "kind": "skill",
+  "title": "Cryptographic Durability",
+  "emoji": "",
+  "card": "The post-quantum migration frame: how to reason about a primitive's durability — the time-distance to the quantum dawn — without overclaiming. Activates when discussing PQC migration timelines, Mosca's inequality, harvest-now-decrypt-later, quantum resource estimation (Toffoli ×…",
+  "brief": "The post-quantum migration frame: how to reason about a primitive's durability — the time-distance to the quantum dawn — without overclaiming. Activates when discussing PQC migration timelines, Mosca's inequality, harvest-now-decrypt-later, quantum resource estimation (Toffoli × qubits, ecdsa.fail), crypto-agility, or whether a key/curve/protocol is \"safe.\" Carries the honest framing: resource estimation is a durability signal, not an attack, and nothing is \"fully post-quantum safe.\" In the City of Mages this is the Horizon District's knowledge (Eos 🌅 · Dokimé 🪨 · Poros 🛤️). V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**How long until the dawn — and how to stay crossable when it comes.**\n\n> \"The dawn is not an attack; it is a time you can measure.\"",
+  "body_ref": "assets/agentprivacy-cryptographic-durability/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-cryptographic-durability/SKILL.md"
+  },
+  "hash": "f45b9a4ae17b465f90e2dc66e9fb323d5bbddf6a43aca16884d8f07b6d32927d",
+  "published": "2026-06-10T18:37:19.249Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

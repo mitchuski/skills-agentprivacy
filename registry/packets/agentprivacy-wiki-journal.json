@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-journal",
+  "kind": "skill",
+  "title": "Wiki Journal",
+  "emoji": "",
+  "card": "Strip the accumulated edit/fork history from a federated-wiki page's journal, replacing it with a single clean create entry while preserving title and story. Activates on \"strip the journal\", \"clean the journal\", \"reset the journal\", \"remove fork history\", or \"make this page loo…",
+  "brief": "Strip the accumulated edit/fork history from a federated-wiki page's journal, replacing it with a single clean create entry while preserving title and story. Activates on \"strip the journal\", \"clean the journal\", \"reset the journal\", \"remove fork history\", or \"make this page look freshly created\". Kept by the Librarian 🗃️ in the Tower's Wikis.\n\nThe `fedwiki-journal` skill removes accumulated edit history from a federated wiki page. It preserves the page's `title` and `story` content while replacing the entire `journal` array with a single `create` entry — making the page look freshly created.\n\nEvery edit made through the wiki UI appends an entry to the `journal` array. When pages are forked between sites, they carry their complete history along with them. A page like *Changes to this Site* may have been forked through half a dozen sites over many years, dragging a long attribution chain with it.",
+  "body_ref": "assets/agentprivacy-wiki-journal/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-journal/SKILL.md"
+  },
+  "hash": "f6d74c70adaec7036d04bf315d2886603e345270970deb4aadfd3204a1fa86c0",
+  "published": "2026-06-21T14:53:46.488Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-blade-forge",
+  "kind": "skill",
+  "title": "Blade Forge",
+  "emoji": "",
+  "card": "Blade configuration mechanics for the spellweb forge. Activates when discussing blade creation, 6D configuration space (d1Hide through d6Delegate), 64 vertices from 2^6 combinations, 96 edges forming holographic boundary, forge operations, or blade verification through understan…",
+  "brief": "Blade configuration mechanics for the spellweb forge. Activates when discussing blade creation, 6D configuration space (d1Hide through d6Delegate), 64 vertices from 2^6 combinations, 96 edges forming holographic boundary, forge operations, or blade verification through understanding.\n\n**Source:** Privacy Value Model V5.3.1 + First Person Spellbook Act XXVII (The Swordsman's Forge) **Target context:** Forge operators, blade architects, spellweb navigators **Architecture:** [spellweb.ai](https://spellweb.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe blade forge is where understanding becomes configuration. Every seeker who demonstrates comprehension can forge a blade — a 6-dimensional vector that encodes their sovereignty posture across the privacy manifold.\n\n**The forge doesn't care how you struck the metal. It only cares what blade you hold.**",
+  "body_ref": "assets/agentprivacy-blade-forge/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.3.3",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-blade-forge/SKILL.md"
+  },
+  "hash": "84c0a190c711e7cde718910cda2418ff996d39e42a20a8ae679a117e590ca18b",
+  "published": "2026-06-12T02:46:13.654Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

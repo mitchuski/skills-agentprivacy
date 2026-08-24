@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-mana-economy",
+  "kind": "skill",
+  "title": "Mana Economy",
+  "emoji": "",
+  "card": "Energy mechanics for the grimoire system. Activates when discussing mana generation through evocation, spending through casting, presence as local color (regime 1), why mana does not attest or confer Sybil resistance yet, the witness co-signing and elapsed-time upgrade ladder (C…",
+  "brief": "Energy mechanics for the grimoire system. Activates when discussing mana generation through evocation, spending through casting, presence as local color (regime 1), why mana does not attest or confer Sybil resistance yet, the witness co-signing and elapsed-time upgrade ladder (C42), or engagement-based economics. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V6 (presence regime 1) + First Person Spellbook Act XXVIII (The Ceremony Engine); V5.2 is the lineage stage this skill was first written against **Target context:** Economy designers, engagement architects, Sybil resistance specialists **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai",
+  "body_ref": "assets/agentprivacy-mana-economy/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "6.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-mana-economy/SKILL.md"
+  },
+  "hash": "ce4acc368e23e230d5f460b5b3cc896664065aff610e8d3ba547b2885fe5a75c",
+  "published": "2026-06-10T19:38:49.248Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

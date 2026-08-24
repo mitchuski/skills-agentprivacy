@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "overlay-sweep",
+  "kind": "skill",
+  "title": "Overlay Sweep",
+  "emoji": "",
+  "card": "Sweep ONE overlay dimension (proverbs, protocols, spells/emoji strings, or sci-fi concepts) across the V6 research directory, producing an evidence-anchored inventory in the poetic register. Use when the Loomkeeper runs an overlay cycle or refreshes a single dimension after new…",
+  "brief": "Sweep ONE overlay dimension (proverbs, protocols, spells/emoji strings, or sci-fi concepts) across the V6 research directory, producing an evidence-anchored inventory in the poetic register. Use when the Loomkeeper runs an overlay cycle or refreshes a single dimension after new formal work lands.\n\nOne dimension, the whole corpus, every item anchored.\n\n- `papers/v6/*.md` — the canon (5 files) - `papers/Programme/pipeline/rehydrations/**` — the eleven expressions - `papers/Programme/pipeline/extractions/*.md` — the claim inventories - `papers/Programme/pipeline/GROUND_RULES.md`, `SOURCES.md` - `papers/Programme/pipeline/programme/*.md` — direction + brief - `papers/Programme/pipeline/chronicles/` — at minimum the synthesis   long read + the A0 cycle chronicles (grep-first for the rest) - `papers/Programme/observers/*.md` - `papers/Programme/pipeline/reviews/critiques_ledger.md` — grep-only   (200KB; census by pattern, read hits in window)",
+  "body_ref": "assets/overlay-sweep/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "research-loops",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/agentprivacy-docs/papers/Programme/overlays/skills/overlay-sweep/SKILL.md"
+  },
+  "hash": "9d1064b7f55309563c1b97c2cc52820edea4da03f002da3f60626ce72b50628d",
+  "published": "2026-07-11T17:25:28.451Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

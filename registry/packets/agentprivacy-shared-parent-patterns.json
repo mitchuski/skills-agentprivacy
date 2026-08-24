@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-shared-parent-patterns",
+  "kind": "skill",
+  "title": "Shared Parent Patterns",
+  "emoji": "",
+  "card": "O(1) collective data structures that avoid N-squared coupling for guilds, pools, and agent swarms. Activates when discussing shared-parent holon architecture, LoadHolonsForParentAsync patterns, guild memory, Intel Pool holons, scalable collective intelligence, or any design requ…",
+  "brief": "O(1) collective data structures that avoid N-squared coupling for guilds, pools, and agent swarms. Activates when discussing shared-parent holon architecture, LoadHolonsForParentAsync patterns, guild memory, Intel Pool holons, scalable collective intelligence, or any design requiring many-to-one data relationships without pairwise links.\n\n**Source:** Privacy Value Model V4 + OASIS Holonic Architecture Whitepaper v1.2 **Target context:** Collective intelligence architects, DAO infrastructure, multi-agent coordination **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe network topology skill covers stratum-weighted graphs. The intel pooling skill covers collective intelligence. But neither specifies the data structure pattern that makes O(1) collective memory possible. Shared-parent patterns fill this gap — the holonic architecture's solution to N² scaling problems.",
+  "body_ref": "assets/agentprivacy-shared-parent-patterns/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-shared-parent-patterns/SKILL.md"
+  },
+  "hash": "81997c348acd0e09e3f081dbc5121009910d195eaabb5e8fa24ca00bdeb8d29f",
+  "published": "2026-04-22T13:39:43.428Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

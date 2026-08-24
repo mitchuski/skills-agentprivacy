@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "tile-from-page",
+  "kind": "skill",
+  "title": "Tile From Page",
+  "emoji": "",
+  "card": "Read a FedWiki page's content, semantically choose a glyph + color + category for it, and write a `tileglyph` navigation tile (the wiki-plugin-tileglyph item type) into a destination page — matching a Root Tiles registry for federation-wide consistency, or minting a new canonica…",
+  "brief": "Read a FedWiki page's content, semantically choose a glyph + color + category for it, and write a `tileglyph` navigation tile (the wiki-plugin-tileglyph item type) into a destination page — matching a Root Tiles registry for federation-wide consistency, or minting a new canonical entry. Use when turning pages/sites into colored glyph navigation tiles, building a tile wall / index, or extending the Root Tiles vocabulary.\n\nThe **authoring-time, semantic half** of the TileGlyph system. The plugin (`wiki-plugin-tileglyph`, item type `tileglyph`) only *renders* tiles; it cannot read content or call a skill in the browser. This skill is where an agent reads a page, **decides** what glyph/color/category fit it, and writes the tile. The mechanical disk work is in `tile.js`; the judgement is yours.\n\n- \"make a tile for [[X]]\" / \"turn these pages into tiles\" / \"build a tile wall\" - \"add <page/site> to the Plugin Lab\" / a navigation index of glyph tiles - \"extend the Root Tiles vocabulary\"",
+  "body_ref": "assets/tile-from-page/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "workbench",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/.claude/skills/tile-from-page/SKILL.md"
+  },
+  "hash": "cc4bfb64d89fd03b3b0ccdbc707db88f255718a4edd0ff7ecdae529ced11a4b7",
+  "published": "2026-06-27T15:21:15.043Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

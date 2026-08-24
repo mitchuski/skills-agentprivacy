@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-braid-reasoning",
+  "kind": "skill",
+  "title": "Braid Reasoning",
+  "emoji": "",
+  "card": "Bounded reasoning architecture for privacy-preserving AI agents using BRAID Mermaid graphs. Activates when discussing Generator/Solver split architecture, Performance-Per-Dollar (PPD) inference economics, BRAID Parity Effect (small model + structure ≥ large model), Mermaid reaso…",
+  "brief": "Bounded reasoning architecture for privacy-preserving AI agents using BRAID Mermaid graphs. Activates when discussing Generator/Solver split architecture, Performance-Per-Dollar (PPD) inference economics, BRAID Parity Effect (small model + structure ≥ large model), Mermaid reasoning graph construction, node atomicity, procedural scaffolding vs answer leakage, terminal verification loops, Numerical Masking Protocol, cached reasoning graph libraries, split- architecture deployment, or any task where reasoning structure should be decoupled from reasoning execution for cost efficiency and privacy preservation. Use whenever designing how dual agents reason, not just what they reason about.\n\n**Source:** Privacy Value Model V4 + BRAID (arXiv:2512.15959) + Holonic BRAID Lite Paper **Target context:** Agent inference architects, reasoning cost optimisers, split-architecture designers, privacy-agent deployment engineers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai",
+  "body_ref": "assets/agentprivacy-braid-reasoning/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-braid-reasoning/SKILL.md"
+  },
+  "hash": "0660d4277f46ca42eb5bf317a49557cef954e1c40342beb0943cb23f42573623",
+  "published": "2026-04-22T13:39:43.348Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

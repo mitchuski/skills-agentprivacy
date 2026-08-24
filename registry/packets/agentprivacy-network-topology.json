@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-network-topology",
+  "kind": "skill",
+  "title": "Network Topology",
+  "emoji": "",
+  "card": "Network topology and stratum-weighted effects for 0xagentprivacy Privacy Pools. Activates when discussing (1 + Σ wᵢ nᵢ/N₀)^k, binomial coefficients across strata, Metcalfe generalisation, pool composition optimisation, or network scaling exponents. Use for Privacy Pool design an…",
+  "brief": "Network topology and stratum-weighted effects for 0xagentprivacy Privacy Pools. Activates when discussing (1 + Σ wᵢ nᵢ/N₀)^k, binomial coefficients across strata, Metcalfe generalisation, pool composition optimisation, or network scaling exponents. Use for Privacy Pool design and network value modelling. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V6 (privacy_value_v6_formal_specification.md; section introduced at V5.4) **Target context:** All agents, network economists, Privacy Pool designers, guild architects, protocol incentive engineers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe network term in PVM-V4 captures how collective participation amplifies individual sovereignty value. But unlike Metcalfe's law (n²) or Reed's law (2^n), this model weights participants by their position on the sovereignty lattice. Not all nodes are equal — nodes at the combinatorial midpoint (stratum 3) contr…",
+  "body_ref": "assets/agentprivacy-network-topology/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "5.4",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-network-topology/SKILL.md"
+  },
+  "hash": "2f719f5f1212a7dff4c9f2d120ae3473294f1b73b8471e7a76cf30b7cf253f1a",
+  "published": "2026-06-10T18:50:10.273Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

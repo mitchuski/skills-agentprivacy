@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-recovery-rpp",
+  "kind": "skill",
+  "title": "Recovery Rpp",
+  "emoji": "",
+  "card": "Recovery mechanisms and Relationship Proverb Protocol for 0xagentprivacy. Activates when discussing key loss recovery, bilateral proverb verification, three-attester recovery ceremonies, RPP as social recovery, or how relationships recover what keys cannot.",
+  "brief": "Recovery mechanisms and Relationship Proverb Protocol for 0xagentprivacy. Activates when discussing key loss recovery, bilateral proverb verification, three-attester recovery ceremonies, RPP as social recovery, or how relationships recover what keys cannot.\n\n**Source:** Privacy Value Model V4 + First Person Spellbook + Zcash Inscription Protocol **Target context:** Key recovery architects, identity restoration designers, understanding-based verification builders, Zcash application developers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe Relationship Proverb Protocol (RPP) is the agentprivacy recovery mechanism. When keys are lost, identity is recovered through demonstrated contextual understanding — proving you understand a relationship, not proving you possess a biometric or a backup phrase. It is also the trust verification mechanism: proving you belong to a community by answering the riddle that only participants could answer.",
+  "body_ref": "assets/agentprivacy-recovery-rpp/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-recovery-rpp/SKILL.md"
+  },
+  "hash": "4a110f6ccd898be990d1986e9e91c921027a8676053388dde7f68eee9fcf5a33",
+  "published": "2026-04-22T13:39:43.420Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

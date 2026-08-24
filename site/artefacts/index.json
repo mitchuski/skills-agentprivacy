@@ -1,0 +1,22 @@
+{
+  "artefacts": [
+    {
+      "constellation": "the-contributor-path",
+      "kind": "contributed",
+      "seal": "8565d5d5f22a1986bbf87edcf32ccc458666ef29399b87253a0afd2d16f3ef48",
+      "packets": 5,
+      "bytes": 8509,
+      "at": "2026-08-24T13:12:26.401Z",
+      "ref": "artefacts/the-contributor-path.md"
+    },
+    {
+      "constellation": "research-loops",
+      "kind": "deck",
+      "seal": "ef418ff624d3855fc3e63ae2b0344c4508cde41fffefe45a58af8edf715ba128",
+      "packets": 6,
+      "bytes": 10390,
+      "at": "2026-08-24T13:12:26.555Z",
+      "ref": "artefacts/research-loops.md"
+    }
+  ]
+}

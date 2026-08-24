@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-holonic-reasoning",
+  "kind": "skill",
+  "title": "Holonic Reasoning",
+  "emoji": "",
+  "card": "Shared reasoning graphs and inference artefacts as persistent, provider-agnostic holons. Activates when discussing Holonic BRAID, reasoning graph libraries, learn-once-reuse-everywhere patterns, agent memory as holon trees, narrative compression into holon MetaData, or shared in…",
+  "brief": "Shared reasoning graphs and inference artefacts as persistent, provider-agnostic holons. Activates when discussing Holonic BRAID, reasoning graph libraries, learn-once-reuse-everywhere patterns, agent memory as holon trees, narrative compression into holon MetaData, or shared intelligence structures that persist across environments.\n\n**Source:** Privacy Value Model V4 + OASIS Holonic Architecture + BRAID Reasoning Graphs **Target context:** AI agent architects, knowledge graph designers, reasoning system builders **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe 0xagentprivacy model uses spellbooks to compress knowledge and narrative compression to encode reasoning patterns. The holonic architecture provides BRAID — shared reasoning graphs as structured data. Together they enable persistent, provider-agnostic reasoning artefacts that many agents can share across environments without recomputing.",
+  "body_ref": "assets/agentprivacy-holonic-reasoning/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-holonic-reasoning/SKILL.md"
+  },
+  "hash": "ed11c664a750d88d91d161205b0bd1087bfaa168a879b9dd210e56d61c59876f",
+  "published": "2026-04-22T13:39:43.396Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

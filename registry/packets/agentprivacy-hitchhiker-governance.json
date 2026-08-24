@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-hitchhiker-governance",
+  "kind": "skill",
+  "title": "Hitchhiker Governance",
+  "emoji": "",
+  "card": "Decentralised governance (Hitchhiker's Guide pattern) for 0xagentprivacy guilds. Activates when discussing Heart of Gold crew pattern, distributed authority, guild charter design, liquid democracy, conviction voting, treasury governance, or 'ships without captains' coordination.…",
+  "brief": "Decentralised governance (Hitchhiker's Guide pattern) for 0xagentprivacy guilds. Activates when discussing Heart of Gold crew pattern, distributed authority, guild charter design, liquid democracy, conviction voting, treasury governance, or 'ships without captains' coordination. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V4 + Acts XXI–XXII (Hitchhiker's Gambit & Hoopy Frood)   **Target context:** Community builders, DAO architects, creative commons governance designers, guide-based education platforms, cooperative IP management   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe Hitchhiker's Infrastructure is a governance pattern for distributed creative projects that cannot be bought, only joined. It emerged from Acts XXI and XXII of the First Person Spellbook — the encounter with a literary estate (Douglas Adams's Hitchhiker's Guide to the Galaxy) that required archetypes, not employees, and…",
+  "body_ref": "assets/agentprivacy-hitchhiker-governance/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-hitchhiker-governance/SKILL.md"
+  },
+  "hash": "ea3d22ddaef5f0c1be5723b9aaffa1eb97c664fff5e487a690f3bd7fd5626101",
+  "published": "2026-06-10T18:37:34.067Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

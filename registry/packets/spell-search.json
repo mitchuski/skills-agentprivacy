@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "spell-search",
+  "kind": "skill",
+  "title": "Spell Search",
+  "emoji": "",
+  "card": "Observe the directories the keeper has been working in, find the ones rich with un-minted skills (written methods that actually ran), draft SKILL.md packets from their evidence, and publish them into Skill Sync after review. Use when the user says \"spell search\", \"survey my dire…",
+  "brief": "Observe the directories the keeper has been working in, find the ones rich with un-minted skills (written methods that actually ran), draft SKILL.md packets from their evidence, and publish them into Skill Sync after review. Use when the user says \"spell search\", \"survey my directories for skills\", \"mine this repo for skills\", \"make a skill out of this project/method\", or when a project's method docs + run history deserve to become a shareable skill. Drafting is agent work; publishing rides the existing harvest -> shelf -> tailnet pipeline with its leak scan and PII neutralization.\n\nSkills are spells that already worked. This skill finds them in the field and mints them. Home: `~\\skill sync\\` (SPEC.md = packet format; README.md = the system).\n\ncd \"~\\skill sync\"     node bin/spellsearch.js                # every top-level dir under ~     node bin/spellsearch.js <dir>          # one directory, any depth",
+  "body_ref": "assets/spell-search/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "skillsync",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/skill sync/skill/spell-search/SKILL.md"
+  },
+  "hash": "84914b957644d448e330a4731961772f221c0402932c7762dca54ffc78afc82e",
+  "published": "2026-08-24T12:37:46.841Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

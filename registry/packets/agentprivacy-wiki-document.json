@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-document",
+  "kind": "skill",
+  "title": "Wiki Document",
+  "emoji": "",
+  "card": "Creating a help page on the wiki for a Claude Code skill — describing what it does and when it fires — and publishing the skill's own SKILL.md as a downloadable asset. The skill-side parallel to documenting a wiki plugin. Part of the git-less onboarding/distribution layer kept b…",
+  "brief": "Creating a help page on the wiki for a Claude Code skill — describing what it does and when it fires — and publishing the skill's own SKILL.md as a downloadable asset. The skill-side parallel to documenting a wiki plugin. Part of the git-less onboarding/distribution layer kept by the Librarian 🗃️ in the Tower's Wikis.\n\nThe **fedwiki-document-skill** skill creates a help page on this wiki for a Claude Code skill — describing what it does and when it fires — and publishes the skill's own `SKILL.md` as a downloadable file in the page's assets folder. It is the skill-side parallel of Fedwiki DocumentPlugin Skill.\n\n\"document this skill\", \"create a skill help page\", \"publish a skill to skill.fedwiki.club\", \"add a skill to the skill wiki\" — or after authoring or editing a skill that should be shared publicly.\n\n- A page here at `skill.fedwiki.club/{slug}` describing the skill in prose. - An `# Assets` section carrying the **real `SKILL.md`** (and any README), so a reader can read or install the exact source — not just the summary.",
+  "body_ref": "assets/agentprivacy-wiki-document/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-document/SKILL.md"
+  },
+  "hash": "609e5dce67e67cb0f971e6de089c9596bae363675a40262eaa17b1c601157667",
+  "published": "2026-06-27T13:51:43.039Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

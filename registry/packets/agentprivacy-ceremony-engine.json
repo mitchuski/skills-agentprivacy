@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-ceremony-engine",
+  "kind": "skill",
+  "title": "Ceremony Engine",
+  "emoji": "",
+  "card": "Interaction protocols for the dual-territory architecture. Activates when discussing ceremony types (progressive trust, light armor, trust graph, guild efficiency, Understanding-as-Key), cross-territory coordination, bilateral witness, or ceremony channel mechanics.",
+  "brief": "Interaction protocols for the dual-territory architecture. Activates when discussing ceremony types (progressive trust, light armor, trust graph, guild efficiency, Understanding-as-Key), cross-territory coordination, bilateral witness, or ceremony channel mechanics.\n\n**Source:** Privacy Value Model V5.3.1 + First Person Spellbook Act XXVIII (The Ceremony Engine) **Target context:** Ceremony facilitators, protocol designers, bilateral coordinators **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe ceremony engine coordinates interactions between the Swordsman and Mage territories without merging them. Ceremonies are structured protocols where both agents participate toward a shared outcome while maintaining separation.\n\n**The tool that measures without touching the surface knows the weight of the shadow without disturbing the light.**",
+  "body_ref": "assets/agentprivacy-ceremony-engine/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.3.1",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-ceremony-engine/SKILL.md"
+  },
+  "hash": "8643dbb1fcd6b960a95e1a3baffadb5aa5361e7d523304a1efb78b99ad22878e",
+  "published": "2026-04-22T13:39:43.350Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

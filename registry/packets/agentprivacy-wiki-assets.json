@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-assets",
+  "kind": "skill",
+  "title": "Wiki Assets",
+  "emoji": "",
+  "card": "Adding an `# Assets` section (an `# Assets` heading + an `assets` item referencing the page slug) to a federated wiki page, placed above the `# See` section. Activates when attaching downloadable companion files to a page. Part of the git-less onboarding/distribution layer kept…",
+  "brief": "Adding an `# Assets` section (an `# Assets` heading + an `assets` item referencing the page slug) to a federated wiki page, placed above the `# See` section. Activates when attaching downloadable companion files to a page. Part of the git-less onboarding/distribution layer kept by the Librarian 🗃️ in the Tower's Wikis.\n\nThe **fedwiki-assets** skill — Add an `# Assets` section to a federated wiki page — an `# Assets` heading followed by an `assets` item referencing the page slug, placed immediately above the `# See` section (or at the bottom). Optionally copy companion files into the page's assets folder.\n\nUse when the user says \"add an assets section\", \"attach this file to the page\", \"add the assets plugin\", \"give this page an assets folder\", or asks to surface downloadable files on a wiki page.\n\n- The Pattern - Locating the page and its slug\n\n- Claude Skills and Fedwiki Document Skill - Claude Import Skill",
+  "body_ref": "assets/agentprivacy-wiki-assets/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-assets/SKILL.md"
+  },
+  "hash": "f9f5203e3a4df609453a059e97ba70cb4d93e0d5f8603ce0c2a02cd5fc06a7ee",
+  "published": "2026-06-27T13:51:43.031Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "skillsync-dreamloop",
+  "kind": "skill",
+  "title": "Skillsync Dreamloop",
+  "emoji": "",
+  "card": "Run the Skill Sync dream loop — discover new skills/spells/personas published across the tailnet fedwiki farms and the fedwiki.club roster, notify via marvin's ntfy, refresh the Recent Discoveries shelf page, and (when asked) recommend discoveries for adoption or record adoption…",
+  "brief": "Run the Skill Sync dream loop — discover new skills/spells/personas published across the tailnet fedwiki farms and the fedwiki.club roster, notify via marvin's ntfy, refresh the Recent Discoveries shelf page, and (when asked) recommend discoveries for adoption or record adoptions with the pi5 librarian. Use when the user says \"run the dream loop\", \"any new skills on the farms?\", \"check the skill roster\", \"what did the network publish\", or wants recurring skill discovery (pair with /loop). Read-only against every remote farm.\n\nThe agent side of the Skill Sync system at `~\\skill sync\\` (see its `README.md` and `SPEC.md` for the protocol). One dream = one pass:\n\ncd \"~\\skill sync\"     node bin/dreamloop.js          # poll roster -> diff -> events -> ntfy -> shelf page\n\n1. Reads `skillsync.config.json` (roster of farms, marvin/ntfy, pi5/librarian). 2. For each roster member, GETs `assets/skillsync/catalog.json` (machine door) or    falls back to `system/sitemap.json` filtered to skill-shaped slugs. 3. Diffs against `state/<member>.json`. First sight of a member = silent baseline. 4. Appends `new-skill` / `updated-skill` / `removed` events to `events/events.jso…",
+  "body_ref": "assets/skillsync-dreamloop/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "skillsync",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/skill sync/skill/skillsync-dreamloop/SKILL.md"
+  },
+  "hash": "db2a083a9e402c1b30e63d93e1c90b768da1dee55360ce697a95d145ea69f738",
+  "published": "2026-08-24T11:48:18.787Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

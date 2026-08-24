@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-policy-governance",
+  "kind": "skill",
+  "title": "Policy Governance",
+  "emoji": "",
+  "card": "Standards and policy governance for 0xagentprivacy. Activates when discussing IEEE 7012, BGIN working groups, Internet Identity Workshop, Trust Over IP Foundation, W3C credentials, IETF standards, regulatory frameworks, or how privacy architecture interfaces with institutional g…",
+  "brief": "Standards and policy governance for 0xagentprivacy. Activates when discussing IEEE 7012, BGIN working groups, Internet Identity Workshop, Trust Over IP Foundation, W3C credentials, IETF standards, regulatory frameworks, or how privacy architecture interfaces with institutional governance. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V4 Formal Specification (the Keeper, Feb 2026)   **Target context:** BGIN, Trust Over IP, IEEE 7012 (MyTerms), IIW, regulatory bodies, data governance frameworks   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nCurrent privacy regulation treats privacy as a compliance cost — something to manage, minimise, and offset against utility. PVM-V4 reframes privacy as value-generating infrastructure. The model provides a formal economic basis for policy positions that treat privacy investment as productive rather than defensive.",
+  "body_ref": "assets/agentprivacy-policy-governance/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-policy-governance/SKILL.md"
+  },
+  "hash": "661bc66a9b5f28a012264f6eec0c4696e8a7822e3490340d81c1b96da205feab",
+  "published": "2026-06-10T18:43:55.034Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

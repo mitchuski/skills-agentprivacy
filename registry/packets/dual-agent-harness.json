@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "dual-agent-harness",
+  "kind": "pattern",
+  "title": "Dual Agent Harness",
+  "emoji": "",
+  "card": "Build and run interchangeable Swordsman ⚔️ ⊥ Mage 🧙 dual-agent harnesses: an autoresearch loop where a proposer (Mage, reduces) and a prover (Swordsman, validates) are held apart by a held-out gate the proposer cannot tune to. Use when building a \"propose a cheaper artifact, pr…",
+  "brief": "Build and run interchangeable Swordsman ⚔️ ⊥ Mage 🧙 dual-agent harnesses: an autoresearch loop where a proposer (Mage, reduces) and a prover (Swordsman, validates) are held apart by a held-out gate the proposer cannot tune to. Use when building a \"propose a cheaper artifact, prove it on a gate it cannot game\" loop for any domain — circuit/gate/qubit reduction, ZKP audit, cost/gas optimization — or when assigning personas + skills to harness seats for a purpose. This is the framework home; the canonical skill (agentprivacy-skills mirrors it). Triggers: \"dual-agent harness\", \"swordsman mage harness\", \"build a harness\", \"plug in a harness\", \"autoresearch loop\", \"held-apart agents\".\n\nOne engine, many purposes, swappable crews. A harness pairs a **proposer** (Mage 🧙 — reduces / conceals) with a **prover** (Swordsman ⚔️ — signs only what survives an un-tuneable gate), held apart by **the Gap** (a held-out test derived from the proposer's own output, so it cannot be tuned to). The result `succ` emerges only from the two held apart: `neg(bnot(x)) = succ(x)`.",
+  "body_ref": "assets/dual-agent-harness/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "harness",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-dual-agent-harness/generic/SKILL.md"
+  },
+  "hash": "d1576ffa9cf0faa0a86953af439547a56bc5cd9b834449666d0ab380b4918ce4",
+  "published": "2026-06-10T23:11:11.815Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

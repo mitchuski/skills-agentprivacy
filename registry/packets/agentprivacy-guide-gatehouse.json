@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-guide-gatehouse",
+  "kind": "skill",
+  "title": "Guide Gatehouse",
+  "emoji": "",
+  "card": "Operate the Gatehouse — sigil-gates that hide documents encrypted inside the public guide.agentprivacy.ai static site behind a two-token trust ceremony (emoji sigil + canon proverb → PBKDF2 → AES-GCM, decrypted client-side at /gates/). Use when adding a gate for new documents (l…",
+  "brief": "Operate the Gatehouse — sigil-gates that hide documents encrypted inside the public guide.agentprivacy.ai static site behind a two-token trust ceremony (emoji sigil + canon proverb → PBKDF2 → AES-GCM, decrypted client-side at /gates/). Use when adding a gate for new documents (letters, meeting prep, mageletters, agentic outputs), rebuilding or deploying the guide (the gate build is a MANDATORY post-snapshot step), choosing/minting sigil+proverb tokens, testing that gates open, or auditing the site for token leaks before a push. Encodes the crypto/normalization spec, the letter-keyed vs canon-keyed gate classes, the deploy path (Workers, NOT Pages), and the gotchas that cost rounds.\n\nDocuments sealed **inside the public static site**, opened by a two-token ceremony. The Swordsman guards the gate; the visitor is the mage who casts the spell. Plan + public register: `agentprivacy.guide/GATES.md`. Chronicle: `~/.wiki/chronicles/2026-07-02_gatehouse_sigil_gates.md`.",
+  "body_ref": "assets/agentprivacy-guide-gatehouse/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "workbench",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/.claude/skills/agentprivacy-guide-gatehouse/SKILL.md"
+  },
+  "hash": "981990ff78e47cf49e50a82efe4b87f580cfd0ce7a2d2f3fb388393204fac106",
+  "published": "2026-07-02T22:56:40.557Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

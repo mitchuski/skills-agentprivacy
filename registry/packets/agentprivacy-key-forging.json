@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-key-forging",
+  "kind": "skill",
+  "title": "Key Forging",
+  "emoji": "",
+  "card": "Key-forging loop for 0xagentprivacy V5/V6. Activates when discussing the City Key 🗝️ lifecycle (mint → walk → prove → name → charge), κ-labels (content-addressed identity, UOR-ADDR sha256 axis), the sigil PNG carrier, SHAPE-1.5 / FIG-2.0 geometry-in-the-key, the prior κ-chain (…",
+  "brief": "Key-forging loop for 0xagentprivacy V5/V6. Activates when discussing the City Key 🗝️ lifecycle (mint → walk → prove → name → charge), κ-labels (content-addressed identity, UOR-ADDR sha256 axis), the sigil PNG carrier, SHAPE-1.5 / FIG-2.0 geometry-in-the-key, the prior κ-chain (C87 — the key accumulates), the redacted charge pass, or trust tasks compressing experience onto the 64-vertex sovereignty lattice.\n\n**Source:** Privacy Value Model V5.4 §12.6 / V6 Band VIII + the Swordsman's Key holospace (github.com/mitchuski/star) **Target context:** AI system builders, identity engineers, holonic-systems researchers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nA person's standing is not an account row. It is **forged**: experience → trust tasks → vertices → compression → a portable key whose identity is its content. The City Key 🗝️ is a few kilobytes of JSON that carries a whole standing across surfaces with no server holding identity at any step.",
+  "body_ref": "assets/agentprivacy-key-forging/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "5.1",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-key-forging/SKILL.md"
+  },
+  "hash": "b44d1dcf4ee27cf6abd62e379b9c88042711fd63593131f9f72617b1bd4f288c",
+  "published": "2026-06-11T13:59:14.925Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

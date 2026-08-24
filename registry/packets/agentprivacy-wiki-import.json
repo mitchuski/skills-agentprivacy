@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-import",
+  "kind": "skill",
+  "title": "Wiki Import",
+  "emoji": "",
+  "card": "Importing a skill — or a whole set-of-skills page — published on a fedwiki (skill.localhost / skill.fedwiki.club) into the local agent. Pass a skill page to install one; pass a set-of-skills page to install every skill it links to. The install counterpart to exporting with agent…",
+  "brief": "Importing a skill — or a whole set-of-skills page — published on a fedwiki (skill.localhost / skill.fedwiki.club) into the local agent. Pass a skill page to install one; pass a set-of-skills page to install every skill it links to. The install counterpart to exporting with agentprivacy-wiki-to-skill. Part of the git-less onboarding/distribution layer kept by the Librarian 🗃️ in the Tower's Wikis.\n\nThe **import-claude-skill** skill — Import a skill — or a whole set of skills — published on a fedwiki (skill.localhost or skill.fedwiki.club) into the local agent. Pass a skill page to install one; pass a set-of-skills page to install every skill it links to. Fetches the real SKILL.md (and companion files) from each page's assets folder over HTTP. Targets Claude Code by default; the fedwiki page is a framework-neutral source.\n\nUse when the user says \"import a skill\", \"import this set of skills\", \"install a skill from the skill wiki\", \"pull <name> from skill.fedwiki.club\", or \"import-claude-skill\".",
+  "body_ref": "assets/agentprivacy-wiki-import/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-import/SKILL.md"
+  },
+  "hash": "fd5b880880bfb7a0e2579ee91cd1414f1f92e8c0823581772251ca7ea6a2d232",
+  "published": "2026-06-27T13:51:43.031Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

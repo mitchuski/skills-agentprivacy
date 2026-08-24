@@ -1,0 +1,14 @@
+{
+  "spec": "skill-loadout/0.1",
+  "name": "persona-core",
+  "emoji": "🎭",
+  "purpose": "The persona backbone: the balanced orchestrator plus the strongest mage and swordsman voices, for dual-agent work.",
+  "packets": [
+    "agentprivacy-kyra",
+    "agentprivacy-soulbae",
+    "agentprivacy-soulbis",
+    "agentprivacy-gatekeeper",
+    "agentprivacy-sentinel",
+    "agentprivacy-herald"
+  ]
+}

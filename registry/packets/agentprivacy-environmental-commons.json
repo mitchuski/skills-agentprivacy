@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-environmental-commons",
+  "kind": "skill",
+  "title": "Environmental Commons",
+  "emoji": "",
+  "card": "Environmental commons and polycentric governance for 0xagentprivacy. Activates when discussing climate coordination, environmental DAOs, carbon accounting, ecosystem services valuation, future-representing mechanisms, or how the dual-agent architecture protects environmental whi…",
+  "brief": "Environmental commons and polycentric governance for 0xagentprivacy. Activates when discussing climate coordination, environmental DAOs, carbon accounting, ecosystem services valuation, future-representing mechanisms, or how the dual-agent architecture protects environmental whistleblowers and builds trust between nations/generations.\n\n**Source:** Privacy Value Model V4 + Plurality Spellbook Act XXVI (The Commons That Breathes) **Target context:** Environmental governance researchers, climate tech builders, commons architects, coordination mechanism designers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe environment is the ultimate commons. The atmosphere. The oceans. The climate. The biodiversity. No one owns them. Everyone depends on them. And they are being destroyed.\n\nAct XXVI applies the dual-agent architecture to the hardest coordination problem humanity faces. The blade protects environmental whistleblowers. The spell builds trust between nations, between generations, and with the voiceless natural world.",
+  "body_ref": "assets/agentprivacy-environmental-commons/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-environmental-commons/SKILL.md"
+  },
+  "hash": "23e2fbca0c420fd1472540896e14902ba303c563dde17d8ebdf06a30e12f090d",
+  "published": "2026-04-22T13:39:43.369Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

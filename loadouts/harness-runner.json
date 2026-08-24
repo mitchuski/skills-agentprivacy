@@ -1,0 +1,13 @@
+{
+  "spec": "skill-loadout/0.1",
+  "name": "harness-runner",
+  "emoji": "⚙️",
+  "purpose": "Running the dual-agent harness and its meta patterns.",
+  "packets": [
+    "agentprivacy-dual-agent-harness",
+    "agentprivacy-attachment-architecture",
+    "agentprivacy-lattice-coherence",
+    "agentprivacy-horizon-gate",
+    "agentprivacy-master-emissary"
+  ]
+}

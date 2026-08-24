@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "wiki-plugin-starpath",
+  "kind": "plugin",
+  "title": "Wiki Plugin Starpath",
+  "emoji": "",
+  "card": "Install and use the starpath fedwiki plugin — the like-shaped ⭐ button that lets a wiki visitor (human or agent) collect an ordered path of skills as they browse card pages, visualise the walk on the star chart, seal it as a constellation runtime at the Librarian, or contribute…",
+  "brief": "Install and use the starpath fedwiki plugin — the like-shaped ⭐ button that lets a wiki visitor (human or agent) collect an ordered path of skills as they browse card pages, visualise the walk on the star chart, seal it as a constellation runtime at the Librarian, or contribute it as a named constellation. Use when adding the starpath button to a fedwiki farm, putting a path tray on a homepage, or wiring walk-collection into a skill garden.\n\nA fedwiki item type (`starpath`) for walking the skill space. The path is per-browser (localStorage), ordered by tap order, and flows into the trust game: visualise → seal runtime → contribute constellation.\n\n1. Copy the plugin dir (`client/starpath.js` + `package.json`) into your wiki's    `node_modules/wiki-plugin-starpath/`. The code ships in this garden at    `site/plugins/wiki-plugin-starpath/`. 2. Register it: add `\"wiki-plugin-starpath\": \"0.1.0\"` to the **wiki package's own**    `package.json` dependencies — the server routes `/plugins/<name>/` from that list,    not from what sits in node_modules. 3. Restart the farm; verify `GET /plugins/starpath/starpath.js` returns 200.",
+  "body_ref": "assets/wiki-plugin-starpath/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "plugins",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/plugin/wiki-plugin-starpath/SKILL.md"
+  },
+  "hash": "ff566eaf1677ad3ea3c78fbe8c88e02d5e46b7dd048240e65307acaa129b2c77",
+  "published": "2026-08-24T13:15:01.360Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

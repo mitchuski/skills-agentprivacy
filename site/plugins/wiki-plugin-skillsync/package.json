@@ -1,0 +1,11 @@
+{
+  "name": "wiki-plugin-skillsync",
+  "version": "0.1.0",
+  "description": "Federated Wiki - skill sync panel: shows a site's skill catalog freshness, the newest packets, and what's new since your last visit.",
+  "keywords": ["wiki", "federated wiki", "plugin", "skills", "sync"],
+  "author": "mitch",
+  "license": "MIT",
+  "scripts": {
+    "about": "wiki -p 3010 -d . --security_legacy"
+  }
+}

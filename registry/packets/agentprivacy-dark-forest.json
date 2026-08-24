@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-dark-forest",
+  "kind": "skill",
+  "title": "Dark Forest",
+  "emoji": "",
+  "card": "Dark forest strategy and adversarial environment navigation for 0xagentprivacy. Activates when discussing R(d) strategic disclosure, information asymmetry, predator-prey dynamics in data markets, position-revealing risks, or how to navigate environments where visibility means vu…",
+  "brief": "Dark forest strategy and adversarial environment navigation for 0xagentprivacy. Activates when discussing R(d) strategic disclosure, information asymmetry, predator-prey dynamics in data markets, position-revealing risks, or how to navigate environments where visibility means vulnerability.\n\n**Source:** Privacy Value Model V4 + Dark Forest Economics + Bonfire Coordination   **Target context:** Dark forest theorists, MEV researchers, adversarial coordination designers, privacy pool architects, encrypted coordination protocols   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe Privacy Value Model's surveillance gap (17×–12,000× value differential) is not an abstract number. It describes a lived topology. The Dark Forest is what that topology feels like from the inside — the space where visibility means extraction, where The System harvests the 7th capital the moment it forms, and where the only sustainable strategy is selective visibility: seen by those who have earned the right to see, hidden from those who have not.",
+  "body_ref": "assets/agentprivacy-dark-forest/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-dark-forest/SKILL.md"
+  },
+  "hash": "a6938ab165b7f6d2b55381c1edfb2411508338d65042ac23f88b569a33cb8490",
+  "published": "2026-04-22T13:39:43.361Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

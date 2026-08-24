@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-skill-vs-library",
+  "kind": "skill",
+  "title": "Wiki Skill Vs Library",
+  "emoji": "",
+  "card": "The distinction between a prompt-based skill (probabilistic, judgment, slow) and an executable library (deterministic, fast, no LLM), and when to graduate a skill into a library. Activates when deciding skill-vs-code, designing an onboarding/automation pipeline, or judging wheth…",
+  "brief": "The distinction between a prompt-based skill (probabilistic, judgment, slow) and an executable library (deterministic, fast, no LLM), and when to graduate a skill into a library. Activates when deciding skill-vs-code, designing an onboarding/automation pipeline, or judging whether a task needs an LLM. An onboarding-judgment skill kept by the Librarian 🗃️.\n\nA **skill** is a text prompt — instructions, examples, and rules given to an LLM that shape how it behaves on a task. A **library** is executable code that runs directly, without LLM involvement. Both can accomplish the same outcome. The question of which to use, and when to graduate a skill into a library, is one of the core design decisions in an AI-augmented workflow.\n\nA skill file (like `~/.claude/skills/fedwiki-page/SKILL.md`) contains no executable code. It is loaded into the LLM's context window and shapes the model's next output. When Claude creates a wiki page using the fedwiki-page skill, it is:",
+  "body_ref": "assets/agentprivacy-wiki-skill-vs-library/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-skill-vs-library/SKILL.md"
+  },
+  "hash": "1bad990028dc612c0c232128a7ff806117bc2e16b5f99e1befbeb61c5ca297e6",
+  "published": "2026-06-21T14:53:46.492Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-new-domain",
+  "kind": "skill",
+  "title": "Wiki New Domain",
+  "emoji": "",
+  "card": "Create a new federated-wiki domain — either a local/private wiki (served on localhost) or a public Nextcloud-synced wiki. Activates when standing up a new wiki site/domain. Merges the new-wiki-skill variant. Kept by the Librarian 🗃️ in the Tower's Wikis.",
+  "brief": "Create a new federated-wiki domain — either a local/private wiki (served on localhost) or a public Nextcloud-synced wiki. Activates when standing up a new wiki site/domain. Merges the new-wiki-skill variant. Kept by the Librarian 🗃️ in the Tower's Wikis.\n\n> **Note:** the upstream page `fedwiki-new-wiki-skill` (and its earlier variant `new-wiki-skill`) was unreachable (HTTP 404) when this skill was materialized on 2026-06-21. This body is reconstructed from the sitemap synopsis and the cross-references in sibling skills (reindex, welcome, nextcloud-push). Refresh it with `agentprivacy-wiki-to-skill` once the upstream page resolves.\n\nThe `fedwiki-new-wiki` skill creates a new federated wiki **domain** — a fresh site with its own `pages/` and `status/` folders. A domain is either *local/private* (served on localhost, never synced off-machine) or *public* (synced to a remote server via Nextcloud).",
+  "body_ref": "assets/agentprivacy-wiki-new-domain/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-new-domain/SKILL.md"
+  },
+  "hash": "8a154f7b6604365e872527fe3ee83359ed50005b49a05de3fa801738819a03e2",
+  "published": "2026-06-21T14:53:46.488Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

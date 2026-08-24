@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "wiki-plugin-skillsync",
+  "kind": "plugin",
+  "title": "Wiki Plugin Skillsync",
+  "emoji": "",
+  "card": "Install and use the skillsync fedwiki plugin — a live panel any wiki page can carry showing a skill garden's catalog freshness, the newest packets, and what's new since this browser last visited. Point it at your own garden's catalog or at another farm's over the tailnet to watc…",
+  "brief": "Install and use the skillsync fedwiki plugin — a live panel any wiki page can carry showing a skill garden's catalog freshness, the newest packets, and what's new since this browser last visited. Point it at your own garden's catalog or at another farm's over the tailnet to watch their shelf from your page. Use when adding a skills panel to a fedwiki homepage, watching a sibling garden, or surfacing recent skill discoveries inside a wiki.\n\nA fedwiki item type (`skillsync`) — the garden's pulse on a wiki page: packet count, harvest date, newest packets in a window, and a highlight of everything new since this browser last looked (localStorage seen-set; degrades gracefully).\n\n1. Copy the plugin dir (`client/skillsync.js` + `package.json`) into your wiki's    `node_modules/wiki-plugin-skillsync/`. Code ships in this garden at    `site/plugins/wiki-plugin-skillsync/`. 2. Add `\"wiki-plugin-skillsync\": \"0.1.0\"` to the wiki package's own `package.json`    dependencies (the server routes plugins from that list). 3. Restart the farm; verify `GET /plugins/skillsync/skillsync.js` returns 200.",
+  "body_ref": "assets/wiki-plugin-skillsync/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "plugins",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/plugin/wiki-plugin-skillsync/SKILL.md"
+  },
+  "hash": "a3c72d3d3f4eb6a94f299a547e620313026b92d959ca864c88819aaf336ffd46",
+  "published": "2026-08-24T13:15:12.013Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

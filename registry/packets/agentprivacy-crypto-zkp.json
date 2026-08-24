@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-crypto-zkp",
+  "kind": "skill",
+  "title": "Crypto Zkp",
+  "emoji": "",
+  "card": "Zero-knowledge proof systems for 0xagentprivacy. Activates when discussing ZKP circuits (Groth16, PLONK, Nova), proof composition, Privacy Pool cryptography, reconstruction resistance R(d), h(τ) attestation chains, or sovereignty-class proof optimisation. Core cryptographic skil…",
+  "brief": "Zero-knowledge proof systems for 0xagentprivacy. Activates when discussing ZKP circuits (Groth16, PLONK, Nova), proof composition, Privacy Pool cryptography, reconstruction resistance R(d), h(τ) attestation chains, or sovereignty-class proof optimisation. Core cryptographic skill. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V4 Formal Specification (the Keeper, Feb 2026)   **Target context:** Zcash, NEAR, Privacy Pools, ZKP toolchains, hackathon evaluators   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nPrivacy-preserving infrastructure lacks an economic model. Builders optimise for proof efficiency and protocol security but cannot quantify the value their systems create versus surveillance alternatives. PVM-V4 provides that pricing function.",
+  "body_ref": "assets/agentprivacy-crypto-zkp/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-crypto-zkp/SKILL.md"
+  },
+  "hash": "42d93b477e0cbb89fb3466ad8cc5685ebef30595280f00c27789ea52d57dcd27",
+  "published": "2026-06-10T18:37:12.701Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

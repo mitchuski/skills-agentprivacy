@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-intel-pooling",
+  "kind": "skill",
+  "title": "Intel Pooling",
+  "emoji": "",
+  "card": "Collective intelligence sharing through privacy-preserving aggregation for 0xagentprivacy agent economies. Activates when designing knowledge sharing between agents without source disclosure, guild intelligence markets, privacy-preserving data contribution, or collective signal…",
+  "brief": "Collective intelligence sharing through privacy-preserving aggregation for 0xagentprivacy agent economies. Activates when designing knowledge sharing between agents without source disclosure, guild intelligence markets, privacy-preserving data contribution, or collective signal extraction from distributed observations. Triggers: \"intel pool\", \"collective intelligence\", \"knowledge sharing\", \"guild intelligence\", \"privacy-preserving aggregation\", \"shared signal\", \"data contribution without disclosure\". V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V4 + Network Topology + Delegation Theory **Target context:** Collective intelligence designers, privacy-preserving data markets, guild economy architects, federated learning researchers, agent coordination systems **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai",
+  "body_ref": "assets/agentprivacy-intel-pooling/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-intel-pooling/SKILL.md"
+  },
+  "hash": "222c6cf0eee4de43f94bfeec3306d4c80f70e2d49b82a1a6b6cc07c36e21801f",
+  "published": "2026-06-10T18:37:39.470Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

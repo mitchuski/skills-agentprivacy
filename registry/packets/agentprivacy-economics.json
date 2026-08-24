@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-economics",
+  "kind": "skill",
+  "title": "Economics",
+  "emoji": "",
+  "card": "Tokenomics and privacy economics for 0xagentprivacy. Activates when discussing SWORD/MAGE token pairs, emission curves, staking mechanisms, guild economics, Privacy Pool financial instruments, or the economic models underlying the sovereignty architecture. V6 register note (2026…",
+  "brief": "Tokenomics and privacy economics for 0xagentprivacy. Activates when discussing SWORD/MAGE token pairs, emission curves, staking mechanisms, guild economics, Privacy Pool financial instruments, or the economic models underlying the sovereignty architecture. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V4 Formal Specification (the Keeper, Feb 2026)   **Target context:** Behavioral economics, tokenomics, DeFi protocol design, data markets, digital asset valuation   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nBehavioural data is the 7th capital — after financial, manufactured, natural, social, human, and intellectual. It currently accrues almost entirely to platforms through extraction. PVM-V4 provides a pricing function that shows sovereign ownership of this capital generates 17×–12,000× more value than the extraction model. The model is not arguing privacy is morally preferable. It is arguing that…",
+  "body_ref": "assets/agentprivacy-economics/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-economics/SKILL.md"
+  },
+  "hash": "dd7e8d52ba17ee1355dd4a0ce712dabd60c409e7bf0b49491fc8a6d9f751d614",
+  "published": "2026-06-10T18:37:29.387Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

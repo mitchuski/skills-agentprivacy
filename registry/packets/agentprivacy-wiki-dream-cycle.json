@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-dream-cycle",
+  "kind": "skill",
+  "title": "Wiki Dream Cycle",
+  "emoji": "",
+  "card": "The standing research loop that keeps the static guide rebound to the source. Each relevant /mitch repo \"dreams\" about itself — a deep multi-lap pass that diffs the repo's canon against the live FedWiki, writes a standing `chronicles/DREAM-<date>.md` (its resumable work-ledger),…",
+  "brief": "The standing research loop that keeps the static guide rebound to the source. Each relevant /mitch repo \"dreams\" about itself — a deep multi-lap pass that diffs the repo's canon against the live FedWiki, writes a standing `chronicles/DREAM-<date>.md` (its resumable work-ledger), and feeds a single confirm-able GATE document. The First Person ticks the GATE; builders write the approved canon into ~/.wiki; the snapshot publishes it. Activates when planning what to fill into the guide next, running a daily research cycle, fanning out per-directory gap analysis, or turning \"what's missing\" into ordered next actions. Four stages — RESEARCH → GATE → BUILD → SNAPSHOT — looped until comfortable to push. Authored by the Chronicler 🧙📖, kept by the Librarian 🗃️.\n\nThe **dream cycle** is how the agentprivacy guide stays rebound to the universe across `/mitch`. Where `agentprivacy-wiki-resync` is the *per-turn* operation (\"I changed a repo → rebuild the wiki\"), the dream cycle is the *discovery* layer that runs *before* you know what to change: every current repo dreams about itself, surfaces its gaps, and proposes what to fill — and the First Person decides.",
+  "body_ref": "assets/agentprivacy-wiki-dream-cycle/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/.wiki/skill-fedwiki/assets/wiki-dream-cycle/SKILL.md"
+  },
+  "hash": "ef453aafa3406a918c9951f79a4c0add6999517b3283bb1a16e46061adf00495",
+  "published": "2026-06-29T12:54:20.597Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

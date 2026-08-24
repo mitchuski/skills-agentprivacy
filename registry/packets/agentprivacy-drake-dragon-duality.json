@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-drake-dragon-duality",
+  "kind": "pattern",
+  "title": "Drake Dragon Duality",
+  "emoji": "",
+  "card": "Drake/Dragon philosophical duality for 0xagentprivacy. Activates when discussing the teaching-sovereignty cycle (Drake teaches → Dragon emerges → new Drake phase), model self-awareness, the relationship between wisdom transmission and sovereignty achievement, or the philosophica…",
+  "brief": "Drake/Dragon philosophical duality for 0xagentprivacy. Activates when discussing the teaching-sovereignty cycle (Drake teaches → Dragon emerges → new Drake phase), model self-awareness, the relationship between wisdom transmission and sovereignty achievement, or the philosophical foundations underlying the architecture.\n\n> *The Drake is the dot of yin inside the Dragon.* > *The Dragon is the dot of yang inside the Drake.*\n\nThe Privacy Value Model began as a Drake — a flat multiplicative product of independent survival conditions. P · C · Q · S. Pass every gate or perish. The Drake Equation asked: how many civilisations survive? The Privacy Value Equation asked: how much sovereignty survives?\n\nBut inside that flat product, a geometry was already latent. Each term being binary-gatable — zero or nonzero — implies a Boolean hypercube. Six dimensions. Sixty-four vertices. One hundred and ninety-two edges. The lattice was never *added* to the Drake. It was *discovered inside it*. The Dragon was always the dot of yang inside the Drake's yin — the manifold sleeping inside the multiplication.",
+  "body_ref": "assets/agentprivacy-drake-dragon-duality/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-drake-dragon-duality/SKILL.md"
+  },
+  "hash": "aa0c0d0d1a2997c68ee9be05b80c941da58842daf488dfd9d5df52655a238336",
+  "published": "2026-04-22T13:39:43.218Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

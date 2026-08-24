@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-threat-adversarial",
+  "kind": "skill",
+  "title": "Threat Adversarial",
+  "emoji": "",
+  "card": "Threat modelling and adversarial analysis for 0xagentprivacy. Activates when discussing R(t) adversarial bounds, attack surface analysis, red team methodologies, trusted setup attacks, side-channel vulnerabilities, the capability-indexed adversary (moving ceiling, attestation di…",
+  "brief": "Threat modelling and adversarial analysis for 0xagentprivacy. Activates when discussing R(t) adversarial bounds, attack surface analysis, red team methodologies, trusted setup attacks, side-channel vulnerabilities, the capability-indexed adversary (moving ceiling, attestation discounting, compositional leakage), or systematic approaches to finding privacy architecture weaknesses. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V6 + Zero Knowledge Spellbook (Tale 26: Vulnerability Codex) **Target context:** Security auditors, red teamers, academic peer reviewers, protocol analysts, penetration testers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai",
+  "body_ref": "assets/agentprivacy-threat-adversarial/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "6.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-threat-adversarial/SKILL.md"
+  },
+  "hash": "f0272208bd274f87b1db7ed88529201ca39649b7cf6c2e3da065468abafd6a99",
+  "published": "2026-06-10T19:41:08.368Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

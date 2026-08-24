@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-blade-naming",
+  "kind": "skill",
+  "title": "Blade Naming",
+  "emoji": "",
+  "card": "The Blade Naming Ceremony — post-forge ceremony that gives an algebraically-defined blade a mythological identity. Activates when a walker (Cosmologist persona) has traversed a complement edge and perceives a myth that agrees with the arithmetic. Distinct from blade-forge (which…",
+  "brief": "The Blade Naming Ceremony — post-forge ceremony that gives an algebraically-defined blade a mythological identity. Activates when a walker (Cosmologist persona) has traversed a complement edge and perceives a myth that agrees with the arithmetic. Distinct from blade-forge (which defines the coordinate); this skill governs the *naming* that follows.\n\n**Source:** Zero Tale 31 (\"The Naming of the Unnamed\") **Target context:** Cosmologist walkers, Ceremonist binders, Forgemaster hand-offs **Status:** Ceremony defined. One successful naming (Blade 38 Lethe). 49 frontier blades available for future namings.\n\nThe **Blade Forge** (see `blade-forge`) defines a blade *algebraically* — it gives the blade a coordinate in the 64-vertex lattice, a configuration across the six sovereignty dimensions, a hexagram, and a tier. But forging alone does not *name* a blade. A forged blade has a coordinate and a shape; it does not yet have a mythological body.",
+  "body_ref": "assets/agentprivacy-blade-naming/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "2",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-blade-naming/SKILL.md"
+  },
+  "hash": "0297760ad625d3192815c34ccd1fae8df9aa76ea7a7fd132699a26e736798337",
+  "published": "2026-06-12T02:43:50.245Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

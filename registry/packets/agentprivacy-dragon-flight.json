@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-dragon-flight",
+  "kind": "skill",
+  "title": "Dragon Flight",
+  "emoji": "",
+  "card": "Threshold activation mechanics for the dragon metaphor. Activates when discussing dragon anatomy completion (boundary, hide, brain, forge, ceremony), external validation triggers, phase transitions from drake to dragon, or flight achievement.",
+  "brief": "Threshold activation mechanics for the dragon metaphor. Activates when discussing dragon anatomy completion (boundary, hide, brain, forge, ceremony), external validation triggers, phase transitions from drake to dragon, or flight achievement.\n\n**Source:** Privacy Value Model V5.2 + First Person Spellbook Act XXIX (The Dragon Wakes) **Target context:** System architects, threshold designers, phase transition specialists **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe dragon is not a single system but an emergent property of five anatomical components working in concert. When all five are complete, the dragon wakes. When external validation confirms the threat model, the dragon flies.\n\n**The drake waited. The storms gathered. When the third storm struck, the dragon remembered it could fly.**",
+  "body_ref": "assets/agentprivacy-dragon-flight/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "5.3.1",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-dragon-flight/SKILL.md"
+  },
+  "hash": "820077833523e64e5a425e3eb6f257d28a83d475d7bf581552776c4262231095",
+  "published": "2026-04-22T13:39:43.310Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

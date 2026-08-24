@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "spellbook-ornaments",
+  "kind": "skill",
+  "title": "Spellbook Ornaments",
+  "emoji": "🪞🖼️",
+  "card": "Draw, extend, and render the engraving ornaments of the Privacymage Grimoire (Selene's Spellbook) — the nine glyphs, the two figure engravings, and the promise-theoretic sparkle field. Use when adding or editing a glyph/engraving, building the ornament proof sheet, or keeping ne…",
+  "brief": "Draw, extend, and render the engraving ornaments of the Privacymage Grimoire (Selene's Spellbook) — the nine glyphs, the two figure engravings, and the promise-theoretic sparkle field. Use when adding or editing a glyph/engraving, building the ornament proof sheet, or keeping new poem art in the same hand. The generator is ReportLab/Python; the visual canon is STYLE_GUIDE.md.\n\nThe local home of the *Selene's Spellbook* art generator — originally built as a **claude.ai artifact**, reconstructed here so the ornaments can be rendered, edited, and extended on this machine in step with the poems.\n\n> The work lives in two greys and the white of the page. Everything else is restraint.\n\n| Path | What | |---|---| | `~\\privacymage_book\\art\\chapbook_framework.py` | palette, weights, fonts, **`_sparkle_field`**, the 9 glyph functions | | `~\\privacymage_book\\art\\engravings.py` | the Mage + Crossed Swords figures, the envoi bird | | `~\\privacymage_book\\art\\build_ornament_proof.py` | the proof sheet (renders all implemented glyphs at 12/9/5.5 mm) | | `~\\privacymage_book\\art\\HANDOFF.md` | how to drop in the cloud-artifact code + EB Garamond | |…",
+  "body_ref": "assets/spellbook-ornaments/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "workbench",
+    "tier": "",
+    "version": "1.0.0",
+    "alignment": "",
+    "source_path": "~/.claude/skills/spellbook-ornaments/SKILL.md"
+  },
+  "hash": "39bc53e3e96b63ca5ad78dc002628255c426214d16f3a3f63de6709b35c33691",
+  "published": "2026-05-30T14:48:57.883Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

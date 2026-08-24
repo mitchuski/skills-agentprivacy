@@ -1,0 +1,10 @@
+# transient local state — never in the repo
+state/
+events/
+librarian/data/
+pii.local.json
+*.log
+node_modules/
+# local-machine specifics — templates are committed instead
+surveys/
+skillsync.config.json

@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-searching-plugins",
+  "kind": "skill",
+  "title": "Wiki Searching Plugins",
+  "emoji": "",
+  "card": "A strategy for finding a federated-wiki plugin — or proving one doesn't exist — across six cost-ordered channels (installed, local repos, farm search, npm, GitHub code search, catalog wikis). Activates when looking for a fedwiki plugin or confirming none exists. Kept by the Libr…",
+  "brief": "A strategy for finding a federated-wiki plugin — or proving one doesn't exist — across six cost-ordered channels (installed, local repos, farm search, npm, GitHub code search, catalog wikis). Activates when looking for a fedwiki plugin or confirming none exists. Kept by the Librarian 🗃️ in the Tower's Wikis.\n\nA strategy for finding federated wiki plugins — or proving one doesn't exist. The key principle: don't grep page files — the farm has proper indexes, so search them.\n\n1. **Installed plugins** — `ls` the wiki's `node_modules` for `wiki-plugin-*` 2. **Local repos** — `~/Code/wiki-plugins/` 3. **The farm's own knowledge** — the `wiki-search` CLI (below) 4. **npm** — the `wiki-plugin-{name}` convention plus description search 5. **GitHub** — repo search, then the decisive code search 6. **Plugin catalog wikis** — plugin.fedwiki.club, wiki.dbbs.co, wiki.ralfbarkow.ch sitemaps\n\n`~/bin/wiki-search` combines both farm indexes in one command:",
+  "body_ref": "assets/agentprivacy-wiki-searching-plugins/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-searching-plugins/SKILL.md"
+  },
+  "hash": "594853b7b3c0793d3c838e1240fdeb0ee0f6198d9338d48b9d62d8631849695c",
+  "published": "2026-06-21T14:53:46.490Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

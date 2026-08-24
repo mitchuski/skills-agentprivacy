@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-resync",
+  "kind": "skill",
+  "title": "Wiki Resync",
+  "emoji": "",
+  "card": "Operate the federated wiki on a research turn — lint it and auto-sync it in one command. `audit.js` reads every host and reports page counts, broken links, leak-scan, orphans, and cross-site refs (the LLM-Wiki \"lint\" op); `resync.js [area]` rebuilds the chosen sources, runs the…",
+  "brief": "Operate the federated wiki on a research turn — lint it and auto-sync it in one command. `audit.js` reads every host and reports page counts, broken links, leak-scan, orphans, and cross-site refs (the LLM-Wiki \"lint\" op); `resync.js [area]` rebuilds the chosen sources, runs the post-passes, audits, and publishes the result. Activates when re-syncing a site after a repo change, health-checking the federation, publishing the audit, or running the per-turn ingest→lint→publish cycle. Part of the git-less onboarding/distribution layer kept by the Librarian 🗃️ in the Tower's Wikis.\n\nThe **per-turn operation** of the agentprivacy federation (a governed LLM-Wiki — see `agentprivacy-wiki-llm-knowledge-base`). Two tools turn \"I changed a repo\" into \"the wiki is rebuilt, cross-linked, family-bound, linted, and the audit is published\" — in one command.\n\nRun order it encodes (so you never have to remember it):",
+  "body_ref": "assets/agentprivacy-wiki-resync/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-resync/SKILL.md"
+  },
+  "hash": "9d22653ed44ebf493794a50b0b9162b455b1985f7958ce19da37b57f56e28f0c",
+  "published": "2026-06-27T23:00:41.422Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

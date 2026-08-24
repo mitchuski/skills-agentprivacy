@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-delete-site",
+  "kind": "skill",
+  "title": "Wiki Delete Site",
+  "emoji": "",
+  "card": "Permanently remove a public federated-wiki domain — both the remote Nextcloud/WebDAV folder and the local ~/Nextcloud/fedwiki/{domain}/ folder. Activates when deleting or decommissioning a public wiki site. Destructive; checks pages/ is empty unless --force. Kept by the Libraria…",
+  "brief": "Permanently remove a public federated-wiki domain — both the remote Nextcloud/WebDAV folder and the local ~/Nextcloud/fedwiki/{domain}/ folder. Activates when deleting or decommissioning a public wiki site. Destructive; checks pages/ is empty unless --force. Kept by the Librarian 🗃️ in the Tower's Wikis.\n\n`fedwiki-delete-site` permanently removes a public federated wiki domain — both the remote folder on the Nextcloud/wiki server and the local `~/Nextcloud/fedwiki/{domain}/` folder. It uses WebDAV `DELETE` directly rather than relying on the Nextcloud sync client, which can be slow or prompt for confirmation on large deletions.\n\nBy default the script checks that `pages/` is empty and exits with an error if any pages remain — use the merge skill's trash step first to clear them. To delete anyway:\n\n1. Checks `pages/` is empty (or `--force` skips this) 2. WebDAV `DELETE` on `fedwiki/{domain}/` — recursive, removes everything including `status/`, `recycler/`, and any remaining files 3. `rm -rf` the local domain folder",
+  "body_ref": "assets/agentprivacy-wiki-delete-site/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-delete-site/SKILL.md"
+  },
+  "hash": "c854dbb66277022a89503a91e1365b03b0f40911be8452700c0b81534f5a2d9f",
+  "published": "2026-06-21T14:53:46.486Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

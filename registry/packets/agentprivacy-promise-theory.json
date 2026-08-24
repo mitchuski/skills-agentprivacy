@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-promise-theory",
+  "kind": "skill",
+  "title": "Promise Theory",
+  "emoji": "",
+  "card": "Promise Theory foundations for 0xagentprivacy bilateral relationships. Activates when discussing polarity (±), cooperation semantics, conditional promises, VRC-as-promise architecture, or Jan Bergstra / Mark Burgess promise frameworks. Use when designing bilateral trust relation…",
+  "brief": "Promise Theory foundations for 0xagentprivacy bilateral relationships. Activates when discussing polarity (±), cooperation semantics, conditional promises, VRC-as-promise architecture, or Jan Bergstra / Mark Burgess promise frameworks. Use when designing bilateral trust relationships or consent infrastructure.\n\n**Source:** Privacy Value Model V4 + Bergstra & Burgess Promise Theory + Act XIII (Book of Promises)   **Target context:** Promise Theory researchers, distributed systems architects, voluntary cooperation modellers, autonomous agent protocol designers   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nPromise Theory (Bergstra & Burgess) provides the cooperation substrate beneath the Privacy Value Model. Where PVM-V4 quantifies the value of privacy-preserving architectures, Promise Theory explains why those architectures must be voluntary. The core principle: only autonomous agents can make promises. Promises reduce uncertainty. Impositions increase it. Cooperation emerges from aligned promises, never from forced compliance.",
+  "body_ref": "assets/agentprivacy-promise-theory/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-promise-theory/SKILL.md"
+  },
+  "hash": "592d8a2bc555db97ed4d0cbddd359c3d2863baa55f7abb3c20e96f002a2b2bec",
+  "published": "2026-04-22T13:39:43.321Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

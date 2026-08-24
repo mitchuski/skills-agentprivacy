@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-atlas-geometry",
+  "kind": "skill",
+  "title": "Atlas Geometry",
+  "emoji": "",
+  "card": "Atlas embeddings and exceptional Lie group geometry. Activates when discussing the 96-vertex Atlas, exceptional Lie groups (G₂, F₄, E₆, E₇, E₈), the Golden Seed Vector, connection to 96-edge holographic boundary, or higher geometric structures underlying the lattice.",
+  "brief": "Atlas embeddings and exceptional Lie group geometry. Activates when discussing the 96-vertex Atlas, exceptional Lie groups (G₂, F₄, E₆, E₇, E₈), the Golden Seed Vector, connection to 96-edge holographic boundary, or higher geometric structures underlying the lattice.\n\n**Source:** UOR Atlas-Embeddings + Privacy Value Model V5.2 + Holographic Bound **Target context:** Mathematical physicists, geometers, advanced protocol architects **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe Atlas is a 96-vertex graph arising from action functional stationarity in the UOR framework. Through categorical operations, it produces the five exceptional Lie groups (G₂, F₄, E₆, E₇, E₈). The connection to the 96-edge holographic boundary of the sovereignty lattice suggests deep geometric structure underlying privacy architecture.",
+  "body_ref": "assets/agentprivacy-atlas-geometry/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "5.2",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-atlas-geometry/SKILL.md"
+  },
+  "hash": "84f5552930b9578774b409d7e0538f5d90bdf3ecd3cd342af4f9921c7149573f",
+  "published": "2026-04-22T13:39:43.300Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

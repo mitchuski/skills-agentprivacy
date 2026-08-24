@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-lattice-coherence",
+  "kind": "pattern",
+  "title": "Lattice Coherence",
+  "emoji": "",
+  "card": "The canonical encoding of the 6-dimension sovereignty lattice and the discipline for keeping every repo in the suite agreeing on it. Activates when assigning or auditing a vertex, when a persona's vertex number and dimension-meaning seem to disagree, when reconciling the grimoir…",
+  "brief": "The canonical encoding of the 6-dimension sovereignty lattice and the discipline for keeping every repo in the suite agreeing on it. Activates when assigning or auditing a vertex, when a persona's vertex number and dimension-meaning seem to disagree, when reconciling the grimoire / spellweb / tomes / docs before a pin, when a new mage is seated, or when a vertex reading (binary, dimensions, stratum, complement) needs verification. Carries the standing rule: meaning is the invariant; the vertex is DERIVED from meaning under the canonical encoding. Ships a runnable coherence linter (`scripts/lattice_coherence_audit.py`).\n\n**The single source of truth for the sovereignty-lattice encoding, and the discipline that keeps the whole suite agreeing on it.**\n\n> \"Meaning is the invariant. The number is derived. Audit before you pin.\"\n\n**Spell:** `🛡️16·8·4·2·💎 → derive → verify → 🔒`\n\nThe lattice is `Z/(2⁶)Z` — 64 vertices, each a 6-bit reading of the six sovereignty dimensions. The **only** canonical bit→dimension mapping is the Privacy-Value-Model definition itself (`privacy-value-model-v5.4.json` `sovereignty_dimensions` + `lattice-vertex.ts` `vertexToBits`):",
+  "body_ref": "assets/agentprivacy-lattice-coherence/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-lattice-coherence/SKILL.md"
+  },
+  "hash": "7aa012144e01fa461a8b38481a8721c948ba3f7c68d108466dc00e4d48531a32",
+  "published": "2026-06-09T15:00:21.512Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

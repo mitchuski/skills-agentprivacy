@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-see-section",
+  "kind": "skill",
+  "title": "Wiki See Section",
+  "emoji": "",
+  "card": "Writing or tidying the `## See` section of a federated wiki page — grouping related wikilinks together on compact lines rather than one link per bullet. Part of the git-less onboarding/distribution layer kept by the Librarian 🗃️ in the Tower's Wikis.",
+  "brief": "Writing or tidying the `## See` section of a federated wiki page — grouping related wikilinks together on compact lines rather than one link per bullet. Part of the git-less onboarding/distribution layer kept by the Librarian 🗃️ in the Tower's Wikis.\n\nThe **fedwiki-see-section** skill — Write or tidy the `## See` section of a federated wiki page. Groups related wikilinks together on compact lines rather than one link per bullet.\n\nUse when the user says \"tidy the see section\", \"compact the see links\", \"group the see section\", or when writing a new page and choosing how to format its See section.\n\n- The Pattern - Grouping Strategy - Example - Full item JSON - When Writing a New Page\n\n- Claude Skills and Fedwiki Document Skill - Claude Import Skill\n\n**Upstream:** [`fedwiki-seesection-skill`](https://skill.fedwiki.club/view/welcome-visitors/view/fedwiki-seesection-skill) — vendored + re-framed (owner: Anon / 'from marvin', skill.fedwiki.club). The wiki page remains the source of truth; this SKILL.md is a fork carrying its lineage.",
+  "body_ref": "assets/agentprivacy-wiki-see-section/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-see-section/SKILL.md"
+  },
+  "hash": "c1d145d561fffbc5df6eda0159842238f88d7659276b54465dcc58bac093f14c",
+  "published": "2026-06-27T13:51:43.042Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

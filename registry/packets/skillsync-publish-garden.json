@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "skillsync-publish-garden",
+  "kind": "skill",
+  "title": "Skillsync Publish Garden",
+  "emoji": "",
+  "card": "Stand up your own skill garden and join the Skill Sync network — package your skills as neutral packets (card / brief / body), publish a skillsync catalog on your site or fedwiki farm, and get onto the roster so dream loops discover you and marvin announces your work. Use when a…",
+  "brief": "Stand up your own skill garden and join the Skill Sync network — package your skills as neutral packets (card / brief / body), publish a skillsync catalog on your site or fedwiki farm, and get onto the roster so dream loops discover you and marvin announces your work. Use when a member says \"publish my skills\", \"join skill sync\", \"set up my garden\", \"make my skills discoverable\", or is bringing a new fedwiki farm universe of skills into the space.\n\nPublishing = putting a catalog where the roster can GET it. No registration, no push access, no account. Full protocol: SPEC.md in the skill sync home.\n\nOne skill/spell/persona = one packet, three zoom levels: - `card` (≤280 chars, MANDATORY — it's what a discovery notification carries) - `brief` (≤1200 — enough to decide to load it) - full body as an asset (`assets/skillsync/<name>/SKILL.md`), sha256-hashed\n\nIf your skills are SKILL.md files, the reference harvester does this mechanically (`bin/harvest.js` — includes a leak scan and PII neutralization; run BOTH before anything ships. A packet that names you everywhere will follow you everywhere).",
+  "body_ref": "assets/skillsync-publish-garden/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "skillsync",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/skill/skillsync-publish-garden/SKILL.md"
+  },
+  "hash": "a4d25d0308d2943ecf178b5ef36ec94a79af1ddd8a1a12369773d3a024e33e41",
+  "published": "2026-08-24T13:08:58.810Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

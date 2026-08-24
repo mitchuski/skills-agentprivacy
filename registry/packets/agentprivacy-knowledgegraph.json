@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-knowledgegraph",
+  "kind": "skill",
+  "title": "Knowledgegraph",
+  "emoji": "",
+  "card": "Complete entity-relationship knowledge graph for 0xagentprivacy. Activates when needing the full map of entities (persons, agents, VRCs, guilds, pools, ceremonies), their relationships, and query surfaces. Use as the canonical reference for how all system components connect. Con…",
+  "brief": "Complete entity-relationship knowledge graph for 0xagentprivacy. Activates when needing the full map of entities (persons, agents, VRCs, guilds, pools, ceremonies), their relationships, and query surfaces. Use as the canonical reference for how all system components connect. Contains the comprehensive entity registry. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V4 Formal Specification (the Keeper, Feb 2026)   **Target context:** Knowledge graph ingestion, trust graph systems, ontology alignment, entity-relationship overlap detection   **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nENTITY: Sovereignty_Lattice   TYPE: mathematical_structure   STRUCTURE: boolean_lattice({0,1}^6)   VERTICES: 64   EDGES_UNDIRECTED: 192   EDGES_DIRECTED: 384   STRATA: 7 (following Pascal's row: 1,6,15,20,15,6,1)   CONJECTURED_CORRESPONDENCE: UOR_Toroidal_Structure (unresolved: 96 vs 64 edges)",
+  "body_ref": "assets/agentprivacy-knowledgegraph/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-knowledgegraph/SKILL.md"
+  },
+  "hash": "e8ef0a3673483ae5043dcb4f57dc1c40a62c5bef7d75b94c5a28fc92de5e98bd",
+  "published": "2026-06-10T18:49:55.181Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

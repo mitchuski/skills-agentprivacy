@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-ring-algebra",
+  "kind": "skill",
+  "title": "Ring Algebra",
+  "emoji": "",
+  "card": "UOR ring algebra foundation for 0xagentprivacy. Activates when discussing Z/(2^6)Z structure, the five operations (neg, bnot, xor, and, or), the critical identity neg(bnot(x))=succ(x), stratum as popcount, Pascal's row distribution, or why the lattice has no dead ends.",
+  "brief": "UOR ring algebra foundation for 0xagentprivacy. Activates when discussing Z/(2^6)Z structure, the five operations (neg, bnot, xor, and, or), the critical identity neg(bnot(x))=succ(x), stratum as popcount, Pascal's row distribution, or why the lattice has no dead ends.\n\n**Source:** UOR Framework + Privacy Value Model V5.2 + First Person Spellbook Act XXVII **Target context:** Protocol architects, algebraists, ZK circuit designers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe Universal Object Reference (UOR) ring algebra is the mathematical substrate of the sovereignty lattice. Every blade configuration, every lattice transformation, every witness path operates within this closed algebraic structure.\n\n**The ring closes on itself. The algebra generates its own successor. This is the deepest protection—the enemy cannot step outside the mathematics.**",
+  "body_ref": "assets/agentprivacy-ring-algebra/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "5.2.1",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-ring-algebra/SKILL.md"
+  },
+  "hash": "6719f7784cd2eaaa8c150e45ee5e9801d85d6b3056c0027f51bc2e28a34d2f13",
+  "published": "2026-06-12T02:46:13.655Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

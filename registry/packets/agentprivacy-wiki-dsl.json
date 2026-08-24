@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-dsl",
+  "kind": "skill",
+  "title": "Wiki Dsl",
+  "emoji": "",
+  "card": "The line-oriented DSL convention for Federated Wiki plugin item text: the UPPERCASE first word is a command, lowercase is data, with an optional YAML-style colon. Read before writing or parsing plugin item text. Part of the git-less onboarding/distribution layer kept by the Libr…",
+  "brief": "The line-oriented DSL convention for Federated Wiki plugin item text: the UPPERCASE first word is a command, lowercase is data, with an optional YAML-style colon. Read before writing or parsing plugin item text. Part of the git-less onboarding/distribution layer kept by the Librarian 🗃️ in the Tower's Wikis.\n\n**Fedwiki DSL Skill** captures the line-oriented DSL convention for Federated Wiki plugin item text: the **UPPERCASE first word is a command**, lowercase is data, with an optional YAML-style colon. It lives at `~/.claude/skills/fedwiki-dsl/`. Read it before writing a plugin's text parser.\n\nWhen authoring or reviewing a plugin that parses its item `text`, when deciding how a plugin item should read, or on *\"wiki DSL\"*, *\"plugin markup\"*, *\"command keywords\"*, *\"capitalised command\"*, or *\"optional colon\"*.\n\nParse the item `text` **line by line**; the **first word** classifies the line:",
+  "body_ref": "assets/agentprivacy-wiki-dsl/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-dsl/SKILL.md"
+  },
+  "hash": "294943ddf1412b10dcba6b6c651e91a3fddd26eaaac6743b0cdb9dfa6e308789",
+  "published": "2026-06-27T13:51:43.039Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

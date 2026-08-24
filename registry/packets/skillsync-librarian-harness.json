@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "skillsync-librarian-harness",
+  "kind": "skill",
+  "title": "Skillsync Librarian Harness",
+  "emoji": "",
+  "card": "The librarian harness method — compress the right skills and constellations into a working artefact shaped for the item you are actually working on, load it into the dual-agent harness seats, and seal the walk as a constellation runtime when the work lands. Use when starting a s…",
+  "brief": "The librarian harness method — compress the right skills and constellations into a working artefact shaped for the item you are actually working on, load it into the dual-agent harness seats, and seal the walk as a constellation runtime when the work lands. Use when starting a substantial working item (\"set up the harness for this task\", \"compress a loadout for this job\", \"which skills does this work need\"), when a harness seat needs a context-window-sized brief instead of a corpus, or when closing a work item that should record which skills it flew.\n\nThe library is dense; the harness is hungry; the working item is specific. This method sits between them: **select → compress → seat → walk → seal**.\n\nRead the task, then pick the smallest set that covers it: - an existing constellation whose purpose matches (check `/constellations` and the   loadout decks first — walking a contributed one credits its author), or - a custom path: search the catalog by card text, order the skills the way the work   will actually flow. 3–7 skills; the harness punishes bloat.",
+  "body_ref": "assets/skillsync-librarian-harness/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "skillsync",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/skill/skillsync-librarian-harness/SKILL.md"
+  },
+  "hash": "b0ce6003861a36afcec14e4bf18badc5de2f6e6e09c02d1b6134406ad4e188de",
+  "published": "2026-08-24T13:12:14.404Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-toroidal-witness",
+  "kind": "skill",
+  "title": "Toroidal Witness",
+  "emoji": "",
+  "card": "Infinite witness space from toroidal topology. Activates when discussing cyclic paths through the lattice, unbounded witnesses, computational hardness from path enumeration, toroidal wrap, or why witness extraction is infeasible.",
+  "brief": "Infinite witness space from toroidal topology. Activates when discussing cyclic paths through the lattice, unbounded witnesses, computational hardness from path enumeration, toroidal wrap, or why witness extraction is infeasible.\n\n**Source:** UOR Framework + Privacy Value Model V5.2 + First Person Spellbook Act XXII **Target context:** Cryptographers, ZK researchers, topology-aware protocol designers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe sovereignty lattice has toroidal topology—edges that exit one face re-enter the opposite face. This creates cyclic paths through the lattice. Unlike a flat space where paths between points are finite, the torus allows infinite distinct paths. This property is the source of zero-knowledge soundness.\n\n**The torus wraps. The paths multiply. The witness space becomes infinite. And infinite witnesses cannot be enumerated.**",
+  "body_ref": "assets/agentprivacy-toroidal-witness/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.2",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-toroidal-witness/SKILL.md"
+  },
+  "hash": "d650da636fe849e6d7568bb347a9a9263438ce12755e4781b2e637cf134903c1",
+  "published": "2026-04-22T13:39:43.440Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

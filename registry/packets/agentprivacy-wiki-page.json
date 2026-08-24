@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-page",
+  "kind": "skill",
+  "title": "Wiki Page",
+  "emoji": "",
+  "card": "Authoring federated-wiki page JSON (story items, IDs, the create journal, and the reindex step) for the agentprivacy skill library. Activates when creating or editing fedwiki pages, publishing a skill to skill.fedwiki.club, or building page-json by hand. Part of the git-less onb…",
+  "brief": "Authoring federated-wiki page JSON (story items, IDs, the create journal, and the reindex step) for the agentprivacy skill library. Activates when creating or editing fedwiki pages, publishing a skill to skill.fedwiki.club, or building page-json by hand. Part of the git-less onboarding/distribution layer kept by the Librarian 🗃️ in the Tower's Wikis.\n\nThe **fedwiki-page** skill creates federated wiki page JSON files. Pages are stored as JSON files (no extension) in a wiki domain's `pages/` folder. This skill covers file locations, story item types, ID generation, journal format, and the reindex step.\n\nTwo separate wiki systems — write to the correct one:\n\n**Local/private wikis** (served on port 3000): ``` ~/Music/Guides/Private/{wiki-domain}/pages/{page-slug} ```\n\n**Public wikis** (synced via Nextcloud to remote server): ``` ~/Nextcloud/fedwiki/{wiki-domain}/pages/{page-slug} ```\n\nThe local server does NOT read from `~/Nextcloud/fedwiki/`. Page slug = title lowercased with spaces as hyphens.",
+  "body_ref": "assets/agentprivacy-wiki-page/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-page/SKILL.md"
+  },
+  "hash": "43830144aacc76a8d14121d6f6baeb73ae61c16b7e24728cac450ad377a5ffb9",
+  "published": "2026-06-21T14:53:46.489Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

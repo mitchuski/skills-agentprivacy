@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "wiki-to-pdf",
+  "kind": "skill",
+  "title": "Wiki To Pdf",
+  "emoji": "",
+  "card": "Pull FedWiki timeline pages and render formal executive-brief PDFs - one brief per timeline plus a combined dossier whose \"Unified Summary\" layer is built from the In-brief summaries. Use when turning the *.timeline.ide.earth subdomain wikis (or any same-shaped FedWiki answer pa…",
+  "brief": "Pull FedWiki timeline pages and render formal executive-brief PDFs - one brief per timeline plus a combined dossier whose \"Unified Summary\" layer is built from the In-brief summaries. Use when turning the *.timeline.ide.earth subdomain wikis (or any same-shaped FedWiki answer pages) into shareable, executive-style PDF documents.\n\nTurns the federated timeline wikis into formal PDF documents. Source of truth is the **live** `*.timeline.ide.earth` subdomains, read over public GET (no cookie needed).\n\nThe **Unified Summary** section is deliberate: it is the shared semantic core (each milestone compressed to its five answers) from which the detailed sections - and any community-specific retelling produced by the `understanding-compression` skill - expand.",
+  "body_ref": "assets/wiki-to-pdf/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "workbench",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/.claude/skills/wiki-to-pdf/SKILL.md"
+  },
+  "hash": "94d78393616e325ec94aa90a0003e18b61a4b70b6e8824f194d395daf5e5ae3b",
+  "published": "2026-06-28T13:46:02.811Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

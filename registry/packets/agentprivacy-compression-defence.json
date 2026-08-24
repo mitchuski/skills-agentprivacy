@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-compression-defence",
+  "kind": "skill",
+  "title": "Compression Defence",
+  "emoji": "",
+  "card": "Compression-as-defence principle for 0xagentprivacy V5. Activates when discussing BRAID 74× compression, R(d,compression) modifier, token reduction as attack surface reduction, the compression spectrum (7 layers), or why efficient inference is also private inference.",
+  "brief": "Compression-as-defence principle for 0xagentprivacy V5. Activates when discussing BRAID 74× compression, R(d,compression) modifier, token reduction as attack surface reduction, the compression spectrum (7 layers), or why efficient inference is also private inference.\n\n**Source:** Privacy Value Model V5 + First Person Spellbook Act XXIV (The Holographic Bound) **Target context:** AI system builders, privacy engineers, efficiency researchers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nBRAID demonstrated 74× inference compression while maintaining performance. This isn't just efficiency — it's a privacy property.\n\n**Every token not sent is a token that cannot be intercepted, reconstructed, or analysed.**\n\nCompression reduces the attack surface for inference-layer surveillance. The same techniques that make inference efficient also make it more private.",
+  "body_ref": "assets/agentprivacy-compression-defence/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "privacy-layer",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-compression-defence/SKILL.md"
+  },
+  "hash": "2111a14c450af109c1b2cb8a72235451a4a4348492f7af7585b9fdb578ae1322",
+  "published": "2026-06-09T17:21:10.788Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

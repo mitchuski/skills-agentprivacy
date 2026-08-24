@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-horizon-gate",
+  "kind": "pattern",
+  "title": "Horizon Gate",
+  "emoji": "",
+  "card": "The held-out-gate discipline: a claimed improvement is worth nothing until it survives an adversarial validation it cannot tune. Activates when accepting or rejecting a claimed optimization/fix/result, when designing a benchmark or acceptance gate, when a change \"looks cheaper\"…",
+  "brief": "The held-out-gate discipline: a claimed improvement is worth nothing until it survives an adversarial validation it cannot tune. Activates when accepting or rejecting a claimed optimization/fix/result, when designing a benchmark or acceptance gate, when a change \"looks cheaper\" on a probe, or when reasoning about whether an attestation can be trusted. Names the failure mode — the nonce-island mirage — and the bounded-change loop that earns trust. In the City of Mages this is Dokimé's 🪨 Ceremony of the 9024 Witnesses at the Horizon District.\n\n**A claim is worth nothing until it survives the witnesses it did not choose.**\n\n> \"The cheaper-looking claim that cannot face the witnesses it did not choose is not progress.\"\n\n**Spell:** `state-the-waste → smallest-fix → confirm-or-reject-with-metrics → assay(9024)`\n\nAn improvement validated only on a **self-chosen** probe is not knowledge — it is a guess that flattered its examiner. Trust requires a gate the claimant **cannot tune**: the test cases are derived from a hash of the claimant's own work (Fiat-Shamir), so they cannot be picked and cannot be charmed (C69). This generalises the City's witness-discipline: an attestation is only as…",
+  "body_ref": "assets/agentprivacy-horizon-gate/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-horizon-gate/SKILL.md"
+  },
+  "hash": "fa31b36e1c6c4561ebc04d9048e0d899c3a10188ae8b834ab67bce4b0bdbe502",
+  "published": "2026-06-09T17:24:09.205Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-attachment-architecture",
+  "kind": "pattern",
+  "title": "Attachment Architecture",
+  "emoji": "",
+  "card": "The three-layer model that binds primary personas to lattice vertices via named cast Mages. Activates when discussing how the 42 abstract personas inhabit the 64-vertex lattice, when naming new cast Mages in a city of mages, when explaining the difference between primary persona…",
+  "brief": "The three-layer model that binds primary personas to lattice vertices via named cast Mages. Activates when discussing how the 42 abstract personas inhabit the 64-vertex lattice, when naming new cast Mages in a city of mages, when explaining the difference between primary personas and cast instances, when distinguishing workshop / cross-shop / peripatetic / divergent attachment kinds, or when reasoning about complement-pair structure at the primary layer versus the attachment layer.\n\n**The three-layer model that binds primary personas to lattice vertices via named cast Mages.**\n\nThe agentprivacy corpus operates on three structurally distinct layers. Skill execution, persona naming, and grimoire authoring must respect the distinction. Conflating them is a common error — the most frequent being to treat a cast Mage as if she were a primary persona, and the second being to add a new primary persona when an existing one suffices.",
+  "body_ref": "assets/agentprivacy-attachment-architecture/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-attachment-architecture/SKILL.md"
+  },
+  "hash": "23829c6216c5baa3b8066702d056e037166cecdb1f367eca6642c3a2f524a5f1",
+  "published": "2026-06-21T14:53:46.503Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

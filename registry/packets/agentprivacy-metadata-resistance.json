@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-metadata-resistance",
+  "kind": "skill",
+  "title": "Metadata Resistance",
+  "emoji": "",
+  "card": "Traffic analysis resistance, timing obfuscation, and metadata stripping for 0xagentprivacy swordsman operations. Activates when designing defences against metadata correlation, implementing mixnet routing, padding strategies, timing decorrelation, or any protection that targets…",
+  "brief": "Traffic analysis resistance, timing obfuscation, and metadata stripping for 0xagentprivacy swordsman operations. Activates when designing defences against metadata correlation, implementing mixnet routing, padding strategies, timing decorrelation, or any protection that targets the signals AROUND encrypted content rather than the content itself. Triggers: \"metadata\", \"traffic analysis\", \"timing attack\", \"correlation\", \"mixnet\", \"padding\", \"network fingerprint\", \"side channel\", \"metadata leakage\". V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V4 + Dark Forest Strategy + Threat Adversarial Modelling **Target context:** Network privacy engineers, mixnet designers, traffic analysis researchers, browser privacy builders, anti-surveillance infrastructure architects **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai",
+  "body_ref": "assets/agentprivacy-metadata-resistance/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-metadata-resistance/SKILL.md"
+  },
+  "hash": "ac36c69e989f56a4363f3cc45b8c6b2fba69c800379ff703ddb68e24e0789120",
+  "published": "2026-06-10T18:43:17.402Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

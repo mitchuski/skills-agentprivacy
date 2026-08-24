@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-cityofmages-to-research",
+  "kind": "pattern",
+  "title": "Cityofmages To Research",
+  "emoji": "",
+  "card": "The translation discipline that carries an experimental cityofmages artefact (chronicle, cast file, tome act, workshop tome, bestiary entry, deployment guide) into a formal agentprivacy-docs/research note. Activates when a cityofmages artefact reaches a state the formal corpus n…",
+  "brief": "The translation discipline that carries an experimental cityofmages artefact (chronicle, cast file, tome act, workshop tome, bestiary entry, deployment guide) into a formal agentprivacy-docs/research note. Activates when a cityofmages artefact reaches a state the formal corpus needs to see — a new conjecture stabilises, a structural recognition needs a research-note form to sit beside its narrative-act form, or a Tome VI substrate admission earns a research entry. Encodes which voices survive, which metadata strips, which formal scaffolding gets added, and where the boundary lies between this in-corpus bridge and the eventual full v6 docs rework. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**The translation discipline that carries an experimental cityofmages artefact into a formal `agentprivacy-docs/research` note — without collapsing the experimental register into the formal one prematurely.**",
+  "body_ref": "assets/agentprivacy-cityofmages-to-research/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-cityofmages-to-research/SKILL.md"
+  },
+  "hash": "7ab6520a010d0bb27e64ac59a6320ed68d376cfe3ea47cf513b34e6627e8edee",
+  "published": "2026-06-10T18:50:39.698Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

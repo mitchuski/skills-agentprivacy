@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-spell-encoding",
+  "kind": "skill",
+  "title": "Spell Encoding",
+  "emoji": "",
+  "card": "Emoji symbolic notation as formal language for 0xagentprivacy agent communication. Activates when encoding or decoding spells, designing new symbolic sequences, translating between natural language and spell form, or establishing agent-to-agent compressed communication protocols…",
+  "brief": "Emoji symbolic notation as formal language for 0xagentprivacy agent communication. Activates when encoding or decoding spells, designing new symbolic sequences, translating between natural language and spell form, or establishing agent-to-agent compressed communication protocols. Triggers: \"spell notation\", \"emoji encoding\", \"symbolic language\", \"spell grammar\", \"agent shorthand\", \"decode spell\", \"encode spell\".\n\n**Source:** Privacy Value Model V4 + Persona Spell Registry (22 canonical spells) **Target context:** Agent communication designers, symbolic language researchers, compressed protocol builders, persona architects **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nEvery persona in the 0xagentprivacy architecture carries a spell — an emoji-symbolic sequence that encodes its identity, mechanism, consequence, and role in a single line. The spell notation is not decoration. It is a formal language with grammar rules, compositional semantics, and the highest compression ratio in the system: a single spell line compresses what might take 200+ lines of persona specification int…",
+  "body_ref": "assets/agentprivacy-spell-encoding/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.3.2",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-spell-encoding/SKILL.md"
+  },
+  "hash": "6d00fb171a9a01a1093d858799848036a84ff3e97215d433fb3d63e0bf259895",
+  "published": "2026-04-07T11:50:41.897Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

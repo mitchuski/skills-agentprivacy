@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-offline-check",
+  "kind": "skill",
+  "title": "Wiki Offline Check",
+  "emoji": "",
+  "card": "Reviewing a fedwiki plugin, FastAPI endpoint, script, or skill for Offline Edit Mode correctness — what breaks or misleads when wiki-local diverts the public domains to the local mirror. Part of the git-less onboarding/distribution layer kept by the Librarian 🗃️ in the Tower's…",
+  "brief": "Reviewing a fedwiki plugin, FastAPI endpoint, script, or skill for Offline Edit Mode correctness — what breaks or misleads when wiki-local diverts the public domains to the local mirror. Part of the git-less onboarding/distribution layer kept by the Librarian 🗃️ in the Tower's Wikis.\n\nThe **fedwiki-offline-check** skill — Review a fedwiki plugin, FastAPI endpoint, script, or skill for Offline Edit Mode correctness — what breaks or misleads when wiki-local diverts the public domains to the local mirror.\n\nUse when creating or changing any plugin/endpoint/script that touches a public wiki domain, the Nextcloud server, or remote indexes, or when the user asks \"does this work offline\", \"offline check\", or \"check offline implications\".\n\n- Detecting offline mode - The Checklist - Guard pattern (shell) - Reporting\n\n- Claude Skills and Fedwiki Document Skill - Claude Import Skill\n\n**Upstream:** [`fedwiki-offlinecheck-skill`](https://skill.fedwiki.club/view/welcome-visitors/view/fedwiki-offlinecheck-skill) — vendored + re-framed (owner: Anon / 'from marvin', skill.fedwiki.club). The wiki page remains the source of truth; this SKILL.md is a fork carrying its lineage.",
+  "body_ref": "assets/agentprivacy-wiki-offline-check/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-offline-check/SKILL.md"
+  },
+  "hash": "72f70b6fff767e7f9e279105d49f7a055cb8a8a2b2943c01fa2674b11f7aad3f",
+  "published": "2026-06-27T13:51:43.039Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

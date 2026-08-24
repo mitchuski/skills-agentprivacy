@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-guild-efficiency",
+  "kind": "skill",
+  "title": "Guild Efficiency",
+  "emoji": "",
+  "card": "Guild efficiency and shared-parent coordination for 0xagentprivacy V5. Activates when discussing G(guilds) network term, O(1) vs O(N²) scaling, shared reasoning libraries, guild coordination economics, or why some networks scale gracefully while others collapse.",
+  "brief": "Guild efficiency and shared-parent coordination for 0xagentprivacy V5. Activates when discussing G(guilds) network term, O(1) vs O(N²) scaling, shared reasoning libraries, guild coordination economics, or why some networks scale gracefully while others collapse.\n\n**Source:** Privacy Value Model V5 + First Person Spellbook Act XXIV (The Holographic Bound) **Target context:** Network architects, guild builders, coordination economists **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nV4's network term treated all coordination as O(N²) — each agent potentially interacting with every other. BRAID's shared-parent pattern shows this is wrong for structured collaboration.\n\n**Agents sharing a reasoning library from the same Generator don't need pairwise coordination.** They share a parent. The interaction cost drops from O(N²) to O(1) per guild member.",
+  "body_ref": "assets/agentprivacy-guild-efficiency/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-guild-efficiency/SKILL.md"
+  },
+  "hash": "b64de72fa512ba42503aa847d3b180d461e192550e7b37d6e5de9679cab13f40",
+  "published": "2026-04-22T13:39:43.386Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

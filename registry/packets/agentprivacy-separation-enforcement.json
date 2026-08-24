@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-separation-enforcement",
+  "kind": "skill",
+  "title": "Separation Enforcement",
+  "emoji": "",
+  "card": "Active maintenance of the dual-agent separation boundary Φ(Σ) for 0xagentprivacy architecture. Activates when designing the swordsman-mage boundary, verifying that signing and viewing capabilities remain orthogonal, detecting separation violations, or building the enforcement me…",
+  "brief": "Active maintenance of the dual-agent separation boundary Φ(Σ) for 0xagentprivacy architecture. Activates when designing the swordsman-mage boundary, verifying that signing and viewing capabilities remain orthogonal, detecting separation violations, or building the enforcement mechanisms that keep det(Σ) ≠ 0 — the mathematical guarantee that no single entity can both protect and project. Triggers: \"separation\", \"dual-agent boundary\", \"swordsman mage split\", \"Phi Sigma\", \"det Sigma\", \"signing viewing separation\", \"orthogonality\", \"information-theoretic bound\", \"separation violation\", \"gap enforcement\". V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n**Source:** Privacy Value Model V4 + Information-Theoretic Separation Proof + Dual-Agent Architecture **Target context:** Privacy architecture designers, dual-agent system builders, information-theoretic security researchers, separation verification engineers, sovereignty infrastructure architects **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https…",
+  "body_ref": "assets/agentprivacy-separation-enforcement/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "5.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-separation-enforcement/SKILL.md"
+  },
+  "hash": "ba42195f1a1ff70cde58a7693f633d405b6e4c59259c7d1a019d7ff33624761c",
+  "published": "2026-06-10T18:44:00.403Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

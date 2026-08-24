@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-similarity-plugin",
+  "kind": "skill",
+  "title": "Wiki Similarity Plugin",
+  "emoji": "",
+  "card": "The wiki-plugin-similarity package — adds semantic similarity search to a fedwiki farm via two item types (similarity search form, similar ambient panel) using in-browser cosine scoring over BGE embedding vectors. Activates when adding similarity/related-pages search to a fedwik…",
+  "brief": "The wiki-plugin-similarity package — adds semantic similarity search to a fedwiki farm via two item types (similarity search form, similar ambient panel) using in-browser cosine scoring over BGE embedding vectors. Activates when adding similarity/related-pages search to a fedwiki, or as a plugin scaffolding reference. Kept by the Librarian 🗃️.\n\nThis plugin adds semantic similarity search to a Federated Wiki farm. It ships two item types — **similarity** (an interactive search form) and **similar** (an ambient panel that automatically finds pages related to the one you are reading).\n\n- **GitHub**: `Hitchhikers-Guide-to-the-Galaxy/wiki-plugin-similarity` - **npm**: not yet published — install locally with `npm link` during development\n\nPages in the farm are pre-indexed as 384-dimensional embedding vectors using `BAAI/bge-small-en-v1.5` via the `fastembed` library. At query time the plugin loads these compact `semantic-vectors.json` index files directly in the browser and performs cosine similarity scoring in JavaScript — no round-trip to a remote search engine.",
+  "body_ref": "assets/agentprivacy-wiki-similarity-plugin/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-similarity-plugin/SKILL.md"
+  },
+  "hash": "f7f01ebe0cb237c19f8f37223ac26dbd24e3a90348ab9ae38e722d2096b321b1",
+  "published": "2026-06-21T14:53:46.491Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

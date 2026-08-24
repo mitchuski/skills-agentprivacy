@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-welcome",
+  "kind": "skill",
+  "title": "Wiki Welcome",
+  "emoji": "",
+  "card": "Create a welcome-visitors landing page for a federated-wiki domain — the fixed 10-item structure (intro with wikilinked concepts, people/topics lists, pod roster present-item). Activates after creating a new wiki, or when asked for a site landing/welcome page. Kept by the Librar…",
+  "brief": "Create a welcome-visitors landing page for a federated-wiki domain — the fixed 10-item structure (intro with wikilinked concepts, people/topics lists, pod roster present-item). Activates after creating a new wiki, or when asked for a site landing/welcome page. Kept by the Librarian 🗃️ in the Tower's Wikis.\n\nThe `fedwiki-create-welcome` skill creates a `welcome-visitors` page for any federated wiki domain. The welcome page is the site's landing page — it describes the site's purpose and links to key pages, people, and the pod roster.\n\nAfter creating a new wiki, the site has no landing page. Ask for a welcome page:\n\n> \"Create a welcome page for skill.fedwiki.club — it's a collection of Claude skills for manipulating federated wikis.\"\n\nAsk for the pod name and any key topic pages to link, then write the file to the correct location.\n\nThe welcome page follows a fixed 10-item structure:\n\n1. **Intro paragraph** — begins `Welcome to this [[Federated Wiki]] site.` with key concepts wikilinked 2. **Pages about us** — paragraph heading 3. **People list** — markdown bullet list of `[[Person Name]]` links 4. **Pages where we do and share** — paragraph heading 5. **Topics list** — markdown bu…",
+  "body_ref": "assets/agentprivacy-wiki-welcome/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "5.5",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-welcome/SKILL.md"
+  },
+  "hash": "4f982dbecab58ea04994f69a006579b0f953787e1407f1eabb01f52bc176a946",
+  "published": "2026-06-21T14:53:46.494Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

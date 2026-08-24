@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-data-dignity",
+  "kind": "skill",
+  "title": "Data Dignity",
+  "emoji": "",
+  "card": "Data dignity and the 7th capital thesis for 0xagentprivacy. Activates when discussing V(π,t) as wealth, behavioural data as the 7th form of capital, Jaron Lanier / RadicalxChange lineage, data ownership vs data access, or the economic case that privacy creates rather than constr…",
+  "brief": "Data dignity and the 7th capital thesis for 0xagentprivacy. Activates when discussing V(π,t) as wealth, behavioural data as the 7th form of capital, Jaron Lanier / RadicalxChange lineage, data ownership vs data access, or the economic case that privacy creates rather than constrains value.\n\n**Source:** Privacy Value Model V4 + Political Economy + Surveillance Capitalism Literature **Target context:** Political economists, data rights advocates, policy makers, attention economists, Web3 value theorists **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe *why* behind the entire architecture. PVM-V4 is a model. The dual-agent separation is a mechanism. But the motivation — the thing that makes the 2–3 year implementation window urgent — is an economic claim: behavioral data constitutes a form of wealth (the \"seventh capital\") being systematically extracted by surveillance systems, and privacy-first architectures can create exponentially more value than surveillance alternatives.",
+  "body_ref": "assets/agentprivacy-data-dignity/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "4.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-data-dignity/SKILL.md"
+  },
+  "hash": "241dd50f877700b88ac6bd91baacf2dab1354da57e869c2ac49923c5e9ed3de9",
+  "published": "2026-04-22T13:39:43.363Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

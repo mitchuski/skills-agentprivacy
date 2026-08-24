@@ -1,0 +1,26 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-quaternion-mapping",
+  "kind": "skill",
+  "title": "Quaternion Mapping",
+  "emoji": "☀️🌍🌑👤",
+  "card": "Domain skill for four-body system analysis and mapping. Covers the Sun-Earth-Moon-Human quaternion, generator/generated relationships, and how two conflicting constraints produce two derived agents through different creation modes (impact vs process).",
+  "brief": "Domain skill for four-body system analysis and mapping. Covers the Sun-Earth-Moon-Human quaternion, generator/generated relationships, and how two conflicting constraints produce two derived agents through different creation modes (impact vs process).\n\n**☀️🌍🌑👤 Quaternion Mapping — Four Bodies, Two Dualities**\n\n> \"When two conflicting constraints find balance, they create from their orbit.\"\n\nThe quaternion is a **complete symmetry group** for privacy architecture:\n\n- **Two generators** (Sun, Earth) — the original duality - **Two generated** (Moon, Human) — the derived agents - **One gap** (⊥) — the irreducible separation\n\nThis skill enables mapping any dual-agent system to the quaternion structure and deriving architectural constraints from the mapping.\n\n| Body | Function | Mode | Privacy Role | |------|----------|------|--------------| | **Sun** | Protection | Constraint as incandescence | Burns so others can see | | **Earth** | Delegation | Agency as proliferation | Lives so others can serve |",
+  "body_ref": "assets/agentprivacy-quaternion-mapping/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "1",
+    "version": "5.3.2",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-quaternion-mapping/SKILL.md"
+  },
+  "hash": "8a5e0846cfedd784008b3b33e7f8e26f139fd71b55e93e5973fd95deb4919ee3",
+  "published": "2026-04-07T19:47:26.746Z",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}
