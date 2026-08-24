@@ -100,6 +100,15 @@ const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'catalog.json
     console.log('engine bridge: system/sitemap.json — ' + sitemap.length + ' page-stars for the improbable engine');
   } catch (e) { console.warn('engine bridge skipped (build the star chart first): ' + e.message); }
   fs.writeFileSync(path.join(SITE, '_headers'), '/*\n  Access-Control-Allow-Origin: *\n');
+  // favicon: the garden's star — night-sky tile, gold four-point star with sparks
+  // (drawn, not emoji text, so it renders identically everywhere at 16px)
+  fs.writeFileSync(path.join(SITE, 'favicon.svg'),
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">' +
+    '<rect width="32" height="32" rx="7" fill="#141a30"/>' +
+    '<path d="M16 4 L19 13 L28 16 L19 19 L16 28 L13 19 L4 16 L13 13 Z" fill="#e8c76a"/>' +
+    '<circle cx="25" cy="7" r="1.6" fill="#6ad0c8"/>' +
+    '<circle cx="7" cy="25" r="1.2" fill="#e8c76a" opacity=".8"/>' +
+    '</svg>');
   fs.writeFileSync(path.join(SITE, 'index.html'), page());
   console.log('site/: index.html + data/ + ' + fs.readdirSync(bodiesDst).length + ' skill bodies');
 
@@ -114,6 +123,7 @@ function page() {
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Skills of the Agentprivacy Universe</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta name="description" content="The skill garden: browse, search, adopt and walk the skills, personas, patterns and plugins of the agentprivacy universe — live over the community tailnet.">
 <style>
  :root{--ink:#232120;--paper:#f5f1e8;--card:#fffdf8;--line:#d8d2c4;--dim:#8a8375;--gold:#9a7b2d;--accent:#4a5d7e;--good:#2d6a4f;--warn:#a13a2f}
