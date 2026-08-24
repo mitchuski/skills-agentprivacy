@@ -1,13 +1,13 @@
 {
-  "updated": "2026-08-24T14:24:00.887Z",
+  "updated": "2026-08-24T14:27:01.451Z",
   "gardens": [
     {
       "member": "mitch",
       "url": "https://skills-agentprivacy.privacymage.workers.dev",
       "note": "the source garden — public face of the agentprivacy skill sync",
-      "verified": false,
-      "packets": 0,
-      "at": "2026-08-24T13:41:31.012Z",
+      "verified": true,
+      "packets": 193,
+      "at": "2026-08-24T14:27:00.793Z",
       "standing": "🌱 rooted"
     },
     {
