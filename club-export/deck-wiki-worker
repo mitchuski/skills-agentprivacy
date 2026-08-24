@@ -3,17 +3,17 @@
   "story": [
     {
       "type": "markdown",
-      "id": "0a060219a588dd8b",
+      "id": "d0d509d935a5428e",
       "text": "🗃️ **Deck Wiki Worker**\n\nEverything needed to build, sync, watch and publish in the FedWiki federation."
     },
     {
       "type": "markdown",
-      "id": "dcc5048abd63d07c",
+      "id": "32d486909eff9777",
       "text": "- [[Fedwiki Watch]]  — Observe external FedWiki / *.fish / fedwiki.club sites for changes and report what moved since last \n- [[Fedwiki Cohere Sync]]  — Sync per-session answer pages from a source-of-truth FedWiki out to milestone subdomains with a cohe\n- [[Fedwiki Transcribe]]  — Transcribe video/audio assets hosted on a FedWiki (Smallest Federated Wiki) page using local whisper\n- [[Tile From Page]]  — Read a FedWiki page's content, semantically choose a glyph + color + category for it, and write a `t\n- [[Wiki To Pdf]]  — Pull FedWiki timeline pages and render formal executive-brief PDFs - one brief per timeline plus a c\n- [[Understanding Compression]]  — Take a unified semantic core (e.g. the In-brief summaries from wiki-to-pdf) and re-express it for a "
     },
     {
       "type": "markdown",
-      "id": "d0d66e20156b1fa3",
+      "id": "77c63a3625a50333",
       "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 6 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
     }
   ],
@@ -25,22 +25,22 @@
         "story": [
           {
             "type": "markdown",
-            "id": "0a060219a588dd8b",
+            "id": "d0d509d935a5428e",
             "text": "🗃️ **Deck Wiki Worker**\n\nEverything needed to build, sync, watch and publish in the FedWiki federation."
           },
           {
             "type": "markdown",
-            "id": "dcc5048abd63d07c",
+            "id": "32d486909eff9777",
             "text": "- [[Fedwiki Watch]]  — Observe external FedWiki / *.fish / fedwiki.club sites for changes and report what moved since last \n- [[Fedwiki Cohere Sync]]  — Sync per-session answer pages from a source-of-truth FedWiki out to milestone subdomains with a cohe\n- [[Fedwiki Transcribe]]  — Transcribe video/audio assets hosted on a FedWiki (Smallest Federated Wiki) page using local whisper\n- [[Tile From Page]]  — Read a FedWiki page's content, semantically choose a glyph + color + category for it, and write a `t\n- [[Wiki To Pdf]]  — Pull FedWiki timeline pages and render formal executive-brief PDFs - one brief per timeline plus a c\n- [[Understanding Compression]]  — Take a unified semantic core (e.g. the In-brief summaries from wiki-to-pdf) and re-express it for a "
           },
           {
             "type": "markdown",
-            "id": "d0d66e20156b1fa3",
+            "id": "77c63a3625a50333",
             "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 6 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
           }
         ]
       },
-      "date": 1787582141800
+      "date": 1787586902494
     }
   ]
 }

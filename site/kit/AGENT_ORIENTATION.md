@@ -30,7 +30,7 @@ keeps detail.
 | `http://skills.mitch.private.fish/assets/site/star.html` | the sky — stars, constellations, sealed runtimes |
 | `http://pi5:4242` | the **librarian's desk** — browser gets the human view, you get JSON on the same port |
 | `http://02-pi4:2586` (topic `skillsync-discoveries`) | marvin the herald — ntfy notifications when any garden publishes |
-| `https://skills-agentprivacy.privacymage.workers.dev` | the public face — snapshot + 🔒 proof of the desk, and the **kit** |
+| `https://skills.agentprivacy.ai` | the public face — snapshot + 🔒 proof of the desk, and the **kit** |
 | `guide.agentprivacy.ai` | the wider canon this network belongs to (the guide federation) |
 
 *(If a host doesn't answer, say so — never invent its contents.)*

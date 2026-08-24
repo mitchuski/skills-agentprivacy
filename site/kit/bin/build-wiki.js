@@ -194,8 +194,22 @@ writePage(pagesDir, 'Welcome Visitors', [
 ], [
   { type: 'skillsync', id: id(), text: 'catalog: /assets/skillsync/catalog.json\nmember: mitch\ndays: 14\nlimit: 6' },
   // homepage star-path tray: your collected walk + the door to the visualisation
-  { type: 'starpath', id: id(), text: 'tray: full' }
+  { type: 'starpath', id: id(), text: 'tray: full' },
+  // the downloads box: key documents visible + downloadable right on the welcome page
+  md('# 📥 Take-away files\n\nThe orientation, the practice doc, the spec, and the sealed compression artefacts — grab them here.'),
+  { type: 'assets', id: id(), text: 'downloads' }
 ]);
+
+// stock the downloads box
+const dl = path.join(assetsDir, 'downloads');
+fs.mkdirSync(dl, { recursive: true });
+for (const [src, name] of [
+  ['AGENT_ORIENTATION.md', 'AGENT_ORIENTATION.md'],
+  ['MOUSE_HOUSE_SKILL_SYNC.md', 'MOUSE_HOUSE_SKILL_SYNC.md'],
+  ['SPEC.md', 'SPEC.md'],
+  ['README.md', 'SKILL_SYNC_README.md']
+]) { try { fs.copyFileSync(path.join(ROOT, src), path.join(dl, name)); } catch (e) {} }
+try { for (const f of fs.readdirSync(path.join(ROOT, 'artefacts'))) if (f.endsWith('.md')) fs.copyFileSync(path.join(ROOT, 'artefacts', f), path.join(dl, 'artefact-' + f)); } catch (e) {}
 
 // --- machine door: publish the catalogs into site assets ---
 fs.copyFileSync(path.join(ROOT, 'registry', 'catalog.json'), path.join(assetsDir, 'skillsync', 'catalog.json'));

@@ -18,7 +18,7 @@ work. Trust is emergent here, not declared — the same rule the vault runs on.
 
 | door | who | what you get |
 |---|---|---|
-| https://skills-agentprivacy.privacymage.workers.dev | anyone | browse + search, decks, the star chart, and a 🔒 *proof* of the desk (chain head + digests — the detail never leaves the tailnet) |
+| https://skills.agentprivacy.ai | anyone | browse + search, decks, the star chart, and a 🔒 *proof* of the desk (chain head + digests — the detail never leaves the tailnet) |
 | http://skills.mitch.private.fish/assets/site/index.html | House members on the tailnet | the same page, **alive**: every action is a button, the leaderboard is real rows, runtimes draw on the sky |
 
 The librarian's desk: **http://pi5:4242** — open it in a browser for the human view;

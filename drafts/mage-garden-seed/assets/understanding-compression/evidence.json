@@ -1,0 +1,12 @@
+{
+ "run": "understanding-compression",
+ "ran_at": "2026-08-24",
+ "target": "http://skillsync.localhost:3030/assets/site/index.html#understanding-compression",
+ "target_page_sha256": "ee1f8726c0e52fb11396ed24ed6881c91001abfa76c0d6f97eaf1dd647e57a1c",
+ "source_packet_body_hash": "8ae9b38952860c5b025603a61098193e6699bf7f6e0fcfdbd0db5ea87d49224f",
+ "cards_sha256": "6fc0085ef4450ba03b9d3e79bab550527342a09346ff2b05a47d13dc27585a20",
+ "cohere": {
+  "verdict": "COHERENCE OK - 1 cards, all axes present, round-trips close.",
+  "exit": 0
+ }
+}

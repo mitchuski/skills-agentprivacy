@@ -1,0 +1,39 @@
+[
+ {
+  "key": "understanding-compression-packet",
+  "title": "Understanding Compression (Skill Sync packet)",
+  "date": "2026-08-24",
+  "source": "http://skillsync.localhost:3030/assets/site/index.html#understanding-compression",
+  "source_packet_hash": "8ae9b38952860c5b025603a61098193e6699bf7f6e0fcfdbd0db5ea87d49224f",
+  "invariant_seed": "Skill Sync shelf packet 'understanding-compression' (skill, workbench, featured, published 2026-06-28): card + brief describing the compress/expand recursion",
+  "invariant": "One meaning can be told many ways to many communities and remain provably the same, because every telling must compress back to one invariant core, and that round-trip recompression check is the coherence test for meaning.",
+  "compressions": {
+   "maths": "For invariant I and tellings T_1..T_n (n>=2 communities): coherent iff compress(T_k) = I for all k; the shelf gate scores overlap(keyterms(compress(T_k)), keyterms(I)) >= 25%. The method fans I into exactly 3 compressions (maths, principles, actions) and 3 expansions (markets, plurality, intents).",
+   "principles": "A re-expression that cannot be compressed back to its source has drifted; round-trip recompression, not authorial intent, is what proves two tellings carry the same meaning.",
+   "actions": "Distill the source to one invariant sentence; write >=2 community tellings of it; compress one telling back and compare key terms to the invariant; ship only if they match, otherwise fix the telling or the invariant and repeat."
+  },
+  "expansions": {
+   "markets": "Every audience a project must convince (developers, funders, artists, institutions) is a separate market for the same claim; this method lets one team sell one truth into all of them without forking the message, and the recompression check is the audit that keeps marketing honest against the spec.",
+   "plurality": [
+    {
+     "community": "Developers",
+     "telling": "It is a lossy encoder with a verifier: encode the doc into audience-specific renderings, then decode each rendering back and diff the key terms against the invariant core. CI-style non-zero exit (the cohere gate) blocks the merge when a telling drifts below 25% term overlap."
+    },
+    {
+     "community": "Funders / institutions",
+     "telling": "When the pitch deck, the technical annex and the community post are all derived from one invariant claim and each is proven to compress back to it, what you were sold and what was built are checkably the same thing - message discipline you can audit."
+    },
+    {
+     "community": "Artists / storytellers",
+     "telling": "Many tellings of one myth stay the same myth only if each retelling, stripped of its costume, gives you back the same bones; this skill is the ritual of stripping the costume and checking the bones match before the story travels."
+    }
+   ],
+   "intents": "Let one truth travel to a plurality of communities without drifting in meaning, so that federated retelling (wikis, briefs, pitches, lore) scales trust instead of eroding it."
+  },
+  "recheck": {
+   "from": "plurality:Developers",
+   "recovered_invariant": "A meaning told many ways stays provably the same when every telling can be compressed (decoded) back to the one invariant core and the key terms match - the round-trip check gates coherence.",
+   "matches": true
+  }
+ }
+]
