@@ -31,7 +31,7 @@ if you're on a fedwiki (fork = countersignature; it's how adoption starts).
 
 ## 3. Register in the garden registry
 
-    POST http://pi5:4242/garden {"member":"you","url":"https://your.garden","note":"one line"}
+    POST http://pi5:4444/garden {"member":"you","url":"https://your.garden","note":"one line"}
 
 (or the 🌱 publish-your-garden button in the live garden UI). The librarian fetches
 your catalog at the door — verified gardens join every dream-loop pass automatically

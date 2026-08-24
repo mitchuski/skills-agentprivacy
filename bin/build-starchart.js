@@ -71,9 +71,9 @@ const edgeList = [...edges.values()].sort((x, y) => y.w - x.w).slice(0, 600);
 (async () => {
   let runtimes = [], contributed = [];
   try {
-    const r = await fetch('http://127.0.0.1:4242/runtimes', { signal: AbortSignal.timeout(3000) });
+    const r = await fetch('http://127.0.0.1:4444/runtimes', { signal: AbortSignal.timeout(3000) });
     if (r.ok) runtimes = await r.json();
-    const c = await fetch('http://127.0.0.1:4242/constellations', { signal: AbortSignal.timeout(3000) });
+    const c = await fetch('http://127.0.0.1:4444/constellations', { signal: AbortSignal.timeout(3000) });
     if (c.ok) contributed = await c.json();
   } catch (e) { /* librarian offline — chart ships without baked runtimes */ }
 
@@ -172,7 +172,7 @@ fetch('data/starchart.json').then(r=>r.json()).then(d=>{
    S.appendChild(ring);
    let r0=s.m*3.2,t=0;const pulse=setInterval(()=>{t++;ring.setAttribute('r',r0+Math.sin(t/6)*3);if(t>120){clearInterval(pulse);ring.remove();}},50);}}
  // live contributed constellations + runtimes when on the tailnet
- fetch('http://pi5:4242/constellations',{signal:AbortSignal.timeout(2500)}).then(r=>r.json()).then(cs=>{
+ fetch('http://pi5:4444/constellations',{signal:AbortSignal.timeout(2500)}).then(r=>r.json()).then(cs=>{
   let added=false;
   for(const c of cs){if(!D.constellations.some(x=>x.name===c.name)){D.constellations.push({name:c.name,emoji:c.emoji||'\u{2B50}',path:c.path,kind:'contributed',member:c.member,purpose:c.purpose});added=true;}}
   if(added)draw();
@@ -218,7 +218,7 @@ function draw(){
   document.getElementById('rtlist').innerHTML='<div class="rt">\u{1F512} <b>'+D.runtimesProof.count+' runtimes sealed</b> at the desk — the walks themselves live on the tailnet</div>';
  }
  // live runtimes when on the tailnet
- fetch('http://pi5:4242/runtimes',{signal:AbortSignal.timeout(2500)}).then(r=>r.json()).then(rs=>{
+ fetch('http://pi5:4444/runtimes',{signal:AbortSignal.timeout(2500)}).then(r=>r.json()).then(rs=>{
   if(rs.length)document.getElementById('rtlist').innerHTML=rs.slice(-8).reverse().map(r=>'<div class="rt"><b>'+r.member+'</b> walked <b>'+r.constellation+'</b> ('+r.path.length+' skills) \u{1F517}live'+(r.run?'<br>'+r.run:'')+'</div>').join('');
  }).catch(()=>{});
  function figure(){

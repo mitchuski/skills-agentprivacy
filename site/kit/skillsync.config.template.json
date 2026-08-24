@@ -42,13 +42,14 @@
     }
   ],
   "marvin": {
-    "host": "02-pi4",
-    "ntfy": "http://02-pi4:2586",
-    "topic": "skillsync-discoveries"
+    "host": "pi5",
+    "ntfy": "http://pi5:4280",
+    "topic": "skillsync-discoveries",
+    "note": "system ntfy, deny-all auth — token in ntfy.local.json (gitignored)"
   },
   "librarian": {
     "host": "pi5",
-    "url": "http://pi5:4242"
+    "url": "http://pi5:4444"
   },
   "leak_patterns": [
     "BEGIN [A-Z ]*PRIVATE KEY",

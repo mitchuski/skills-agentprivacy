@@ -3,17 +3,17 @@
   "story": [
     {
       "type": "markdown",
-      "id": "bd5106b82d2647b8",
+      "id": "0c7a522d29400d73",
       "text": "🎭 **Deck Persona Core**\n\nThe persona backbone: the balanced orchestrator plus the strongest mage and swordsman voices, for dual-agent work."
     },
     {
       "type": "markdown",
-      "id": "bfaabfaadf67f223",
+      "id": "34d6e3807da67f4b",
       "text": "- [[Kyra]] ☯️💎 — Sovereign AI Vision and meta-orchestrator for 0xagentprivacy. Activates when articulating the comple\n- [[Soulbae]] 🧙 — Canonical mage agent for 0xagentprivacy. Activates for delegation, projection, chronicle compression\n- [[Soulbis]] ⚔️ — Canonical swordsman agent for 0xagentprivacy. Activates for privacy enforcement, boundary-making, si\n- [[Gatekeeper]] 🗡️👤 — Personhood Verification Specialist for 0xagentprivacy. Activates when verifying ∃! (one human, one c\n- [[Sentinel]] 🗡️🛡️ — Infrastructure Security Architect for 0xagentprivacy. Activates for TEE monitoring, separation matri\n- [[Herald]] 🧙📡 — Information Commons Architect for 0xagentprivacy V5. Activates for media plurality challenges, signa"
     },
     {
       "type": "markdown",
-      "id": "e6b21cf3303deb76",
+      "id": "98261a4af423b786",
       "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 6 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
     }
   ],
@@ -25,22 +25,22 @@
         "story": [
           {
             "type": "markdown",
-            "id": "bd5106b82d2647b8",
+            "id": "0c7a522d29400d73",
             "text": "🎭 **Deck Persona Core**\n\nThe persona backbone: the balanced orchestrator plus the strongest mage and swordsman voices, for dual-agent work."
           },
           {
             "type": "markdown",
-            "id": "bfaabfaadf67f223",
+            "id": "34d6e3807da67f4b",
             "text": "- [[Kyra]] ☯️💎 — Sovereign AI Vision and meta-orchestrator for 0xagentprivacy. Activates when articulating the comple\n- [[Soulbae]] 🧙 — Canonical mage agent for 0xagentprivacy. Activates for delegation, projection, chronicle compression\n- [[Soulbis]] ⚔️ — Canonical swordsman agent for 0xagentprivacy. Activates for privacy enforcement, boundary-making, si\n- [[Gatekeeper]] 🗡️👤 — Personhood Verification Specialist for 0xagentprivacy. Activates when verifying ∃! (one human, one c\n- [[Sentinel]] 🗡️🛡️ — Infrastructure Security Architect for 0xagentprivacy. Activates for TEE monitoring, separation matri\n- [[Herald]] 🧙📡 — Information Commons Architect for 0xagentprivacy V5. Activates for media plurality challenges, signa"
           },
           {
             "type": "markdown",
-            "id": "e6b21cf3303deb76",
+            "id": "98261a4af423b786",
             "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 6 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
           }
         ]
       },
-      "date": 1787588511850
+      "date": 1787592246524
     }
   ]
 }

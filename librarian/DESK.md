@@ -42,7 +42,7 @@ Data is a directory of JSON-lines files it creates next to itself on first write
 ```bash
 mkdir -p ~/desk && cd ~/desk
 curl -fsSO http://<any-garden>/assets/site/kit/librarian/server.js
-node server.js 4242        # first face: open http://<pi>:4242/ in a browser
+node server.js 4444        # first face: open http://<pi>:4444/ in a browser
 ```
 
 ## 3. Host it (systemd, survives reboots)
@@ -53,7 +53,7 @@ sudo tee /etc/systemd/system/desk.service >/dev/null <<'UNIT'
 Description=The Librarian's Desk
 After=network.target
 [Service]
-ExecStart=/usr/bin/node %h/desk/server.js 4242
+ExecStart=/usr/bin/node %h/desk/server.js 4444
 WorkingDirectory=/home/YOU/desk
 Restart=on-failure
 User=YOU
@@ -61,7 +61,7 @@ User=YOU
 WantedBy=multi-user.target
 UNIT
 sudo systemctl enable --now desk
-curl http://localhost:4242/     # JSON face; add -H "Accept: text/html" for the desk
+curl http://localhost:4444/     # JSON face; add -H "Accept: text/html" for the desk
 ```
 
 Back up one thing: `desk/data/`. The ledger is the memory; everything else
@@ -73,13 +73,13 @@ The desk has **no logins**. The network boundary is the auth — so draw the
 boundary before you share the URL. Three ways, pick one:
 
 - **Bind to the tailnet interface** — start it with the pi's tailscale IP so the
-  LAN and WAN never see it: `node server.js 4242 100.x.y.z` (or firewall the port
+  LAN and WAN never see it: `node server.js 4444 100.x.y.z` (or firewall the port
   to `100.64.0.0/10`).
-- **`tailscale serve`** — `tailscale serve --bg --https=443 localhost:4242` gives
+- **`tailscale serve`** — `tailscale serve --bg --https=443 localhost:4444` gives
   the desk a tailnet-only HTTPS name with zero config.
 - **Front with Caddy** — if the pi already runs a Caddy embassy, wrap the route in
   a tailnet-only guard (the `remote_ip 100.64.0.0/10` handle-abort pattern) and
-  reverse-proxy to `:4242`.
+  reverse-proxy to `:4444`.
 
 Whichever door you choose, the result is the same trust shape: being on the
 tailnet **is** the login, and the chain records *who* (self-declared, attributed,
@@ -88,7 +88,7 @@ to be enough for a small network of people who can see each other.
 
 ## 5. The first-person loop (day one)
 
-1. Start the desk; open `http://<pi>:4242/` in a browser. Empty desk, valid chain.
+1. Start the desk; open `http://<pi>:4444/` in a browser. Empty desk, valid chain.
 2. Point your agents at it — any agent that can `curl` can speak every lane. Give
    them one rule: *always send your real member handle, and cite evidence hashes
    in `run` fields.*

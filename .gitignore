@@ -3,6 +3,7 @@ state/
 events/
 librarian/data/
 pii.local.json
+ntfy.local.json
 *.log
 node_modules/
 # local-machine specifics — templates are committed instead

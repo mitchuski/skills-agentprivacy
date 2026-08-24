@@ -43,7 +43,7 @@ sudo tee /etc/systemd/system/skillsync-librarian.service >/dev/null <<'UNIT'
 Description=Skill Sync librarian
 After=network.target
 [Service]
-ExecStart=/usr/bin/node /home/opn/skillsync-librarian/server.js 4242
+ExecStart=/usr/bin/node /home/opn/skillsync-librarian/server.js 4444
 WorkingDirectory=/home/opn/skillsync-librarian
 Restart=on-failure
 User=opn
@@ -51,11 +51,11 @@ User=opn
 WantedBy=multi-user.target
 UNIT
 sudo systemctl enable --now skillsync-librarian
-curl http://localhost:4242/    # smoke test
+curl http://localhost:4444/    # smoke test
 ```
 
-pi5 fronts :80/:443 with Caddy already; either open TCP 4242 to the tailnet, or add a
-Caddy route (`handle_path /librarian/* { reverse_proxy localhost:4242 }`) and change
+pi5 fronts :80/:443 with Caddy already; either open TCP 4444 to the tailnet, or add a
+Caddy route (`handle_path /librarian/* { reverse_proxy localhost:4444 }`) and change
 `librarian.url` in `skillsync.config.json` accordingly.
 
 Data lives in `~/skillsync-librarian/data/` — `ledger.jsonl` is the hash chain

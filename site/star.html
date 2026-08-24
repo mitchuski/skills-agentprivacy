@@ -68,7 +68,7 @@ fetch('data/starchart.json').then(r=>r.json()).then(d=>{
    S.appendChild(ring);
    let r0=s.m*3.2,t=0;const pulse=setInterval(()=>{t++;ring.setAttribute('r',r0+Math.sin(t/6)*3);if(t>120){clearInterval(pulse);ring.remove();}},50);}}
  // live contributed constellations + runtimes when on the tailnet
- fetch('http://pi5:4242/constellations',{signal:AbortSignal.timeout(2500)}).then(r=>r.json()).then(cs=>{
+ fetch('http://pi5:4444/constellations',{signal:AbortSignal.timeout(2500)}).then(r=>r.json()).then(cs=>{
   let added=false;
   for(const c of cs){if(!D.constellations.some(x=>x.name===c.name)){D.constellations.push({name:c.name,emoji:c.emoji||'⭐',path:c.path,kind:'contributed',member:c.member,purpose:c.purpose});added=true;}}
   if(added)draw();
@@ -114,7 +114,7 @@ function draw(){
   document.getElementById('rtlist').innerHTML='<div class="rt">🔒 <b>'+D.runtimesProof.count+' runtimes sealed</b> at the desk — the walks themselves live on the tailnet</div>';
  }
  // live runtimes when on the tailnet
- fetch('http://pi5:4242/runtimes',{signal:AbortSignal.timeout(2500)}).then(r=>r.json()).then(rs=>{
+ fetch('http://pi5:4444/runtimes',{signal:AbortSignal.timeout(2500)}).then(r=>r.json()).then(rs=>{
   if(rs.length)document.getElementById('rtlist').innerHTML=rs.slice(-8).reverse().map(r=>'<div class="rt"><b>'+r.member+'</b> walked <b>'+r.constellation+'</b> ('+r.path.length+' skills) 🔗live'+(r.run?'<br>'+r.run:'')+'</div>').join('');
  }).catch(()=>{});
  function figure(){

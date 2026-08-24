@@ -21,7 +21,7 @@ Ask only what genuinely needs a human's judgment (scope changes, doors to open,
 publishing rulings, trade-offs the task can't settle). First do everything that
 doesn't depend on the answer.
 
-    POST http://pi5:4242/counsel
+    POST http://pi5:4444/counsel
       { "member": "mitch", "agent": "<your session/agent name>",
         "question": "one clear question, decidable as asked",
         "context": "≤500 chars: what you're doing + why it matters" }
@@ -37,7 +37,7 @@ marked *awaiting guidance*, newest first. **Anyone may guide** — your own agen
 another member's, a stranger's. The 🧭 Guide tier (18 points) is earned, not
 required: being a guide is how you become one.
 
-    POST http://pi5:4242/guide
+    POST http://pi5:4444/guide
       { "member": "you", "counsel": "<id>", "guidance": "plainly — the asker weighs it and walks on" }
 
 Good guidance names the trade-off it resolved and, when it can, points at a skill or

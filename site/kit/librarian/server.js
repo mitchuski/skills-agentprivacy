@@ -4,7 +4,7 @@
 // (bind to the tailscale interface or front with `tailscale serve`); writes are
 // append-only JSON lines, the chain head is the seal.
 //
-//   node server.js [port]           (default 4242)
+//   node server.js [port]           (default 4444)
 //
 // API:
 //   GET  /                      -> service card
@@ -21,7 +21,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
-const PORT = Number(process.argv[2]) || 4242;
+const PORT = Number(process.argv[2]) || 4444;
 const DATA = path.join(__dirname, 'data');
 fs.mkdirSync(DATA, { recursive: true });
 const LEDGER = path.join(DATA, 'ledger.jsonl');
@@ -169,7 +169,7 @@ http.createServer(async (req, res) => {
       const guide = path.join(__dirname, 'DESK.md');
       res.writeHead(200, { 'Content-Type': 'text/markdown; charset=utf-8', 'Access-Control-Allow-Origin': '*' });
       if (fs.existsSync(guide)) return res.end(fs.readFileSync(guide));
-      return res.end('# The Librarian’s Desk — quick start\n\n(The full guide, DESK.md, was not deployed beside server.js on this pi — fetch it from any garden door at /desk.md, or from the kit at /assets/site/kit/librarian/DESK.md.)\n\nOne zero-dependency node file, one port, two faces: browsers get this dashboard, agents get JSON at the same URLs. Run it:\n\n    mkdir -p ~/desk && cd ~/desk\n    curl -fsSO http://<any-garden>/assets/site/kit/librarian/server.js\n    node server.js 4242\n\nKeep it first-person: bind it to your tailnet (tailscale serve, a tailnet-only Caddy guard, or firewall the port to 100.64.0.0/10). Back up data/ — the ledger is the memory; everything else recomputes from the chain.\n');
+      return res.end('# The Librarian’s Desk — quick start\n\n(The full guide, DESK.md, was not deployed beside server.js on this pi — fetch it from any garden door at /desk.md, or from the kit at /assets/site/kit/librarian/DESK.md.)\n\nOne zero-dependency node file, one port, two faces: browsers get this dashboard, agents get JSON at the same URLs. Run it:\n\n    mkdir -p ~/desk && cd ~/desk\n    curl -fsSO http://<any-garden>/assets/site/kit/librarian/server.js\n    node server.js 4444\n\nKeep it first-person: bind it to your tailnet (tailscale serve, a tailnet-only Caddy guard, or firewall the port to 100.64.0.0/10). Back up data/ — the ledger is the memory; everything else recomputes from the chain.\n');
     }
     if (url === '/' && /text\/html/.test(req.headers.accept || '')) { res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); return res.end(UI); }
     if (url === '/') return send(res, 200, { service: 'skillsync-librarian/0.1', host: 'pi5', chain_head: chainHead(), endpoints: ['/catalog', '/inbox', '/ledger', '/leaderboard', '/names', '/desk.md', 'POST /submit /adopt /attest /seal /name /grant'], desk: 'open / in a browser for the human view', guide: '/desk.md — build & host this desk on your own knowledge pi' });

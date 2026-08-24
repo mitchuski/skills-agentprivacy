@@ -22,7 +22,7 @@ really flown, not just drawn.
 
 ## Seal the walk (runtime)
 
-    POST http://pi5:4242/runtime {"member":"you", "constellation":"<name or 'unnamed'>",
+    POST http://pi5:4444/runtime {"member":"you", "constellation":"<name or 'unnamed'>",
                                   "path":["skill-a","skill-b",...], "run":"evidence ref"}
 
 Chain-sealed like every ledger entry — the walk evidence IS the credential (the same
@@ -33,7 +33,7 @@ Walking another member's contributed constellation scores THEM 5.
 
 When a path proved itself (you walked it more than once, or it teaches a real lane):
 
-    POST http://pi5:4242/constellation {"member":"you", "name":"<held-by-you>",
+    POST http://pi5:4444/constellation {"member":"you", "name":"<held-by-you>",
                                         "purpose":"one line: what this path is FOR",
                                         "path":[...]}
 

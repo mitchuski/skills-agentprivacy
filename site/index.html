@@ -111,7 +111,7 @@ const HTTPS=location.protocol==='https:';
 const TAILNET_SHELF='http://skills.mitch.private.fish';
 const onFarm=/skills[.]mitch[.]private[.]fish|skillsync[.]localhost/.test(location.host);
 const SHELF=onFarm?location.origin:TAILNET_SHELF;
-const LIBS=['http://pi5:4242','http://127.0.0.1:4242'];
+const LIBS=['http://pi5:4444','http://127.0.0.1:4444'];
 let LIVE=false,LIB=null,ALL=[],byName={},SLUGS={};
 const KEY='starpath-current',WHO='starpath-member'; // shared with wiki-plugin-starpath
 const loadPath=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'null')||{path:[]}}catch(e){return{path:[]}}};

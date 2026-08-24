@@ -28,7 +28,7 @@ async function allConstellations() {
     .map(f => JSON.parse(fs.readFileSync(path.join(ROOT, 'loadouts', f), 'utf8')))
     .map(d => ({ name: d.name, emoji: d.emoji, purpose: d.purpose, path: d.packets, member: cfg.member, kind: 'deck' }));
   let contributed = [];
-  for (const base of [cfg.librarian.url, 'http://127.0.0.1:4242']) {
+  for (const base of [cfg.librarian.url, 'http://127.0.0.1:4444']) {
     try {
       const r = await fetch(base + '/constellations', { signal: AbortSignal.timeout(3000) });
       if (r.ok) { contributed = (await r.json()).map(c => ({ ...c, kind: 'contributed' })); break; }

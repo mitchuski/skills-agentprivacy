@@ -17,6 +17,8 @@ const eventsFile = path.join(ROOT, 'events', 'events.jsonl');
 fs.mkdirSync(stateDir, { recursive: true });
 fs.mkdirSync(path.dirname(eventsFile), { recursive: true });
 const DRY = process.argv.includes('--dry');
+let NTFY_AUTH = null;
+try { NTFY_AUTH = 'Bearer ' + JSON.parse(fs.readFileSync(path.join(ROOT, 'ntfy.local.json'), 'utf8')).token; } catch (e) { /* unauthed server or token not minted yet */ }
 
 function get(url, timeoutMs) {
   return fetch(url, { signal: AbortSignal.timeout(timeoutMs || 8000), redirect: 'follow' })
@@ -47,7 +49,7 @@ function notify(event) {
   const title = (event.member + ' - ' + event.type.replace('-skill', ' skill') + ': ' + event.title).replace(/[^\x20-\x7E]/g, '?');
   return fetch(cfg.marvin.ntfy + '/' + cfg.marvin.topic, {
     method: 'POST',
-    headers: { Title: title, Priority: 'default', Tags: 'mage,sparkles' },
+    headers: Object.assign({ Title: title, Priority: 'default', Tags: 'mage,sparkles' }, NTFY_AUTH ? { Authorization: NTFY_AUTH } : {}),
     body: (event.card || '(no card)').slice(0, 500),
     signal: AbortSignal.timeout(6000)
   }).then(r => (r.ok ? 'sent' : 'http ' + r.status)).catch(e => 'unreachable (' + e.name + ')');

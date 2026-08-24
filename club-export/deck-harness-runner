@@ -3,17 +3,17 @@
   "story": [
     {
       "type": "markdown",
-      "id": "7d52c8cc3ba074d3",
+      "id": "a406a5cd95002d20",
       "text": "⚙️ **Deck Harness Runner**\n\nRunning the dual-agent harness and its meta patterns."
     },
     {
       "type": "markdown",
-      "id": "0e7e409afb632e1d",
+      "id": "e56378527def6d28",
       "text": "- [[Dual Agent Harness]]  — The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a s\n- [[Attachment Architecture]]  — The three-layer model that binds primary personas to lattice vertices via named cast Mages. Activate\n- [[Lattice Coherence]]  — The canonical encoding of the 6-dimension sovereignty lattice and the discipline for keeping every r\n- [[Horizon Gate]]  — The held-out-gate discipline: a claimed improvement is worth nothing until it survives an adversaria\n- [[Master Emissary]]  — Deep philosophical framework for 0xagentprivacy dual-agent architecture. Activates when discussing M"
     },
     {
       "type": "markdown",
-      "id": "ab7d8c829ce80860",
+      "id": "b193e6ac8a55bc98",
       "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 5 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
     }
   ],
@@ -25,22 +25,22 @@
         "story": [
           {
             "type": "markdown",
-            "id": "7d52c8cc3ba074d3",
+            "id": "a406a5cd95002d20",
             "text": "⚙️ **Deck Harness Runner**\n\nRunning the dual-agent harness and its meta patterns."
           },
           {
             "type": "markdown",
-            "id": "0e7e409afb632e1d",
+            "id": "e56378527def6d28",
             "text": "- [[Dual Agent Harness]]  — The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a s\n- [[Attachment Architecture]]  — The three-layer model that binds primary personas to lattice vertices via named cast Mages. Activate\n- [[Lattice Coherence]]  — The canonical encoding of the 6-dimension sovereignty lattice and the discipline for keeping every r\n- [[Horizon Gate]]  — The held-out-gate discipline: a claimed improvement is worth nothing until it survives an adversaria\n- [[Master Emissary]]  — Deep philosophical framework for 0xagentprivacy dual-agent architecture. Activates when discussing M"
           },
           {
             "type": "markdown",
-            "id": "ab7d8c829ce80860",
+            "id": "b193e6ac8a55bc98",
             "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 5 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
           }
         ]
       },
-      "date": 1787588511849
+      "date": 1787592246523
     }
   ]
 }

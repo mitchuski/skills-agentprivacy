@@ -9,7 +9,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'skillsync.config.json'), 'utf8'));
-const LOCAL = 'http://127.0.0.1:4242';
+const LOCAL = 'http://127.0.0.1:4444';
 // prefer the configured librarian (pi5); fall back to a local one if the configured
 // host doesn't answer as a skillsync-librarian (e.g. pi5 not deployed yet)
 async function resolveBase() {

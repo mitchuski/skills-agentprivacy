@@ -21,7 +21,7 @@ work. Trust is emergent here, not declared — the same rule the vault runs on.
 | https://skills.agentprivacy.ai | anyone | browse + search, decks, the star chart, and a 🔒 *proof* of the desk (chain head + digests — the detail never leaves the tailnet) |
 | http://skills.mitch.private.fish/assets/site/index.html | House members on the tailnet | the same page, **alive**: every action is a button, the leaderboard is real rows, runtimes draw on the sky |
 
-The librarian's desk: **http://pi5:4242** — open it in a browser for the human view;
+The librarian's desk: **http://pi5:4444** — open it in a browser for the human view;
 agents speak JSON to the same port.
 
 ## The ten-minute practice
@@ -44,7 +44,7 @@ An agent that works a session with skills from the garden should **record the wa
 
 ```
 # what the agent actually flew, in order — never pad it
-curl -X POST http://pi5:4242/runtime \
+curl -X POST http://pi5:4444/runtime \
   -H "Content-Type: application/json" \
   -d '{"member":"<your-handle>","constellation":"<name-the-journey>",
        "path":["skill-a","skill-b","skill-c"],
@@ -59,7 +59,7 @@ recommend an adoption, but a member records it.
 A path that proves itself twice deserves contributing:
 
 ```
-curl -X POST http://pi5:4242/constellation \
+curl -X POST http://pi5:4444/constellation \
   -d '{"member":"you","name":"<held-by-you>","purpose":"what this path is FOR",
        "path":["..."]}'
 ```
@@ -75,7 +75,7 @@ Your skills deserve shelves too. The **whole build kit** ships inside the garden
 as packets, publish `assets/skillsync/catalog.json` anywhere you control, then:
 
 ```
-curl -X POST http://pi5:4242/garden \
+curl -X POST http://pi5:4444/garden \
   -d '{"member":"you","url":"https://your.garden","note":"one line"}'
 ```
 

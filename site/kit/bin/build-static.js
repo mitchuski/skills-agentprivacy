@@ -32,7 +32,7 @@ fs.writeFileSync(path.join(SITE, 'data', 'decks.json'), JSON.stringify(decks, nu
 (async () => {
   let gardens = null;
   try {
-    const r = await fetch('http://127.0.0.1:4242/gardens', { signal: AbortSignal.timeout(3000) });
+    const r = await fetch('http://127.0.0.1:4444/gardens', { signal: AbortSignal.timeout(3000) });
     if (r.ok) gardens = await r.json();
   } catch (e) { /* desk closed */ }
   if (!gardens || !gardens.length) gardens = cfg.roster.map(m => ({ member: m.member, url: m.url, note: m.owner === 'self' ? 'the source garden' : '', standing: '', verified: false }));
@@ -56,7 +56,7 @@ const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'catalog.json
   } else {
     let board = [{ member: cat.member, published: cat.count, adopted_by_others: 0, attested: 0, points: cat.count, tier: 'seeding' }];
     try {
-      const r = await fetch('http://127.0.0.1:4242/leaderboard', { signal: AbortSignal.timeout(3000) });
+      const r = await fetch('http://127.0.0.1:4444/leaderboard', { signal: AbortSignal.timeout(3000) });
       if (r.ok) board = await r.json();
     } catch (e) { /* librarian not running locally — keep the seed */ }
     baked = { mode: 'detail', board };
@@ -252,7 +252,7 @@ const HTTPS=location.protocol==='https:';
 const TAILNET_SHELF='http://skills.mitch.private.fish';
 const onFarm=/skills[.]mitch[.]private[.]fish|skillsync[.]localhost/.test(location.host);
 const SHELF=onFarm?location.origin:TAILNET_SHELF;
-const LIBS=['http://pi5:4242','http://127.0.0.1:4242'];
+const LIBS=['http://pi5:4444','http://127.0.0.1:4444'];
 let LIVE=false,LIB=null,ALL=[],byName={},SLUGS={};
 const KEY='starpath-current',WHO='starpath-member'; // shared with wiki-plugin-starpath
 const loadPath=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'null')||{path:[]}}catch(e){return{path:[]}}};

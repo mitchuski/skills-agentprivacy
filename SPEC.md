@@ -143,7 +143,7 @@ shape as counsel — attributed, chain-sealed, answerable at the desk:
 
 ```json
 POST /name   { "member": "mage", "name": "mage", "zone": "private.fish",
-               "target": "farm site on the embassy :4242", "note": "why" }
+               "target": "farm site on the embassy :4444", "note": "why" }
         ->   { "ok": true, "id": "…", "fqdn": "mage.private.fish",
                "resolves": true, "address": "100.x.y.z" }
 POST /grant  { "member": "david", "request": "<id>", "status": "granted",

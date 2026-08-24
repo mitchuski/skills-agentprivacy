@@ -18,7 +18,7 @@ const canon = o => o === null || typeof o !== 'object' ? JSON.stringify(o)
 
 (async () => {
   let base = null;
-  for (const b of [cfg.librarian.url, 'http://127.0.0.1:4242']) {
+  for (const b of [cfg.librarian.url, 'http://127.0.0.1:4444']) {
     try { const j = await (await fetch(b + '/', { headers: { Accept: 'application/json' }, signal: AbortSignal.timeout(3000) })).json();
       if (String(j.service || '').startsWith('skillsync-librarian')) { base = b; break; } } catch (e) {}
   }
