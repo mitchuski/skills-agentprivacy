@@ -23,12 +23,33 @@
  #tip b{color:var(--gold)} #tip .k{color:var(--dim);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
  .cat-label{fill:var(--dim);font-size:13px;letter-spacing:.18em;opacity:.7}
  a{color:var(--teal)}
+ /* collapsible panel heads: tap the emoji/header to fold a panel to a chip */
+ #detail{bottom:1rem;right:1rem;max-width:320px;font-size:.85rem}
+ .hud-head{display:flex;align-items:center;gap:.45rem;cursor:pointer;user-select:none}
+ .hh-e{font-size:1.05rem}
+ .hh-t{color:var(--gold);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;flex:1}
+ .hh-c{color:var(--dim);transition:transform .2s}
+ .hud.min .hud-body{display:none}
+ .hud.min{padding:.4rem .6rem}
+ .hud.min .hh-t{display:none}
+ .hud.min .hh-c{transform:rotate(-90deg)}
+ .hud-body{margin-top:.4rem}
+ #title h1{display:none}
+ /* mobile: chips dock to the corners, panels scroll, detail becomes a bottom sheet */
+ @media (max-width:700px){
+  .hud{font-size:.8rem;max-width:82vw}
+  #title{top:.5rem;left:.5rem;max-width:88vw}
+  #cons{top:.5rem;right:.5rem;max-width:74vw;max-height:46vh}
+  #legend{bottom:.5rem;left:.5rem;max-width:60vw}
+  #detail{left:.5rem;right:.5rem;bottom:.5rem;max-width:none !important;max-height:44vh;overflow-y:auto}
+  #tip{display:none !important}
+ }
 </style></head><body>
 <svg id="chart" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet"></svg>
-<div class="hud" id="title"><h1>✨ THE SKILL STAR CHART</h1><p>every star a skill · lines are real relations (frontmatter kinship, body mentions, deck neighbours) · constellations are decks and recorded runtimes</p><p><a href="index.html">← the garden</a></p></div>
-<div class="hud" id="cons"><h2>Constellations</h2><div id="decklist"></div><h2 style="margin-top:.6rem">Runtimes</h2><div id="rtlist"><span style="color:var(--dim)">none recorded yet — an agent walks a path and records it at the Librarian:<br><code>POST /runtime {path:[...]}</code></span></div></div>
-<div class="hud" id="legend"><h2>Reading the sky</h2><div id="leg"></div><div style="color:var(--dim);margin-top:.3rem">brightness = kind (personas burn brightest) · drag to pan · wheel to zoom · hover a star for its card · <b>click a star to open its panel — collect it into your walk without leaving the sky</b></div></div>
-<div class="hud" id="detail" style="display:none;bottom:1rem;right:1rem;max-width:320px;font-size:.85rem"></div>
+<div class="hud" id="title"><div class="hud-head" data-p="title"><span class="hh-e">✨</span><span class="hh-t">THE SKILL STAR CHART</span><span class="hh-c">▾</span></div><div class="hud-body"><p>every star a skill · lines are real relations (frontmatter kinship, body mentions, deck neighbours) · constellations are decks and recorded runtimes</p><p><a href="index.html">← the garden</a></p></div></div>
+<div class="hud" id="cons"><div class="hud-head" data-p="cons"><span class="hh-e">🌌</span><span class="hh-t">Constellations</span><span class="hh-c">▾</span></div><div class="hud-body"><div id="decklist"></div><h2 style="margin-top:.6rem">Runtimes</h2><div id="rtlist"><span style="color:var(--dim)">none recorded yet — an agent walks a path and records it at the Librarian:<br><code>POST /runtime {path:[...]}</code></span></div></div></div>
+<div class="hud" id="legend"><div class="hud-head" data-p="legend"><span class="hh-e">🔭</span><span class="hh-t">Reading the sky</span><span class="hh-c">▾</span></div><div class="hud-body"><div id="leg"></div><div style="color:var(--dim);margin-top:.3rem">brightness = kind (personas burn brightest) · drag to pan · wheel or pinch to zoom · tap a star to open its panel — collect it into your walk without leaving the sky</div></div></div>
+<div class="hud" id="detail" style="display:none"></div>
 <div class="hud" id="tip"></div>
 <script>
 const S=document.getElementById('chart'),NS='http://www.w3.org/2000/svg';
@@ -158,9 +179,25 @@ function tip(s,ev){
 // pan/zoom
 let vb=[0,0,1000,1000],drag=null;
 const apply=()=>S.setAttribute('viewBox',vb.join(' '));apply();
-S.addEventListener('pointerdown',e=>{drag=[e.clientX,e.clientY,...vb]});
-addEventListener('pointerup',()=>drag=null);
-addEventListener('pointermove',e=>{if(!drag)return;const k=vb[2]/S.clientWidth;vb[0]=drag[2]-(e.clientX-drag[0])*k;vb[1]=drag[3]-(e.clientY-drag[1])*k;apply()});
+// pan (one pointer) + pinch zoom (two pointers) — phone-first
+const ptrs=new Map();
+S.addEventListener('pointerdown',e=>{ptrs.set(e.pointerId,[e.clientX,e.clientY]);if(ptrs.size===1)drag=[e.clientX,e.clientY,...vb];else drag=null;});
+addEventListener('pointerup',e=>{ptrs.delete(e.pointerId);drag=null;pinch=null;});
+let pinch=null;
+addEventListener('pointermove',e=>{
+ if(ptrs.has(e.pointerId))ptrs.set(e.pointerId,[e.clientX,e.clientY]);
+ if(ptrs.size===2){
+  const [a,b]=[...ptrs.values()];const d=Math.hypot(a[0]-b[0],a[1]-b[1]);
+  if(!pinch){pinch=[d,...vb];return;}
+  const f=pinch[0]/d;const cx=vb[0]+vb[2]/2,cy=vb[1]+vb[3]/2;
+  vb[2]=pinch[3]*f;vb[3]=pinch[4]*f;vb[0]=cx-vb[2]/2;vb[1]=cy-vb[3]/2;apply();return;
+ }
+ if(!drag)return;const k=vb[2]/S.clientWidth;vb[0]=drag[2]-(e.clientX-drag[0])*k;vb[1]=drag[3]-(e.clientY-drag[1])*k;apply()});
 S.addEventListener('wheel',e=>{e.preventDefault();const f=e.deltaY>0?1.12:.89;const mx=vb[0]+vb[2]*e.offsetX/S.clientWidth,my=vb[1]+vb[3]*e.offsetY/S.clientHeight;
  vb[2]*=f;vb[3]*=f;vb[0]=mx-(mx-vb[0])*f;vb[1]=my-(my-vb[1])*f;apply()},{passive:false});
+S.style.touchAction='none';
+// collapsible panels: tap a header (or its emoji) to fold to a chip; on small
+// screens the side panels start folded so the sky owns the viewport
+document.querySelectorAll('.hud-head').forEach(h=>h.addEventListener('click',()=>h.parentElement.classList.toggle('min')));
+if(matchMedia('(max-width:700px)').matches){['title','cons','legend'].forEach(id=>document.getElementById(id).classList.add('min'));}
 </script></body></html>
