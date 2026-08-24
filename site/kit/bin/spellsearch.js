@@ -19,7 +19,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'skillsync.config.json'), 'utf8'));
-const HOME = 'C:/Users/mitch';
+const HOME = require('os').homedir().split(require('path').sep).join('/');
 const JSON_ONLY = process.argv.includes('--json');
 const targets = process.argv.slice(2).filter(a => a !== '--json');
 

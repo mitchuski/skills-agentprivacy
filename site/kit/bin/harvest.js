@@ -77,6 +77,9 @@ function makeBrief(desc, body) {
   return clip(out, 1200);
 }
 
+const deckMembers = new Set();
+try { for (const f of fs.readdirSync(path.join(ROOT, 'loadouts'))) if (f.endsWith('.json')) JSON.parse(fs.readFileSync(path.join(ROOT, 'loadouts', f), 'utf8')).packets.forEach(n => deckMembers.add(n)); } catch (e) {}
+const archRes = (cfg.archive_patterns || []).map(p => new RegExp(p));
 const packets = [];
 const refused = [];
 
@@ -118,6 +121,7 @@ for (const src of cfg.sources) {
         },
         hash: crypto.createHash('sha256').update(pub).digest('hex'), // hash of the PUBLISHED body — peers can verify what they downloaded
         published: stat.mtime.toISOString(),
+        listing: archRes.some(re => re.test(name)) ? 'archive' : (deckMembers.has(name) ? 'featured' : 'listed'),
         requires: [],
         trust: { adoptions: 0, attested_runs: 0 }
       };

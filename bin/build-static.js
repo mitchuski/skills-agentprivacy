@@ -26,8 +26,17 @@ fs.copyFileSync(path.join(ROOT, 'registry', 'catalog-full.json'), path.join(SITE
 const decks = fs.readdirSync(path.join(ROOT, 'loadouts')).filter(f => f.endsWith('.json'))
   .map(f => JSON.parse(fs.readFileSync(path.join(ROOT, 'loadouts', f), 'utf8')));
 fs.writeFileSync(path.join(SITE, 'data', 'decks.json'), JSON.stringify(decks, null, 2));
-const gardens = cfg.roster.map(m => ({ member: m.member, url: m.url, owner: m.owner }));
-fs.writeFileSync(path.join(SITE, 'data', 'gardens.json'), JSON.stringify({ updated: new Date().toISOString(), gardens }, null, 2));
+// gardens: bake the PUBLIC REGISTRY from the librarian (standing rides the
+// leaderboard); fall back to the local dream-loop roster if the desk is closed
+(async () => {
+  let gardens = null;
+  try {
+    const r = await fetch('http://127.0.0.1:4242/gardens', { signal: AbortSignal.timeout(3000) });
+    if (r.ok) gardens = await r.json();
+  } catch (e) { /* desk closed */ }
+  if (!gardens || !gardens.length) gardens = cfg.roster.map(m => ({ member: m.member, url: m.url, note: m.owner === 'self' ? 'the source garden' : '', standing: '', verified: false }));
+  fs.writeFileSync(path.join(SITE, 'data', 'gardens.json'), JSON.stringify({ updated: new Date().toISOString(), gardens }, null, 2));
+})();
 
 // baked leaderboard: from the live librarian if reachable, else a publication seed
 const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'catalog.json'), 'utf8'));
@@ -44,6 +53,11 @@ const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'catalog.json
   const bodiesDst = path.join(SITE, 'assets');
   fs.rmSync(bodiesDst, { recursive: true, force: true });
   fs.cpSync(bodiesSrc, bodiesDst, { recursive: true });
+  // ...and the catalog at the SPEC path, so this site is itself a valid garden
+  // (any librarian can verify it, any dream loop can drink from it)
+  fs.mkdirSync(path.join(SITE, 'assets', 'skillsync'), { recursive: true });
+  fs.copyFileSync(path.join(ROOT, 'registry', 'catalog.json'), path.join(SITE, 'assets', 'skillsync', 'catalog.json'));
+  fs.copyFileSync(path.join(ROOT, 'registry', 'catalog-full.json'), path.join(SITE, 'assets', 'skillsync', 'catalog-full.json'));
 
   // ship the fedwiki plugins so other gardens can install the interfaces, not just read the content
   const plugSrc = path.join(ROOT, 'plugin');
@@ -64,6 +78,26 @@ const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'catalog.json
   cfgTemplate.member = '<your-handle>';
   cfgTemplate.sources = [{ root: '<path-to-your-skills>', dirs: ['.'], universe: '<your-universe>', kind_by_dir: { '.': 'skill' } }];
   fs.writeFileSync(path.join(kit, 'skillsync.config.template.json'), JSON.stringify(cfgTemplate, null, 2));
+  // ENGINE BRIDGE: serve a fedwiki-shaped sitemap so the guide's improbable engine
+  // (guide.agentprivacy.ai/star-chart) can seat this whole skill space as a remote
+  // site with one roster line — [{slug,title,date,links:{slug:count}}], links drawn
+  // from the star chart's real-relation edges. Plus _headers for permissive CORS
+  // (Workers static assets honour Pages-style _headers).
+  try {
+    const chart = JSON.parse(fs.readFileSync(path.join(SITE, 'data', 'starchart.json'), 'utf8'));
+    const slugOf = Object.fromEntries(chart.stars.map(s => [s.name, 'card-' + s.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')]));
+    const linkMap = {};
+    for (const e of chart.edges) {
+      (linkMap[e.a] = linkMap[e.a] || {})[slugOf[e.b]] = e.w;
+      (linkMap[e.b] = linkMap[e.b] || {})[slugOf[e.a]] = e.w;
+    }
+    const catFull = JSON.parse(fs.readFileSync(path.join(SITE, 'data', 'catalog.json'), 'utf8'));
+    const sitemap = catFull.packets.map(p => ({ slug: slugOf[p.name], title: p.title, date: Date.parse(p.published) || 0, links: linkMap[p.name] || {} }));
+    fs.mkdirSync(path.join(SITE, 'system'), { recursive: true });
+    fs.writeFileSync(path.join(SITE, 'system', 'sitemap.json'), JSON.stringify(sitemap));
+    console.log('engine bridge: system/sitemap.json — ' + sitemap.length + ' page-stars for the improbable engine');
+  } catch (e) { console.warn('engine bridge skipped (build the star chart first): ' + e.message); }
+  fs.writeFileSync(path.join(SITE, '_headers'), '/*\n  Access-Control-Allow-Origin: *\n');
   fs.writeFileSync(path.join(SITE, 'index.html'), page());
   console.log('site/: index.html + data/ + ' + fs.readdirSync(bodiesDst).length + ' skill bodies');
 
@@ -114,9 +148,16 @@ function page() {
  .note{color:var(--dim);font-size:.85rem}
  .ok{color:var(--good)} .warntx{color:var(--warn)}
  code{background:#eee9dd;padding:.05rem .3rem;border-radius:3px;font-size:.85em}
- .tray{background:var(--card);border:1px solid var(--gold);border-radius:8px;padding: .8rem 1rem}
  .tray ol{margin:.4rem 0;padding-left:1.4rem}.tray li{padding:.1rem 0}
  .sp-x{cursor:pointer;color:var(--warn);margin-right:.35rem}
+ /* the inventory: a game-style sidebar — badge on the right edge, panel slides out */
+ #invToggle{position:fixed;right:0;top:38%;z-index:40;font:inherit;font-size:1.05rem;background:var(--card);border:1px solid var(--gold);border-right:none;border-radius:8px 0 0 8px;padding:.5rem .6rem;cursor:pointer;box-shadow:-2px 2px 8px rgba(0,0,0,.12)}
+ #invToggle span{font-size:.78rem;font-variant-numeric:tabular-nums;color:var(--gold);margin-left:.2rem;font-weight:bold}
+ #invToggle.pulse{animation:invpulse .5s ease}
+ @keyframes invpulse{0%{transform:scale(1)}40%{transform:scale(1.18)}100%{transform:scale(1)}}
+ #inv{position:fixed;right:0;top:0;bottom:0;width:min(330px,88vw);z-index:39;background:var(--paper);border-left:1px solid var(--gold);box-shadow:-6px 0 18px rgba(0,0,0,.15);padding:1rem 1.1rem;overflow-y:auto;transform:translateX(105%);transition:transform .25s ease}
+ #inv.open{transform:translateX(0)}
+ #inv h2{border-bottom:1px solid var(--line);font-size:1rem;padding-bottom:.3rem}
  .counsel-q{border-left:3px solid var(--gold);background:var(--card);padding:.5rem .8rem;margin:.5rem 0;font-size:.9rem}
  .counsel-q.directed{border-left-color:var(--good)}
  .row{display:flex;gap:.5rem;flex-wrap:wrap;margin:.5rem 0}
@@ -131,13 +172,16 @@ function page() {
  <p class="tag">the skill garden — spells, personas, patterns and plugins of the City of Mages, live over the tailnet</p>
  <p><span id="net" class="badge">finding the doors…</span> &nbsp; <a class="badge" href="star.html">✨ star chart</a> &nbsp; <span id="desklink"></span> &nbsp; <span id="who"></span></p>
 </header>
-<main>
- <h2>⭐ Your star path</h2>
+<button id="invToggle" title="your star path inventory">⭐<span id="invCount">0</span></button>
+<aside id="inv">
+ <h2 style="margin-top:0">⭐ Star path — your inventory</h2>
  <div class="tray" id="tray"></div>
-
+</aside>
+<main>
  <h2>\u{1F4DA} Browse the garden</h2>
  <div class="controls">
   <input type="search" id="q" placeholder="search skills, spells, personas, plugins…" aria-label="search">
+  <select id="listing"><option value="curated">✨ curated</option><option value="">everything</option><option value="archive">archive</option></select>
   <select id="kind"><option value="">every kind</option></select>
   <select id="cat"><option value="">every category</option></select>
   <span id="count"></span>
@@ -159,7 +203,8 @@ function page() {
 
  <h2>\u{1F331} Gardens — the federated roster</h2>
  <div id="gardens"></div>
- <p class="note"><b>Add your garden:</b> publish <code>assets/skillsync/catalog.json</code> on your site (spec: card ≤280 · brief ≤1200 · sha256 body hash) and ask to join the roster. Nothing ever writes to your wiki. Fedwiki <b>plugins</b> ship at <code>plugins/</code> — install the interfaces, not just the content.</p>
+ <div class="row" id="gardenPub"></div>
+ <p class="note"><b>Publish your garden:</b> put <code>assets/skillsync/catalog.json</code> on your site (spec: card ≤280 · brief ≤1200 · sha256 body hash), then register it at the Librarian — <code>POST /garden</code> with your handle, url and a one-line note. The librarian fetches your catalog at the door (verified ✓), the entry is chain-sealed, and <b>your listing standing rides the leaderboard</b>: \u{1F330} seedling (0+) · \u{1F331} rooted (6+) · \u{1F333} grove (18+). Nothing ever writes to your wiki. Fedwiki <b>plugins</b> ship at <code>plugins/</code> — install the interfaces, not just the content.</p>
 
  <h2>\u{1F6AA} Doors</h2>
  <p class="note" id="doors"></p>
@@ -210,11 +255,21 @@ async function detect(){
 /* ===== catalog + cards with action buttons ===== */
 function pathHas(n){return loadPath().path.some(e=>e.skill===n);}
 function togglePath(n){const st=loadPath();const i=st.path.findIndex(e=>e.skill===n);
+ const adding=i===-1;
  if(i>-1)st.path.splice(i,1);else st.path.push({skill:n,at:new Date().toISOString(),page:'garden'});
- savePath(st);drawTray();drawGrid();}
+ savePath(st);drawTray();drawGrid();
+ // the inventory reacts: badge pulses, and collecting slides the sidebar open
+ const t=$('invToggle');t.classList.remove('pulse');void t.offsetWidth;t.classList.add('pulse');
+ if(adding)$('inv').classList.add('open');}
 function drawGrid(){
- const q=$('q').value.toLowerCase(),k=$('kind').value,c=$('cat').value;
- const hits=ALL.filter(p=>(!k||p.kind===k)&&(!c||p.origin.category===c)&&(!q||(p.name+' '+p.title+' '+p.card+' '+(p.brief||'')).toLowerCase().includes(q)));
+ const q=$('q').value.toLowerCase(),k=$('kind').value,c=$('cat').value,lv=$('listing').value;
+ // listing filter: curated = deck-featured skills (the shelf's own curation);
+ // everything = featured+listed; archive shows only what curation retired
+ const lvOk=p=>{const l=p.listing||'listed';
+  if(lv==='curated')return l==='featured';
+  if(lv==='archive')return l==='archive';
+  return l!=='archive';};
+ const hits=ALL.filter(p=>lvOk(p)&&(!k||p.kind===k)&&(!c||p.origin.category===c)&&(!q||(p.name+' '+p.title+' '+p.card+' '+(p.brief||'')).toLowerCase().includes(q)));
  $('count').textContent=hits.length+' / '+ALL.length;
  $('grid').innerHTML=hits.map(p=>{
   const inPath=pathHas(p.name);
@@ -247,6 +302,7 @@ $('grid').addEventListener('click',async e=>{
 /* ===== the tray (shared walk) ===== */
 function drawTray(){
  const st=loadPath();const n=st.path.length;
+ $('invCount').textContent=n;
  let h='<b>'+n+' star'+(n===1?'':'s')+' collected</b>';
  if(n)h+='<ol>'+st.path.map((e,i)=>'<li><span class="sp-x" data-i="'+i+'">×</span>'+esc(e.skill)+'</li>').join('')+'</ol>';
  else h+='<p class="note">Tap ☆ on any card below — or on the wiki shelf pages — to collect a walk. Same walk, both doors.</p>';
@@ -293,8 +349,30 @@ async function drawCounsel(){
  }catch(e){$('counsel').innerHTML='<p class="note">desk unreachable</p>';}
 }
 
+/* ===== gardens: the public registry, standing from the leaderboard ===== */
+function gardenRow(g){
+ return '<div class="garden"><span><b>'+esc(g.member)+'</b> '+esc(g.standing||'')+(g.verified?' <span class="ok" title="catalog fetched and valid at registration">✓ verified'+(g.packets?' · '+g.packets+' packets':'')+'</span>':' <span class="note">unverified</span>')+
+  (g.note?'<br><span class="note">'+esc(g.note)+'</span>':'')+'</span>'+
+  '<span><a href="'+esc(g.url)+'">'+esc(g.url)+'</a>'+(g.points!=null?' <span class="note">'+g.points+' pts · '+esc(g.tier||'')+'</span>':'')+'</span></div>';
+}
+async function drawGardens(){
+ let rows=null,live=false;
+ if(LIB){try{rows=await lib('/gardens');live=true;}catch(e){}}
+ if(!rows){try{rows=(await jget('data/gardens.json')).gardens;}catch(e){rows=[];}}
+ $('gardens').innerHTML=(rows.length?rows.map(gardenRow).join(''):'<p class="note">no gardens registered yet — be the first</p>')+(live?'':'<p class="note">snapshot — the live registry answers on the tailnet</p>');
+ if(LIB){$('gardenPub').innerHTML='<button class="abtn" id="pubGarden">\u{1F331} publish your garden</button>';
+  $('pubGarden').onclick=async()=>{const w=needMe();if(!w)return;
+   const url=(prompt('Your garden URL (serves assets/skillsync/catalog.json):','https://')||'').trim();if(!url)return;
+   const note=(prompt('One line about your garden:')||'').trim();
+   try{const j=await lib('/garden',{member:w,url:url,note:note});
+    alert(j.ok?(j.verified?'registered ✓ verified — '+j.packets+' packets found':'registered (unverified — catalog not reachable from the librarian; the dream loop will re-check)'):'error: '+(j.error||'?'));
+    drawGardens();}catch(e){alert('librarian unreachable');}};}
+}
+
 /* ===== boot ===== */
 (async()=>{
+ $('invToggle').onclick=()=>$('inv').classList.toggle('open');
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')$('inv').classList.remove('open');});
  drawWho();drawTray();
  await detect();
  if(!ALL.length){try{ALL=(await jget('data/catalog.json')).packets;}catch(e){ALL=[];}}
@@ -302,13 +380,14 @@ async function drawCounsel(){
  const kinds=[...new Set(ALL.map(p=>p.kind))],cats=[...new Set(ALL.map(p=>p.origin.category))].sort();
  $('kind').innerHTML+=kinds.map(k=>'<option>'+esc(k)+'</option>').join('');
  $('cat').innerHTML+=cats.map(c=>'<option>'+esc(c)+'</option>').join('');
- ['q','kind','cat'].forEach(id=>$(id).addEventListener('input',drawGrid));
+ ['q','kind','cat','listing'].forEach(id=>$(id).addEventListener('input',drawGrid));
+ $('q').addEventListener('input',()=>{if($('q').value&&$('listing').value==='curated')$('listing').value='';}); // searching implies the whole shelf
  drawGrid();drawTray();
  const ds=await jget('data/decks.json').catch(()=>[]);drawDecks(ds);
  try{const l=await jget('data/leaderboard.json');drawBoard(l.board,false);}catch(e){}
  drawBoardLive();
  drawCounsel();
- try{const g=await jget('data/gardens.json');$('gardens').innerHTML=g.gardens.map(x=>'<div class="garden"><b>'+esc(x.member)+'</b><span><a href="'+esc(x.url)+'">'+esc(x.url)+'</a> <span class="note">('+esc(x.owner)+')</span></span></div>').join('');}catch(e){}
+ await drawGardens();
  $('builtlink').href=(LIVE?SHELF:TAILNET_SHELF)+'/view/how-skill-sync-was-built';
 })();
 </script>

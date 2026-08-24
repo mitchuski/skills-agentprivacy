@@ -55,5 +55,7 @@ async function call(method, p, bodyObj) {
   if (cmd === 'counsel') return call('POST', '/counsel', { member: cfg.member, agent: flag('--agent') || '', question: name, context: flag('--context') || '' });
   if (cmd === 'guide' || cmd === 'direct') return call('POST', '/guide', { member: cfg.member, counsel: name, guidance: flag('--guidance') || flag('--direction') || '' });
   if (cmd === 'counsels') return call('GET', '/counsel');
+  if (cmd === 'garden') return call('POST', '/garden', { member: cfg.member, url: name, note: flag('--note') || '' });
+  if (cmd === 'gardens') return call('GET', '/gardens');
   console.log('usage: status | submit <name> | adopt <name> [--from a] | attest <name> --from a --run "ref" | runtime <constellation> --path a,b,c --run "ref" | runtimes | leaderboard');
 })().catch(e => { console.error('librarian unreachable: ' + e.message); process.exit(1); });

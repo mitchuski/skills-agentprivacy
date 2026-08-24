@@ -17,7 +17,7 @@ Point `catalog:` at another farm over the tailnet to watch THEIR shelf from YOUR
 ## Install (local farm)
 
     cd %APPDATA%\npm\node_modules\wiki\node_modules
-    xcopy /E /I "C:\Users\mitch\skill sync\plugin\wiki-plugin-skillsync" wiki-plugin-skillsync
+    xcopy /E /I "%USERPROFILE%\skill sync\plugin\wiki-plugin-skillsync" wiki-plugin-skillsync
     # restart the farm; add a "skillsync" item via the page JSON or the factory
 
 No build step — the client is plain JS at `client/skillsync.js`.

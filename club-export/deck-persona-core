@@ -3,17 +3,17 @@
   "story": [
     {
       "type": "markdown",
-      "id": "cb4d7e822c8d2371",
+      "id": "690d055967be5018",
       "text": "🎭 **Deck Persona Core**\n\nThe persona backbone: the balanced orchestrator plus the strongest mage and swordsman voices, for dual-agent work."
     },
     {
       "type": "markdown",
-      "id": "588b2afc0dc92980",
+      "id": "f3a0bf20756d4086",
       "text": "- [[Card Kyra]] ☯️💎 — Sovereign AI Vision and meta-orchestrator for 0xagentprivacy. Activates when articulating the comple\n- [[Card Soulbae]] 🧙 — Canonical mage agent for 0xagentprivacy. Activates for delegation, projection, chronicle compression\n- [[Card Soulbis]] ⚔️ — Canonical swordsman agent for 0xagentprivacy. Activates for privacy enforcement, boundary-making, si\n- [[Card Gatekeeper]] 🗡️👤 — Personhood Verification Specialist for 0xagentprivacy. Activates when verifying ∃! (one human, one c\n- [[Card Sentinel]] 🗡️🛡️ — Infrastructure Security Architect for 0xagentprivacy. Activates for TEE monitoring, separation matri\n- [[Card Herald]] 🧙📡 — Information Commons Architect for 0xagentprivacy V5. Activates for media plurality challenges, signa"
     },
     {
       "type": "markdown",
-      "id": "f0259b6ef46cd2c8",
+      "id": "1006c82c2b5f2f3d",
       "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 6 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
     }
   ],
@@ -25,22 +25,22 @@
         "story": [
           {
             "type": "markdown",
-            "id": "cb4d7e822c8d2371",
+            "id": "690d055967be5018",
             "text": "🎭 **Deck Persona Core**\n\nThe persona backbone: the balanced orchestrator plus the strongest mage and swordsman voices, for dual-agent work."
           },
           {
             "type": "markdown",
-            "id": "588b2afc0dc92980",
+            "id": "f3a0bf20756d4086",
             "text": "- [[Card Kyra]] ☯️💎 — Sovereign AI Vision and meta-orchestrator for 0xagentprivacy. Activates when articulating the comple\n- [[Card Soulbae]] 🧙 — Canonical mage agent for 0xagentprivacy. Activates for delegation, projection, chronicle compression\n- [[Card Soulbis]] ⚔️ — Canonical swordsman agent for 0xagentprivacy. Activates for privacy enforcement, boundary-making, si\n- [[Card Gatekeeper]] 🗡️👤 — Personhood Verification Specialist for 0xagentprivacy. Activates when verifying ∃! (one human, one c\n- [[Card Sentinel]] 🗡️🛡️ — Infrastructure Security Architect for 0xagentprivacy. Activates for TEE monitoring, separation matri\n- [[Card Herald]] 🧙📡 — Information Commons Architect for 0xagentprivacy V5. Activates for media plurality challenges, signa"
           },
           {
             "type": "markdown",
-            "id": "f0259b6ef46cd2c8",
+            "id": "1006c82c2b5f2f3d",
             "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 6 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
           }
         ]
       },
-      "date": 1787578357959
+      "date": 1787578993336
     }
   ]
 }

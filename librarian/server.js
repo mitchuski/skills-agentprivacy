@@ -45,6 +45,10 @@ function appendLedger(entry) {
 
 const POINTS = { published: 1, adopted: 3, attested: 7, constellation: 2, walked: 5 };
 const TIERS = [[42, '\u{1F4DA} Librarian'], [18, '\u{1F9ED} Guide'], [6, '\u{1F44D} Hitchhiker'], [0, '\u{1F6B6} Wanderer']];
+// garden listing standing rides the leaderboard: the member's points decide how
+// their garden shows in the public registry. Trust in the garden = trust earned
+// by its keeper's work being used.
+const GARDEN_STANDING = [[18, '\u{1F333} grove'], [6, '\u{1F331} rooted'], [0, '\u{1F330} seedling']];
 
 // latest contribution per constellation name defines its author + path
 function constellations() {
@@ -161,6 +165,16 @@ http.createServer(async (req, res) => {
     if (url === '/leaderboard') return send(res, 200, leaderboard());
     if (url === '/runtimes') return send(res, 200, lines(LEDGER).map(l => JSON.parse(l)).filter(e => e.type === 'runtime'));
     if (url === '/constellations') return send(res, 200, constellations());
+    if (url === '/gardens') { // the public garden registry: latest entry per url, standing from the leaderboard
+      const latest = {};
+      for (const l of lines(LEDGER)) { const e = JSON.parse(l); if (e.type === 'garden') latest[e.url] = e; }
+      const board = Object.fromEntries(leaderboard().map(r => [r.member, r]));
+      return send(res, 200, Object.values(latest).map(g => {
+        const r = board[g.member] || { points: 0, tier: TIERS[3][1] };
+        return { member: g.member, url: g.url, note: g.note || '', verified: !!g.verified, packets: g.packets || 0,
+          at: g.at, points: r.points, tier: r.tier, standing: GARDEN_STANDING.find(([min]) => r.points >= min)[1] };
+      }).sort((a, b) => b.points - a.points));
+    }
     if (url === '/counsel') { // the counsel lane: guidance requested, paired with guidance given
       const entries = lines(LEDGER).map(l => JSON.parse(l));
       const qs = entries.filter(e => e.type === 'counsel');
@@ -208,6 +222,19 @@ http.createServer(async (req, res) => {
     if (!b.question) return send(res, 400, { error: 'question required' });
     const id = sha(b.member + '|' + b.question + '|' + chainHead()).slice(0, 12);
     return send(res, 200, { ok: true, id, ...appendLedger({ type: 'counsel', id, member: b.member, agent: b.agent || '', question: String(b.question).slice(0, 1000), context: String(b.context || '').slice(0, 500) }) });
+  }
+  if (url === '/garden') {
+    // publish your garden into the registry: attributed, chain-sealed, and VERIFIED
+    // at the door — the librarian fetches your catalog before recording you. Your
+    // listing standing then rides the leaderboard: seedling -> rooted -> grove.
+    if (!b.url || !/^https?:[/][/]/.test(b.url)) return send(res, 400, { error: 'url (http/https) required' });
+    const gurl = b.url.replace(/\/+$/, '');
+    let verified = false, packets = 0;
+    try {
+      const r = await fetch(gurl + '/assets/skillsync/catalog.json', { signal: AbortSignal.timeout(6000) });
+      if (r.ok) { const c = await r.json(); if (c && Array.isArray(c.packets)) { verified = true; packets = c.count || c.packets.length; } }
+    } catch (e) { /* unreachable from here — recorded unverified; the dream loop re-checks */ }
+    return send(res, 200, { ok: true, verified, packets, ...appendLedger({ type: 'garden', member: b.member, url: gurl, note: String(b.note || '').slice(0, 300), verified, packets }) });
   }
   if (url === '/guide' || url === '/direct') { // '/direct' = legacy name for the same act
     // the counsel lane, guide side: guidance offered on an open request. Anyone may

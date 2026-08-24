@@ -41,6 +41,16 @@ That's it. No push, no registration. **Publishing = putting the catalog where th
 roster can GET it.** The fedwiki pages make every packet forkable — a fork into your
 own farm is itself the first trust signal (fork = countersignature, embassy canon).
 
+## 2.1 The garden registry
+
+`POST /garden {member, url, note}` at the librarian publishes a garden into the public
+registry: the librarian fetches `<url>/assets/skillsync/catalog.json` at the door
+(verified flag + packet count recorded, chain-sealed). `GET /gardens` lists the latest
+entry per url with the member’s leaderboard standing deciding the LISTING TIER:
+🌰 seedling 0+ · 🌱 rooted 6+ · 🌳 grove 18+. Verified gardens join every dream-loop
+pass automatically. Packets also carry a `listing` level (featured = deck-curated ·
+listed · archive via config patterns); public UIs default to the curated view.
+
 ## 3. Discovery (the dream loop)
 
 Each participant runs `bin/dreamloop.js` (or the `skillsync-dreamloop` agent skill) on

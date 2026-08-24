@@ -29,11 +29,15 @@ Put `assets/skillsync/catalog.json` on any site you control:
 `{ member, updated, count, packets: [cards...] }` — plus one forkable page per packet
 if you're on a fedwiki (fork = countersignature; it's how adoption starts).
 
-## 3. Join the roster
+## 3. Register in the garden registry
 
-Ask any rostered member to add your garden: `{ member, url, owner: "external" }` in
-their `skillsync.config.json`. Their next dream-loop pass baselines you silently;
-after that, every new skill you publish notifies the network.
+    POST http://pi5:4242/garden {"member":"you","url":"https://your.garden","note":"one line"}
+
+(or the 🌱 publish-your-garden button in the live garden UI). The librarian fetches
+your catalog at the door — verified gardens join every dream-loop pass automatically
+and get baselined silently. Your LISTING STANDING rides the leaderboard: 🌰 seedling
+(0+) · 🌱 rooted (6+) · 🌳 grove (18+) — trust in the garden is trust earned by
+its keeper’s work being used.
 
 ## Gotchas
 

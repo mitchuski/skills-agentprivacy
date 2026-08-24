@@ -1,25 +1,27 @@
 {
-  "updated": "2026-08-24T13:32:38.043Z",
+  "updated": "2026-08-24T13:43:13.722Z",
   "gardens": [
     {
       "member": "mitch",
-      "url": "http://skillsync.localhost:3030",
-      "owner": "self"
+      "url": "https://skills-agentprivacy.privacymage.workers.dev",
+      "note": "the source garden — public face of the agentprivacy skill sync",
+      "verified": false,
+      "packets": 0,
+      "at": "2026-08-24T13:41:31.012Z",
+      "points": 7,
+      "tier": "👍 Hitchhiker",
+      "standing": "🌱 rooted"
     },
     {
-      "member": "skill.fedwiki.club",
-      "url": "https://skill.fedwiki.club",
-      "owner": "external"
-    },
-    {
-      "member": "david.self.fish",
-      "url": "https://david.self.fish",
-      "owner": "external"
-    },
-    {
-      "member": "radio.myth.garden",
-      "url": "https://radio.myth.garden",
-      "owner": "external"
+      "member": "mitch",
+      "url": "http://skills.mitch.private.fish",
+      "note": "the living shelf — tailnet door of the same garden",
+      "verified": true,
+      "packets": 192,
+      "at": "2026-08-24T13:41:31.231Z",
+      "points": 7,
+      "tier": "👍 Hitchhiker",
+      "standing": "🌱 rooted"
     }
   ]
 }

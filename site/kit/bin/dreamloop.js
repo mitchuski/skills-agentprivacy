@@ -54,8 +54,15 @@ function notify(event) {
 }
 
 (async () => {
+  // the roster grows itself: verified gardens from the librarian registry join the poll
+  let roster = cfg.roster.slice();
+  try {
+    const gs = await (await fetch(cfg.librarian.url + '/gardens', { signal: AbortSignal.timeout(4000) })).json().catch(() => null)
+      || await (await fetch('http://127.0.0.1:4242/gardens', { signal: AbortSignal.timeout(3000) })).json();
+    for (const g of gs) if (g.verified && !roster.some(m => m.url === g.url)) roster.push({ member: g.member, url: g.url, owner: 'external' });
+  } catch (e) { /* desk closed — configured roster only */ }
   const pass = { at: new Date().toISOString(), members: {}, events: [] };
-  for (const m of cfg.roster) {
+  for (const m of roster) {
     const res = await readMember(m);
     if (!res.rows) { pass.members[m.member] = 'unreachable'; continue; }
     const stateFile = path.join(stateDir, m.member.replace(/[^A-Za-z0-9.-]/g, '_') + '.json');
