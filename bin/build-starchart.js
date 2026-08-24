@@ -129,7 +129,7 @@ function page() {
 <svg id="chart" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet"></svg>
 <div class="hud" id="title"><h1>\u{2728} THE SKILL STAR CHART</h1><p>every star a skill · lines are real relations (frontmatter kinship, body mentions, deck neighbours) · constellations are decks and recorded runtimes</p><p><a href="index.html">\u{2190} the garden</a></p></div>
 <div class="hud" id="cons"><h2>Constellations</h2><div id="decklist"></div><h2 style="margin-top:.6rem">Runtimes</h2><div id="rtlist"><span style="color:var(--dim)">none recorded yet — an agent walks a path and records it at the Librarian:<br><code>POST /runtime {path:[...]}</code></span></div></div>
-<div class="hud" id="legend"><h2>Reading the sky</h2><div id="leg"></div><div style="color:var(--dim);margin-top:.3rem">brightness = kind (personas burn brightest) · drag to pan · wheel to zoom · hover a star</div></div>
+<div class="hud" id="legend"><h2>Reading the sky</h2><div id="leg"></div><div style="color:var(--dim);margin-top:.3rem">brightness = kind (personas burn brightest) · drag to pan · wheel to zoom · hover a star for its card · <b>click a star to open it in the garden</b></div></div>
 <div class="hud" id="tip"></div>
 <script>
 const S=document.getElementById('chart'),NS='http://www.w3.org/2000/svg';
@@ -143,6 +143,15 @@ fetch('data/starchart.json').then(r=>r.json()).then(d=>{
  if(hm){const p=hm[1].split(',').map(decodeURIComponent).filter(Boolean);
   if(p.length){D.constellations.unshift({name:'your walk',emoji:'\u{1F463}',path:p,kind:'walk'});active='your walk';}}
  draw();
+ // #star=<name> (from a garden card or a wiki page): fly to that star and ring it
+ const sm=location.hash.match(/star=([^&]+)/);
+ if(sm){const s=D.stars.find(x=>x.name===decodeURIComponent(sm[1]));
+  if(s){vb=[s.x-170,s.y-170,340,340];apply();
+   const NS='http://www.w3.org/2000/svg';const ring=document.createElementNS(NS,'circle');
+   ring.setAttribute('cx',s.x);ring.setAttribute('cy',s.y);ring.setAttribute('r',s.m*3.2);
+   ring.setAttribute('fill','none');ring.setAttribute('stroke','var(--gold)');ring.setAttribute('stroke-width','1.6');
+   S.appendChild(ring);
+   let r0=s.m*3.2,t=0;const pulse=setInterval(()=>{t++;ring.setAttribute('r',r0+Math.sin(t/6)*3);if(t>120){clearInterval(pulse);ring.remove();}},50);}}
  // live contributed constellations + runtimes when on the tailnet
  fetch('http://pi5:4242/constellations',{signal:AbortSignal.timeout(2500)}).then(r=>r.json()).then(cs=>{
   let added=false;

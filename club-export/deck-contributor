@@ -3,17 +3,17 @@
   "story": [
     {
       "type": "markdown",
-      "id": "bbea11fffeb15f34",
+      "id": "32f3cfc07ccdbe7a",
       "text": "🤝 **Deck Contributor**\n\nThe base default constellation: how to join and contribute to the skill network itself. Publish your garden, dream the roster, adopt properly, and walk + contribute constellations. Every new member starts here."
     },
     {
       "type": "markdown",
-      "id": "afafb1dc45107335",
+      "id": "3f414e0c37b6d869",
       "text": "- [[Skillsync Publish Garden]]  — Stand up your own skill garden and join the Skill Sync network — package your skills as neutral pack\n- [[Skillsync Dreamloop]]  — Run the Skill Sync dream loop — discover new skills/spells/personas published across the tailnet fed\n- [[Skillsync Adopt]]  — Adopt and attest skills from the Skill Sync network — browse a garden's shelf or catalog, load a ski\n- [[Skillsync Constellation]]  — Walk, seal, and contribute constellations in the Skill Sync sky — collect an ordered path of skills \n- [[Spell Search]]  — Observe the directories the keeper has been working in, find the ones rich with un-minted skills (wr"
     },
     {
       "type": "markdown",
-      "id": "fec2bfa83544d789",
+      "id": "be065ba85f07ee8c",
       "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 5 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
     }
   ],
@@ -25,22 +25,22 @@
         "story": [
           {
             "type": "markdown",
-            "id": "bbea11fffeb15f34",
+            "id": "32f3cfc07ccdbe7a",
             "text": "🤝 **Deck Contributor**\n\nThe base default constellation: how to join and contribute to the skill network itself. Publish your garden, dream the roster, adopt properly, and walk + contribute constellations. Every new member starts here."
           },
           {
             "type": "markdown",
-            "id": "afafb1dc45107335",
+            "id": "3f414e0c37b6d869",
             "text": "- [[Skillsync Publish Garden]]  — Stand up your own skill garden and join the Skill Sync network — package your skills as neutral pack\n- [[Skillsync Dreamloop]]  — Run the Skill Sync dream loop — discover new skills/spells/personas published across the tailnet fed\n- [[Skillsync Adopt]]  — Adopt and attest skills from the Skill Sync network — browse a garden's shelf or catalog, load a ski\n- [[Skillsync Constellation]]  — Walk, seal, and contribute constellations in the Skill Sync sky — collect an ordered path of skills \n- [[Spell Search]]  — Observe the directories the keeper has been working in, find the ones rich with un-minted skills (wr"
           },
           {
             "type": "markdown",
-            "id": "fec2bfa83544d789",
+            "id": "be065ba85f07ee8c",
             "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 5 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
           }
         ]
       },
-      "date": 1787581584441
+      "date": 1787581950959
     }
   ]
 }

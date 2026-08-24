@@ -69,7 +69,8 @@ for (const p of catalog.packets) {
     p.card,
     '**Brief**\n\n' + p.brief,
     'Full text: the SKILL.md asset below · packet hash `' + p.hash.slice(0, 16) + '` · published ' + p.published.slice(0, 10) +
-    '\n\nFork this card to adopt — a fork is a countersignature. Then tell the librarian: `node bin/librarian-client.js adopt ' + p.name + '`'
+    '\n\nFork this card to adopt — a fork is a countersignature. Then tell the librarian: `node bin/librarian-client.js adopt ' + p.name + '`',
+    '**Doors:** [this skill in the garden](/assets/site/index.html#' + encodeURIComponent(p.name) + ') · [its star on the chart](/assets/site/star.html#star=' + encodeURIComponent(p.name) + ') · [[Skill Shelf]] · [[Welcome Visitors]]'
   ];
   const assetItem = { type: 'assets', id: id(), text: 'skillsync/' + p.name };
   // the like-shaped button: collect this skill into your star path as you browse

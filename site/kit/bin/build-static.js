@@ -86,6 +86,8 @@ const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'catalog.json
   for (const f of fs.readdirSync(path.join(ROOT, 'bin'))) fs.copyFileSync(path.join(ROOT, 'bin', f), path.join(kit, 'bin', f));
   fs.copyFileSync(path.join(ROOT, 'SPEC.md'), path.join(kit, 'SPEC.md'));
   fs.copyFileSync(path.join(ROOT, 'README.md'), path.join(kit, 'README.md'));
+  fs.copyFileSync(path.join(ROOT, 'AGENT_ORIENTATION.md'), path.join(SITE, 'orientation.md'));
+  fs.copyFileSync(path.join(ROOT, 'AGENT_ORIENTATION.md'), path.join(kit, 'AGENT_ORIENTATION.md'));
   fs.mkdirSync(path.join(kit, 'librarian'), { recursive: true });
   fs.copyFileSync(path.join(ROOT, 'librarian', 'server.js'), path.join(kit, 'librarian', 'server.js'));
   fs.copyFileSync(path.join(ROOT, 'librarian', 'README.md'), path.join(kit, 'librarian', 'README.md'));
@@ -306,6 +308,7 @@ function drawGrid(){
    '<button class="abtn pth'+(inPath?' on':'')+'">'+(inPath?'⭐ on path':'☆ path')+'</button>'+
    (LIB?'<button class="abtn adopt">✓ adopt</button><button class="abtn attest">⚡ attest</button>':'')+
    (LIVE?'<a class="abtn" href="'+SHELF+'/view/'+esc(SLUGS[p.name]||p.title.toLowerCase().replace(/[^a-z0-9]+/g,'-'))+'" target="_blank">wiki page</a>':'')+
+   '<a class="abtn" href="star.html#star='+encodeURIComponent(p.name)+'">✨ on the chart</a>'+
    '<a class="abtn" href="assets/'+encodeURIComponent(p.name)+'/SKILL.md" target="_blank">SKILL.md</a>'+
   '</div></div>';}).join('')||'<p class="note">nothing matches</p>';
 }
@@ -437,6 +440,20 @@ async function drawGardens(){
  ['q','kind','cat','listing'].forEach(id=>$(id).addEventListener('input',drawGrid));
  $('q').addEventListener('input',()=>{if($('q').value&&$('listing').value==='curated')$('listing').value='';}); // searching implies the whole shelf
  drawGrid();drawTray();
+ // deep link: #<skill-name> (from the star chart or a wiki page) lands ON the card —
+ // filters widen so the target is visible, the brief opens, the card flashes
+ function focusSkill(){
+  const n=decodeURIComponent(location.hash.slice(1));
+  if(!n||!byName[n])return;
+  $('listing').value='';$('kind').value='';$('cat').value='';$('q').value='';drawGrid();
+  const el=document.querySelector('.skill[data-n="'+(window.CSS&&CSS.escape?CSS.escape(n):n)+'"]');
+  if(!el)return;
+  el.classList.add('open');
+  el.scrollIntoView({behavior:'smooth',block:'center'});
+  el.style.transition='border-color .3s';el.style.borderColor='var(--gold)';el.style.boxShadow='0 0 0 2px var(--gold)';
+  setTimeout(()=>{el.style.boxShadow='';},2200);
+ }
+ focusSkill();addEventListener('hashchange',focusSkill);
  const ds=await jget('data/decks.json').catch(()=>[]);drawDecks(ds);
  try{const l=await jget('data/leaderboard.json');if(l.mode==='proof')drawProof(l.proof);else drawBoard(l.board,false);}catch(e){}
  drawBoardLive();
