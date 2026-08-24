@@ -3,27 +3,27 @@
   "story": [
     {
       "type": "markdown",
-      "id": "d6f9308bedd955ed",
+      "id": "2410b8d448b4a72c",
       "text": "📜 **How Skill Sync was built** — 2026-08-24, one session, in `~/skill sync` on the keeper’s machine. This page is the working record; fork it if you build your own."
     },
     {
       "type": "markdown",
-      "id": "08964fe5c9136640",
+      "id": "90a2f6db039d495f",
       "text": "# The problem\n\nThe agentprivacy corpus had grown past easy sharing: 167 universe skills, 20+ workbench skills, personas, patterns, the dual-agent harness. Dense by design — but a fresh model, or a collaborator agent on the tailnet, had no way to pick a working hand. And skills lived in git repos and private directories: no neutral place to publish, discover, or adopt."
     },
     {
       "type": "markdown",
-      "id": "99edcda88cfc4ad3",
+      "id": "63b401cd0c188511",
       "text": "# The shape\n\nThree zoom levels per skill (card 280 chars, brief 1200, full body as an asset) so an agent loads only what the task fires. A harvest walks the sources and mints one JSON packet per SKILL.md, sha256-hashed. A leak scan runs before anything is packaged — it caught one real credential on the first pass and refused that packet (a friend-secret that was already on the rotation list)."
     },
     {
       "type": "markdown",
-      "id": "fe03892e335d004f",
+      "id": "e0c6174bc98c8a35",
       "text": "# The pieces, in build order\n\n- **harvest** — 186 packets from two source trees; a name collision surfaced (the working copy of a skill vs the corpus copy) and the rule became: later source supersedes.\n- **the shelf** — this fedwiki site, generated: card pages (forkable), the [[Skill Shelf]] index, five [[Loadout Deck]]s, and the machine door `assets/skillsync/catalog.json`.\n- **the dream loop** — polls the roster farms (catalog first, sitemap fallback), first sight = silent baseline, then diffs become events. Proven with a mock notifier before touching the real one.\n- **the librarian** — zero-dependency node service; the hash chain was verified end-to-end (submit, adopt by a second member, attest by a third, recompute the chain, and the seal endpoint correctly refused a member below 42 points).\n- **the plugin** — a `skillsync` fedwiki item that renders catalog freshness on any page."
     },
     {
       "type": "markdown",
-      "id": "2cd784b0b0226706",
+      "id": "06b651cca3f6b691",
       "text": "# Machines\n\n- **the keeper’s machine** (this farm) — source of truth, harvest + shelf + dream loop\n- **marvin (02-pi4)** — the herald: ntfy notifications when the network publishes\n- **pi5** — the [[Librarian Desk]]\n\nEverything is plain JSON over HTTP inside the tailnet; nothing writes to anyone else’s wiki, ever. Contribution is a fork, and a fork is a countersignature."
     }
   ],
@@ -35,32 +35,32 @@
         "story": [
           {
             "type": "markdown",
-            "id": "d6f9308bedd955ed",
+            "id": "2410b8d448b4a72c",
             "text": "📜 **How Skill Sync was built** — 2026-08-24, one session, in `~/skill sync` on the keeper’s machine. This page is the working record; fork it if you build your own."
           },
           {
             "type": "markdown",
-            "id": "08964fe5c9136640",
+            "id": "90a2f6db039d495f",
             "text": "# The problem\n\nThe agentprivacy corpus had grown past easy sharing: 167 universe skills, 20+ workbench skills, personas, patterns, the dual-agent harness. Dense by design — but a fresh model, or a collaborator agent on the tailnet, had no way to pick a working hand. And skills lived in git repos and private directories: no neutral place to publish, discover, or adopt."
           },
           {
             "type": "markdown",
-            "id": "99edcda88cfc4ad3",
+            "id": "63b401cd0c188511",
             "text": "# The shape\n\nThree zoom levels per skill (card 280 chars, brief 1200, full body as an asset) so an agent loads only what the task fires. A harvest walks the sources and mints one JSON packet per SKILL.md, sha256-hashed. A leak scan runs before anything is packaged — it caught one real credential on the first pass and refused that packet (a friend-secret that was already on the rotation list)."
           },
           {
             "type": "markdown",
-            "id": "fe03892e335d004f",
+            "id": "e0c6174bc98c8a35",
             "text": "# The pieces, in build order\n\n- **harvest** — 186 packets from two source trees; a name collision surfaced (the working copy of a skill vs the corpus copy) and the rule became: later source supersedes.\n- **the shelf** — this fedwiki site, generated: card pages (forkable), the [[Skill Shelf]] index, five [[Loadout Deck]]s, and the machine door `assets/skillsync/catalog.json`.\n- **the dream loop** — polls the roster farms (catalog first, sitemap fallback), first sight = silent baseline, then diffs become events. Proven with a mock notifier before touching the real one.\n- **the librarian** — zero-dependency node service; the hash chain was verified end-to-end (submit, adopt by a second member, attest by a third, recompute the chain, and the seal endpoint correctly refused a member below 42 points).\n- **the plugin** — a `skillsync` fedwiki item that renders catalog freshness on any page."
           },
           {
             "type": "markdown",
-            "id": "2cd784b0b0226706",
+            "id": "06b651cca3f6b691",
             "text": "# Machines\n\n- **the keeper’s machine** (this farm) — source of truth, harvest + shelf + dream loop\n- **marvin (02-pi4)** — the herald: ntfy notifications when the network publishes\n- **pi5** — the [[Librarian Desk]]\n\nEverything is plain JSON over HTTP inside the tailnet; nothing writes to anyone else’s wiki, ever. Contribution is a fork, and a fork is a countersignature."
           }
         ]
       },
-      "date": 1787581950964
+      "date": 1787582141803
     }
   ]
 }
