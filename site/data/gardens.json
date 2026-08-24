@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T14:14:56.235Z",
+  "updated": "2026-08-24T14:24:00.887Z",
   "gardens": [
     {
       "member": "mitch",
@@ -18,6 +18,15 @@
       "packets": 192,
       "at": "2026-08-24T13:41:31.231Z",
       "standing": "🌱 rooted"
+    },
+    {
+      "member": "mage",
+      "url": "https://mage.private.fish",
+      "note": "just another mage",
+      "verified": false,
+      "packets": 0,
+      "at": "2026-08-24T14:19:06.102Z",
+      "standing": "🌰 seedling"
     }
   ]
 }

@@ -8,7 +8,7 @@
  *
  * Renders: packet count + harvest date, the packets published inside the window,
  * and highlights anything NEW since this browser last looked (localStorage seen-set).
- * Clicking a row follows the internal link [[Card <Title>]] when the page exists.
+ * Clicking a row follows the skill's wiki page (bare titles via page-titles.json).
  */
 (() => {
   const DEFAULTS = { catalog: '/assets/skillsync/catalog.json', member: '', days: 7, limit: 8 };
@@ -31,7 +31,7 @@
     try { localStorage.setItem(storeKey(cfg), JSON.stringify(names.slice(0, 2000))); } catch (e) { /* private window etc. */ }
   };
 
-  const render = (cfg, cat, seen) => {
+  const render = (cfg, cat, seen, titles) => {
     if (!cat) return '<div class="skillsync-panel skillsync-err">catalog unreachable: <code>' + esc(cfg.catalog) + '</code></div>';
     const now = Date.now();
     const winMs = (cfg.days || 7) * 864e5;
@@ -46,7 +46,7 @@
       (cat.count || rows.length) + ' packets · harvested ' + esc((cat.updated || '').slice(0, 10)) +
       (unseen.length && seen.size ? ' · <span class="skillsync-new">' + unseen.length + ' new since your last visit</span>' : '') + '</div>';
     const list = show.map(r =>
-      '<div class="skillsync-row' + (seen.size && !seen.has(r.name) ? ' skillsync-unseen' : '') + '" data-link="Card ' + esc(r.title) + '">' +
+      '<div class="skillsync-row' + (seen.size && !seen.has(r.name) ? ' skillsync-unseen' : '') + '" data-link="' + esc((titles && titles[r.name]) || r.title) + '">' +
       '<span class="skillsync-emoji">' + esc(r.emoji) + '</span> <b>' + esc(r.title) + '</b> <i>' + esc(r.kind) + '</i>' +
       '<div class="skillsync-card">' + esc(r.card.slice(0, 140)) + '</div></div>').join('');
     const foot = '<div class="skillsync-foot">' + (fresh.length ? fresh.length + ' published in the last ' + cfg.days + ' days' : 'nothing in the ' + cfg.days + '-day window — showing newest') + '</div>';
@@ -66,14 +66,17 @@
     }
     const cfg = parse(item.text);
     $item.html('<div class="skillsync-panel">\u{1F4E1} loading ' + esc(cfg.catalog) + ' …</div>');
-    fetch(cfg.catalog, { credentials: 'same-origin' })
-      .then(r => (r.ok ? r.json() : null))
-      .catch(() => null)
-      .then(cat => {
-        const seen = seenSet(cfg);
-        $item.html(render(cfg, cat, seen));
-        if (cat && cat.packets) remember(cfg, cat.packets.map(p => p.name));
-      });
+    // page-titles.json (published by the shelf builder, beside the catalog) maps
+    // packet name -> its wiki page title, bare-titled with collision exceptions
+    const titlesUrl = cfg.catalog.replace(/catalog(-full)?\.json$/, 'page-titles.json');
+    Promise.all([
+      fetch(cfg.catalog, { credentials: 'same-origin' }).then(r => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(titlesUrl, { credentials: 'same-origin' }).then(r => (r.ok ? r.json() : null)).catch(() => null)
+    ]).then(([cat, titles]) => {
+      const seen = seenSet(cfg);
+      $item.html(render(cfg, cat, seen, titles));
+      if (cat && cat.packets) remember(cfg, cat.packets.map(p => p.name));
+    });
   };
 
   const bind = ($item, item) => {

@@ -52,9 +52,12 @@ for (const p of catalog.packets) {
   pageTitle[p.name] = t;
 }
 
-// export the name -> slug map so the garden UI and the engine bridge link correctly
+// export the name -> slug map so the garden UI and the engine bridge link correctly,
+// and publish the name -> page-title map into the farm assets so the skillsync
+// PLUGIN can resolve its row links (bare titles + the collision-guarded exceptions)
 fs.writeFileSync(path.join(ROOT, 'registry', 'page-slugs.json'),
   JSON.stringify(Object.fromEntries(catalog.packets.map(p => [p.name, asSlug(pageTitle[p.name])])), null, 2));
+fs.writeFileSync(path.join(assetsDir, 'skillsync', 'page-titles.json'), JSON.stringify(pageTitle, null, 2));
 
 const KINDS = { persona: '\u{1F3AD}', skill: '\u{1F6E0}️', pattern: '\u{1F9EC}', agent: '\u{1F916}', ceremony: '\u{1F56F}️', plugin: '\u{1F50C}' };
 for (const p of catalog.packets) {

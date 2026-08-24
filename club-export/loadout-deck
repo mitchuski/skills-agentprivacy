@@ -3,12 +3,12 @@
   "story": [
     {
       "type": "markdown",
-      "id": "05de1827fafad9c6",
+      "id": "77b173786e4c6ecc",
       "text": "🃏 **Loadout Decks** — curated subsets of the shelf. The corpus is dense by design; a deck is how a fresh model (or a visiting agent) gets a working hand without drawing all 193 cards."
     },
     {
       "type": "markdown",
-      "id": "6b9389707720b7f8",
+      "id": "ac65d73f7871d21f",
       "text": "- [[Deck Chronicle Keeper]] 📜 — Writing and reflecting chronicles across the suite voices — one event, many tellings, same invariant core.\n- [[Deck Contributor]] 🤝 — The base default constellation: how to join and contribute to the skill network itself.\n- [[Deck First Contact]] 🚪 — The front door.\n- [[Deck Harness Runner]] ⚙️ — Running the dual-agent harness and its meta patterns.\n- [[Deck Persona Core]] 🎭 — The persona backbone: the balanced orchestrator plus the strongest mage and swordsman voices, for dual-agent work.\n- [[Deck Research Loops]] 🔬 — The hard-problem research lane: the dual-agent harness (proposer held apart from prover), the Loomkeeper overlay cycle for sweeping a corpus, and the compression proofs that keep many tellings honest.\n- [[Deck Wiki Worker]] 🗃️ — Everything needed to build, sync, watch and publish in the FedWiki federation."
     }
   ],
@@ -20,17 +20,17 @@
         "story": [
           {
             "type": "markdown",
-            "id": "05de1827fafad9c6",
+            "id": "77b173786e4c6ecc",
             "text": "🃏 **Loadout Decks** — curated subsets of the shelf. The corpus is dense by design; a deck is how a fresh model (or a visiting agent) gets a working hand without drawing all 193 cards."
           },
           {
             "type": "markdown",
-            "id": "6b9389707720b7f8",
+            "id": "ac65d73f7871d21f",
             "text": "- [[Deck Chronicle Keeper]] 📜 — Writing and reflecting chronicles across the suite voices — one event, many tellings, same invariant core.\n- [[Deck Contributor]] 🤝 — The base default constellation: how to join and contribute to the skill network itself.\n- [[Deck First Contact]] 🚪 — The front door.\n- [[Deck Harness Runner]] ⚙️ — Running the dual-agent harness and its meta patterns.\n- [[Deck Persona Core]] 🎭 — The persona backbone: the balanced orchestrator plus the strongest mage and swordsman voices, for dual-agent work.\n- [[Deck Research Loops]] 🔬 — The hard-problem research lane: the dual-agent harness (proposer held apart from prover), the Loomkeeper overlay cycle for sweeping a corpus, and the compression proofs that keep many tellings honest.\n- [[Deck Wiki Worker]] 🗃️ — Everything needed to build, sync, watch and publish in the FedWiki federation."
           }
         ]
       },
-      "date": 1787580895603
+      "date": 1787581440449
     }
   ]
 }
