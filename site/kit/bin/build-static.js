@@ -91,6 +91,10 @@ const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'catalog.json
   fs.mkdirSync(path.join(kit, 'librarian'), { recursive: true });
   fs.copyFileSync(path.join(ROOT, 'librarian', 'server.js'), path.join(kit, 'librarian', 'server.js'));
   fs.copyFileSync(path.join(ROOT, 'librarian', 'README.md'), path.join(kit, 'librarian', 'README.md'));
+  // the desk guide: build & host the Librarian's Desk on any knowledge pi —
+  // served at /desk.md on every door, like /orientation.md
+  fs.copyFileSync(path.join(ROOT, 'librarian', 'DESK.md'), path.join(kit, 'librarian', 'DESK.md'));
+  fs.copyFileSync(path.join(ROOT, 'librarian', 'DESK.md'), path.join(SITE, 'desk.md'));
   const cfgTemplate = JSON.parse(JSON.stringify(cfg));
   cfgTemplate.member = '<your-handle>';
   cfgTemplate.sources = [{ root: '<path-to-your-skills>', dirs: ['.'], universe: '<your-universe>', kind_by_dir: { '.': 'skill' } }];
@@ -416,13 +420,21 @@ async function drawGardens(){
  if(!rows){try{rows=(await jget('data/gardens.json')).gardens;}catch(e){rows=[];}}
  const cards=gardenCards(rows);
  $('gardens').innerHTML=(cards||'<p class="note">no gardens registered yet — be the first</p>')+(live?'':'<p class="note">snapshot — the live registry answers on the tailnet</p>');
- if(LIB){$('gardenPub').innerHTML='<button class="abtn" id="pubGarden">\u{1F331} publish your garden</button>';
+ if(LIB){$('gardenPub').innerHTML='<button class="abtn" id="pubGarden">\u{1F331} publish your garden</button><button class="abtn" id="reqName">\u{1F41F} request a name</button>';
   $('pubGarden').onclick=async()=>{const w=needMe();if(!w)return;
    const url=(prompt('Your garden URL (serves assets/skillsync/catalog.json):','https://')||'').trim();if(!url)return;
    const note=(prompt('One line about your garden:')||'').trim();
    try{const j=await lib('/garden',{member:w,url:url,note:note});
     alert(j.ok?(j.verified?'registered ✓ verified — '+j.packets+' packets found':'registered (unverified — catalog not reachable from the librarian; the dream loop will re-check)'):'error: '+(j.error||'?'));
-    drawGardens();}catch(e){alert('librarian unreachable');}};}
+    drawGardens();}catch(e){alert('librarian unreachable');}};
+  // the name lane: ask the zone keeper for <label>.private.fish — chain-sealed
+  // request the keeper answers at the desk; a name is how a member starts writing
+  $('reqName').onclick=async()=>{const w=needMe();if(!w)return;
+   const label=(prompt('The name you want (one DNS label, e.g. mage):')||'').trim().toLowerCase();if(!label)return;
+   const note=(prompt('One line: what will live at '+label+'.private.fish?')||'').trim();
+   try{const j=await lib('/name',{member:w,name:label,note:note});
+    alert(j.ok?('requested '+j.fqdn+' — id '+j.id+(j.resolves?'\n(already resolves to '+j.address+' — wildcard or taken; the keeper decides)':'')+'\nthe zone keeper answers at the desk'):'error: '+(j.error||'?'));
+   }catch(e){alert('librarian unreachable');}};}
 }
 
 /* ===== boot ===== */

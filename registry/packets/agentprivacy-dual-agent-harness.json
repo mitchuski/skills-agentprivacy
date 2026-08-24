@@ -5,19 +5,19 @@
   "title": "Dual Agent Harness",
   "emoji": "",
   "card": "The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a self-improvement harness against a concrete optimization target. The Mage (bnot · proposer) conceals/reduces; the Swordsman (neg · prover) signs only what survives an un-tuneable h…",
-  "brief": "The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a self-improvement harness against a concrete optimization target. The Mage (bnot · proposer) conceals/reduces; the Swordsman (neg · prover) signs only what survives an un-tuneable held-out gate; the Gap between them is the non-collusion precondition, physically realized as a Fiat-Shamir witness set the proposer cannot see. Activates when building or driving an agent loop that must produce VALIDATED improvements (circuit/gate/qubit reduction, cost optimization, any \"make it cheaper and prove it\" task) without fooling itself with mirages. Triggers: \"dual-agent loop\", \"swordsman mage harness\", \"autoresearch\", \"proposer prover loop\", \"reduce gates or qubits\", \"ecdsa.fail\", \"circuit co-evolution\", \"held-apart agents\", \"neg bnot succ\". V6 register note (2026-06-10): conjecture/version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.",
+  "brief": "The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a self-improvement harness against a concrete optimization target. The Mage (bnot · proposer) conceals/reduces; the Swordsman (neg · prover) signs only what survives an un-tuneable held-out gate; the Gap between them is the non-collusion precondition, physically realized as a Fiat-Shamir witness set the proposer cannot see. Activates when building or driving an agent loop that must produce VALIDATED improvements (circuit/gate/qubit reduction, cost optimization, any \"make it cheaper and prove it\" task) without fooling itself with mirages. Triggers: \"dual-agent loop\", \"swordsman mage harness\", \"autoresearch\", \"proposer prover loop\", \"reduce gates or qubits\", \"ecdsa.fail\", \"circuit co-evolution\", \"held-apart agents\", \"neg bnot succ\". V6 register note (2026-07-11): conjecture/version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C96); model head: privacy_value_v6_formal_specification.md.",
   "body_ref": "assets/agentprivacy-dual-agent-harness/SKILL.md",
   "origin": {
     "author": "mitch",
     "universe": "agentprivacy",
     "category": "meta",
     "tier": "",
-    "version": "1.0",
+    "version": "1.1",
     "alignment": "",
-    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-dual-agent-harness/SKILL.md"
+    "source_path": "~/agentprivacy-skills/meta/agentprivacy-dual-agent-harness/SKILL.md"
   },
-  "hash": "896e01c12a64274f58ac0d511b23f0e596565728ae74fb9285ad296ef7d12feb",
-  "published": "2026-06-10T21:21:18.900Z",
+  "hash": "ba7719267e1cff415fd9eddfa9771288bd931a112f17de3362e2f428a885179a",
+  "published": "2026-08-24T16:19:06.672Z",
   "listing": "featured",
   "requires": [],
   "trust": {

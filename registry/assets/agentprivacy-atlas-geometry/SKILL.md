@@ -179,6 +179,18 @@ The path integral becomes an integral over exceptional group structure.
 | Atlas = lattice boundary | 25% (unproven) |
 | E₈ privacy interpretation | 15% (highly speculative) |
 
+## External convergence — UOR Atlas UTQC (2026-06-30)
+
+The UOR Foundation's UTQC paper builds a modular tensor category on **24 symmetry classes** = the symmetric group S₄ acting on a 24-dimensional space V_T ⊗ V_O (T=3, O=8), with quantum-double D(Z_O) machinery. This raises a concrete **open seam** for the 96/96 question above:
+
+> Is their 24-class S₄ orbit a **quotient or sub-object of the 96-vertex Atlas** — given F₄ = 96/± already sits in the table above — or a **parallel UOR structure** sharing only the substrate?
+
+If quotient/sub-object, their topological compiler runs on this boundary and the MTC machinery is inheritable directly. If parallel, cite as a sibling under plurality-over-precedence.
+
+**Coincidence-level cardinality (do not over-read):** O² = 8² = 64 (the lattice) ~15%; 96 = 4 × 24 ~25% — matched to the ~25% Atlas=boundary confidence above.
+
+**Algebra mismatch guard:** their generators (σ order 4, τ order 8, µ order 2) build a **non-abelian** braid representation; the sovereignty ring is **abelian** Z/(2⁶)Z with succ = neg∘bnot. The product 4 × 8 × 2 = 64 is tidy but is **not** a homomorphism. Do not let numerology bridge the algebras. Full assessment: `research/uor-atlas-utqc-v6-note.md`.
+
 ---
 
 **Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)

@@ -1,7 +1,7 @@
 {
   "spec": "skill-catalog/0.1",
   "member": "mitch",
-  "updated": "2026-08-24T16:04:30.036Z",
+  "updated": "2026-08-24T16:21:20.238Z",
   "count": 194,
   "packets": [
     {
@@ -20,7 +20,7 @@
         "tier": "",
         "version": "6.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-academic/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-academic/SKILL.md"
       },
       "hash": "e02189293c2a5cb41a4aff7bd49014dc1a576f05ad292f296fc519c069e65051",
       "published": "2026-06-21T14:29:33.341Z",
@@ -47,7 +47,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-agent-interop/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-agent-interop/SKILL.md"
       },
       "hash": "e2be542727aa715f142e6c381efb47ba3f63c19be119e56ca8965562aac36e26",
       "published": "2026-04-22T13:39:43.339Z",
@@ -74,7 +74,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-ai-agent/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-ai-agent/SKILL.md"
       },
       "hash": "2c21b22c4b9fdd72489ef290c7fc7fc365358ba55074aac4d05b2e6076f35d62",
       "published": "2026-06-10T18:37:03.003Z",
@@ -101,7 +101,7 @@
         "tier": "1",
         "version": "5.2",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-algebraist/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-algebraist/SKILL.md"
       },
       "hash": "71f9feffb82276801986e3027073e00549920078aa23bfdac6942584f63ae15c",
       "published": "2026-04-22T13:39:43.221Z",
@@ -128,10 +128,10 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-ambassador/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-ambassador/SKILL.md"
       },
-      "hash": "8b5f1a6996eeb414a772b46aa3a87107b36f13d02a5fa35447037d54c4335077",
-      "published": "2026-06-10T18:50:50.208Z",
+      "hash": "57024a21d940a0db63b2fc4fda6957f9b6c14644b64e28fa1e8fd72fc611671d",
+      "published": "2026-08-24T16:19:06.821Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -155,7 +155,7 @@
         "tier": "0",
         "version": "5.3.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-amnesia-protocol/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-amnesia-protocol/SKILL.md"
       },
       "hash": "011388880805c272bf3a473fc2df05fc15f2b17b7310f6fe7c8f3452dc81b771",
       "published": "2026-06-12T02:46:13.654Z",
@@ -182,7 +182,7 @@
         "tier": "3",
         "version": "5.0",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-archer/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-archer/SKILL.md"
       },
       "hash": "513d1bc59708d28746f73aca5ba524ad5b2e148a71ffa0ca71a912b6600ba0c5",
       "published": "2026-04-22T13:39:43.227Z",
@@ -209,7 +209,7 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "balanced",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-architect/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-architect/SKILL.md"
       },
       "hash": "852f18a11714e8c23b44b9dbdab1185b1693fbe47dc4aed15b08c35ee7d24529",
       "published": "2026-06-21T14:53:46.502Z",
@@ -236,7 +236,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-armor-progression/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-armor-progression/SKILL.md"
       },
       "hash": "e7fd725095e72561aecbd099947b784bed995b33aec8de8e453ea2d545c62065",
       "published": "2026-04-22T13:39:43.342Z",
@@ -263,7 +263,7 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-assessor/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-assessor/SKILL.md"
       },
       "hash": "20c24d897143a411881b8c994e1ad97c2faab3c02e1472bf67e3816dec8021d1",
       "published": "2026-04-22T13:39:43.230Z",
@@ -290,10 +290,10 @@
         "tier": "",
         "version": "5.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-atlas-geometry/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-atlas-geometry/SKILL.md"
       },
-      "hash": "84f5552930b9578774b409d7e0538f5d90bdf3ecd3cd342af4f9921c7149573f",
-      "published": "2026-04-22T13:39:43.300Z",
+      "hash": "11ff902724372fae1aacb70f3e7143c2a7dc2e1b5e7df3e8e6799e1b6b2c0998",
+      "published": "2026-08-24T16:19:06.925Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -317,7 +317,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-attachment-architecture/SKILL.md"
+        "source_path": "~/agentprivacy-skills/meta/agentprivacy-attachment-architecture/SKILL.md"
       },
       "hash": "23829c6216c5baa3b8066702d056e037166cecdb1f367eca6642c3a2f524a5f1",
       "published": "2026-06-21T14:53:46.503Z",
@@ -344,7 +344,7 @@
         "tier": "",
         "version": "5.3.3",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-blade-forge/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-blade-forge/SKILL.md"
       },
       "hash": "84c0a190c711e7cde718910cda2418ff996d39e42a20a8ae679a117e590ca18b",
       "published": "2026-06-12T02:46:13.654Z",
@@ -371,7 +371,7 @@
         "tier": "2",
         "version": "0.1",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-blade-naming/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-blade-naming/SKILL.md"
       },
       "hash": "0297760ad625d3192815c34ccd1fae8df9aa76ea7a7fd132699a26e736798337",
       "published": "2026-06-12T02:43:50.245Z",
@@ -398,7 +398,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-boundary-enforcement/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-boundary-enforcement/SKILL.md"
       },
       "hash": "e2823736c88dad02023a440bb39f1524d213c3a70db17dcfd124bb6ebdfa1ab6",
       "published": "2026-02-26T23:07:30.502Z",
@@ -425,7 +425,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-braid-reasoning/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-braid-reasoning/SKILL.md"
       },
       "hash": "0660d4277f46ca42eb5bf317a49557cef954e1c40342beb0943cb23f42573623",
       "published": "2026-04-22T13:39:43.348Z",
@@ -452,7 +452,7 @@
         "tier": "2",
         "version": "5.3.2",
         "alignment": "balanced",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-ceremonist/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-ceremonist/SKILL.md"
       },
       "hash": "7480ab69bc6523ff2771e2175c8906287f8af1fe8abf56bf6e3bd20deb16b9ed",
       "published": "2026-06-10T18:51:03.920Z",
@@ -479,7 +479,7 @@
         "tier": "",
         "version": "5.3.1",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-ceremony-engine/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-ceremony-engine/SKILL.md"
       },
       "hash": "8643dbb1fcd6b960a95e1a3baffadb5aa5361e7d523304a1efb78b99ad22878e",
       "published": "2026-04-22T13:39:43.350Z",
@@ -533,7 +533,7 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-chronicler/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-chronicler/SKILL.md"
       },
       "hash": "923f6725366de831c786e061706f86f0b17f33c150fc9008621c3dbe1237acbb",
       "published": "2026-06-21T14:53:46.501Z",
@@ -560,7 +560,7 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-cipher/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-cipher/SKILL.md"
       },
       "hash": "adbd24c8a1dfce136683cf1d39efda03da49540ad2252901da560869c684a43f",
       "published": "2026-06-10T18:51:08.863Z",
@@ -587,10 +587,10 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-cityofmages-to-research/SKILL.md"
+        "source_path": "~/agentprivacy-skills/meta/agentprivacy-cityofmages-to-research/SKILL.md"
       },
-      "hash": "7ab6520a010d0bb27e64ac59a6320ed68d376cfe3ea47cf513b34e6627e8edee",
-      "published": "2026-06-10T18:50:39.698Z",
+      "hash": "98f08f941d9be6e1684937f2569eeec5f8a322c275fe42ab2842a12699ce7be0",
+      "published": "2026-08-24T16:19:06.615Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -614,7 +614,7 @@
         "tier": "2",
         "version": "5.5",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-companion-tamer/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-companion-tamer/SKILL.md"
       },
       "hash": "5c15badba0ddedbce4f600c0214262d91b91f759642114682a9b152495775e00",
       "published": "2026-06-10T18:52:02.720Z",
@@ -641,7 +641,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-compression-defence/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-compression-defence/SKILL.md"
       },
       "hash": "2111a14c450af109c1b2cb8a72235451a4a4348492f7af7585b9fdb578ae1322",
       "published": "2026-06-09T17:21:10.788Z",
@@ -668,7 +668,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-consent-infrastructure/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-consent-infrastructure/SKILL.md"
       },
       "hash": "637409261eb89f0ddba08132392255e21982bdb2be27350ce74c7b30df4724b9",
       "published": "2026-04-22T13:39:43.351Z",
@@ -695,7 +695,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-constellation-method/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-constellation-method/SKILL.md"
       },
       "hash": "2a61d833fdc034c8fb338ca3089ee6c78840f952f841ed8189d18d07f09e095c",
       "published": "2026-04-22T13:39:43.354Z",
@@ -722,10 +722,10 @@
         "tier": "",
         "version": "5.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-content-addressing/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-content-addressing/SKILL.md"
       },
-      "hash": "1bb61004d264672302b76f48249011ba97e4c975cde5446f2e1dbb1385889f2b",
-      "published": "2026-04-22T13:39:43.305Z",
+      "hash": "983fc7c283cfcafab052d29f63684d63eba7786b938b7dc31897cf9a186db7c4",
+      "published": "2026-08-24T16:19:06.978Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -749,7 +749,7 @@
         "tier": "0",
         "version": "5.3.1",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-cosmological-bound/SKILL.md"
+        "source_path": "~/agentprivacy-skills/meta/agentprivacy-cosmological-bound/SKILL.md"
       },
       "hash": "2262add425096b15abd76d6a529670d311c45d8db56ba0e9a336dd623a6ba5c5",
       "published": "2026-04-07T19:07:01.340Z",
@@ -776,7 +776,7 @@
         "tier": "2",
         "version": "5.4.1",
         "alignment": "balanced",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-cosmologist/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-cosmologist/SKILL.md"
       },
       "hash": "44bd6c408162f27d445f808e5c9fe823f14747ae336f9961d0aed2ebc956ec46",
       "published": "2026-06-12T02:40:35.382Z",
@@ -803,7 +803,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-cross-chain/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-cross-chain/SKILL.md"
       },
       "hash": "6ca4645aec7cea7aef0515c289509fa4b222b6a6db9f3f0c71e669e96a5c09d2",
       "published": "2026-04-22T13:39:43.356Z",
@@ -830,7 +830,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-crypto-zkp/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-crypto-zkp/SKILL.md"
       },
       "hash": "42d93b477e0cbb89fb3466ad8cc5685ebef30595280f00c27789ea52d57dcd27",
       "published": "2026-06-10T18:37:12.701Z",
@@ -857,7 +857,7 @@
         "tier": "",
         "version": "1.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-cryptographic-durability/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-cryptographic-durability/SKILL.md"
       },
       "hash": "f45b9a4ae17b465f90e2dc66e9fb323d5bbddf6a43aca16884d8f07b6d32927d",
       "published": "2026-06-10T18:37:19.249Z",
@@ -884,7 +884,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-dark-forest/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-dark-forest/SKILL.md"
       },
       "hash": "a6938ab165b7f6d2b55381c1edfb2411508338d65042ac23f88b569a33cb8490",
       "published": "2026-04-22T13:39:43.361Z",
@@ -911,7 +911,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-data-dignity/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-data-dignity/SKILL.md"
       },
       "hash": "241dd50f877700b88ac6bd91baacf2dab1354da57e869c2ac49923c5e9ed3de9",
       "published": "2026-04-22T13:39:43.363Z",
@@ -938,7 +938,7 @@
         "tier": "",
         "version": "5.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-derivation-certificate/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-derivation-certificate/SKILL.md"
       },
       "hash": "61ecdf1085ec41a64c5d8cd85f7d5dee27cbf3fddc9930de1c5b3a649017fcf3",
       "published": "2026-04-22T13:39:43.365Z",
@@ -965,7 +965,7 @@
         "tier": "",
         "version": "5.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-dihedral-sovereignty/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-dihedral-sovereignty/SKILL.md"
       },
       "hash": "6f93e8e89e5fe325c044e7c3930c64a12bb59a7e2676d812015bb004a51d5fca",
       "published": "2026-04-22T13:39:43.307Z",
@@ -992,7 +992,7 @@
         "tier": "2",
         "version": "0.1",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-disclosure-phi/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-disclosure-phi/SKILL.md"
       },
       "hash": "b6cd80edbaf74c9f9724fc083b63d87c6d03078bfaba22fdea81510460390dd0",
       "published": "2026-06-12T02:40:35.385Z",
@@ -1019,10 +1019,10 @@
         "tier": "",
         "version": "6.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-dragon/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-dragon/SKILL.md"
       },
-      "hash": "af8f2f2ee0d24069287ea7ec6e7561a271b70d6fe13714684734e4955c469a35",
-      "published": "2026-06-10T19:36:40.848Z",
+      "hash": "1c7824f99215faede57077315108514c5d2104d2591587af717d3c1e24a6d77a",
+      "published": "2026-08-24T16:19:07.040Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -1046,7 +1046,7 @@
         "tier": "",
         "version": "5.3.1",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-dragon-flight/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-dragon-flight/SKILL.md"
       },
       "hash": "820077833523e64e5a425e3eb6f257d28a83d475d7bf581552776c4262231095",
       "published": "2026-04-22T13:39:43.310Z",
@@ -1073,7 +1073,7 @@
         "tier": "2",
         "version": "5.3.1",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-dragonwaker/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-dragonwaker/SKILL.md"
       },
       "hash": "4d6cc5a14409c1cedc0d52c3d96c4b479332100179b17f374397c7c3e75dee7e",
       "published": "2026-04-05T20:37:29.171Z",
@@ -1100,7 +1100,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-drake-dragon-duality/SKILL.md"
+        "source_path": "~/agentprivacy-skills/meta/agentprivacy-drake-dragon-duality/SKILL.md"
       },
       "hash": "aa0c0d0d1a2997c68ee9be05b80c941da58842daf488dfd9d5df52655a238336",
       "published": "2026-04-22T13:39:43.218Z",
@@ -1118,19 +1118,19 @@
       "title": "Dual Agent Harness",
       "emoji": "",
       "card": "The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a self-improvement harness against a concrete optimization target. The Mage (bnot · proposer) conceals/reduces; the Swordsman (neg · prover) signs only what survives an un-tuneable h…",
-      "brief": "The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a self-improvement harness against a concrete optimization target. The Mage (bnot · proposer) conceals/reduces; the Swordsman (neg · prover) signs only what survives an un-tuneable held-out gate; the Gap between them is the non-collusion precondition, physically realized as a Fiat-Shamir witness set the proposer cannot see. Activates when building or driving an agent loop that must produce VALIDATED improvements (circuit/gate/qubit reduction, cost optimization, any \"make it cheaper and prove it\" task) without fooling itself with mirages. Triggers: \"dual-agent loop\", \"swordsman mage harness\", \"autoresearch\", \"proposer prover loop\", \"reduce gates or qubits\", \"ecdsa.fail\", \"circuit co-evolution\", \"held-apart agents\", \"neg bnot succ\". V6 register note (2026-06-10): conjecture/version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.",
+      "brief": "The operational Swordsman ⊥ Mage autoresearch loop: how to actually RUN dual-agent separation as a self-improvement harness against a concrete optimization target. The Mage (bnot · proposer) conceals/reduces; the Swordsman (neg · prover) signs only what survives an un-tuneable held-out gate; the Gap between them is the non-collusion precondition, physically realized as a Fiat-Shamir witness set the proposer cannot see. Activates when building or driving an agent loop that must produce VALIDATED improvements (circuit/gate/qubit reduction, cost optimization, any \"make it cheaper and prove it\" task) without fooling itself with mirages. Triggers: \"dual-agent loop\", \"swordsman mage harness\", \"autoresearch\", \"proposer prover loop\", \"reduce gates or qubits\", \"ecdsa.fail\", \"circuit co-evolution\", \"held-apart agents\", \"neg bnot succ\". V6 register note (2026-07-11): conjecture/version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C96); model head: privacy_value_v6_formal_specification.md.",
       "body_ref": "assets/agentprivacy-dual-agent-harness/SKILL.md",
       "origin": {
         "author": "mitch",
         "universe": "agentprivacy",
         "category": "meta",
         "tier": "",
-        "version": "1.0",
+        "version": "1.1",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-dual-agent-harness/SKILL.md"
+        "source_path": "~/agentprivacy-skills/meta/agentprivacy-dual-agent-harness/SKILL.md"
       },
-      "hash": "896e01c12a64274f58ac0d511b23f0e596565728ae74fb9285ad296ef7d12feb",
-      "published": "2026-06-10T21:21:18.900Z",
+      "hash": "ba7719267e1cff415fd9eddfa9771288bd931a112f17de3362e2f428a885179a",
+      "published": "2026-08-24T16:19:06.672Z",
       "listing": "featured",
       "requires": [],
       "trust": {
@@ -1154,7 +1154,7 @@
         "tier": "",
         "version": "5.3.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-dual-territory/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-dual-territory/SKILL.md"
       },
       "hash": "c34ab4518fd27bc9067ce811552659ed861179a39a3ee583f58714e3d300a4ea",
       "published": "2026-04-22T13:39:43.366Z",
@@ -1181,7 +1181,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-economics/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-economics/SKILL.md"
       },
       "hash": "dd7e8d52ba17ee1355dd4a0ce712dabd60c409e7bf0b49491fc8a6d9f751d614",
       "published": "2026-06-10T18:37:29.387Z",
@@ -1208,7 +1208,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-edge-value/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-edge-value/SKILL.md"
       },
       "hash": "0e4e4876d44a448862b2aba82f4a0c4ab1d143dbc5b7c68cf1c7ad128611bcb9",
       "published": "2026-04-22T13:39:43.312Z",
@@ -1235,7 +1235,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-enclave-operations/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-enclave-operations/SKILL.md"
       },
       "hash": "42e1b90e7e8f891ec48a139601f49431a0fda4745448c97fe159aae719edd05d",
       "published": "2026-02-24T01:07:43.144Z",
@@ -1262,7 +1262,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-environmental-commons/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-environmental-commons/SKILL.md"
       },
       "hash": "23e2fbca0c420fd1472540896e14902ba303c563dde17d8ebdf06a30e12f090d",
       "published": "2026-04-22T13:39:43.369Z",
@@ -1289,7 +1289,7 @@
         "tier": "",
         "version": "5.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-five-strikes/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-five-strikes/SKILL.md"
       },
       "hash": "c9a31ea71034362001ef8a228103e729b7ccaf227d88e6ca1faf64cdd7b583e4",
       "published": "2026-04-22T13:39:43.371Z",
@@ -1316,7 +1316,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-forensic-defense/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-forensic-defense/SKILL.md"
       },
       "hash": "aa2e2229e1e26ae458e1dff1cb97f9b0e8a096c6786c61bb0d7ad06690366e79",
       "published": "2026-02-24T01:07:43.175Z",
@@ -1343,7 +1343,7 @@
         "tier": "2",
         "version": "5.3.1",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-forgecaller/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-forgecaller/SKILL.md"
       },
       "hash": "a5e2bf398e0d917600e923a41bba13d59e3b3bc837bfa43e1c9cd099bdf0c9bc",
       "published": "2026-04-05T20:38:53.725Z",
@@ -1370,7 +1370,7 @@
         "tier": "2",
         "version": "5.3.2",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-forgemaster/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-forgemaster/SKILL.md"
       },
       "hash": "62461d6b8f84e862cfcdc459716001b3b1593b4e221068de26d82625d64e4c81",
       "published": "2026-06-12T02:40:35.382Z",
@@ -1397,7 +1397,7 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-gatekeeper/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-gatekeeper/SKILL.md"
       },
       "hash": "82ea5761d8099481ef2e9f5bb3c866e903a85a51de1f8ee80c064a65a0dd4c9a",
       "published": "2026-04-22T13:39:43.244Z",
@@ -1424,7 +1424,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-governance-agents/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-governance-agents/SKILL.md"
       },
       "hash": "e78d9703bdda9aab2d5195a30af1dbed532d3aac1962b791aef2444329653b03",
       "published": "2026-04-22T13:39:43.374Z",
@@ -1451,7 +1451,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-grimoire-navigation/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-grimoire-navigation/SKILL.md"
       },
       "hash": "602742ddb9be8e42cffb35143e4ee6a1002197410bef2f2d3c76dd9b20752051",
       "published": "2026-02-24T01:07:43.205Z",
@@ -1505,7 +1505,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-guild-efficiency/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-guild-efficiency/SKILL.md"
       },
       "hash": "b64de72fa512ba42503aa847d3b180d461e192550e7b37d6e5de9679cab13f40",
       "published": "2026-04-22T13:39:43.386Z",
@@ -1532,7 +1532,7 @@
         "tier": "2",
         "version": "5.0",
         "alignment": "balanced",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-healer/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-healer/SKILL.md"
       },
       "hash": "37fcdbfd9902ef4988dfdaa7bb1a2c00ce3a1aa48a32eccb67693a9754c1edd3",
       "published": "2026-04-22T13:39:43.246Z",
@@ -1559,7 +1559,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-hemispheric-attention/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-hemispheric-attention/SKILL.md"
       },
       "hash": "7ba8a17c6817dd864c08f70075de02c2df2d755e2c7fa5ecf7c038eb304aa135",
       "published": "2026-04-22T13:39:43.388Z",
@@ -1586,7 +1586,7 @@
         "tier": "2",
         "version": "5.0",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-herald/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-herald/SKILL.md"
       },
       "hash": "eaaa1e0d77ba75fbc532704dc741b220d1bd4788e8bf12a0a534e56ee787e262",
       "published": "2026-04-22T13:39:43.248Z",
@@ -1613,7 +1613,7 @@
         "tier": "",
         "version": "5.3.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-hexagram-convergence/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-hexagram-convergence/SKILL.md"
       },
       "hash": "d04863e7de9c1e3a709c9705493cd6341c8f98697bd3f2333db3fc18cac9622c",
       "published": "2026-04-22T13:39:43.389Z",
@@ -1640,7 +1640,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-hitchhiker-governance/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-hitchhiker-governance/SKILL.md"
       },
       "hash": "ea3d22ddaef5f0c1be5723b9aaffa1eb97c664fff5e487a690f3bd7fd5626101",
       "published": "2026-06-10T18:37:34.067Z",
@@ -1667,7 +1667,7 @@
         "tier": "2",
         "version": "5.5",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-hold-witness/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-hold-witness/SKILL.md"
       },
       "hash": "0119677b16344aa01cfae0d444a0a62594ad0ca3462bff7d0bf7491aed4c7ce7",
       "published": "2026-05-14T13:48:52.758Z",
@@ -1694,7 +1694,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-holographic-bound/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-holographic-bound/SKILL.md"
       },
       "hash": "5e1d691c63a465cb3cbff2bdbe17cfd39ac5bc8a45400895ad0a0b049dfc3c47",
       "published": "2026-04-22T13:39:43.314Z",
@@ -1721,7 +1721,7 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "balanced",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-holonic-architect/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-holonic-architect/SKILL.md"
       },
       "hash": "3b41c6d7e33405dc7d063bcfcb8e43b275bb9b1139d0fffde57ec5cb8f4b38ff",
       "published": "2026-04-22T13:39:43.251Z",
@@ -1748,7 +1748,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-holonic-identity/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-holonic-identity/SKILL.md"
       },
       "hash": "82ff693449eb81ddfa98decb523b9e24c72c132a52cabdd944dfc9864666e49c",
       "published": "2026-04-22T13:39:43.393Z",
@@ -1775,7 +1775,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-holonic-persistence/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-holonic-persistence/SKILL.md"
       },
       "hash": "cf82bef418f2bc4ee660788fae8baa9a847866a720a9c4d88c39b6b97d29b5c2",
       "published": "2026-04-22T13:39:43.395Z",
@@ -1802,7 +1802,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-holonic-reasoning/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-holonic-reasoning/SKILL.md"
       },
       "hash": "ed11c664a750d88d91d161205b0bd1087bfaa168a879b9dd210e56d61c59876f",
       "published": "2026-04-22T13:39:43.396Z",
@@ -1829,7 +1829,7 @@
         "tier": "",
         "version": "1.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-horizon-gate/SKILL.md"
+        "source_path": "~/agentprivacy-skills/meta/agentprivacy-horizon-gate/SKILL.md"
       },
       "hash": "fa31b36e1c6c4561ebc04d9048e0d899c3a10188ae8b834ab67bce4b0bdbe502",
       "published": "2026-06-09T17:24:09.205Z",
@@ -1856,7 +1856,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-inscription-mechanics/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-inscription-mechanics/SKILL.md"
       },
       "hash": "de8aa5687490c3cee87b4cda5afa5e8e5a0f80ffbfcaf1691d2a733effaba377",
       "published": "2026-02-24T01:07:43.235Z",
@@ -1883,7 +1883,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-intel-pooling/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-intel-pooling/SKILL.md"
       },
       "hash": "222c6cf0eee4de43f94bfeec3306d4c80f70e2d49b82a1a6b6cc07c36e21801f",
       "published": "2026-06-10T18:37:39.470Z",
@@ -1910,7 +1910,7 @@
         "tier": "2",
         "version": "5.0",
         "alignment": "balanced",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-jedi/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-jedi/SKILL.md"
       },
       "hash": "2351ad0f4902b0e2e435c96b54084f074ba7093e92398cf25aa7e38502c54a2e",
       "published": "2026-04-22T13:39:43.254Z",
@@ -1937,7 +1937,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-key-ceremony/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-key-ceremony/SKILL.md"
       },
       "hash": "eea0497af9c1218db4364521accfe7df1f341903a95dac15e330821c99152040",
       "published": "2026-02-24T01:07:43.293Z",
@@ -1964,7 +1964,7 @@
         "tier": "",
         "version": "5.1",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-key-forging/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-key-forging/SKILL.md"
       },
       "hash": "b44d1dcf4ee27cf6abd62e379b9c88042711fd63593131f9f72617b1bd4f288c",
       "published": "2026-06-11T13:59:14.925Z",
@@ -1991,7 +1991,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-knowledgegraph/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-knowledgegraph/SKILL.md"
       },
       "hash": "e8ef0a3673483ae5043dcb4f57dc1c40a62c5bef7d75b94c5a28fc92de5e98bd",
       "published": "2026-06-10T18:49:55.181Z",
@@ -2018,7 +2018,7 @@
         "tier": "0",
         "version": "5.0",
         "alignment": "balanced",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-kyra/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-kyra/SKILL.md"
       },
       "hash": "d7c236e895198bd41a6a65b4a749d1c412425d2e8ed0b0c9d277c0e2e6f28777",
       "published": "2026-06-09T15:26:31.932Z",
@@ -2045,7 +2045,7 @@
         "tier": "",
         "version": "1.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-lattice-coherence/SKILL.md"
+        "source_path": "~/agentprivacy-skills/meta/agentprivacy-lattice-coherence/SKILL.md"
       },
       "hash": "7aa012144e01fa461a8b38481a8721c948ba3f7c68d108466dc00e4d48531a32",
       "published": "2026-06-09T15:00:21.512Z",
@@ -2072,7 +2072,7 @@
         "tier": "",
         "version": "6.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-mana-economy/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-mana-economy/SKILL.md"
       },
       "hash": "ce4acc368e23e230d5f460b5b3cc896664065aff610e8d3ba547b2885fe5a75c",
       "published": "2026-06-10T19:38:49.248Z",
@@ -2099,7 +2099,7 @@
         "tier": "2",
         "version": "5.3.1",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-manaweaver/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-manaweaver/SKILL.md"
       },
       "hash": "f531a294cf15a29fa819ef5df181b4e8772bdbdca2ca8c9695e80827d67f3403",
       "published": "2026-04-05T20:43:19.179Z",
@@ -2126,7 +2126,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/meta/agentprivacy-master-emissary/SKILL.md"
+        "source_path": "~/agentprivacy-skills/meta/agentprivacy-master-emissary/SKILL.md"
       },
       "hash": "279de12f11c6d6778e26342ef4e6bb7bdc46f224fc8c31e3051f45814c166e33",
       "published": "2026-04-22T13:39:43.219Z",
@@ -2153,7 +2153,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-media-plurality/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-media-plurality/SKILL.md"
       },
       "hash": "e97dede4c78fc473a968728be62ee0c738ecdbdc518e6319fee0b7c17f27ff4c",
       "published": "2026-04-22T13:39:43.402Z",
@@ -2180,7 +2180,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-mesh-architecture/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-mesh-architecture/SKILL.md"
       },
       "hash": "c44cb005f592cacefc2f3eb695a0a927c859b12201e5e5c1d78b6dce9ace4c64",
       "published": "2026-04-22T13:39:43.404Z",
@@ -2207,7 +2207,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-metadata-resistance/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-metadata-resistance/SKILL.md"
       },
       "hash": "ac36c69e989f56a4363f3cc45b8c6b2fba69c800379ff703ddb68e24e0789120",
       "published": "2026-06-10T18:43:17.402Z",
@@ -2234,7 +2234,7 @@
         "tier": "2",
         "version": "5.3.1",
         "alignment": "balanced",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-mirrorkeeper/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-mirrorkeeper/SKILL.md"
       },
       "hash": "620d82a69ab79de39e1a2258e0287a996495a9dbe3b77b7b7b30f35117da6c4c",
       "published": "2026-04-05T20:37:30.201Z",
@@ -2261,7 +2261,7 @@
         "tier": "2",
         "version": "5.5",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-moonkeeper/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-moonkeeper/SKILL.md"
       },
       "hash": "1ab6339bb152126c502fb02e117e0a33d3cf27309ea0e136261057f6070653fd",
       "published": "2026-06-10T19:33:44.392Z",
@@ -2288,7 +2288,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-narrative-compression/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-narrative-compression/SKILL.md"
       },
       "hash": "8d8b01ab625012b04bf10b42430dbc762c8385bfcd1ac75d4caa96c52ab9537c",
       "published": "2026-06-21T14:53:46.503Z",
@@ -2315,7 +2315,7 @@
         "tier": "2",
         "version": "5.4",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-netkeeper/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-netkeeper/SKILL.md"
       },
       "hash": "eb6c796aa2f03969d33143728ee4db4cb9c54f84c39f636a212b1c9ae38b9c78",
       "published": "2026-04-22T13:39:43.261Z",
@@ -2342,7 +2342,7 @@
         "tier": "",
         "version": "5.4",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-network-topology/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-network-topology/SKILL.md"
       },
       "hash": "2f719f5f1212a7dff4c9f2d120ae3473294f1b73b8471e7a76cf30b7cf253f1a",
       "published": "2026-06-10T18:50:10.273Z",
@@ -2369,7 +2369,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-nullifier-design/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-nullifier-design/SKILL.md"
       },
       "hash": "b82e09502fa178fba0b3e201401af918848cc901c7b7d207f633851f054fad1c",
       "published": "2026-06-10T18:43:22.227Z",
@@ -2396,7 +2396,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-path-integral/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-path-integral/SKILL.md"
       },
       "hash": "14f6b1703915af66a205a64c442644e5b4b7c3cfd6043c4b82b4c9415911c1f0",
       "published": "2026-04-22T13:39:43.320Z",
@@ -2423,7 +2423,7 @@
         "tier": "2",
         "version": "5.0",
         "alignment": "balanced",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-pedagogue/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-pedagogue/SKILL.md"
       },
       "hash": "c8ab78f330d683d5975ed42471155c1bbbf0f99d414b7f33e00bc2e7a9e2f167",
       "published": "2026-06-10T18:51:23.867Z",
@@ -2450,7 +2450,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-perimeter-hardening/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-perimeter-hardening/SKILL.md"
       },
       "hash": "3ed15f65a176f5b699427f4c32357020061b29301dbcb9df8e1207e3fc35f5f2",
       "published": "2026-02-24T01:08:00.678Z",
@@ -2477,7 +2477,7 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "balanced",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-person/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-person/SKILL.md"
       },
       "hash": "21766c33d643482185c9e0a6330250558dc19ad6ceb9f99b9b7f8411857c55ba",
       "published": "2026-04-22T13:39:43.266Z",
@@ -2504,7 +2504,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-personhood-sybil/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-personhood-sybil/SKILL.md"
       },
       "hash": "5c5195253e5d4a3e74cc91ab7fd77b9d603d4ab58d439f6f60cbbfa5f17d9973",
       "published": "2026-04-22T13:39:43.409Z",
@@ -2531,7 +2531,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-plurality-cooperative/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-plurality-cooperative/SKILL.md"
       },
       "hash": "0ab4b631d0773dafaf92f26fa305af401b861bc44347d6a645e9e06579dddcc4",
       "published": "2026-04-22T13:39:43.411Z",
@@ -2558,7 +2558,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-policy-governance/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-policy-governance/SKILL.md"
       },
       "hash": "661bc66a9b5f28a012264f6eec0c4696e8a7822e3490340d81c1b96da205feab",
       "published": "2026-06-10T18:43:55.034Z",
@@ -2585,7 +2585,7 @@
         "tier": "",
         "version": "5.3.1",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-pretext-measurement/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-pretext-measurement/SKILL.md"
       },
       "hash": "02776681fa63b633f22e383a23a27ad3f5e3a20a7fa50191b5130c05244946fb",
       "published": "2026-04-22T13:39:43.415Z",
@@ -2612,7 +2612,7 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-priest/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-priest/SKILL.md"
       },
       "hash": "93199113c811394b04840ff47aed2d73615f83d567bc14f1cbd16fa227c0e851",
       "published": "2026-06-09T15:47:39.353Z",
@@ -2639,7 +2639,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-promise-theory/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-promise-theory/SKILL.md"
       },
       "hash": "592d8a2bc555db97ed4d0cbddd359c3d2863baa55f7abb3c20e96f002a2b2bec",
       "published": "2026-04-22T13:39:43.321Z",
@@ -2666,7 +2666,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-proverbiogenesis/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-proverbiogenesis/SKILL.md"
       },
       "hash": "a2bf6932379c94a4c9101facf9364e5764499bfddbab20cc4ea27d51cdd98366",
       "published": "2026-04-22T13:39:43.417Z",
@@ -2693,7 +2693,7 @@
         "tier": "",
         "version": "5.3.1",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-quantum-defence/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-quantum-defence/SKILL.md"
       },
       "hash": "9022be67eae4782b4274a94ce272cec586051c6e8eb968b5207026fa9278a873",
       "published": "2026-04-22T13:39:43.418Z",
@@ -2720,7 +2720,7 @@
         "tier": "2",
         "version": "5.2",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-quantum-sentinel/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-quantum-sentinel/SKILL.md"
       },
       "hash": "ddf766f9cb0b45d9ba95813331e280a87683f5c56fd65679c0d1cb31abb0567d",
       "published": "2026-06-10T18:51:33.078Z",
@@ -2747,7 +2747,7 @@
         "tier": "1",
         "version": "5.3.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-quaternion-mapping/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-quaternion-mapping/SKILL.md"
       },
       "hash": "8a5e0846cfedd784008b3b33e7f8e26f139fd71b55e93e5973fd95deb4919ee3",
       "published": "2026-04-07T19:47:26.746Z",
@@ -2774,7 +2774,7 @@
         "tier": "2",
         "version": "5.0",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-ranger/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-ranger/SKILL.md"
       },
       "hash": "6cc26d9bd8a0b40c3e9ef1d7de55504a4728a62b15a3d221cc2b9925fe6a7fa0",
       "published": "2026-04-22T13:39:43.272Z",
@@ -2801,7 +2801,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-recovery-rpp/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-recovery-rpp/SKILL.md"
       },
       "hash": "4a110f6ccd898be990d1986e9e91c921027a8676053388dde7f68eee9fcf5a33",
       "published": "2026-04-22T13:39:43.420Z",
@@ -2828,7 +2828,7 @@
         "tier": "2",
         "version": "5.5",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-registry-keeper/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-registry-keeper/SKILL.md"
       },
       "hash": "79881a7e6838ecdde90db9c6bfb09f9c7587d3a6004cf69bf8e3b4c72bbf53d3",
       "published": "2026-05-14T13:41:36.193Z",
@@ -2855,7 +2855,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-reputation-credentials/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-reputation-credentials/SKILL.md"
       },
       "hash": "5cf3e2d2084717cc0fdf39bba6072035b221e602ab51608bad2b2dedfa28e064",
       "published": "2026-04-22T13:39:43.423Z",
@@ -2882,7 +2882,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-revocation-mechanics/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-revocation-mechanics/SKILL.md"
       },
       "hash": "f960ed8b6b7e13c8ea9f8d1c35f66085f3f177f4d08a17836942ec6a760d1b46",
       "published": "2026-02-24T01:08:00.712Z",
@@ -2909,7 +2909,7 @@
         "tier": "",
         "version": "5.2.1",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-ring-algebra/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-ring-algebra/SKILL.md"
       },
       "hash": "6719f7784cd2eaaa8c150e45ee5e9801d85d6b3056c0027f51bc2e28a34d2f13",
       "published": "2026-06-12T02:46:13.655Z",
@@ -2936,7 +2936,7 @@
         "tier": "",
         "version": "5.3.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-selective-disclosure/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-selective-disclosure/SKILL.md"
       },
       "hash": "90413a15f65870084d109952661f0dac5b3c5b45428ceedb560bf5df1f0941ed",
       "published": "2026-04-22T13:39:43.425Z",
@@ -2963,7 +2963,7 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-sentinel/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-sentinel/SKILL.md"
       },
       "hash": "0d7da498aca44b3a80f4380803afb445a5b80557bad0727581790804447a5274",
       "published": "2026-06-10T18:51:37.506Z",
@@ -2990,7 +2990,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-separation-enforcement/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-separation-enforcement/SKILL.md"
       },
       "hash": "ba42195f1a1ff70cde58a7693f633d405b6e4c59259c7d1a019d7ff33624761c",
       "published": "2026-06-10T18:44:00.403Z",
@@ -3017,7 +3017,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-shared-parent-patterns/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-shared-parent-patterns/SKILL.md"
       },
       "hash": "81997c348acd0e09e3f081dbc5121009910d195eaabb5e8fa24ca00bdeb8d29f",
       "published": "2026-04-22T13:39:43.428Z",
@@ -3044,7 +3044,7 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-shipwright/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-shipwright/SKILL.md"
       },
       "hash": "bd96d59968deb3f405035b28fbda4c46cccb36e1cbecae124661f18172b88736",
       "published": "2026-06-21T14:53:46.501Z",
@@ -3071,7 +3071,7 @@
         "tier": "2",
         "version": "5.0",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-sith/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-sith/SKILL.md"
       },
       "hash": "6c7b78c3b3a3963fcdfbbd0b2f744115fc38be7b8352e155addb846971c18613",
       "published": "2026-06-10T18:51:47.874Z",
@@ -3098,7 +3098,7 @@
         "tier": "0",
         "version": "5.3.1",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-soulbae/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-soulbae/SKILL.md"
       },
       "hash": "b860c560ffbfee8e408af5e155c8ab8d540b90e836427780e632d39614d2bf30",
       "published": "2026-06-09T15:47:39.385Z",
@@ -3125,7 +3125,7 @@
         "tier": "0",
         "version": "5.3.2",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-soulbis/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-soulbis/SKILL.md"
       },
       "hash": "dff4ddcc817511821e6bdea23e8a83e939521e80a8b0e65340edcf98478f0c34",
       "published": "2026-06-10T18:51:52.474Z",
@@ -3142,8 +3142,8 @@
       "kind": "skill",
       "title": "Sovereignty Economics",
       "emoji": "",
-      "card": "Sovereignty economics and P^1.5 superlinearity for 0xagentprivacy. Activates when discussing the superlinear returns of protection, sovereignty gap quantification (17×-12,000×), V_sovereign/V_surveillance ratios, or the mathematical proof that privacy creates exponentially more…",
-      "brief": "Sovereignty economics and P^1.5 superlinearity for 0xagentprivacy. Activates when discussing the superlinear returns of protection, sovereignty gap quantification (17×-12,000×), V_sovereign/V_surveillance ratios, or the mathematical proof that privacy creates exponentially more value than surveillance.\n\n**Source:** Privacy Value Model V4 + \"Privacy is Normal and the Path to Value in an Agentic Everything Era\" (Oct 2025) **Target context:** Protocol economists, DeFi architects, privacy pool designers, regulatory analysts **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe applied economics of the Privacy Value Model. Not the theoretical equation but the practical demonstration: when you run the numbers, high privacy is not incrementally better than low privacy. It is categorically different. ZK proofs don't give 2× the value of basic encryption. They give 20–30×. And if you try to split privacy between intelligence and tokens, the flow consistency factor kills the value before the exponent even applies.",
+      "card": "Sovereignty economics and P^1.5 superlinearity for 0xagentprivacy. Activates when discussing the superlinear strength of protection (P^1.5), sovereignty gap analysis, V_sovereign/V_surveillance ratios, or the appropriation-share reading of privacy value — the share of surplus th…",
+      "brief": "Sovereignty economics and P^1.5 superlinearity for 0xagentprivacy. Activates when discussing the superlinear strength of protection (P^1.5), sovereignty gap analysis, V_sovereign/V_surveillance ratios, or the appropriation-share reading of privacy value — the share of surplus the consent interface lets the subject keep (historical gap multiples are retired lineage, not current facts).\n\n**Source:** Privacy Value Model V4 + \"Privacy is Normal and the Path to Value in an Agentic Everything Era\" (Oct 2025) **Target context:** Protocol economists, DeFi architects, privacy pool designers, regulatory analysts **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe applied economics of the Privacy Value Model. Not the theoretical equation but the practical demonstration: when you run the numbers, high privacy is not incrementally better than low privacy. It is categorically different. ZK proofs don't give 2× the value of basic encryption. They give 20–30×. And if you try to split privacy between intelligence and tokens, the flow consistency factor kills the value before the exponent even…",
       "body_ref": "assets/agentprivacy-sovereignty-economics/SKILL.md",
       "origin": {
         "author": "mitch",
@@ -3152,10 +3152,10 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-sovereignty-economics/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-sovereignty-economics/SKILL.md"
       },
-      "hash": "efa6a0a236a0d6b895b5aeda0d7159a536ac8135e8fe6c632a0e774bf10ed1dc",
-      "published": "2026-04-22T13:39:43.429Z",
+      "hash": "3ab73931eebadde950ce4d339e576e005f62c3fa41e69f850bd120bf162a5f9d",
+      "published": "2026-08-24T16:19:07.223Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -3179,7 +3179,7 @@
         "tier": "2",
         "version": "5.5",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-spawning-witness/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-spawning-witness/SKILL.md"
       },
       "hash": "43233aa2d343e5600f9f908a8db96c8ebd58fbd26113a7f4510f3ef57b782776",
       "published": "2026-06-10T18:52:07.410Z",
@@ -3206,7 +3206,7 @@
         "tier": "",
         "version": "5.3.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-spell-encoding/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-spell-encoding/SKILL.md"
       },
       "hash": "6d00fb171a9a01a1093d858799848036a84ff3e97215d433fb3d63e0bf259895",
       "published": "2026-04-07T11:50:41.897Z",
@@ -3233,7 +3233,7 @@
         "tier": "",
         "version": "5.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-spellweb/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-spellweb/SKILL.md"
       },
       "hash": "de21acdb976eb77024a965bdbade6784b3b8bd1b5d79e8f1e7acba2087edf3bc",
       "published": "2026-04-22T13:39:43.432Z",
@@ -3260,10 +3260,10 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-story-diffusion/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-story-diffusion/SKILL.md"
       },
-      "hash": "9451457ef7c17763d6e556faaa2b49fa7aba3f06f813561c489e1aefa3e789ed",
-      "published": "2026-06-10T18:44:38.276Z",
+      "hash": "8f2a3e04cfba39f38471ce2c94f4e82d3a8fad5ed688b91182261c33f3c49b9a",
+      "published": "2026-08-24T16:19:07.290Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -3287,7 +3287,7 @@
         "tier": "",
         "version": "5.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-stranger-ceremony/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-stranger-ceremony/SKILL.md"
       },
       "hash": "f8983944934b03c1cfc0f744e41c2cd8d9e56730ed7cf0a3efe6d4b11a951848",
       "published": "2026-04-22T13:39:43.434Z",
@@ -3314,7 +3314,7 @@
         "tier": "2",
         "version": "5.2",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-stranger-witness/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-stranger-witness/SKILL.md"
       },
       "hash": "7f382c68f73407367e934ea74ebc4d36c5dac80a6ba4d6b4666da042cde21c4e",
       "published": "2026-04-22T13:39:43.287Z",
@@ -3341,7 +3341,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-swordsman-browser/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-swordsman-browser/SKILL.md"
       },
       "hash": "a4a834f91eb6eb5dd29c9af0daee1ef6422e2421c62f43078d1fda765601b7e0",
       "published": "2026-04-22T13:39:43.436Z",
@@ -3368,7 +3368,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-temporal-dynamics/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-temporal-dynamics/SKILL.md"
       },
       "hash": "0a59b3d87807d67bf418b3623e8b30d3ca1fbce99636345298197ca756b46366",
       "published": "2026-04-22T13:39:43.327Z",
@@ -3395,7 +3395,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-tetrahedral-sovereignty/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-tetrahedral-sovereignty/SKILL.md"
       },
       "hash": "bbb5efa9ab1f5c74837cdbf888530ccdcf440829f62a2061b6b23239bd65eb4a",
       "published": "2026-04-22T13:39:43.329Z",
@@ -3422,7 +3422,7 @@
         "tier": "2",
         "version": "5.4",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-theia/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-theia/SKILL.md"
       },
       "hash": "dcbd38ff0e53a278e515110d2eae3abcbf5cb9145f45b441b8f296f1d0718db1",
       "published": "2026-06-12T02:40:35.383Z",
@@ -3449,7 +3449,7 @@
         "tier": "1",
         "version": "5.3.1",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-theia-derivation/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-theia-derivation/SKILL.md"
       },
       "hash": "f319c9080b898e28ed74ec366341a9d8a29c8bbd5521c2c05aca10a8cdbdf2d9",
       "published": "2026-04-07T19:07:03.282Z",
@@ -3476,10 +3476,10 @@
         "tier": "",
         "version": "6.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-threat-adversarial/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-threat-adversarial/SKILL.md"
       },
-      "hash": "f0272208bd274f87b1db7ed88529201ca39649b7cf6c2e3da065468abafd6a99",
-      "published": "2026-06-10T19:41:08.368Z",
+      "hash": "8f152f651fbc7d58e9ee603f76d179fc8b841317681be64d8cdbc11d3d6374bd",
+      "published": "2026-08-24T16:19:07.357Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -3503,7 +3503,7 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-three-axis-separation/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-three-axis-separation/SKILL.md"
       },
       "hash": "c3585847ed2b40b731edf256a290338325b9d73757a1427e19b01559bd0ef7a0",
       "published": "2026-06-10T19:42:54.509Z",
@@ -3530,10 +3530,10 @@
         "tier": "2",
         "version": "5.4",
         "alignment": "balanced",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-topologist/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-topologist/SKILL.md"
       },
-      "hash": "9864656e668128179923cc83f6c5648324bcd3c567e18f23184e24bdc6bd7061",
-      "published": "2026-06-12T02:43:50.245Z",
+      "hash": "41b92323b3b468c30fd47e6c9d5789250994d585c4815cb6c9aa64e6273041bb",
+      "published": "2026-08-24T16:19:06.876Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -3557,10 +3557,10 @@
         "tier": "",
         "version": "5.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-toroidal-witness/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-toroidal-witness/SKILL.md"
       },
-      "hash": "d650da636fe849e6d7568bb347a9a9263438ce12755e4781b2e637cf134903c1",
-      "published": "2026-04-22T13:39:43.440Z",
+      "hash": "6dca963a116d9d4bf31bf3628d2c922808e822b8ce7d06b75dc3a1e41d4cd26a",
+      "published": "2026-08-24T16:19:07.425Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -3584,7 +3584,7 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-trust-spanning/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-trust-spanning/SKILL.md"
       },
       "hash": "9199c6a64b968c1991d508a7d3d0f551520b986063c342eff646f88ad59e9932",
       "published": "2026-04-22T13:39:43.442Z",
@@ -3611,7 +3611,7 @@
         "tier": "2",
         "version": "0.1",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-two-waters/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-two-waters/SKILL.md"
       },
       "hash": "a8712fb510f91052341bc097d86f3e80010fd13ee23784991d26990d76f8d68b",
       "published": "2026-06-12T02:46:13.654Z",
@@ -3638,7 +3638,7 @@
         "tier": "",
         "version": "5.2",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-understanding-as-key/SKILL.md"
+        "source_path": "~/agentprivacy-skills/role/agentprivacy-understanding-as-key/SKILL.md"
       },
       "hash": "58bfc4e920d132d87696030e2ed69eb95db0ac72c6bf58777c21425971d32d19",
       "published": "2026-05-11T18:38:43.929Z",
@@ -3665,10 +3665,10 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-uor-toroidal/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-uor-toroidal/SKILL.md"
       },
-      "hash": "380c6b700769a0d1128860b4b766e03818f9e2fdc2e740bcff1406ac3b0c30b0",
-      "published": "2026-04-22T13:39:43.332Z",
+      "hash": "ba535d675a3a9cc7a2700fabcd4d0a956f9ba580fcb088785886ff52313463b0",
+      "published": "2026-08-24T16:19:07.093Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -3692,10 +3692,10 @@
         "tier": "",
         "version": "4.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/privacy-layer/agentprivacy-vrc-identity/SKILL.md"
+        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-vrc-identity/SKILL.md"
       },
-      "hash": "89e7a1d9c4f70d5c1e878e1c51c14dc0ccc7264eb0e812d66a33e2d3c7e7a619",
-      "published": "2026-06-10T18:49:59.850Z",
+      "hash": "a5cdfad9c7932c80d06b7803bf27b50bc1295f33a61ff3c5cda35592279da01a",
+      "published": "2026-08-24T16:19:07.159Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -3719,7 +3719,7 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-warden/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-warden/SKILL.md"
       },
       "hash": "9fd35388c4f1bca9bcc9191854acdec742b13181c5ec1c177f8fae99fe4fda17",
       "published": "2026-04-22T13:39:43.292Z",
@@ -3746,7 +3746,7 @@
         "tier": "2",
         "version": "5.0",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-weaver/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-weaver/SKILL.md"
       },
       "hash": "1722c98c6f1fef56d0ce1ac9841700a5f01c10f0becf584f24cba226b033ccbe",
       "published": "2026-04-22T13:39:43.295Z",
@@ -3773,7 +3773,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-assets/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-assets/SKILL.md"
       },
       "hash": "f9f5203e3a4df609453a059e97ba70cb4d93e0d5f8603ce0c2a02cd5fc06a7ee",
       "published": "2026-06-27T13:51:43.031Z",
@@ -3800,7 +3800,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-claude-ghost/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-claude-ghost/SKILL.md"
       },
       "hash": "bb09e83b0870d178a3353acd8da80b1fe0b972027e56ac45aaf59927649e7843",
       "published": "2026-06-21T14:53:46.486Z",
@@ -3827,7 +3827,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-compact-references/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-compact-references/SKILL.md"
       },
       "hash": "dac1b7bf4b98ca088d5045527d88b9cb76c2a2d0cd84d23b705274bf8d50bf56",
       "published": "2026-06-27T13:51:43.031Z",
@@ -3854,7 +3854,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-create-plugin/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-create-plugin/SKILL.md"
       },
       "hash": "2d3e11c4b4c62496602d34b4d7ea155d349f300b9977ce31f37200e85dafafa8",
       "published": "2026-06-21T14:53:46.486Z",
@@ -3881,7 +3881,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-delete-site/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-delete-site/SKILL.md"
       },
       "hash": "c854dbb66277022a89503a91e1365b03b0f40911be8452700c0b81534f5a2d9f",
       "published": "2026-06-21T14:53:46.486Z",
@@ -3908,7 +3908,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-document/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-document/SKILL.md"
       },
       "hash": "609e5dce67e67cb0f971e6de089c9596bae363675a40262eaa17b1c601157667",
       "published": "2026-06-27T13:51:43.039Z",
@@ -3935,7 +3935,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-document-plugin/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-document-plugin/SKILL.md"
       },
       "hash": "485e2dbd0039212d7f95ab2be30c4cb459f3d672420efec708238be0efa0d82e",
       "published": "2026-06-21T14:53:46.487Z",
@@ -3962,10 +3962,10 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/.wiki/skill-fedwiki/assets/wiki-dream-cycle/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-dream-cycle/SKILL.md"
       },
       "hash": "ef453aafa3406a918c9951f79a4c0add6999517b3283bb1a16e46061adf00495",
-      "published": "2026-06-29T12:54:20.597Z",
+      "published": "2026-08-24T16:18:54.165Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -3989,7 +3989,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-dsl/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-dsl/SKILL.md"
       },
       "hash": "294943ddf1412b10dcba6b6c651e91a3fddd26eaaac6743b0cdb9dfa6e308789",
       "published": "2026-06-27T13:51:43.039Z",
@@ -4016,7 +4016,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-ghost-pages/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-ghost-pages/SKILL.md"
       },
       "hash": "d69976be1e86a2f215a16171abd2d059397929719e1ad68cc90ecc430a36a543",
       "published": "2026-06-21T14:53:46.487Z",
@@ -4043,7 +4043,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-import/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-import/SKILL.md"
       },
       "hash": "fd5b880880bfb7a0e2579ee91cd1414f1f92e8c0823581772251ca7ea6a2d232",
       "published": "2026-06-27T13:51:43.031Z",
@@ -4070,7 +4070,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-journal/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-journal/SKILL.md"
       },
       "hash": "f6d74c70adaec7036d04bf315d2886603e345270970deb4aadfd3204a1fa86c0",
       "published": "2026-06-21T14:53:46.488Z",
@@ -4097,7 +4097,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-llm-knowledge-base/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-llm-knowledge-base/SKILL.md"
       },
       "hash": "d637517883edfeeb404b9aa8e0a0feb20f65fbf094e1117bcafadcd7fd8b6406",
       "published": "2026-06-27T22:23:25.574Z",
@@ -4124,7 +4124,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-merge/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-merge/SKILL.md"
       },
       "hash": "a0821b8634d101bf4f68b1ce56e71204dd063feda8c29508379745ad4130c4ea",
       "published": "2026-06-21T14:53:46.488Z",
@@ -4151,7 +4151,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-new-domain/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-new-domain/SKILL.md"
       },
       "hash": "8a154f7b6604365e872527fe3ee83359ed50005b49a05de3fa801738819a03e2",
       "published": "2026-06-21T14:53:46.488Z",
@@ -4178,7 +4178,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-nextcloud-push/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-nextcloud-push/SKILL.md"
       },
       "hash": "a71ddaecaf215d38bb66b718de1c54d09d7510650608b7b16576ac07c0935e46",
       "published": "2026-06-21T14:53:46.489Z",
@@ -4205,7 +4205,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-offline-check/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-offline-check/SKILL.md"
       },
       "hash": "72f70b6fff767e7f9e279105d49f7a055cb8a8a2b2943c01fa2674b11f7aad3f",
       "published": "2026-06-27T13:51:43.039Z",
@@ -4232,7 +4232,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-page/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-page/SKILL.md"
       },
       "hash": "43830144aacc76a8d14121d6f6baeb73ae61c16b7e24728cac450ad377a5ffb9",
       "published": "2026-06-21T14:53:46.489Z",
@@ -4259,7 +4259,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-publish-plugin/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-publish-plugin/SKILL.md"
       },
       "hash": "9ee8273e969e0df77cc677adf0f7ccd703a7a4d63f5b837aeaf85e6955cab2ca",
       "published": "2026-06-21T14:53:46.490Z",
@@ -4286,7 +4286,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-reindex/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-reindex/SKILL.md"
       },
       "hash": "4aeff86268ffcdf5888c23691a49929d67795fc28c0a685fac0c6a2ed085c41d",
       "published": "2026-06-21T14:53:46.490Z",
@@ -4313,7 +4313,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-resync/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-resync/SKILL.md"
       },
       "hash": "9d22653ed44ebf493794a50b0b9162b455b1985f7958ce19da37b57f56e28f0c",
       "published": "2026-06-27T23:00:41.422Z",
@@ -4340,7 +4340,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-searching-plugins/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-searching-plugins/SKILL.md"
       },
       "hash": "594853b7b3c0793d3c838e1240fdeb0ee0f6198d9338d48b9d62d8631849695c",
       "published": "2026-06-21T14:53:46.490Z",
@@ -4367,7 +4367,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-see-section/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-see-section/SKILL.md"
       },
       "hash": "c1d145d561fffbc5df6eda0159842238f88d7659276b54465dcc58bac093f14c",
       "published": "2026-06-27T13:51:43.042Z",
@@ -4394,7 +4394,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-similarity-plugin/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-similarity-plugin/SKILL.md"
       },
       "hash": "f7f01ebe0cb237c19f8f37223ac26dbd24e3a90348ab9ae38e722d2096b321b1",
       "published": "2026-06-21T14:53:46.491Z",
@@ -4421,7 +4421,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-skill-anatomy/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-skill-anatomy/SKILL.md"
       },
       "hash": "fcd1b07daa0033f52094b43b898829122886bc3f4f794c5c273c0e2b6ffc9bc9",
       "published": "2026-06-21T14:53:46.491Z",
@@ -4448,7 +4448,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-skill-library/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-skill-library/SKILL.md"
       },
       "hash": "c3bd225ddce8b9368a558424d7af35d7b151db2492236a512009a7cbe1258121",
       "published": "2026-06-21T14:53:46.492Z",
@@ -4475,7 +4475,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-skill-vs-library/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-skill-vs-library/SKILL.md"
       },
       "hash": "1bad990028dc612c0c232128a7ff806117bc2e16b5f99e1befbeb61c5ca297e6",
       "published": "2026-06-21T14:53:46.492Z",
@@ -4502,10 +4502,10 @@
         "tier": "",
         "version": "1.0",
         "alignment": "",
-        "source_path": "~/.wiki/skill-fedwiki/assets/wiki-sync/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-sync/SKILL.md"
       },
       "hash": "b64555bb65c5b424dcfa7135e072242bc12c6fc8c8102f475a66c982012fd507",
-      "published": "2026-08-18T11:58:20.670Z",
+      "published": "2026-08-24T16:18:54.207Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -4529,7 +4529,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-to-skill/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-to-skill/SKILL.md"
       },
       "hash": "91aa4d911f05bc41f07e6704a9049c076c2d4efebfc9b619dc199ffbeffffd54",
       "published": "2026-06-21T14:53:46.493Z",
@@ -4556,10 +4556,10 @@
         "tier": "",
         "version": "",
         "alignment": "",
-        "source_path": "~/.wiki/skill-fedwiki/assets/wiki-watch/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-watch/SKILL.md"
       },
       "hash": "937fe8fd76970e9095e2be4236bb6c1c961e8be158f626fa1f5c131ad88bc4f8",
-      "published": "2026-07-13T20:47:37.860Z",
+      "published": "2026-08-24T16:18:54.244Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -4583,7 +4583,7 @@
         "tier": "",
         "version": "5.5",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/wikis/agentprivacy-wiki-welcome/SKILL.md"
+        "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-welcome/SKILL.md"
       },
       "hash": "4f982dbecab58ea04994f69a006579b0f953787e1407f1eabb01f52bc176a946",
       "published": "2026-06-21T14:53:46.494Z",
@@ -4610,7 +4610,7 @@
         "tier": "2",
         "version": "5.0",
         "alignment": "balanced",
-        "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-witness/SKILL.md"
+        "source_path": "~/agentprivacy-skills/persona/agentprivacy-witness/SKILL.md"
       },
       "hash": "e02d49f31f42ee978ac16d328636c6dd7da6aef5c77a71d2e0ed6019969888da",
       "published": "2026-04-22T13:39:43.298Z",

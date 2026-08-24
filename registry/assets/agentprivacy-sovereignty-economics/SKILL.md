@@ -2,10 +2,11 @@
 name: agentprivacy-sovereignty-economics
 description: >
   Sovereignty economics and P^1.5 superlinearity for 0xagentprivacy.
-  Activates when discussing the superlinear returns of protection, sovereignty
-  gap quantification (17×-12,000×), V_sovereign/V_surveillance ratios, or the
-  mathematical proof that privacy creates exponentially more value than
-  surveillance.
+  Activates when discussing the superlinear strength of protection (P^1.5),
+  sovereignty gap analysis, V_sovereign/V_surveillance ratios, or the
+  appropriation-share reading of privacy value — the share of surplus the
+  consent interface lets the subject keep (historical gap multiples are
+  retired lineage, not current facts).
 license: Apache-2.0
 metadata:
   version: "4.0"
@@ -96,13 +97,13 @@ BRAID (Amcalar & Cinar 2025) proves empirically that reasoning performance follo
 
 | BRAID Metric | PVM-V4 Parallel |
 |---|---|
-| Nano + BRAID ≥ Medium + Classic (74× PPD) | Sovereign + structure ≥ Surveillance + scale (678×–31,000× V) |
+| Nano + BRAID ≥ Medium + Classic (74× PPD) | Sovereign + structure ≥ Surveillance + scale (the 678×–31,000× multiples are retired essay-lineage figures; value is the appropriation share) |
 | Structure beats raw capacity | Architecture beats raw power |
 | PPD is superlinear in structure | V(π,t) is superlinear in P (P^1.5) |
 
 **The Structure Dominance Thesis:** In both inference and privacy, increasing structural constraint yields greater returns than increasing raw capacity. This is not coincidence — it is a general property of information systems where bounded channels preserve signal while unbounded channels amplify noise.
 
-If privacy-structured inference compounds with privacy-structured data and privacy-structured identity, the total value is triply superlinear. Structure at every layer multiplies.
+Structure at every layer multiplies — but the data layer itself does not compound: behavioural data yields rent by position, not value by aggregation, and the marginal product of one additional raw record is approximately zero. The one stock that genuinely accumulates is reputational fertility, and that is a conjecture, not a measurement.
 
 ## Connection to equation terms
 

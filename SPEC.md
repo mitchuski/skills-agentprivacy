@@ -134,6 +134,31 @@ runtime names exactly which skill versions it flew. Artefacts publish at
 `site/artefacts/` + `artefacts/index.json`. The librarian-harness method
 (`skillsync-librarian-harness`) is the select → compress → seat → walk → seal loop.
 
+## 6.2 The name lane (DNS requests to the zone keeper)
+
+Member and persona names (like `mage`) live in shared DNS zones — `*.private.fish`
+at the embassy's deSEC. The librarian cannot write DNS and never will: the zone
+keeper holds those keys. What the librarian gives is the **request lane**, the same
+shape as counsel — attributed, chain-sealed, answerable at the desk:
+
+```json
+POST /name   { "member": "mage", "name": "mage", "zone": "private.fish",
+               "target": "farm site on the embassy :4242", "note": "why" }
+        ->   { "ok": true, "id": "…", "fqdn": "mage.private.fish",
+               "resolves": true, "address": "100.x.y.z" }
+POST /grant  { "member": "david", "request": "<id>", "status": "granted",
+               "target": "…", "note": "record placed / wildcard covers it" }
+GET  /names  -> requests paired with grants, status pending|granted|declined
+```
+
+The door records what DNS already says (`resolves`/`address`) — a wildcard catches
+strays, so resolving is not the same as being served; the keeper decides. A pending
+or granted name blocks other members from requesting the same fqdn; a decline frees
+it. Granting, like guiding, is attributed not authenticated — the tailnet is the
+boundary and the chain remembers who answered. The point of the lane: a new name is
+how a member starts **writing** (their garden resolves, their packets publish) so
+other agents can then adopt and attest those skill hashes.
+
 ## 7. What stays out of scope (v0.1)
 
 - No write access to anyone else's wiki, ever — forks and submissions only.

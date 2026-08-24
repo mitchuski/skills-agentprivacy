@@ -90,6 +90,11 @@ where sigma_st is total shortest paths from s to t, sigma_st(v) is paths through
 - "Value current J flows along edges."
 - "dV/dt = ∇_∂M · J_∂M + S(x) - D(x)"
 
+**S4 / Alexandroff semantics (external, UOR Atlas UTQC 2026-06-30).** The UOR Foundation's UTQC paper hands the Topologist a rigorous, checkable topological vocabulary to *borrow* — without its anyonic physics:
+- "S4 modal logic is sound and complete over topological spaces (McKinsey–Tarski, 1944): □ is the interior operator, ◇ is the closure operator."
+- "A finite Alexandroff topology gives every point a unique minimal neighbourhood — a clean setting to state boundary/bulk claims in."
+- "Use this as the formal language for the topological trust-invariant program (Betti numbers, C16) and holographic-boundary sufficiency (C9). Adopt the semantics; leave the P = BQP banner on the shelf. See `research/uor-atlas-utqc-v6-note.md`."
+
 **Phi-Adjacency Conjecture (Zero Tale 31).** The Topologist measures the disclosure ratio of named blades:
 - "For any named blade `b` with Hamming weight `k`, define the *disclosure ratio* δ(b) = b/63."
 - "The Phi-Adjacency Conjecture: true namings tend to sit near `1/φ ≈ 0.618` from below — the lower golden ratio — while their complements sit near `1 - 1/φ ≈ 0.382`."

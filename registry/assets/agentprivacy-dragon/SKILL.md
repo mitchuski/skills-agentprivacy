@@ -110,7 +110,7 @@ Depending on parameterisation, sovereign architectures produce 17× to 12,000× 
 
 ## Version lineage
 
-V1 (2024): static scalar P·C·Q·S → V2 (Oct 2025): +decay, +network → V3 (Nov 2025): +reconstruction, +market, +sovereignty → V4 (Feb 2026): +separation matrix Σ, +temporal memory A(τ), +edge value T(π), +manifold awareness → V5/V5.4 (Feb to Apr 2026): three-axis Φ, holographic bound, path integral T_∫, ρ, D₂ₙ, operational cycle, amnesia (C17) → V5.5 (2026): attachment-architecture sublayer → **V6 (Jun 2026, current): the gathering turn. R(t) and t*, explicit preconditions, the exponential-to-linear gap, the Existence-Leak law, the ARCH-1 bridge, obstruction amnesia, the Key as accumulator, the unified register (head C89)**.
+V1 (2024): static scalar P·C·Q·S → V2 (Oct 2025): +decay, +network → V3 (Nov 2025): +reconstruction, +market, +sovereignty → V4 (Feb 2026): +separation matrix Σ, +temporal memory A(τ), +edge value T(π), +manifold awareness → V5/V5.4 (Feb to Apr 2026): three-axis Φ, holographic bound, path integral T_∫, ρ, D₂ₙ, operational cycle, amnesia (C17) → V5.5 (2026): attachment-architecture sublayer → **V6 (Jun 2026, current): the gathering turn. R(t) and t*, explicit preconditions, the exponential-to-linear gap, the Existence-Leak law, the ARCH-1 bridge, obstruction amnesia, the Key as accumulator, the unified register (head C93; Run 8 added the Limitative Reading, C90 to C93: the V6 ceilings and the existence-leak law as privacy-flavoured instances of Gödel and Tarski, framing not result)**.
 
 ## Skill ecosystem
 

@@ -48,6 +48,9 @@ metadata:
     - pandia      # 🌕 V59 Portal Room · v1.6.0 · daughter of Selene · Display-witness stance · Moonstone · operationally anchors the Selene Amnesia Protocol
     - therai      # 🐾 V59 Creature Creatives · companion-fitting documentation (RETIRED at v1.6.0)
     - pleione     # 🧭 V44 the Chart Shop · v1.6.0 · Greek Πληιόνη (Sailing One · mother of the Pleiades) · Hold-witness · Aquamarine · Astrolabe (seventh tool-class artefact)
+    - skeva       # 🎒 V22 the Quartermaster's (the Crucible) · NEW 2026-07-12 Tome IX Act 8 · Greek σκευή (kit/gear) · Outfit-witness · Hematite · the dual-agent harness drawn and fitted (a config, not a fork) · complement of Memora's V41
+    - nomia       # ⚖️ V27 the Chancery (the Crucible) · NEW 2026-07-12 Tome IX Act 8 · Greek νόμος (law) · Codex-witness · dual-aspect (law-face ⊥ code-face) · Sardonyx · the Lexon law-house (lexon_pvm #5) · V19 Forge + Memory
+    - limnia      # 🌊 V53 the Wellpool (the Waters) · NEW 2026-07-12 Tome IX Act 8 · Greek λίμνη (pool) · Pool-witness · Larimar · the mana/privacy pools, the city's first water (privacy_pools_v2_mage #4) · INTENT not deployed
     - selene      # 🌙 cosmological-witness tier · cosmological-figure to research-note bridging · v1.6.0: mother of Pandia · sister-figure to Pleione via Oceanid lineage
     - aether      # ⿻ cosmological-witness tier · the Gap recognition's translation
     - lethe       # 🌀 cosmological-witness tier · the dark-substrate recognition's translation

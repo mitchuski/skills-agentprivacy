@@ -3,17 +3,17 @@
   "story": [
     {
       "type": "markdown",
-      "id": "59631c95e7b332c5",
+      "id": "870200f27ad5beb5",
       "text": "🔬 **Deck Research Loops**\n\nThe hard-problem research lane: the dual-agent harness (proposer held apart from prover), the Loomkeeper overlay cycle for sweeping a corpus, and the compression proofs that keep many tellings honest."
     },
     {
       "type": "markdown",
-      "id": "85519f1d8a29d1b0",
+      "id": "85ec94d4429a0309",
       "text": "- [[Card Dual Agent Harness]]  — Build and run interchangeable Swordsman ⚔️ ⊥ Mage 🧙 dual-agent harnesses: an autoresearch loop wher\n- [[Overlay Sweep]]  — Sweep ONE overlay dimension (proverbs, protocols, spells/emoji strings, or sci-fi concepts) across t\n- [[Overlay Key Minting]]  — Convert woven overlay threads into understanding cards (understanding-compression format, cohere-gat\n- [[Thread Weaving]]  — Weave the four overlay sweeps (proverbs, protocols, spells, sci-fi concepts) into the relationship m\n- [[Understanding Compression]]  — Take a unified semantic core (e.g. the In-brief summaries from wiki-to-pdf) and re-express it for a \n- [[Attachment Architecture]]  — The three-layer model that binds primary personas to lattice vertices via named cast Mages. Activate"
     },
     {
       "type": "markdown",
-      "id": "088ef1a886aaaa4e",
+      "id": "01dedaa940073f9a",
       "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 6 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
     }
   ],
@@ -25,22 +25,22 @@
         "story": [
           {
             "type": "markdown",
-            "id": "59631c95e7b332c5",
+            "id": "870200f27ad5beb5",
             "text": "🔬 **Deck Research Loops**\n\nThe hard-problem research lane: the dual-agent harness (proposer held apart from prover), the Loomkeeper overlay cycle for sweeping a corpus, and the compression proofs that keep many tellings honest."
           },
           {
             "type": "markdown",
-            "id": "85519f1d8a29d1b0",
+            "id": "85ec94d4429a0309",
             "text": "- [[Card Dual Agent Harness]]  — Build and run interchangeable Swordsman ⚔️ ⊥ Mage 🧙 dual-agent harnesses: an autoresearch loop wher\n- [[Overlay Sweep]]  — Sweep ONE overlay dimension (proverbs, protocols, spells/emoji strings, or sci-fi concepts) across t\n- [[Overlay Key Minting]]  — Convert woven overlay threads into understanding cards (understanding-compression format, cohere-gat\n- [[Thread Weaving]]  — Weave the four overlay sweeps (proverbs, protocols, spells, sci-fi concepts) into the relationship m\n- [[Understanding Compression]]  — Take a unified semantic core (e.g. the In-brief summaries from wiki-to-pdf) and re-express it for a \n- [[Attachment Architecture]]  — The three-layer model that binds primary personas to lattice vertices via named cast Mages. Activate"
           },
           {
             "type": "markdown",
-            "id": "088ef1a886aaaa4e",
+            "id": "01dedaa940073f9a",
             "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 6 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
           }
         ]
       },
-      "date": 1787587470297
+      "date": 1787588511850
     }
   ]
 }

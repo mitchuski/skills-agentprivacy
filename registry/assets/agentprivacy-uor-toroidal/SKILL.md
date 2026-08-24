@@ -31,7 +31,7 @@ metadata:
 
 The 64-vertex sovereignty lattice ({0,1}⁶) used in PVM-V4 exhibits a conjectured structural correspondence with the UOR Foundation's toroidal algebraic structure. If this correspondence holds, the sovereignty lattice is not an arbitrary mathematical convenience but a fragment of a deeper geometric object — a compact manifold with periodic boundary conditions that constrain the possible value flows and create natural compactification of the sovereignty configuration space.
 
-This is the most speculative element of PVM-V4. The correspondence is observed but unproven. A 96-versus-64 edge-count discrepancy remains unresolved. This skill file is for mathematicians who can either prove the correspondence, explain the discrepancy, or demonstrate that it is a structural mismatch rather than an encoding feature.
+This is the most speculative element of PVM-V4. The correspondence is observed but unproven. The 96-versus-64 edge count is resolved: they don't need to match. The 96-edge surface IS the holographic encoding of the 64-vertex bulk — 96/64 = 1.5 is not a discrepancy but the holographic principle expressing itself in discrete lattice geometry (boundary-encodes-volume; the C6 thread; see `agentprivacy-holographic-bound`) (corrected 2026-07-10 per the register; OBS-GPT56-014, L125/D5). The separate 96-versus-192 edge-count question treated below remains open. This skill file is for mathematicians who can either prove the correspondence, explain that remaining discrepancy, or demonstrate that it is a structural mismatch rather than an encoding feature.
 
 ## The lattice structure
 

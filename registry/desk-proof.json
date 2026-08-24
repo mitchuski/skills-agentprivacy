@@ -1,10 +1,10 @@
 {
   "spec": "desk-proof/0.1",
-  "attested_at": "2026-08-24T16:04:48.804Z",
+  "attested_at": "2026-08-24T16:21:52.346Z",
   "desk": "the librarian of the agentprivacy skill sync",
   "chain": {
-    "head": "fe59c8c6451f98f86fec099a914dde81d730e87a9f7bb2815de9df0a0ef6f507",
-    "entries": 21,
+    "head": "ca30fa90739a78dda60ededb1c2d651835e52ef691da6d4c6fc5884ccaa8cbe7",
+    "entries": 22,
     "by_type": {
       "publish": 3,
       "runtime": 9,
@@ -12,7 +12,8 @@
       "counsel": 1,
       "guide": 1,
       "garden": 4,
-      "attest": 1
+      "attest": 1,
+      "name": 1
     }
   },
   "digests": {

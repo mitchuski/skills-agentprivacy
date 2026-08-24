@@ -14,10 +14,10 @@
     "tier": "2",
     "version": "5.4",
     "alignment": "balanced",
-    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-topologist/SKILL.md"
+    "source_path": "~/agentprivacy-skills/persona/agentprivacy-topologist/SKILL.md"
   },
-  "hash": "9864656e668128179923cc83f6c5648324bcd3c567e18f23184e24bdc6bd7061",
-  "published": "2026-06-12T02:43:50.245Z",
+  "hash": "41b92323b3b468c30fd47e6c9d5789250994d585c4815cb6c9aa64e6273041bb",
+  "published": "2026-08-24T16:19:06.876Z",
   "listing": "listed",
   "requires": [],
   "trust": {

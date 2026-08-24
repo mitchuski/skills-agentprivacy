@@ -14,10 +14,10 @@
     "tier": "",
     "version": "6.0",
     "alignment": "",
-    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/role/agentprivacy-threat-adversarial/SKILL.md"
+    "source_path": "~/agentprivacy-skills/role/agentprivacy-threat-adversarial/SKILL.md"
   },
-  "hash": "f0272208bd274f87b1db7ed88529201ca39649b7cf6c2e3da065468abafd6a99",
-  "published": "2026-06-10T19:41:08.368Z",
+  "hash": "8f152f651fbc7d58e9ee603f76d179fc8b841317681be64d8cdbc11d3d6374bd",
+  "published": "2026-08-24T16:19:07.357Z",
   "listing": "listed",
   "requires": [],
   "trust": {

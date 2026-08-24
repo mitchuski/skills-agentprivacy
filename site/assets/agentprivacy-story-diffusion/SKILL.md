@@ -93,7 +93,7 @@ Each platform reaches a different audience. Each audience encounters a different
 
 ## Connection to the equation
 
-**Network topology: (1 + Σ wᵢ nᵢ/N₀)^k.** Story diffusion is HOW the network grows. Each frame seeds a different stratum (wᵢ). Each audience that adopts the principle adds nodes (nᵢ). The exponent k captures the superlinear compound effect when different strata connect. Diffusion that reaches only one audience adds linearly. Diffusion that bridges audiences compounds exponentially.
+**Network topology: (1 + Σ wᵢ nᵢ/N₀)^k.** Story diffusion is HOW the network grows. Each frame seeds a different stratum (wᵢ). Each audience that adopts the principle adds nodes (nᵢ). The exponent k captures the superlinear effect when different strata connect. Diffusion that reaches only one audience adds linearly; diffusion that bridges audiences compounds — in reach and relationship (the reputational stock), never in the data itself, which yields rent by position, not value by aggregation.
 
 **Proverbiogenesis.** Story diffusion is the macro-scale mechanism that proverbiogenesis describes at the individual level. Proverbiogenesis tracks how a single statement evolves from personal insight to cultural truth. Story diffusion tracks how a single principle evolves from specialist knowledge to collective inevitability.
 

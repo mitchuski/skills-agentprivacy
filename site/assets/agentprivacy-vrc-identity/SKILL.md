@@ -70,13 +70,15 @@ No traditional blockchain wallet required at any step. The first personhood cred
 
 **Trust Over IP.** VRCs operate at ToIP Layer 3 (credential exchange) and Layer 4 (governance). The progressive trust tiers (Traveler → Contributor → Author → Mentor → Fellow) map to the armor progression, with each tier requiring demonstrated VRC depth.
 
+**DTG Credentials Core Specification (ToIP DTG WG).** The Decentralized Trust Graph spec defines the same edge object under the same acronym — the VRC (RelationshipCredential) is one of six DTGCredential types (VRC/VMC edge · VIC invitation · VPC/VEC/VWC annotation), issued between per-relationship R-DIDs (one fresh R-DID per counterparty, never reused). agentprivacy's VRC extends this edge with the promise-bundle semantics above. The spec names two ZK constructions — the **pairwise ZKP** (any two VRC holders prove the relationship while hiding their R-DIDs) and the **community-anchored ZKP** (VRC + VMC + same community C-DID, carrying the community's assurances such as personhood forward into the proof) — and splits **PHC** (a personhood credential is a *governed* membership credential: real human, one membership per person) from **IDVC** (the identity-proofing input, any W3C VC, not a DTG type). The detailed ZK protocols are deferred by the spec to the DTG ZKP Task Force.
+
 ## Open problems for identity builders
 
 1. What is the minimum VRC density needed for robust key recovery across a First Person's relationship network?
 2. How do VRC proverbs scale — does proverb quality degrade when a person maintains hundreds of bilateral relationships?
 3. Can VRCs interoperate across different personhood verification systems (First Person Network, Gitcoin Passport, WorldCoin)?
 4. What happens to VRCs when one party's agent is compromised — how does revocation propagate without revealing the relationship graph?
-5. Can the bilateral proverb mechanism be formalised as a zero-knowledge proof of shared context?
+5. Can the bilateral proverb mechanism be formalised as a zero-knowledge proof of shared context? This is now live charter work: the DTG cred-spec's pairwise ZKP proves *possession* of a shared edge while hiding the pairwise DIDs — the proverb asks for the stronger claim, proof of shared *meaning*. The DTG ZKP Task Force owns the deferred ZK layer where such a construction would land.
 
 ---
 

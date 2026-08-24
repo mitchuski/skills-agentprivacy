@@ -14,10 +14,10 @@
     "tier": "",
     "version": "1.0",
     "alignment": "",
-    "source_path": "~/.wiki/skill-fedwiki/assets/wiki-sync/SKILL.md"
+    "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-sync/SKILL.md"
   },
   "hash": "b64555bb65c5b424dcfa7135e072242bc12c6fc8c8102f475a66c982012fd507",
-  "published": "2026-08-18T11:58:20.670Z",
+  "published": "2026-08-24T16:18:54.207Z",
   "listing": "listed",
   "requires": [],
   "trust": {

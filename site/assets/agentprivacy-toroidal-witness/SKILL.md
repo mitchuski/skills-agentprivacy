@@ -200,6 +200,12 @@ The torus is not separate from the holographic principle—it IS the holographic
 4. **Proof Systems:** Which ZK proof systems best leverage toroidal structure?
 5. **Topology Variants:** Would other topologies (Klein bottle, projective space) have different security properties?
 
+## External convergence — UOR Atlas UTQC (2026-06-30)
+
+The UOR Foundation's UTQC paper makes the same *shape* of argument this skill rests on: reframe an evaluation as a **topological decision problem over invariants** — "are two braid words isotopic?" — and thereby subvert the #P-hard tensor-contraction boundary. Their braid-word representation and topological-invariant readout are a **mechanism-cousin** of the toroidal witness-hiding / topological-ZK reduction here (register **C5**, resolved).
+
+Take the *shape* of the reduction argument as an external precedent; **do not** import their O(N⁶) closure magnitude (theirs to defend) or the surrounding P = BQP banner (quarantined). See `research/uor-atlas-utqc-v6-note.md`.
+
 ---
 
 **Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)

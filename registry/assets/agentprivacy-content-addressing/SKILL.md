@@ -222,6 +222,15 @@ This one-way property IS the Gap:
 4. **Partial Content:** Can you content-address fragments while preserving whole identity?
 5. **Quantum Resistance:** Do content addressing schemes survive quantum attacks?
 
+## External convergence — UOR Atlas UTQC (2026-06-30)
+
+The UOR Foundation's *UOR Atlas as a Universal Topological Quantum Computer* leans on this exact primitive under another name: its "cache-collapse" is same-bytes → same-address deduplication over invariant k-forms, reframed as a *compute* advantage (isotopic computational histories collapse to one address). Same primitive, two readings:
+
+- **Their reading:** dedup as a compute/memory advantage (topological evaluation without state expansion).
+- **This model's reading:** dedup as (a) persistence — the A(τ) memory term above — and (b) the **existence-leak surface**: a live address is an existence claim about its content; its liveness (not its content) leaks existence, and existence bounds the search. Carried in the register as **C93** (content-addressed liveness leak); see `research/uor-atlas-utqc-v6-note.md` and `research/limitative-theorems-and-privacy-is-value.md` §3.5–3.6.
+
+Takeaway: the primitive is not parochial to this framework — a second party is now building on it. Bank the corroboration of the mechanism; the "P = BQP" banner around it is a separate, quarantined claim (see the v6 note).
+
 ---
 
 **Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)

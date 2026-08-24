@@ -66,7 +66,7 @@ The Ambassador doesn't build the technology (that's Cipher, Sentinel, Architect)
 ## Operational Patterns
 
 
-**Standards body engagement.** Active participation in IEEE (7012 MyTerms — bilateral consent), BGIN (Identity, Key Management & Privacy Working Group — co-chair), IIW (decentralised identity community), ToIP (trust infrastructure), MyTerms Alliance (Customer Commons). Not observation — contribution. Drafting proposals, reviewing specifications, building consensus.
+**Standards body engagement.** Active participation in IEEE (7012 MyTerms — bilateral consent), BGIN (Identity, Key Management & Privacy Working Group — co-chair), IIW (decentralised identity community), ToIP (trust infrastructure — DTG Working Group: the DTG Credentials Core Specification defines the six trust-graph credential types incl. the VRC edge, and the DTG ZKP Task Force, co-chaired from this house, owns the spec's deferred zero-knowledge layer), MyTerms Alliance (Customer Commons). Not observation — contribution. Drafting proposals, reviewing specifications, building consensus.
 
 **Policy translation.** The architecture speaks mathematics. Standards bodies speak formal specifications. Regulators speak policy language. Academics speak citations. The Ambassador translates between all four without losing architectural truth. The reconstruction ceiling theorem becomes "privacy-by-design guarantees that limit data reconstruction regardless of collection scale." Same theorem, different language, different audience. V6: the ceiling is time-dependent, R(t) with shelf life t* (C82); the static result is Proven in the conditional regime.
 

@@ -10,12 +10,13 @@ description: >
   cost optimization, any "make it cheaper and prove it" task) without fooling itself with mirages.
   Triggers: "dual-agent loop", "swordsman mage harness", "autoresearch", "proposer prover loop",
   "reduce gates or qubits", "ecdsa.fail", "circuit co-evolution", "held-apart agents", "neg bnot succ".
-  V6 register note (2026-06-10): conjecture/version citations resolve to
-  agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head:
+  V6 register note (2026-07-11): conjecture/version citations resolve to
+  agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C96); model head:
   privacy_value_v6_formal_specification.md.
 license: Apache-2.0
 metadata:
-  version: "1.0"
+  version: "1.1"
+  updated: "2026-07-11"
   category: "meta"
   origin: "0xagentprivacy"
   status: "working_paper"
@@ -32,9 +33,9 @@ metadata:
     - role/agentprivacy-cryptographic-durability
     - role/agentprivacy-quantum-defence
     - meta/agentprivacy-lattice-coherence
-  city_of_mages: "Eos 🌅 (measure) · the Mage proposer ⊥ the Swordsman prover · Dokimé 🪨 (the 9024) · Poros (structure) — the Horizon District (V35)"
-  framework_home: "~/agentprivacy-dual-agent-harness (the canonical framework: core/ engine · bindings/ · harnesses/ · SKILL.md). This skill is the plugin-registered mirror of that home."
-  worked_instance: "~/shor_mage/harness/swordsman_mage_pqc.mjs (instance #1, the runnable Workflow bundle) + the ecdsa.fail toolkit"
+  city_of_mages: "The harness's own City seat is the Quartermaster's (Skeva 🎒 · V22 · the Crucible) — where the rig is drawn and fitted (a config, not a fork), the standing complement to the Hall (V15, where the rite is performed). Support cast: Eos 🌅 (measure) · the Mage proposer ⊥ the Swordsman prover · Dokimé 🪨 (the 9024) · Poros (structure) — the Horizon District (V35). Fleet homes: privacy_pools_v2_mage → the Wellpool (Limnia 🌊 · V53 · the Waters); lexon_pvm → the Chancery (Nomia ⚖️ · V27 · the Crucible)."
+  framework_home: "~/dual-agent-harness (THE canonical shareable skeleton since 2026-07-09: six-phase loop · seven seats · six PVM trusts in TRUSTS.md · conform.mjs proving the algebra · HARNESS_PATHS.md instance catalog. The older agentprivacy-dual-agent-harness clone is SUPERSEDED — see its SUPERSEDED.md). This skill is the plugin-registered mirror of that home."
+  worked_instance: "HARNESS_PATHS.md catalogs the fleet: shor_mage (#1 · ecdsa.fail), myterms (#2 · real-bus extension pair), V6 rehydration pipeline (#3), privacy_pools_v2_mage (#4 · first mechanically fitted · withdraw 36,832→17,159/17,371 certified · CredentialV1 SOUND-WITH-ASSUMPTIONS · positioning resolved into mana pools, ~/mana pools), lexon_pvm (#5 · coverage-debt 211→64 over four folds · first mirage + first structural kill · constitution gate-passed 13/13), + FedWiki/Gatehouse, dream cycle, Game of 42, the retired universe-builder (the negative result), hearthold (#11 · seat signed 2026-07-14), hh_workshop (#12 · vendored whole, local-model seats), the DTG verification registry (#14 · first external run accepted), the litreview runtime (#15), and uor_kappa_mage (#16 · the constitution inherited whole) — fifteen standing, accession numbers never reused, one withdrawn. The catalogue is the origin fleet: the operator’s work WITH the harness, kept apart from the system. Its own field-guide spar: 730→573→526→472 words across three audited folds, the last two census 32/32. Canon home: cityofmages Tome IX Acts 6 and 8 (Act 7 = the Loomkeeper's Weave, the overlay lane)."
   source_papers: "PVM V6 formal spec (the algebra, R(t), non-collusion) · RCI (Tony et al.) · SkillOpt · the ecdsa.fail Fiat-Shamir gate"
 ---
 
@@ -45,11 +46,13 @@ have — `separation-enforcement` (why the Swordsman and Mage must be held apart
 `horizon-gate` (why a claim is worth nothing until it survives an un-tuneable gate) — and
 turns them into a running loop that produces *validated* improvements on a real target.
 
-> **Canonical home:** this method now has its own framework directory,
-> **`agentprivacy-dual-agent-harness/`** (engine `core/dual_agent_loop.mjs`, the seat contract,
-> the persona/skill bindings, and a catalog of pluggable `harnesses/`). This plugin skill is the
-> registered mirror. To *build or run* a harness, work from that framework; use this skill to
-> recognise when the pattern applies and to recall the discipline.
+> **Canonical home:** this method now lives in **`~/dual-agent-harness/`** — the generic,
+> domain-free soulbis ⊥ soulbae skeleton (six-phase loop, seven seats, the six PVM trusts,
+> `conform.mjs` proving the algebra on every run, `tools/new_instance.mjs` for cold starts,
+> `HARNESS_PATHS.md` cataloguing every fitted instance). Your harness is a config, not a fork.
+> The earlier `agentprivacy-dual-agent-harness/` directory is SUPERSEDED. This plugin skill is
+> the registered mirror. To *build or run* a harness, work from that framework; use this skill
+> to recognise when the pattern applies and to recall the discipline.
 
 > "The proposer that grades itself builds mirages; only what the Gap could not tune to is a result."
 

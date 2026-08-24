@@ -3,17 +3,17 @@
   "story": [
     {
       "type": "markdown",
-      "id": "227d41231419a901",
+      "id": "c075b16f4f1ad0e5",
       "text": "📜 **Deck Chronicle Keeper**\n\nWriting and reflecting chronicles across the suite voices — one event, many tellings, same invariant core."
     },
     {
       "type": "markdown",
-      "id": "962e83de3269074b",
+      "id": "10ea99a8b13db67b",
       "text": "- [[Chronicle Reflect]]  — Reflect chronicles between the suite's voices — the framework-voice master series, repo-local collab\n- [[Chronicler]] 🧙📖 — Narrative Compression Specialist for 0xagentprivacy. Activates for chronicle creation, narrative com\n- [[Understanding Compression]]  — Take a unified semantic core (e.g. the In-brief summaries from wiki-to-pdf) and re-express it for a \n- [[Mirrorkeeper]] 🪞✨ — Dihedral convergence navigator persona. Activates when discussing UOR-grimoire convergence, 2D to ma"
     },
     {
       "type": "markdown",
-      "id": "f4970ed5620ea274",
+      "id": "8db6a93abe8035b6",
       "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 4 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
     }
   ],
@@ -25,22 +25,22 @@
         "story": [
           {
             "type": "markdown",
-            "id": "227d41231419a901",
+            "id": "c075b16f4f1ad0e5",
             "text": "📜 **Deck Chronicle Keeper**\n\nWriting and reflecting chronicles across the suite voices — one event, many tellings, same invariant core."
           },
           {
             "type": "markdown",
-            "id": "962e83de3269074b",
+            "id": "10ea99a8b13db67b",
             "text": "- [[Chronicle Reflect]]  — Reflect chronicles between the suite's voices — the framework-voice master series, repo-local collab\n- [[Chronicler]] 🧙📖 — Narrative Compression Specialist for 0xagentprivacy. Activates for chronicle creation, narrative com\n- [[Understanding Compression]]  — Take a unified semantic core (e.g. the In-brief summaries from wiki-to-pdf) and re-express it for a \n- [[Mirrorkeeper]] 🪞✨ — Dihedral convergence navigator persona. Activates when discussing UOR-grimoire convergence, 2D to ma"
           },
           {
             "type": "markdown",
-            "id": "f4970ed5620ea274",
+            "id": "8db6a93abe8035b6",
             "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 4 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
           }
         ]
       },
-      "date": 1787587470294
+      "date": 1787588511847
     }
   ]
 }

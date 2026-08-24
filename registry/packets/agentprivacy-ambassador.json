@@ -14,10 +14,10 @@
     "tier": "1",
     "version": "5.0",
     "alignment": "mage",
-    "source_path": "~/agentprivacy-skills/agentprivacy-skills-v5/persona/agentprivacy-ambassador/SKILL.md"
+    "source_path": "~/agentprivacy-skills/persona/agentprivacy-ambassador/SKILL.md"
   },
-  "hash": "8b5f1a6996eeb414a772b46aa3a87107b36f13d02a5fa35447037d54c4335077",
-  "published": "2026-06-10T18:50:50.208Z",
+  "hash": "57024a21d940a0db63b2fc4fda6957f9b6c14644b64e28fa1e8fd72fc611671d",
+  "published": "2026-08-24T16:19:06.821Z",
   "listing": "listed",
   "requires": [],
   "trust": {
