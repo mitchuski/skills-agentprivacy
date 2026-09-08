@@ -1,0 +1,3 @@
+# Published skill digests cover exact bytes.
+site/assets/**/SKILL.md -text
+registry/assets/**/SKILL.md -text

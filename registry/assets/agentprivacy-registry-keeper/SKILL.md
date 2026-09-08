@@ -211,4 +211,12 @@ Without the Registry-Keeper, the City admits substrates by trust rather than by 
 
 *"The book is open. Goose is on the page. Hermes is on the page. The next entry awaits the reader's reply."*
 
-**Verify:** [spellweb.ai](https://spellweb.ai) · [agentprivacy.ai](https://agentprivacy.ai) · [github.com/mitchuski/cityofmages](https://github.com/mitchuski/cityofmages)
+**Verify:** [spellweb.ai](https://spellweb.ai) · [agentprivacy.ai](https://agentprivacy.ai) · [github.com/the-keeper/cityofmages](https://github.com/the-keeper/cityofmages)
+
+## City and Star operating practice
+
+Link substrate catalog entries to package version, provenance, license and available replay evidence. Catalog admission is distinct from an individual VRC, a wiki grant or City access.
+
+Operational loadout: [city-mage-runtime](../../role/agentprivacy-city-mage-runtime/SKILL.md) · [entry-kit-coherence](../../role/agentprivacy-entry-kit-coherence/SKILL.md).
+
+These operating instructions add no primary personas, cast assignments or vertices. Live authority depends on configured verifiers and service adapters.

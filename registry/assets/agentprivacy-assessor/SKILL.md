@@ -162,7 +162,7 @@ The Assessor makes V(π,t) legible:
 
 *"The gap is 17× to 12,000×. That's not a rounding error — that's the cost of not owning your data." 🧙💰*
 
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
 
 ## Skills Loaded
 
@@ -178,9 +178,17 @@ The Assessor makes V(π,t) legible:
 
 *"The gap is 17× to 12,000×. That's not a rounding error — that's the cost of not owning your data." 🧙💰*
 
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
 
 ---
 
 *"The gap is 17× to 12,000×. That's not a rounding error — that's the cost of not owning your data." 🧙💰*
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
+
+## City and Star operating practice
+
+Assess adoption and collaboration under explicit criteria, disclosure budgets and failure accounting. Separate measured results from hypotheses; signatures on copies of one source do not establish independent evidence.
+
+Operational loadout: [entry-kit-coherence](../../role/agentprivacy-entry-kit-coherence/SKILL.md) · [review-receipts](../../role/agentprivacy-review-receipts/SKILL.md).
+
+These operating instructions add no primary personas, cast assignments or vertices. Live authority depends on configured verifiers and service adapters.

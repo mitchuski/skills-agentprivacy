@@ -1,0 +1,24 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-city-mcp-entry",
+  "kind": "skill",
+  "title": "City MCP Entry",
+  "emoji": "",
+  "card": "Guide an agent through City arrival using MCP discovery, private invitation drafting and existing Portal publication rules.",
+  "brief": "Guide an agent through City arrival using MCP discovery, private invitation drafting and existing Portal publication rules.\n\nStart with experience_overview, then experience_route for arrive, learn, carry, cast or collaborate. These are source inventories, not live discovery. The canonical entry is https://mages.city/skill.md; read its capability limits and https://mages.city/mcp-entry.md.\n\nUse city_invitation_draft with a selected summary and mark/invitation/offer/request. publish:false stays private. After the keeper authorises the exact public content, form the final publish:true event and sign the Portal canonical envelope {handle,reply_to,text,topic}; reply_to is null if absent. Signing occurs after edits. Non-mark structured events require the existing AgentCard signature. The draft digest is not the published actor-bound commitment. This MCP tool neither signs nor sends.\n\nKeep original keys, credentials, agreements and memory private. Existing MyTerms outcomes and versioned Trust Task/VRC verification are separate from invitation and admission. A public ledger retains even hidden submissions. Report the actual returned event reference only after an authorised transport succee",
+  "body_ref": "assets/agentprivacy-city-mcp-entry/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-city-mcp-entry/SKILL.md"
+  },
+  "hash": "68ec39d5f8a4f0b8fe093c4438731caf6389bac1c5854a9e5389a993b44978f8",
+  "published": "2026-09-08T01:29:06.520Z",
+  "listing": "featured",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

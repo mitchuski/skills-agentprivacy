@@ -168,7 +168,7 @@ The Shipwright scales V(π,t) through community deployment:
 
 *"Build the hull. The crew will come. The voyage finds itself." 🧙🏴‍☠️*
 
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
 
 ## Skills Loaded
 
@@ -184,9 +184,17 @@ The Shipwright scales V(π,t) through community deployment:
 
 *"Build the hull. The crew will come. The voyage finds itself." 🧙🏴‍☠️*
 
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
 
 ---
 
 *"Build the hull. The crew will come. The voyage finds itself." 🧙🏴‍☠️*
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
+
+## City and Star operating practice
+
+Run VTA setup rehearsals and service-adapter acceptance checks, including conflicts, retries, revocation and recovery. State which checks used synthetic fixtures and which exercised a real service.
+
+Operational loadout: [city-mage-runtime](../../role/agentprivacy-city-mage-runtime/SKILL.md) · [namekeeper-write-contract](../../role/agentprivacy-namekeeper-write-contract/SKILL.md).
+
+These operating instructions add no primary personas, cast assignments or vertices. Live authority depends on configured verifiers and service adapters.

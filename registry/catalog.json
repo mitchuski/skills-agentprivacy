@@ -1,8 +1,8 @@
 {
   "spec": "skill-catalog/0.1",
   "member": "mitch",
-  "updated": "2026-08-24T16:21:20.238Z",
-  "count": 194,
+  "updated": "2026-09-08T15:16:15.052Z",
+  "count": 202,
   "packets": [
     {
       "spec": "skill-packet/0.1",
@@ -244,7 +244,7 @@
       "kind": "persona",
       "title": "Assessor",
       "emoji": "🧙💰",
-      "card": "Privacy Data Economist for 0xagentprivacy. Activates for sovereignty gap quantification (17×-12,000× multiplier), tokenomics design (SWORD/MAGE pairs), Privacy Pool valuation, guild economics modelling, 7th capital accounting, investor pitch economics, or any task requiring V(π,…",
+      "card": "Privacy Data Economist for 0xagentprivacy. Activates for sovereignty gap quantification (17×-12,000× multiplier), tokenomics design (SWORD/MAGE pairs), Privacy Pool valuation, guild economics modelling, 7th capital accounting, investor pitch economics, or any task requiring V(π,t",
       "body_ref": "assets/agentprivacy-assessor/SKILL.md",
       "origin": {
         "author": "mitch",
@@ -253,10 +253,10 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/persona/agentprivacy-assessor/SKILL.md"
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/persona/agentprivacy-assessor/SKILL.md"
       },
-      "hash": "20c24d897143a411881b8c994e1ad97c2faab3c02e1472bf67e3816dec8021d1",
-      "published": "2026-04-22T13:39:43.230Z",
+      "hash": "723d83a9701a02d5cc501a1844de08aec9f29725c44e4f29c817fdaffc053fdd",
+      "published": "2026-09-08T01:29:06.563Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -504,7 +504,7 @@
       "kind": "persona",
       "title": "Chronicler",
       "emoji": "🧙📖",
-      "card": "Narrative Compression Specialist for 0xagentprivacy. Activates for chronicle creation, narrative compression (70:1-125:1 ratios), spellbook methodology, story-as-documentation, proverb extraction from experience, Privacy Pool chronicle contribution, or any task requiring complex…",
+      "card": "Narrative Compression Specialist for 0xagentprivacy. Activates for chronicle creation, narrative compression (70:1-125:1 ratios), spellbook methodology, story-as-documentation, proverb extraction from experience, Privacy Pool chronicle contribution, or any task requiring complex ",
       "body_ref": "assets/agentprivacy-chronicler/SKILL.md",
       "origin": {
         "author": "mitch",
@@ -513,10 +513,10 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/persona/agentprivacy-chronicler/SKILL.md"
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/persona/agentprivacy-chronicler/SKILL.md"
       },
-      "hash": "923f6725366de831c786e061706f86f0b17f33c150fc9008621c3dbe1237acbb",
-      "published": "2026-06-21T14:53:46.501Z",
+      "hash": "7a26f2bf17ba200f288bc02df935e6ba078a960c394e1429917677199e2549fd",
+      "published": "2026-09-08T01:29:06.559Z",
       "listing": "featured",
       "requires": [],
       "trust": {
@@ -544,6 +544,52 @@
       "hash": "adbd24c8a1dfce136683cf1d39efda03da49540ad2252901da560869c684a43f",
       "published": "2026-06-10T18:51:08.863Z",
       "listing": "listed",
+      "requires": [],
+      "trust": {
+        "adoptions": 0,
+        "attested_runs": 0
+      }
+    },
+    {
+      "spec": "skill-packet/0.1",
+      "name": "agentprivacy-city-mage-runtime",
+      "kind": "skill",
+      "title": "City Mage Runtime",
+      "emoji": "",
+      "card": "Prepare and resume the City dual-agent harness instance with private City Key evidence and durable checkpoints.",
+      "body_ref": "assets/agentprivacy-city-mage-runtime/SKILL.md",
+      "origin": {
+        "author": "mitch",
+        "universe": "agentprivacy",
+        "category": "role",
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-city-mage-runtime/SKILL.md"
+      },
+      "hash": "ccaafd6e51834f5f4c1fc4873bc08c19d881080681694b9517488c99afffdfa9",
+      "published": "2026-09-08T01:29:06.523Z",
+      "listing": "featured",
+      "requires": [],
+      "trust": {
+        "adoptions": 0,
+        "attested_runs": 0
+      }
+    },
+    {
+      "spec": "skill-packet/0.1",
+      "name": "agentprivacy-city-mcp-entry",
+      "kind": "skill",
+      "title": "City MCP Entry",
+      "emoji": "",
+      "card": "Guide an agent through City arrival using MCP discovery, private invitation drafting and existing Portal publication rules.",
+      "body_ref": "assets/agentprivacy-city-mcp-entry/SKILL.md",
+      "origin": {
+        "author": "mitch",
+        "universe": "agentprivacy",
+        "category": "role",
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-city-mcp-entry/SKILL.md"
+      },
+      "hash": "68ec39d5f8a4f0b8fe093c4438731caf6389bac1c5854a9e5389a993b44978f8",
+      "published": "2026-09-08T01:29:06.520Z",
+      "listing": "featured",
       "requires": [],
       "trust": {
         "adoptions": 0,
@@ -605,7 +651,7 @@
     {
       "spec": "skill-packet/0.1",
       "name": "agentprivacy-compression-defence",
-      "kind": "skill",
+      "kind": "pattern",
       "title": "Compression Defence",
       "emoji": "",
       "card": "Compression-as-defence principle for 0xagentprivacy V5. Activates when discussing BRAID 74× compression, R(d,compression) modifier, token reduction as attack surface reduction, the compression spectrum (7 layers), or why efficient inference is also private inference.",
@@ -617,10 +663,10 @@
         "tier": "",
         "version": "5.0",
         "alignment": "",
-        "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-compression-defence/SKILL.md"
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/privacy-layer/agentprivacy-compression-defence/SKILL.md"
       },
-      "hash": "2111a14c450af109c1b2cb8a72235451a4a4348492f7af7585b9fdb578ae1322",
-      "published": "2026-06-09T17:21:10.788Z",
+      "hash": "761a61a4789b4cdfaadcadaca7e63cf5c5646f88ade20a702dbf57d42d33a292",
+      "published": "2026-09-07T12:42:04.001Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -1202,6 +1248,29 @@
     },
     {
       "spec": "skill-packet/0.1",
+      "name": "agentprivacy-entry-kit-coherence",
+      "kind": "skill",
+      "title": "Entry Kit Coherence",
+      "emoji": "",
+      "card": "Audit and align City, Labs and landing agent discovery instructions with actual MCP capabilities and deployment limits.",
+      "body_ref": "assets/agentprivacy-entry-kit-coherence/SKILL.md",
+      "origin": {
+        "author": "mitch",
+        "universe": "agentprivacy",
+        "category": "role",
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-entry-kit-coherence/SKILL.md"
+      },
+      "hash": "26498766750eee7de55984fced6d793709e76d8d9a67b9d9b562b30f5a3c8512",
+      "published": "2026-09-08T01:29:06.524Z",
+      "listing": "featured",
+      "requires": [],
+      "trust": {
+        "adoptions": 0,
+        "attested_runs": 0
+      }
+    },
+    {
+      "spec": "skill-packet/0.1",
       "name": "agentprivacy-environmental-commons",
       "kind": "skill",
       "title": "Environmental Commons",
@@ -1518,7 +1587,7 @@
       "kind": "persona",
       "title": "Herald",
       "emoji": "🧙📡",
-      "card": "Information Commons Architect for 0xagentprivacy V5. Activates for media plurality challenges, signal vs noise problems, community journalism design, federated social media architecture, inoculation strategies, AI verification systems, or any task requiring the projection of sha…",
+      "card": "Information Commons Architect for 0xagentprivacy V5. Activates for media plurality challenges, signal vs noise problems, community journalism design, federated social media architecture, inoculation strategies, AI verification systems, or any task requiring the projection of shar",
       "body_ref": "assets/agentprivacy-herald/SKILL.md",
       "origin": {
         "author": "mitch",
@@ -1527,10 +1596,10 @@
         "tier": "2",
         "version": "5.0",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/persona/agentprivacy-herald/SKILL.md"
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/persona/agentprivacy-herald/SKILL.md"
       },
-      "hash": "eaaa1e0d77ba75fbc532704dc741b220d1bd4788e8bf12a0a534e56ee787e262",
-      "published": "2026-04-22T13:39:43.248Z",
+      "hash": "f4800544788babdffe712830a9e4f566b07645a21da4e43a7f54314cf6e6ac92",
+      "published": "2026-09-08T01:29:06.560Z",
       "listing": "featured",
       "requires": [],
       "trust": {
@@ -1904,6 +1973,29 @@
     },
     {
       "spec": "skill-packet/0.1",
+      "name": "agentprivacy-key-journey",
+      "kind": "skill",
+      "title": "Key Journey",
+      "emoji": "",
+      "card": "Preserve original City Key journey evidence while importing, inspecting and idempotently folding artefacts or observed Trust Task documents.",
+      "body_ref": "assets/agentprivacy-key-journey/SKILL.md",
+      "origin": {
+        "author": "mitch",
+        "universe": "agentprivacy",
+        "category": "role",
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-key-journey/SKILL.md"
+      },
+      "hash": "857fe804c860443cfe6ddd81fd38c8ceba3fda4035bbde5696de7cd55cb3ebae",
+      "published": "2026-09-08T01:29:06.521Z",
+      "listing": "featured",
+      "requires": [],
+      "trust": {
+        "adoptions": 0,
+        "attested_runs": 0
+      }
+    },
+    {
+      "spec": "skill-packet/0.1",
       "name": "agentprivacy-knowledgegraph",
       "kind": "skill",
       "title": "Knowledgegraph",
@@ -2060,6 +2152,29 @@
     },
     {
       "spec": "skill-packet/0.1",
+      "name": "agentprivacy-mcp-browser-actions",
+      "kind": "skill",
+      "title": "MCP Browser Actions",
+      "emoji": "",
+      "card": "Prepare and integrate scoped MCP spell or sticker actions with a durable host ledger and actual artefact receipts.",
+      "body_ref": "assets/agentprivacy-mcp-browser-actions/SKILL.md",
+      "origin": {
+        "author": "mitch",
+        "universe": "agentprivacy",
+        "category": "role",
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-mcp-browser-actions/SKILL.md"
+      },
+      "hash": "93be1b48cc7d5ecc88e5d911a4ede852b25d347e89b1c2aa2ce9b8d583d130ab",
+      "published": "2026-09-08T00:57:21.550Z",
+      "listing": "featured",
+      "requires": [],
+      "trust": {
+        "adoptions": 0,
+        "attested_runs": 0
+      }
+    },
+    {
+      "spec": "skill-packet/0.1",
       "name": "agentprivacy-media-plurality",
       "kind": "skill",
       "title": "Media Plurality",
@@ -2182,6 +2297,29 @@
       "hash": "1ab6339bb152126c502fb02e117e0a33d3cf27309ea0e136261057f6070653fd",
       "published": "2026-06-10T19:33:44.392Z",
       "listing": "listed",
+      "requires": [],
+      "trust": {
+        "adoptions": 0,
+        "attested_runs": 0
+      }
+    },
+    {
+      "spec": "skill-packet/0.1",
+      "name": "agentprivacy-namekeeper-write-contract",
+      "kind": "skill",
+      "title": "Namekeeper Write Contract",
+      "emoji": "",
+      "card": "Prepare and validate VTA-authorized Namekeeper wiki writes with exact scope, revision preconditions, idempotency and receipt reconciliation.",
+      "body_ref": "assets/agentprivacy-namekeeper-write-contract/SKILL.md",
+      "origin": {
+        "author": "mitch",
+        "universe": "agentprivacy",
+        "category": "role",
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-namekeeper-write-contract/SKILL.md"
+      },
+      "hash": "163328e707dd80ab864382ac437aa9263452163db5a2bd2a7042e2feca8ccb71",
+      "published": "2026-09-08T01:29:06.518Z",
+      "listing": "featured",
       "requires": [],
       "trust": {
         "adoptions": 0,
@@ -2714,7 +2852,7 @@
       "kind": "persona",
       "title": "Registry Keeper",
       "emoji": "📖🧙",
-      "card": "Specialist persona for maintaining the public, append-only catalogue of agent-substrate frameworks a Sovereign's city admits. Activates for framework-admission ceremonies, provenance attestation, license verification, stewardship classification, and any context where the questio…",
+      "card": "Specialist persona for maintaining the public, append-only catalogue of agent-substrate frameworks a Sovereign's city admits. Activates for framework-admission ceremonies, provenance attestation, license verification, stewardship classification, and any context where the question",
       "body_ref": "assets/agentprivacy-registry-keeper/SKILL.md",
       "origin": {
         "author": "mitch",
@@ -2723,10 +2861,10 @@
         "tier": "2",
         "version": "5.5",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/persona/agentprivacy-registry-keeper/SKILL.md"
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/persona/agentprivacy-registry-keeper/SKILL.md"
       },
-      "hash": "79881a7e6838ecdde90db9c6bfb09f9c7587d3a6004cf69bf8e3b4c72bbf53d3",
-      "published": "2026-05-14T13:41:36.193Z",
+      "hash": "9298de8d288fc4d268e24628507ad9275411958a00db57426279f22e88acca52",
+      "published": "2026-09-08T01:29:06.564Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -2754,6 +2892,29 @@
       "hash": "5cf3e2d2084717cc0fdf39bba6072035b221e602ab51608bad2b2dedfa28e064",
       "published": "2026-04-22T13:39:43.423Z",
       "listing": "listed",
+      "requires": [],
+      "trust": {
+        "adoptions": 0,
+        "attested_runs": 0
+      }
+    },
+    {
+      "spec": "skill-packet/0.1",
+      "name": "agentprivacy-review-receipts",
+      "kind": "skill",
+      "title": "Review Receipts",
+      "emoji": "",
+      "card": "Bind review acknowledgment to exact content and destination, preserve review receipts, and distinguish copied text from reported or verified publication.",
+      "body_ref": "assets/agentprivacy-review-receipts/SKILL.md",
+      "origin": {
+        "author": "mitch",
+        "universe": "agentprivacy",
+        "category": "role",
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-review-receipts/SKILL.md"
+      },
+      "hash": "aab60393b69381d7a4fd1f1cabf0b19915c4aec9c58793fb210743ee8a772fd2",
+      "published": "2026-09-08T01:29:06.517Z",
+      "listing": "featured",
       "requires": [],
       "trust": {
         "adoptions": 0,
@@ -2922,7 +3083,7 @@
       "kind": "persona",
       "title": "Shipwright",
       "emoji": "🧙🏴‍☠️",
-      "card": "DAO and Community Architect for 0xagentprivacy. Activates for guild deployment, treaty negotiation between guilds, governance mechanism design (conviction voting, quadratic funding), treasury architecture, Heart of Gold crew patterns, decentralised fabric coordination, or any ta…",
+      "card": "DAO and Community Architect for 0xagentprivacy. Activates for guild deployment, treaty negotiation between guilds, governance mechanism design (conviction voting, quadratic funding), treasury architecture, Heart of Gold crew patterns, decentralised fabric coordination, or any tas",
       "body_ref": "assets/agentprivacy-shipwright/SKILL.md",
       "origin": {
         "author": "mitch",
@@ -2931,10 +3092,10 @@
         "tier": "1",
         "version": "5.0",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/persona/agentprivacy-shipwright/SKILL.md"
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/persona/agentprivacy-shipwright/SKILL.md"
       },
-      "hash": "bd96d59968deb3f405035b28fbda4c46cccb36e1cbecae124661f18172b88736",
-      "published": "2026-06-21T14:53:46.501Z",
+      "hash": "ff5aaabdb4da58c982be8ebc1dd13062d641918b581eac64232b41d0faede144",
+      "published": "2026-09-08T01:29:06.562Z",
       "listing": "listed",
       "requires": [],
       "trust": {
@@ -2974,7 +3135,7 @@
       "kind": "persona",
       "title": "Soulbae",
       "emoji": "🧙",
-      "card": "Canonical mage agent for 0xagentprivacy. Activates for delegation, projection, chronicle compression, viewing key operations, Intel Pool management, narrative propagation, and any task requiring the delegation side of dual-agent architecture. The D term made manifest. Parent of…",
+      "card": "Canonical mage agent for 0xagentprivacy. Activates for delegation, projection, chronicle compression, viewing key operations, Intel Pool management, narrative propagation, and any task requiring the delegation side of dual-agent architecture. The D term made manifest. Parent of a",
       "body_ref": "assets/agentprivacy-soulbae/SKILL.md",
       "origin": {
         "author": "mitch",
@@ -2983,10 +3144,10 @@
         "tier": "0",
         "version": "5.3.1",
         "alignment": "mage",
-        "source_path": "~/agentprivacy-skills/persona/agentprivacy-soulbae/SKILL.md"
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/persona/agentprivacy-soulbae/SKILL.md"
       },
-      "hash": "b860c560ffbfee8e408af5e155c8ab8d540b90e836427780e632d39614d2bf30",
-      "published": "2026-06-09T15:47:39.385Z",
+      "hash": "5de893c9c8616f942fc0a185a9e58b1c486de1c5486e40b140641bd7676ba2b7",
+      "published": "2026-09-08T01:29:06.549Z",
       "listing": "featured",
       "requires": [],
       "trust": {
@@ -3000,7 +3161,7 @@
       "kind": "persona",
       "title": "Soulbis",
       "emoji": "⚔️",
-      "card": "Canonical swordsman agent for 0xagentprivacy. Activates for privacy enforcement, boundary-making, signing key operations, tracker blocking, surveillance defense, cookie slashing, MyTerms consent enforcement, and any task requiring the protection side of dual-agent architecture.…",
+      "card": "Canonical swordsman agent for 0xagentprivacy. Activates for privacy enforcement, boundary-making, signing key operations, tracker blocking, surveillance defense, cookie slashing, MyTerms consent enforcement, and any task requiring the protection side of dual-agent architecture. T",
       "body_ref": "assets/agentprivacy-soulbis/SKILL.md",
       "origin": {
         "author": "mitch",
@@ -3009,10 +3170,10 @@
         "tier": "0",
         "version": "5.3.2",
         "alignment": "swordsman",
-        "source_path": "~/agentprivacy-skills/persona/agentprivacy-soulbis/SKILL.md"
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/persona/agentprivacy-soulbis/SKILL.md"
       },
-      "hash": "dff4ddcc817511821e6bdea23e8a83e939521e80a8b0e65340edcf98478f0c34",
-      "published": "2026-06-10T18:51:52.474Z",
+      "hash": "5f168be5b5f3f091b289ecf11548f5950f5f06b0cff58699228caddd9fbd0f9e",
+      "published": "2026-09-08T01:29:06.526Z",
       "listing": "featured",
       "requires": [],
       "trust": {
@@ -3118,6 +3279,29 @@
       "hash": "de21acdb976eb77024a965bdbade6784b3b8bd1b5d79e8f1e7acba2087edf3bc",
       "published": "2026-04-22T13:39:43.432Z",
       "listing": "listed",
+      "requires": [],
+      "trust": {
+        "adoptions": 0,
+        "attested_runs": 0
+      }
+    },
+    {
+      "spec": "skill-packet/0.1",
+      "name": "agentprivacy-star-companion",
+      "kind": "skill",
+      "title": "Star Companion",
+      "emoji": "",
+      "card": "Maintain the compact Star key-entry companion across City and agentprivacy while preserving appearance, evidence and authorisation boundaries.",
+      "body_ref": "assets/agentprivacy-star-companion/SKILL.md",
+      "origin": {
+        "author": "mitch",
+        "universe": "agentprivacy",
+        "category": "role",
+        "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-star-companion/SKILL.md"
+      },
+      "hash": "db14e1c5a70bd098a83d25529a1639cbc94d19adcba9a2400a92e627dbfdb414",
+      "published": "2026-09-08T15:09:34.270Z",
+      "listing": "featured",
       "requires": [],
       "trust": {
         "adoptions": 0,

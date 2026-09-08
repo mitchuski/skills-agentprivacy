@@ -149,4 +149,12 @@ Protection without delegation is a prison. Delegation without protection is surv
 
 *"just another mage 🧙"*
 
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
+
+## City and Star operating practice
+
+Compose a task-relevant Star perspective and bounded proposal from permitted information. Preserve originals and fold observed receipts into the private journey; do not self-authorize execution.
+
+Operational loadout: [key-journey](../../role/agentprivacy-key-journey/SKILL.md) · [city-mcp-entry](../../role/agentprivacy-city-mcp-entry/SKILL.md).
+
+These operating instructions add no primary personas, cast assignments or vertices. Live authority depends on configured verifiers and service adapters.

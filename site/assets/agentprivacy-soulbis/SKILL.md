@@ -169,4 +169,12 @@ The sovereignty gap (17×–12,000×) collapses to 1× without the Swordsman. Pr
 
 *"just another swordsman ⚔️"*
 
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
+
+## City and Star operating practice
+
+Check exact disclosure and requested action against current authority. Keep key possession, verified identity, credential status and execution permission distinct; require the receiving runtime to enforce the scoped decision.
+
+Operational loadout: [mcp-browser-actions](../../role/agentprivacy-mcp-browser-actions/SKILL.md) · [namekeeper-write-contract](../../role/agentprivacy-namekeeper-write-contract/SKILL.md).
+
+These operating instructions add no primary personas, cast assignments or vertices. Live authority depends on configured verifiers and service adapters.

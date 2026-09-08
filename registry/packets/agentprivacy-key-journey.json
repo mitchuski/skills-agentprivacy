@@ -1,0 +1,24 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-key-journey",
+  "kind": "skill",
+  "title": "Key Journey",
+  "emoji": "",
+  "card": "Preserve original City Key journey evidence while importing, inspecting and idempotently folding artefacts or observed Trust Task documents.",
+  "brief": "Preserve original City Key journey evidence while importing, inspecting and idempotently folding artefacts or observed Trust Task documents.\n\nUse the existing agentprivacy-mcp journey_start, journey_inspect and journey_fold tools. Resolve their input schema from tools/list. Supply a complete private bundle when the key commits to packets or prior journey steps. Never reconstruct missing originals from a graph projection.\n\nPreserve unknown key fields, bearer identity, original task documents, packet roots/counts and lineage. A repeated exact fold must be a no-op; changed content under a reused task ID is a conflict. Treat catalog matching, signature verification, freshness, task qualification and issuer authority as separate findings. Recorded task documents are not verified credentials.\n\nKeep full originals in private custody and export the bundle deliberately. A compact Star appearance is not a replacement key or a ZKP. Host action receipts remain private alongside the actual artefact; do not infer a saved VTA state merely from a returned bundle.\n\nImplementation: agentprivacy-mcp/lib/journey.mjs, key.mjs, kappa.mjs; browser generators under scripts/. Validation: node --test test/j",
+  "body_ref": "assets/agentprivacy-key-journey/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-key-journey/SKILL.md"
+  },
+  "hash": "857fe804c860443cfe6ddd81fd38c8ceba3fda4035bbde5696de7cd55cb3ebae",
+  "published": "2026-09-08T01:29:06.521Z",
+  "listing": "featured",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

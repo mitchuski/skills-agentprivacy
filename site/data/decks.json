@@ -1,6 +1,22 @@
 [
   {
     "spec": "skill-loadout/0.1",
+    "name": "city-star-arrival",
+    "emoji": "âœ§",
+    "purpose": "Enter through the model, choose a Star reading, follow a scoped City task and return a reviewable receipt.",
+    "packets": [
+      "agentprivacy-city-mcp-entry",
+      "agentprivacy-key-journey",
+      "agentprivacy-city-mage-runtime",
+      "agentprivacy-mcp-browser-actions",
+      "agentprivacy-star-companion",
+      "agentprivacy-entry-kit-coherence",
+      "agentprivacy-review-receipts",
+      "agentprivacy-namekeeper-write-contract"
+    ]
+  },
+  {
+    "spec": "skill-loadout/0.1",
     "name": "chronicle-keeper",
     "emoji": "📜",
     "purpose": "Writing and reflecting chronicles across the suite voices — one event, many tellings, same invariant core.",

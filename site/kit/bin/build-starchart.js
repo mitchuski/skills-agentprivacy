@@ -9,6 +9,7 @@ const path = require('path');
 const crypto = require('crypto');
 
 const ROOT = path.join(__dirname, '..');
+const snapshotOnly = process.argv.includes('--snapshot-only');
 const catalog = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'catalog-full.json'), 'utf8'));
 const cfg2 = JSON.parse(fs.readFileSync(path.join(ROOT, 'skillsync.config.json'), 'utf8'));
 const SITE = path.join(ROOT, 'site');
@@ -71,12 +72,19 @@ const edgeList = [...edges.values()].sort((x, y) => y.w - x.w).slice(0, 600);
 (async () => {
   let runtimes = [], contributed = [];
   try {
+    if (snapshotOnly) throw Error("Use retained snapshot");
     const r = await fetch('http://127.0.0.1:4444/runtimes', { signal: AbortSignal.timeout(3000) });
     if (r.ok) runtimes = await r.json();
     const c = await fetch('http://127.0.0.1:4444/constellations', { signal: AbortSignal.timeout(3000) });
     if (c.ok) contributed = await c.json();
   } catch (e) { /* librarian offline — chart ships without baked runtimes */ }
 
+  let prior = {};
+  if (snapshotOnly) {
+    prior = JSON.parse(fs.readFileSync(path.join(SITE, "data/starchart.json"), "utf8"));
+    runtimes = prior.runtimes || [];
+    contributed = (prior.constellations || []).filter(c => c.kind === "contributed");
+  }
   const data = {
     built: new Date().toISOString(),
     cats,
@@ -85,13 +93,14 @@ const edgeList = [...edges.values()].sort((x, y) => y.w - x.w).slice(0, 600);
     constellations: decks.map(d => ({ name: d.name, emoji: d.emoji, path: d.packets, kind: 'deck' }))
       .concat(contributed.map(c => ({ name: c.name, emoji: c.emoji || '\u{2B50}', path: c.path, kind: 'contributed', member: c.member, purpose: c.purpose }))),
     runtimes: cfg2.public_desk === 'proof' ? [] : runtimes.map(r => ({ member: r.member, constellation: r.constellation, path: r.path, run: r.run, at: r.at })),
-    runtimesProof: cfg2.public_desk === 'proof' ? { count: runtimes.length, note: 'runtimes sealed at the desk - detail lives on the tailnet' } : undefined
+    runtimesProof: snapshotOnly ? prior.runtimesProof : cfg2.public_desk === 'proof' ? { count: runtimes.length, note: 'runtimes sealed at the desk - detail lives on the tailnet' } : undefined
   };
   fs.writeFileSync(path.join(SITE, 'data', 'starchart.json'), JSON.stringify(data));
   fs.writeFileSync(path.join(SITE, 'star.html'), page());
   console.log('star chart: ' + stars.length + ' stars · ' + edgeList.length + ' edges · ' +
     data.constellations.length + ' deck constellations · ' + runtimes.length + ' recorded runtimes');
 
+  if (snapshotOnly) return; // Local public artefacts only; no farm writes.
   // mirror into the farm assets alongside the rest of the static site
   const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'skillsync.config.json'), 'utf8'));
   const farmSite = path.join(cfg.shelf.farm_assets, 'site');

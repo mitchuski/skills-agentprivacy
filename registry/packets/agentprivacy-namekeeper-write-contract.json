@@ -1,0 +1,24 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-namekeeper-write-contract",
+  "kind": "skill",
+  "title": "Namekeeper Write Contract",
+  "emoji": "",
+  "card": "Prepare and validate VTA-authorized Namekeeper wiki writes with exact scope, revision preconditions, idempotency and receipt reconciliation.",
+  "brief": "Prepare and validate VTA-authorized Namekeeper wiki writes with exact scope, revision preconditions, idempotency and receipt reconciliation.\n\nRead mages_city/gate/permissions.mjs and the receiving adapter contract. Bind authentication to subject, audience, exact space and page, action, contentDigest, operationId and expectedRevision. Hash the exact UTF-8 body. Supply a new unpredictable operationId per intended change (16–128 ASCII letters, digits, underscores or hyphens); preserve it across retries. expectedRevision is explicit null for create-if-absent or sha256 followed by a colon and 64 lowercase hex digits for an authoritative revision.\n\nRequire verified identity binding and a separate current grant. Authenticate fresh proof on each attempt, including retries. Inside the receiving service's commit boundary, check authorization, compare the stored operation digest, check the expected revision, and commit page plus durable receipt together. A matching retry returns the original receipt; changed content under the same operation ID conflicts. Scope the deduplication key to authenticated subject and exact space.\n\nTreat revision-conflict, operation-id-conflict and authorization-reje",
+  "body_ref": "assets/agentprivacy-namekeeper-write-contract/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-namekeeper-write-contract/SKILL.md"
+  },
+  "hash": "163328e707dd80ab864382ac437aa9263452163db5a2bd2a7042e2feca8ccb71",
+  "published": "2026-09-08T01:29:06.518Z",
+  "listing": "featured",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-mcp-browser-actions",
+  "kind": "skill",
+  "title": "MCP Browser Actions",
+  "emoji": "",
+  "card": "Prepare and integrate scoped MCP spell or sticker actions with a durable host ledger and actual artefact receipts.",
+  "brief": "Prepare and integrate scoped MCP spell or sticker actions with a durable host ledger and actual artefact receipts.\n\nCall browser_action_prepare for an exact HTTPS origin/page, subject DID reference, registered target, spell.cast or sticker.place, content digest, stable operation ID and expiry within five minutes. This is a proposal, not permission or dispatch.\n\nThe trusted extension/host derives the real top-level context and obtains holder/delegation approval for that exact intent. Do not use page postMessage flags as identity; do not resolve targets as scripts, selectors or arbitrary URLs. Read agentprivacy-mcp/docs/BROWSER_ACTIONS.md before attaching live adapters.\n\nUse lib/browser-action-runtime.mjs with an existing private ledger directory and host-owned authorize/execute/reconcile/verifyReceipt functions. Shared-directory locks prevent concurrent dispatch by cooperating local processes. Pending outcomes require reconciliation using the same operation ID. Changed intent under an existing ID is a conflict. Reverify retained results and validate original packets before journey folding. Save the returned bundle in actual private custody.\n\nExpired pending operations need a separat",
+  "body_ref": "assets/agentprivacy-mcp-browser-actions/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-mcp-browser-actions/SKILL.md"
+  },
+  "hash": "93be1b48cc7d5ecc88e5d911a4ede852b25d347e89b1c2aa2ce9b8d583d130ab",
+  "published": "2026-09-08T00:57:21.550Z",
+  "listing": "featured",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}

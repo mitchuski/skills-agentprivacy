@@ -1,0 +1,24 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-city-mage-runtime",
+  "kind": "skill",
+  "title": "City Mage Runtime",
+  "emoji": "",
+  "card": "Prepare and resume the City dual-agent harness instance with private City Key evidence and durable checkpoints.",
+  "brief": "Prepare and resume the City dual-agent harness instance with private City Key evidence and durable checkpoints.\n\nWork in the existing mages_city/harness/city_mage instance of dual-agent-harness, not the superseded extraction. Read runtime.json and README.md before operating. Use bootstrap.mjs --help for explicit key/bundle, private state directory, subject reference and HTTPS audience arguments.\n\nPrefer the existing deployed VTA and key. A subject reference is not proof of control. Local preparation validates/preserves evidence and pins entry-kit sources; it does not mint a service-discovery receipt. Changed evidence/context/sources require an explicit new preparation without discarding the old instance.\n\nResume through setup.mjs with host-owned adapters and verification. Persist pending operations before effects; use revision comparison and reconcile uncertain outcomes rather than blindly repeating. Never derive executable adapters from keys. Retained crash locks require inspection after the writer has stopped. Keep storage outside source/public/sync folders; local files are not encrypted VTA memory.\n\nRun node harness/city_mage/run.mjs from the City repo. Preserve failed and succe",
+  "body_ref": "assets/agentprivacy-city-mage-runtime/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-city-mage-runtime/SKILL.md"
+  },
+  "hash": "ccaafd6e51834f5f4c1fc4873bc08c19d881080681694b9517488c99afffdfa9",
+  "published": "2026-09-08T01:29:06.523Z",
+  "listing": "featured",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  }
+}
