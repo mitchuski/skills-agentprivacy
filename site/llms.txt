@@ -1,0 +1,21 @@
+# skills.agentprivacy.ai
+
+> The skills door of the agentprivacy universe: packet catalogue, loadouts, one SKILL.md per packet. A skill supplies a method. Updated 12 September 2026.
+
+## Start
+- Agent instructions for this host: https://skills.agentprivacy.ai/skill.md
+- The entry (one command, five starting doors): https://agentprivacy.org/skill.md · https://agentprivacy.org/begin/#one-command
+
+## On this host
+- Packet catalogue (ids, versions, hashes): https://skills.agentprivacy.ai/assets/skillsync/catalog.json
+- A packet: https://skills.agentprivacy.ai/assets/<packet-id>/SKILL.md
+- Loadouts: https://skills.agentprivacy.ai/#loadouts
+- Network orientation: https://skills.agentprivacy.ai/orientation.md
+- Librarian's desk: https://skills.agentprivacy.ai/desk.md
+
+## Next
+- Personas: https://agentprivacy.ai/persona
+- Run a method (the harness): https://github.com/mitchuski/agentprivacy-harness
+- Carry a loadout into the City: https://mages.city/skill.md
+
+A listed skill is not demonstrated competence. Nothing here grants City write authority or membership.
