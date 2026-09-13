@@ -20,7 +20,10 @@ inside. Three zoom levels so a fresh model can load exactly as much as it needs:
   "hash": "sha256 of the full SKILL.md body",
   "published": "2026-08-24T00:00:00Z",
   "requires": [],                     // packet names this one assumes loaded
-  "trust": { "adoptions": 0, "attested_runs": 0 }
+  "trust": { "adoptions": 0, "attested_runs": 0 },
+  "license": "CC-BY-NC-SA-4.0",       // SPDX id of the terms this packet is offered under (additive, 2026-09-13)
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }
 ```
 
@@ -28,7 +31,17 @@ Rules:
 - `name` is globally unique per author; `hash` makes versions comparable across farms.
 - `card` is MANDATORY and is the only thing a discovery notification carries.
 - A **loadout** is `{ "name", "purpose", "packets": [names...] }` — a curated deck.
-  Loadouts are the density fix: a new model loads a deck, not the corpus.
+  Loadouts are the density fix: a new model loads a deck, not the corpus. A loadout
+  carries the same three terms fields as a packet, so a whole skill set shared as one
+  deck travels with its terms.
+- **The terms travel with the packet.** `license` is an SPDX identifier; `attribution` is
+  the credit line the licence requires; `commercial` is where a commercial licence is
+  obtained when the public terms exclude commercial use. A packet with `license` absent
+  or `null` is **all rights reserved by `origin.author`**: it may be read and evaluated
+  where it was published, not copied onward. The dream loop and every shelf show the
+  terms beside the card; a fork into your own farm inherits them unchanged. The
+  agentprivacy corpus is offered under CC BY-NC-SA 4.0 with commercial licences by
+  agreement (`LICENSE.md`, `COMMERCIAL.md`); other gardens declare their own.
 
 ## 2. Publication (how a skill becomes discoverable)
 

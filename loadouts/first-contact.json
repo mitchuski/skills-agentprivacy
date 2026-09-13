@@ -11,5 +11,8 @@
     "agentprivacy-dual-agent-harness",
     "agentprivacy-chronicle-reflect",
     "fedwiki-watch"
-  ]
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

@@ -1,5 +1,10 @@
 {
   "member": "<your-handle>",
+  "license": {
+    "spdx": "<SPDX id of the terms your packets are offered under, e.g. CC-BY-NC-SA-4.0 — or omit this block for all rights reserved>",
+    "attribution": "<the credit line the licence requires>",
+    "commercial": "<URL where a commercial licence is obtained, when the public terms exclude commercial use>"
+  },
   "sources": [
     {
       "root": "<path-to-your-skills>",
