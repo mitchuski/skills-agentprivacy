@@ -73,9 +73,9 @@ The gap is topological, not arithmetic. Surveillance systems cannot incrementall
 
 **Liquidity for verified history.** The temporal memory term A(τ) suggests that verified agent histories are tradeable assets. An agent with deep, attested history has quantifiably more value than a fresh agent. This creates a secondary market for agent reputation — not selling the data itself, but selling verifiable proof of the quality and depth of sovereignty decisions made on that data.
 
-**Sovereignty-weighted yield.** DeFi protocols can use stratum weighting to determine yield allocation. Participants at higher sovereignty strata (more dimensions active) receive proportionally more yield, creating economic incentives for sovereignty improvement rather than just liquidity provision.
+**Sovereignty-weighted yield.** DeFi protocols can use stratum weighting to determine yield allocation. Participants weighted by the binomial stratum weights (peaking at stratum 3: 1, 6, 15, 20, 15, 6, 1) receive proportionally more yield — note that strata 4–6 weigh less than 3, so "more dimensions, more yield" holds only up to stratum 3 — creating economic incentives for sovereignty improvement rather than just liquidity provision.
 
-**The determinant as collateral quality.** The sovereignty duality term Φ(Σ) = min(1.0, (S/M)/φ) · det(Σ) provides a single scalar measure of architectural quality. det(Σ) close to 1 means well-separated forces; close to 0 means entangled and vulnerable. This scalar could serve as a collateral quality rating for data-backed financial instruments.
+**The determinant as collateral quality.** The sovereignty duality term Φ(Σ) = min(1.0, (S/M)/φ) · det(Σ) provides a single scalar measure of architectural quality. det(Σ) close to 1 means well-separated forces (the entries of Σ are correlations, so Σ ≈ I); close to 0 means entangled and vulnerable. In this Φ the factor min(1, (S/M)/φ) is a threshold, not an optimum (audit F1, F2). This scalar could serve as a collateral quality rating for data-backed financial instruments.
 
 ## Inference economics: Performance-Per-Dollar
 
@@ -100,10 +100,14 @@ The model has four empirically uncalibrated terms: the memory scaling coefficien
 ## Open questions for economists
 
 1. Does the 17×–12,000× gap hold under empirical calibration, or does it narrow/widen?
-2. Is the golden ratio φ genuinely optimal for protect/project balance, or is this an artefact of the model structure?
+2. Is the golden ratio φ the right protect/project threshold? (In the stated Φ it is a threshold, not an optimum; audit F2.) Would an optimum need a different Φ?
 3. What discount rate should apply to A(τ) for agents with verified histories spanning multiple market cycles?
 4. How do sovereignty transitions interact with traditional financial risk models?
 5. Can the multiplicative gating property be exploited by adversaries to cheaply collapse entire markets by targeting a single dimension?
+
+### 2026-09-12 · BRAID as a service
+
+PPD's denominator is itemised in SERV's billing: upstream inference, reasoning generation, prompt-guard evaluation, audit or repair, shadow validation, each a billable component of one request; cache hits skip generation and still pay the upstream model. That is C_amortized = C_BRAID/N + C_inference written as a price list. The 25% revenue buy-and-burn of the vendor's token is a token mechanic outside this model and is not a term in V(π,t).
 
 ---
 

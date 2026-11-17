@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-reversible-circuit-validation",
+  "kind": "skill",
+  "title": "Reversible Circuit Validation",
+  "emoji": "",
+  "card": "Validate and debug the CORRECTNESS of a reversible or quantum circuit, not its size. Use whenever a circuit \"gives wrong answers on some inputs\", \"ancilla aren't returning to zero / uncomputation is leaving garbage\", there are \"phase errors\", \"it passes my basis-state test but I…",
+  "brief": "Validate and debug the CORRECTNESS of a reversible or quantum circuit, not its size. Use whenever a circuit \"gives wrong answers on some inputs\", \"ancilla aren't returning to zero / uncomputation is leaving garbage\", there are \"phase errors\", \"it passes my basis-state test but I'm not sure it's right in superposition\", or someone needs to test a reversible adder, multiplier or modular-arithmetic block before trusting it inside Shor's. Covers the classical/phase/ancilla (cls/pha/anc) three-channel decomposition, differential testing against a trusted reference on RANDOM inputs, the forward-inverse identity check, telling a designed approximation failure from a real bug, per-channel zero-reachability as a go/no-go for seed searches, and localising the first broken op. Fires on informal phrasing (\"my uncompute is dirty\", \"results get corrupted when I compose it\", \"is 0.3% failure expected?\"). For making a correct circuit SMALLER use agentprivacy-peak-qubit-reduction (qubits) or agentprivacy-toffoli-reduction (gates); this skill owns CORRECTNESS.",
+  "body_ref": "assets/agentprivacy-reversible-circuit-validation/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/role/agentprivacy-reversible-circuit-validation/SKILL.md"
+  },
+  "hash": "fbbed0bc3d0297eb265ff8a373cf1f0dd328087ea9e2463f872e8004a4fca2a3",
+  "published": "2026-11-12T15:16:53.232Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

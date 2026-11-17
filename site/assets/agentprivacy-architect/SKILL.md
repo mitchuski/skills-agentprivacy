@@ -249,3 +249,8 @@ The mapping was admitted on 2026-05-17 by privacymage's editorial direction. It 
 
 *"The mathematics requires separation. The architecture enforces it. Everything else is commentary." ☯️🤖*
 **Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+
+## BRAID as a service (2026-09-12)
+
+The split architecture the Architect selects now has a vendor path: SERV Reasoning ships the Generator on the provider's side and returns only the Solver's answer. The Architect's decision is therefore no longer "split or monolith" but "which seat, on whose machine". Rules carried from `braid_reasoning`: SERV may hold one seat of the dual-agent harness, never both, never the default; the Shadow Agent is a critic inside the provider's call, not the Gap; Φ_inference is computed over observers, not model ids, because one intermediary reading both prompts collapses the separation whatever the ids say. The API's separation is a promise; the harness's is a file (`run.json`, replayed by `tools/verify_run.mjs`). The architecture enforces what the mathematics requires, and an intermediary is part of the architecture.
+

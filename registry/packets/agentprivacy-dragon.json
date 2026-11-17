@@ -4,8 +4,8 @@
   "kind": "skill",
   "title": "Dragon",
   "emoji": "",
-  "card": "Root equation and complete Privacy Value Model V6 overview for 0xagentprivacy. Activates when discussing V(π,t), the sovereignty value equation, proven bounds (reconstruction ceiling, Proven in the conditional regime; time-indexed as R(t) with shelf life t* at V6), conjectured p…",
-  "brief": "Root equation and complete Privacy Value Model V6 overview for 0xagentprivacy. Activates when discussing V(π,t), the sovereignty value equation, proven bounds (reconstruction ceiling, Proven in the conditional regime; time-indexed as R(t) with shelf life t* at V6), conjectured properties (golden ratio φ optimality), or any foundational question about how privacy creates measurable value. Use when the user needs the complete model, equation term definitions, or version lineage. V4 is the lineage stage this skill was first written against; V6 is current. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n> *The Dragon is the Drake that learned it contained geometry.*\n\nA formal economic model that prices privacy as infrastructure, not preference. It answers: *what is a unit of privacy-preserving data worth compared to a unit of surveilled data, and why?*",
+  "card": "Root equation and complete Privacy Value Model V6 overview for 0xagentprivacy. Activates when discussing V(π,t), the sovereignty value equation, proven bounds (reconstruction ceiling: capacity-sum bound and Fano floor Proven in the conditional regime, strict R < 1 only under a d…",
+  "brief": "Root equation and complete Privacy Value Model V6 overview for 0xagentprivacy. Activates when discussing V(π,t), the sovereignty value equation, proven bounds (reconstruction ceiling: capacity-sum bound and Fano floor Proven in the conditional regime, strict R < 1 only under a declared capacity deficit; time-indexed as R(t) with shelf life t* at V6), conjectured properties (golden ratio φ as a threshold, C1 challenged), or any foundational question about how privacy creates measurable value. Use when the user needs the complete model, equation term definitions, or version lineage. V4 is the lineage stage this skill was first written against; V6 is current. V6 register note (2026-06-10): conjecture and version citations resolve to agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md (head C89); model head: privacy_value_v6_formal_specification.md.\n\n> *The Dragon is the Drake that learned it contained geometry.*",
   "body_ref": "assets/agentprivacy-dragon/SKILL.md",
   "origin": {
     "author": "mitch",
@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-dragon/SKILL.md"
   },
-  "hash": "1c7824f99215faede57077315108514c5d2104d2591587af717d3c1e24a6d77a",
-  "published": "2026-08-24T16:19:07.040Z",
+  "hash": "994bc25837123a2ca70a6aa1ead8d3a8475ae3728217cd43b9aa4b1332d7c6e4",
+  "published": "2026-10-25T22:52:54.374Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

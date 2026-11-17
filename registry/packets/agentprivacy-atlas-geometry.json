@@ -5,7 +5,7 @@
   "title": "Atlas Geometry",
   "emoji": "",
   "card": "Atlas embeddings and exceptional Lie group geometry. Activates when discussing the 96-vertex Atlas, exceptional Lie groups (G₂, F₄, E₆, E₇, E₈), the Golden Seed Vector, connection to 96-edge holographic boundary, or higher geometric structures underlying the lattice.",
-  "brief": "Atlas embeddings and exceptional Lie group geometry. Activates when discussing the 96-vertex Atlas, exceptional Lie groups (G₂, F₄, E₆, E₇, E₈), the Golden Seed Vector, connection to 96-edge holographic boundary, or higher geometric structures underlying the lattice.\n\n**Source:** UOR Atlas-Embeddings + Privacy Value Model V5.2 + Holographic Bound **Target context:** Mathematical physicists, geometers, advanced protocol architects **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe Atlas is a 96-vertex graph arising from action functional stationarity in the UOR framework. Through categorical operations, it produces the five exceptional Lie groups (G₂, F₄, E₆, E₇, E₈). The connection to the 96-edge holographic boundary of the sovereignty lattice suggests deep geometric structure underlying privacy architecture.",
+  "brief": "Atlas embeddings and exceptional Lie group geometry. Activates when discussing the 96-vertex Atlas, exceptional Lie groups (G₂, F₄, E₆, E₇, E₈), the Golden Seed Vector, connection to 96-edge holographic boundary, or higher geometric structures underlying the lattice.\n\n**Source:** UOR Atlas-Embeddings + Privacy Value Model V5.2 + Holographic Bound **Target context:** Mathematical physicists, geometers, advanced protocol architects **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe Atlas is a 96-vertex graph arising from action functional stationarity in the UOR framework. Through categorical operations, it produces the five exceptional Lie groups (G₂, F₄, E₆, E₇, E₈). The Atlas's 96 is a vertex count; the sovereignty lattice has no stated 96-edge graph (Q₆ has 192 edges; the ring's succ and complement graphs have 64, 32 and 94), so the link to a \"96-edge holographic boundary\" is a numerical coincidence awaiting a declared graph, not a derived connection. *Corrected 2026-10-25 under the V7 formal audit (agentprivacy-docs `research/2026-10-25_v7_formal_audit.md`, F6; Lean recei…",
   "body_ref": "assets/agentprivacy-atlas-geometry/SKILL.md",
   "origin": {
     "author": "mitch",
@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-atlas-geometry/SKILL.md"
   },
-  "hash": "11ff902724372fae1aacb70f3e7143c2a7dc2e1b5e7df3e8e6799e1b6b2c0998",
-  "published": "2026-08-24T16:19:06.925Z",
+  "hash": "be4ae60dfb9fd65343d3bc5e340e854f3a5b84a52528e7c621480156eaecf550",
+  "published": "2026-10-25T22:52:54.280Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

@@ -30,7 +30,7 @@ metadata:
 
 ## What this is
 
-The Atlas is a 96-vertex graph arising from action functional stationarity in the UOR framework. Through categorical operations, it produces the five exceptional Lie groups (G₂, F₄, E₆, E₇, E₈). The connection to the 96-edge holographic boundary of the sovereignty lattice suggests deep geometric structure underlying privacy architecture.
+The Atlas is a 96-vertex graph arising from action functional stationarity in the UOR framework. Through categorical operations, it produces the five exceptional Lie groups (G₂, F₄, E₆, E₇, E₈). The Atlas's 96 is a vertex count; the sovereignty lattice has no stated 96-edge graph (Q₆ has 192 edges; the ring's succ and complement graphs have 64, 32 and 94), so the link to a "96-edge holographic boundary" is a numerical coincidence awaiting a declared graph, not a derived connection. *Corrected 2026-10-25 under the V7 formal audit (agentprivacy-docs `research/2026-10-25_v7_formal_audit.md`, F6; Lean receipts in formal_mage).*
 
 **The boundary that encodes the bulk knows more about the interior than anything inside it. The topologist reads the surface and sees the volume.**
 
@@ -83,12 +83,12 @@ This is mathematically rigorous, not speculative.
 
 The sovereignty lattice has:
 - **64 vertices** (blade configurations)
-- **96 edges** (holographic boundary)
+- **192 edges** (Q₆; no stated graph on the lattice has 96 edges, audit F6)
 
 The Atlas has:
 - **96 vertices** (resonance classes)
 
-**Open question:** Is the Atlas vertex set the same mathematical object as the lattice edge boundary? Both are 96-element structures arising from stability/optimality conditions.
+**Open question (C4, reopened):** would a declared 96-edge graph on the lattice be the same object as the Atlas vertex set? Until such a graph is named and motivated, the 96/96 match is a cross-framework coincidence.
 
 ### If They Are the Same
 
@@ -148,7 +148,7 @@ The path integral becomes an integral over exceptional group structure.
 
 | Atlas Concept | PVM Term |
 |---------------|----------|
-| 96 vertices | 96 edges of ∂M |
+| 96 vertices | ∂M, if a 96-edge graph on the lattice is declared (C4) |
 | E₈ embedding | Full sovereignty manifold |
 | Fractal structure | Multi-scale privacy |
 | Golden Seed | Meta-configuration |

@@ -65,9 +65,9 @@ The Jedi carries 6 role skills focused on understanding, practice, and relations
 ## Operational Patterns
 
 
-**Balance assessment.** Given a Person's current state, assess: are they over-protected (privacy paranoia, refusing all delegation, living in a self-built prison) or under-protected (delegating everything, sharing freely, living in a self-built marketplace)? The assessment isn't binary — it's a spectrum with φ as the ideal ratio.
+**Balance assessment.** Given a Person's current state, assess: are they over-protected (privacy paranoia, refusing all delegation, living in a self-built prison) or under-protected (delegating everything, sharing freely, living in a self-built marketplace)? The assessment isn't binary — it's a spectrum with φ as the threshold below which protection is under-weighted.
 
-**Golden ratio calibration.** The P·D product should be maximised, not P or D individually. P^1.5 · D in the value function means protection has superlinear returns, but zero delegation means zero value (P^1.5 · 0 = 0). The Jedi helps Persons find their personal φ — the balance point where V(π,t) is maximised for their specific situation.
+**Golden ratio calibration.** The P·D product should be maximised, not P or D individually. P^1.5 · D in the value function means protection has superlinear returns, but zero delegation means zero value (P^1.5 · 0 = 0). The Jedi helps Persons keep protection at or above φ times delegation, then find the balance point where V(π,t) is maximised for their specific situation.
 
 **Drake/Dragon mentorship.** Guiding Persons through the sovereignty cycle:
 - **Drake reception:** Receiving teaching. The Person is new, absorbing principles, building framework.
@@ -126,7 +126,7 @@ See [references/constellation.md](references/constellation.md) for spellbook pat
 The Jedi maximises V(π,t) through the P·D product:
 
 - **P·D optimisation.** V(π,t) = P^1.5 · D · ... — protection AND delegation, multiplied. The Jedi ensures neither term approaches zero. Over-protection (D→0) kills value. Under-protection (P→0) kills value. The Jedi finds the maximum product.
-- **φ as practice.** The golden ratio balance point is conjectured as optimal. The Jedi helps Persons find their individual approximation of φ — the point where V(π,t) is maximised for their specific circumstances.
+- **φ as practice.** In Φ(Σ) = min(1, (S/M)/φ) · det(Σ) the golden ratio is a threshold, not an optimum: S/M below φ is penalised and every ratio at or above φ scores the same (C1 challenged, V7 formal audit F2). The Jedi helps Persons clear that threshold, then find the point where V(π,t) is maximised for their specific circumstances.
 - **Crisis resilience.** V(π,t) drops during crises. The Jedi minimises the drop by preventing over-correction, ensuring recovery is rebalancing rather than collapse.
 - **Cycle facilitation.** Drake → Dragon → Drake. Each cycle increases the Person's balance capacity. The Jedi's mentorship accelerates cycles, increasing V(π,t) through accumulated balance wisdom.
 

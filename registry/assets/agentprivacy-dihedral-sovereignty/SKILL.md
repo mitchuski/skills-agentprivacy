@@ -99,6 +99,8 @@ Step 64: neg(bnot(63)) = neg(0) = 0 (back to start)
 
 ## Φ_agent as Determinant
 
+> *Corrected 2026-10-25 under the V7 formal audit (agentprivacy-docs `research/2026-10-25_v7_formal_audit.md`, F7; Lean receipts in formal_mage).* This section's reading is **refuted** (C14 challenged). A representation takes values in invertible matrices, so det ρ(g) ≠ 0 for every group element; for the permutation representation on the 64 vertices it is ±1. The determinant cannot measure separation, and V6's own breaking condition (§18 item 6) fires. The group-theoretic core (⟨neg, bnot⟩ ≅ D₆₄, order 128, transitive) is proven and machine-checked. The text below is kept as the record of the V5 reading.
+
 ### The Three-Axis Separation
 
 V5 introduces three-axis separation:
@@ -135,7 +137,7 @@ If Swordsman and Mage merge (same agent does both operations):
 
 ### The 64-Vertex Hypercube
 
-The dihedral group D₆₄ acts on the 6-dimensional hypercube:
+The dihedral group D₆₄ acts on the 64 vertices (as a 64-cycle under succ). It does not act by symmetries of the hypercube: bnot preserves cube adjacency, but neg and succ do not (neg sends the edge 0–1 to 0–63, at distance 6).
 - neg reflects through the arithmetic center
 - bnot reflects through the bitwise center
 - succ = neg∘bnot rotates through all vertices
@@ -149,9 +151,9 @@ Visualize the hypercube:
 
 ### Why Neither Alone Suffices
 
-- Swordsman alone: Can only reach half the vertices (neg partitions the space)
-- Mage alone: Can only reach half the vertices (bnot partitions the space)
-- Together: The entire space is accessible
+- Swordsman alone: neg is an involution, so from any vertex it reaches at most one other (orbits of size ≤ 2; 0 and 32 are fixed)
+- Mage alone: bnot is an involution, so it reaches exactly one other (the complement)
+- Together: neg ∘ bnot = succ generates all 64 vertices — the group is transitive, and for every start and target exactly two group elements connect them (two witnesses per transition, Lean `exactly_two_witnesses`)
 
 **This is the mathematical reason for dual-agent architecture.**
 
@@ -201,7 +203,7 @@ No amount of Swordsman operations produces Mage capability, and vice versa.
 | neg involution | Swordsman (P term) |
 | bnot involution | Mage (D term) |
 | neg∘bnot rotation | First Person (V(π,t)) |
-| det(ρ(D₂ₙ)) | Φ_agent(Σ) |
+| det(ρ(D₂ₙ)) | ~~Φ_agent(Σ)~~ refuted (det ρ(g) = ±1 for the permutation representation; C14 challenged) |
 | Group transitivity | Reachability guarantee |
 | Generator independence | The Gap |
 
@@ -211,8 +213,8 @@ No amount of Swordsman operations produces Mage capability, and vice versa.
 |-------|------------|
 | neg and bnot are involutions | 100% (mathematical fact) |
 | neg∘bnot = succ | 100% (mathematical fact) |
-| D₂ₙ structure applies to lattice | 95% (implemented, verified) |
-| Φ_agent = det(ρ(D₂ₙ)) | 75% (C14 conjecture) |
+| D₂ₙ structure applies to lattice | proven: ⟨neg, bnot⟩ ≅ D₆₄, order 128, transitive (Lean `order_128`, `succ_transitive`) |
+| Φ_agent = det(ρ(D₂ₙ)) | refuted (C14 challenged, V7 formal audit F7) |
 | Full representation theory proof | 50% (needs formalization) |
 
 ## Proverb

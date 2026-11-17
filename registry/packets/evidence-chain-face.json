@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "evidence-chain-face",
+  "kind": "skill",
+  "title": "Evidence Chain Face",
+  "emoji": "",
+  "card": "Compose a \"face of the evidence\" — one public chain root chosen per vertex of the 64-vertex lattice, each root sitting at the vertex its own first six bits name — and fold it into a portable key (City Key) as an additive chains field with a sidecar, so the key's content address…",
+  "brief": "Compose a \"face of the evidence\" — one public chain root chosen per vertex of the 64-vertex lattice, each root sitting at the vertex its own first six bits name — and fold it into a portable key (City Key) as an additive chains field with a sidecar, so the key's content address moves and its prior chain records the new step of the bearer's trajectory. Use when gathering many evidence chains onto one lattice, letting a person compose their own reading of them, or carrying chosen work roots inside an identity carrier without carrying the work.\n\nMany chains, one lattice. A root's vertex is its first six bits, read in the lattice's own order (most significant first), so placement needs no table and every surface agrees. A face is a choice of one root per vertex; folding it into the bearer's key appends a workflow hash chain to their trajectory.\n\n- Several evidence chains should be seen together on the 64 states. - A person wants to compose and keep their own selection of public work roots. - A key carrier needs to name chosen evidence without holding it.",
+  "body_ref": "assets/evidence-chain-face/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "drafted",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/drafts/evidence-chain-face/SKILL.md"
+  },
+  "hash": "4d64f1e926410100018f8513ff129b2858add03062b19666265bab8a6c76cbb5",
+  "published": "2026-10-25T14:09:21.147Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

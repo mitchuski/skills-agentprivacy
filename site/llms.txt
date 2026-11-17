@@ -4,7 +4,7 @@
 
 ## Start
 - Agent instructions for this host: https://skills.agentprivacy.ai/skill.md
-- The entry (one command, five starting doors): https://agentprivacy.org/skill.md · https://agentprivacy.org/begin/#one-command
+- The entry (one command, five starting doors): the agent door https://agentprivacy.ai/skill.md · the human door https://agentprivacy.org/begin/#one-command
 
 ## On this host
 - Packet catalogue (ids, versions, hashes): https://skills.agentprivacy.ai/assets/skillsync/catalog.json

@@ -149,7 +149,7 @@ Protection without delegation is a prison. Delegation without protection is surv
 
 *"just another mage 🧙"*
 
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
 
 ## City and Star operating practice
 
@@ -158,3 +158,7 @@ Compose a task-relevant Star perspective and bounded proposal from permitted inf
 Operational loadout: [key-journey](../../role/agentprivacy-key-journey/SKILL.md) · [city-mcp-entry](../../role/agentprivacy-city-mcp-entry/SKILL.md).
 
 These operating instructions add no primary personas, cast assignments or vertices. Live authority depends on configured verifiers and service adapters.
+
+## BRAID as a service (2026-09-12)
+
+The proposer's seat is the natural SERV seat: the Generator writes the graph, and SERV puts the Generator on the vendor's side. The honest shape is the split pattern already in `drivers/run.mjs`, proposer on the API and prover local, so the corpus never leaves the box except as the proposal's canonical bytes. The API requires a system prompt on every call; the seat contract line is that prompt. Soulbae proposes; the Gap and the Swordsman remain at home.

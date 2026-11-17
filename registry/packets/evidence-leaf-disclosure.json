@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "evidence-leaf-disclosure",
+  "kind": "skill",
+  "title": "Evidence Leaf Disclosure",
+  "emoji": "",
+  "card": "Disclose one leaf of a sealed evidence bundle to a named party, at the discloser's chosen moment, as a bundle of its own that carries the leaf bytes, the Merkle inclusion path, the sealed roots and the recipient, so the recipient re-derives inclusion without receiving anything e…",
+  "brief": "Disclose one leaf of a sealed evidence bundle to a named party, at the discloser's chosen moment, as a bundle of its own that carries the leaf bytes, the Merkle inclusion path, the sealed roots and the recipient, so the recipient re-derives inclusion without receiving anything else. Use when a sealed root was published earlier and one document, result or record now needs to be shown to one reader; when a reviewer asks \"show me that leaf\"; when deciding what a disclosure reveals about its siblings; or when a disclosure itself must be verifiable and dated. Encodes the disclosure record, what it reveals and does not, the second-disclosure question, and the verifier's checks.\n\nThe root was shown earlier. Now one leaf is told, to a named party, when the holder chooses. The move exists so that sealing is not the same as hiding forever, and telling one thing is not the same as telling everything.",
+  "body_ref": "assets/evidence-leaf-disclosure/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "drafted",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/drafts/evidence-leaf-disclosure/SKILL.md"
+  },
+  "hash": "c130aaec950d44f729a29aef1448427992a93448918c18de9fa7b0946ceb6063",
+  "published": "2026-10-20T02:38:39.908Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

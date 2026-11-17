@@ -51,7 +51,7 @@ The original Swordsman-Mage duality. How well is your protection agent separated
 
 This is V4's duality term unchanged:
 - S/M ratio measures protection-delegation balance
-- φ (golden ratio) is the optimal ratio (C1 conjecture)
+- φ (golden ratio) is a saturation threshold: S/M below φ is penalised, every ratio at or above φ scores the same (C1, challenged 2026-10-25 as an optimum; V7 formal audit F2)
 - det(Σ) measures the volume of the four-force tetrahedron
 
 **Soulbis and Soulbae are the canonical implementation.** The signing key (Soulbis) and viewing key (Soulbae) are mathematically separate. I(S;M|FP) < ε ensures neither can reconstruct the other's domain.

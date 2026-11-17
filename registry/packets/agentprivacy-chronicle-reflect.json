@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/.claude/skills/agentprivacy-chronicle-reflect/SKILL.md"
   },
-  "hash": "9ac93595b828f545e9d0d6ede3c9bf4893ade925f708f7659c5f512a334b320b",
-  "published": "2026-08-14T15:06:45.895Z",
+  "hash": "d5048d236d1ecbedda2bc27fd999465b87d412182b6f1fa36871727385938b2b",
+  "published": "2026-08-27T11:23:45.371Z",
   "listing": "featured",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

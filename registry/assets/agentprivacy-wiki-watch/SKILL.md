@@ -14,12 +14,13 @@ that feed per site, diffs it against a stored snapshot, and reports what changed
 
 **Read-only.** Public GETs only — it never pushes, forks, or logs in, so no cookies are needed. It is
 the *observe* counterpart to `agentprivacy-wiki-resync` (project) and the fedwiki-cohere-sync skill
-(*write*). The live twin runs from `~/.claude/skills/fedwiki-watch/`.
+(*write*).
 
 ## Files
 
 - `roster.json` — the watchlist: `{name, url, group, owner}` per site. `owner:external` = other
-  people's wikis (star-flagged, sorted first); `owner:mitch` = your own sites.
+  people's wikis (star-flagged, sorted first); `owner:self` (any value other than `external`) =
+  your own sites, tracked but de-emphasised.
 - `watch.mjs` — the runtime (zero dependencies, Node 18+ for global `fetch`).
 - `state/<name>.json` — per-site snapshot; `state/last-run.json` — full last result.
 - `reports/latest.md` + `reports/<timestamp>.md` — human digests.
@@ -42,14 +43,23 @@ second run onward is where changes surface.
 
 1. Run `node watch.mjs --json`, parse it. `totals` gives counts; `sites[]` carries `new[]`,
    `updated[]`, `removed[]`, `status`, `seeded`.
-2. Summarise **external changes first** (david/max/henry, skill.fedwiki.club, radio.myth.garden,
-   david.self.fish) — edits by others are the real signal.
+2. Summarise **external changes first** (neighbour vision wikis, skill.fedwiki.club, radio.myth.garden,
+   self.fish neighbours) — edits by others are the real signal. De-emphasise your own sites.
 3. To show *what* changed on a page, GET `<site.url>/<slug>.json` and read the tail of `.journal`
-   (`--detail` does a light version automatically).
+   (or diff `.story`); `--detail` does a light version automatically.
+4. `reports/latest.md` is the shareable digest.
 
 ## Watchlist & scheduling
 
-Edit `roster.json` to add/remove sites; discover neighbours from a roster site's
-`welcome-visitors`/`recent-changes` page JSON. Not scheduled by default — run on demand, or wire
-`/loop`, `/schedule`, or Windows Task Scheduler. The feed is public and read-only, so any cadence is
-safe; hourly is plenty (these wikis move slowly). 21 seed sites verified live 2026-07-13.
+Edit `roster.json` to add/remove sites. To discover more neighbours: read a roster site's
+`welcome-visitors`/`recent-changes` page JSON, or any page's `journal[].site` / story-item `site`
+references, and add the new hostnames. **Removing a site: delete its `state/<name>.json` too**, or it
+lingers as a stale baseline. 21 seed sites verified live 2026-07-13.
+
+Not scheduled by default. Options, cheapest first:
+- **On demand** — "check the fedwikis" and the agent runs it.
+- **`/loop`** — `/loop 6h node watch.mjs --json` polls on an interval within a session.
+- **`/schedule`** — a cron cloud agent that runs `watch.mjs` and messages the digest.
+- **OS scheduler** — cron / Windows Task Scheduler running `node <skill-dir>/watch.mjs`.
+
+The feed is public and read-only, so any cadence is safe; hourly is plenty (these wikis move slowly).

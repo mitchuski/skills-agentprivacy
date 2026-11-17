@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-lane-chronicle",
+  "kind": "skill",
+  "title": "Lane Chronicle",
+  "emoji": "",
+  "card": "Turn a dual-agent harness lane's work on a public board (a benchmark, a leaderboard, a standards thread) into a shareable chronicle: a research-note PDF and one-image PNG with exact figures, every submission and outcome, who in the field composed or cited the work, where the rec…",
+  "brief": "Turn a dual-agent harness lane's work on a public board (a benchmark, a leaderboard, a standards thread) into a shareable chronicle: a research-note PDF and one-image PNG with exact figures, every submission and outcome, who in the field composed or cited the work, where the record stands, a closing tome proverb tagged with the City of Mages, a short note from the solver, and an account of the dual-agent harness. Use when someone asks to \"visualise my contributions\", \"make a research note / chronicle of this lane\", \"share this with the solver group\", \"add a proverb at the end\", or to keep such a note true after the board moves. Also drives the companions: figures exported for a Soul Sync letter and the matching holes of a City tome. Encodes the verification pass against the public record, the honesty rules for credit and counts, what to leave out before sharing, the page-layout fixes, and the render gotchas.",
+  "body_ref": "assets/agentprivacy-lane-chronicle/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "0.1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/role/agentprivacy-lane-chronicle/SKILL.md"
+  },
+  "hash": "a538089f2ccb7ca49f2b104af02bb09f8daf61d6cdf8c4674ecdb874b9f7ad53",
+  "published": "2026-10-05T23:21:16.780Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

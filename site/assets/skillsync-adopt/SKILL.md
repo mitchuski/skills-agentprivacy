@@ -26,8 +26,8 @@ federation-native signal that you took the skill seriously enough to hold a copy
 
 ## 3. Record at the Librarian
 
-    POST http://pi5:4242/adopt   {"member":"you", "packet":"<name>", "from":"<author>"}
-    POST http://pi5:4242/attest  {"member":"you", "packet":"<name>", "from":"<author>",
+    POST http://pi5:4444/adopt   {"member":"you", "packet":"<name>", "from":"<author>"}
+    POST http://pi5:4444/attest  {"member":"you", "packet":"<name>", "from":"<author>",
                                   "run":"one-line evidence ref"}
 
 Adopt when you decide to keep it (author +3). Attest after it actually worked in a

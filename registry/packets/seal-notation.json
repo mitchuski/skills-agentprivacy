@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "seal-notation",
+  "kind": "skill",
+  "title": "Seal Notation",
+  "emoji": "",
+  "card": "Write 32-byte hashes (sha-256 κ, BLAKE3 labels, Merkle roots, keys) as seals — one 26-character word from five scripts with an arithmetic check, via the pinned Sigil encoding — on web pages, in a spellbook-style listing, behind a page-wide toggle, and in a paste-and-check reader…",
+  "brief": "Write 32-byte hashes (sha-256 κ, BLAKE3 labels, Merkle roots, keys) as seals — one 26-character word from five scripts with an arithmetic check, via the pinned Sigil encoding — on web pages, in a spellbook-style listing, behind a page-wide toggle, and in a paste-and-check reader that says where a hash sits in a community's record. Use when hashes must be read, compared, copied or photographed by people, when a page should offer \"show hashes as seals\", or when building a seal reader or lookup.\n\nA truncated hex hash has no check and can be imitated cheaply. A **seal** is the whole 32 bytes as one word of 26 characters, no two alike, selected whole by a double-click, with a check: one misread or changed character, or two swapped, cannot decode. The algorithm stays beside it (sha-256 unless marked).\n\n- A page shows hashes people compare by eye. - Someone asks for \"the hashes as sigils/seals\", a toggle, a spellbook listing, or a \"paste a hash, find it\" page.",
+  "body_ref": "assets/seal-notation/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "drafted",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/drafts/seal-notation/SKILL.md"
+  },
+  "hash": "5c7d24086d6ced7f37eeddfcb5630c95a1d3e2563e8db3c2fd6b3b316d28293b",
+  "published": "2026-10-26T16:49:03.480Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

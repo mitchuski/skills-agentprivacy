@@ -33,6 +33,7 @@ home.
 |---|---|---|---|
 | **master** | `~/agentprivacy_master/docs/chronicles/YYYY-MM-DD_slug.md` | framework voice; scope block; numbered sections; "Why this is interesting" bullets; closes `*Uncommitted, as ever — the First Person's read comes first.*` until signed | SOURCE OF TRUTH. Arc chronicles name one **inversion** each |
 | **repo-local (collaborator)** | `<public repo>/chronicles/` (first instance: `~/dtgwg-cred-spec-main_mage/chronicles/` → github.com/mitchuski/dtgwg-zkp-mage) | body verbatim from master; **provenance header** + **runtime traces** prepended; paths repo-relative | the evidence-first public telling; see procedure below |
+| **repo-local (BGIN_IKP)** | `~/BGIN_IKP/chronicles/` (added 2026-08-27; worked example: `2026-08-27_the-hall-gathers-its-papers.md`) | body verbatim from master; provenance header + runtime traces; paths KB-relative | PRIVATE working-KB telling — NOT a publication surface; anything leaving it gets its own gate |
 | **spellweb DREAM** | `~/spellweb/chronicles/DREAM-YYYY-MM-DD.md` | KG voice; node/edge framing; signature line (e.g. `⚔️📊⊥🧙🕸️\|😊`) | minted during dream loops |
 | **cityofmages dream** | `~/cityofmages/` DREAM files | City cargo-lap ledger; workshop/tome vocabulary | City binding rules apply |
 | **agentprivacy-docs** | `~/agentprivacy-docs/chronicles/` + INDEX.md row | family-B ROOT chronicles — canon vocab OK; NEVER the pipeline chronicles dir (that needs role/first-person approval + GR-4 register) | add the INDEX row |

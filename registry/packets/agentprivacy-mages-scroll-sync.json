@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-mages-scroll-sync",
+  "kind": "pattern",
+  "title": "Mages Scroll Sync",
+  "emoji": "",
+  "card": "Build a new Mages City scroll (any sealed κ-evidence bundle, a mage's census, or a wiki's κ-registry → a page of nothing but hashes on its own *.mages.city subdomain, joined to the list of scrolls and the Sigil ledger), or sync the existing scrolls and quest pages after new spel…",
+  "brief": "Build a new Mages City scroll (any sealed κ-evidence bundle, a mage's census, or a wiki's κ-registry → a page of nothing but hashes on its own *.mages.city subdomain, joined to the list of scrolls and the Sigil ledger), or sync the existing scrolls and quest pages after new spells have been cast (new bundles minted → project files → build → copy back → City indexes → tests → deploy copies). Use when the keeper says \"make a scroll for X\", \"scroll sync\", \"update the quests with the new casts\", \"refresh the chains/scrolls\", or after any lane mints bundles that a quest page should show. Encodes the scroll's hashes-only guard, the builder map, the new-scroll walk, the quest-sync walk, the hover/pin interaction, the BLAKE3 second axis, and the gotchas.\n\n`nothing leaves but hashes, dates and numerals`\n\nA **scroll** is a mage's work written as nothing but its hashes: one book per sealed root, each record then the threads drawn from it, beside a star that places every hash by its first six bits. A **quest** is an evidence-chain page (tree, star, grimoire, scroll, sound) whose Scroll tab is the same writing. Every scroll lists every other (the line under the header), and every hash it shows…",
+  "body_ref": "assets/agentprivacy-mages-scroll-sync/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/meta/agentprivacy-mages-scroll-sync/SKILL.md"
+  },
+  "hash": "1f87e1fcc1e70fd6e7a3b1dee0994b93e49055752ea2a8c44f6cfe6f03279188",
+  "published": "2026-11-12T15:16:53.036Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

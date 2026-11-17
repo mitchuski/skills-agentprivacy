@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "evidence-chain-mint-verify",
+  "kind": "skill",
+  "title": "Evidence Chain Mint Verify",
+  "emoji": "",
+  "card": "Mint a lane's documents and run records as a content-addressed evidence bundle (one record per leaf, a ledger, recomputable checks, a run root with a Merkle root and a second hash axis) and re-derive it from the root with two independent verifiers. Use when a research lane, a so…",
+  "brief": "Mint a lane's documents and run records as a content-addressed evidence bundle (one record per leaf, a ledger, recomputable checks, a run root with a Merkle root and a second hash axis) and re-derive it from the root with two independent verifiers. Use when a research lane, a solver lane or a document pipeline needs its work to travel as addresses that a stranger re-derives, when a chronicle should become a leaf of the next step, when a label or a leaf changes and the question is \"re-mint or overwrite\", or when a note must quote a root it cannot retype. Encodes the leaves file, the step discipline, the two-verifier rule, the two-roots-not-one-overwrite rule and the gotchas the lane recorded.\n\nA measurement, a document or a run leaves the room as a decimal in a note. The decimal travels; nothing binds it to the bytes it came from. This method gives the bytes an address and gives the lane a root, so that whatever is quoted later can be re-derived by whoever holds the bundle, and whoever holds only the root can tell whether a bundle is the one that was cited.",
+  "body_ref": "assets/evidence-chain-mint-verify/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "drafted",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/drafts/evidence-chain-mint-verify/SKILL.md"
+  },
+  "hash": "14720303b9318da75151f6e39d03ea7b7575c2dfe795b065d653d115ce84355e",
+  "published": "2026-10-20T02:38:39.165Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

@@ -1,6 +1,21 @@
 [
   {
     "spec": "skill-loadout/0.1",
+    "name": "chronicle-keeper",
+    "emoji": "📜",
+    "purpose": "Writing and reflecting chronicles across the suite voices — one event, many tellings, same invariant core.",
+    "packets": [
+      "agentprivacy-chronicle-reflect",
+      "agentprivacy-chronicler",
+      "understanding-compression",
+      "agentprivacy-mirrorkeeper"
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+    "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+  },
+  {
+    "spec": "skill-loadout/0.1",
     "name": "city-star-arrival",
     "emoji": "âœ§",
     "purpose": "Enter through the model, choose a Star reading, follow a scoped City task and return a reviewable receipt.",
@@ -13,19 +28,10 @@
       "agentprivacy-entry-kit-coherence",
       "agentprivacy-review-receipts",
       "agentprivacy-namekeeper-write-contract"
-    ]
-  },
-  {
-    "spec": "skill-loadout/0.1",
-    "name": "chronicle-keeper",
-    "emoji": "📜",
-    "purpose": "Writing and reflecting chronicles across the suite voices — one event, many tellings, same invariant core.",
-    "packets": [
-      "agentprivacy-chronicle-reflect",
-      "agentprivacy-chronicler",
-      "understanding-compression",
-      "agentprivacy-mirrorkeeper"
-    ]
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+    "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
   },
   {
     "spec": "skill-loadout/0.1",
@@ -38,7 +44,10 @@
       "skillsync-adopt",
       "skillsync-constellation",
       "spell-search"
-    ]
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+    "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
   },
   {
     "spec": "skill-loadout/0.1",
@@ -53,7 +62,10 @@
       "agentprivacy-dual-agent-harness",
       "agentprivacy-chronicle-reflect",
       "fedwiki-watch"
-    ]
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+    "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
   },
   {
     "spec": "skill-loadout/0.1",
@@ -66,7 +78,10 @@
       "agentprivacy-lattice-coherence",
       "agentprivacy-horizon-gate",
       "agentprivacy-master-emissary"
-    ]
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+    "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
   },
   {
     "spec": "skill-loadout/0.1",
@@ -80,7 +95,10 @@
       "agentprivacy-gatekeeper",
       "agentprivacy-sentinel",
       "agentprivacy-herald"
-    ]
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+    "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
   },
   {
     "spec": "skill-loadout/0.1",
@@ -94,7 +112,10 @@
       "thread-weaving",
       "understanding-compression",
       "agentprivacy-attachment-architecture"
-    ]
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+    "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
   },
   {
     "spec": "skill-loadout/0.1",
@@ -108,6 +129,9 @@
       "tile-from-page",
       "wiki-to-pdf",
       "understanding-compression"
-    ]
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+    "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
   }
 ]

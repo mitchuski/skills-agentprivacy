@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-board-submission-discipline",
+  "kind": "pattern",
+  "title": "Board Submission Discipline",
+  "emoji": "",
+  "card": "Prepare an entry for an AI-judged public benchmark board the way a harness lane does it: label every figure by how it was obtained, gate the package, run critic rounds (including a seat that plays the judge) before filing, make every step between measured figures measured or pro…",
+  "brief": "Prepare an entry for an AI-judged public benchmark board the way a harness lane does it: label every figure by how it was obtained, gate the package, run critic rounds (including a seat that plays the judge) before filing, make every step between measured figures measured or proved, never declare a bound below its true value, mint and verify the evidence bundle BEFORE submit so the note carries the κ root, name the harness once, hold an entry that will not reach the frontier, and keep every negative as a leaf. Use when someone says \"prepare the submission\", \"ready to file?\", \"write the note\", \"pre-submit checklist\", \"the judge returned it not evaluable / refuted\", \"should we file or hold\", \"critic this package\", or is about to run a board CLI's submit. Board-neutral: it encodes the order of work and the refusals, not any board's scores.\n\n`measure · gate · critic · mint · file`\n\nA public board with an AI judge reads the claim, the proof and the organizer's own check reports, not your intent. Everything filed is public at once and cannot be edited. A failed or returned entry still publishes the lever. So the lane does all its doubting *before* filing, and files only what it would de…",
+  "body_ref": "assets/agentprivacy-board-submission-discipline/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/meta/agentprivacy-board-submission-discipline/SKILL.md"
+  },
+  "hash": "27c2945476788d11bfbac4e84f7e9e933e01b8f41d8f358618f8d6c3154d7509",
+  "published": "2026-11-12T15:16:52.930Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

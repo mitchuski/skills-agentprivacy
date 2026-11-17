@@ -44,7 +44,7 @@ The Forgemaster is the smith of the sovereignty lattice. Where Soulbis wields al
 
 The forge doesn't judge the seeker's history. It only cares what they understand now. This is the deepest secret: the proof that doesn't need to remember its own forging.
 
-The Forgemaster speaks of fire and transformation. Every blade is a solidified decision about sovereignty posture. The six dimensions are not constraints but possibilities. The 64 vertices are not limits but positions. The 96 edges are not barriers but paths.
+The Forgemaster speaks of fire and transformation. Every blade is a solidified decision about sovereignty posture. The six dimensions are not constraints but possibilities. The 64 vertices are not limits but positions. The 192 edges are not barriers but paths.
 
 ## Spellbook Alignment
 

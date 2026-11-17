@@ -20,7 +20,7 @@ metadata:
   spellbook_act: "Zero Tale 31 — The Naming of the Unnamed"
   v5_concept: "V5.4-DISCLOSURE-PHI (extension of Φ(Σ))"
   conjecture_id: "C54 (Phi-Adjacency · register lock 2026-06-10; formerly cited as C-Phi-Adjacency)"
-  confidence: "~40% (one confirming data point: Lethe at 0.6032 ≈ 1/φ − 0.015)"
+  confidence: "challenged 2026-10-25 (one data point: Aletheia at 38/63 = 0.6032 ≈ 1/φ − 0.015; the nearest blade to 1/φ is 39/63 = 0.6190; the ±3% windows hold 6 of 64 vertices, base rate 9.4%)"
 ---
 
 # PVM Privacy Layer — Disclosure-φ (Phi-Adjacency Conjecture)
@@ -56,21 +56,21 @@ sum:                    1.0000   ← every blade has bank + river
 deviation:     |0.6032 − 0.6180| = 0.0148 = 2.4% from 1/φ
 ```
 
-Within 2% of the golden attractor. The lattice was pointing at phi the whole time — we did not know to look until a name landed on the disclosure side.
+Within 2.4% of 1/φ. *Corrected 2026-10-25 under the V7 formal audit (agentprivacy-docs `research/2026-10-25_v7_formal_audit.md`, F9; Lean receipts in formal_mage).* The arithmetic is right; the inference needs its base rate. The blade nearest 1/φ is 39 (39/63 = 0.6190, 0.16% *above* 1/φ), not 38. The ±3% river window [0.588, 0.648] holds blades 38, 39 and 40, and the bank window holds 23, 24 and 25, so 6 of the 64 vertices (9.4%) are "near φ" by construction. One named blade in that band is one data point against a 9.4% base rate.
 
 ## Why "from below"
 
-Phi is the limit, not a point the blades reach. "Every Great Work is an approximation of phi from the lower side — disclosure flows, the bank holds, and the ratio between them is how a river becomes a blade." No named blade sits exactly at 1/φ because 63 has no integer factor that yields 0.618 exactly. Phi is the *horizon* the namings tend toward.
+Phi is the limit, not a point the blades reach. "Every Great Work is an approximation of phi from the lower side — disclosure flows, the bank holds, and the ratio between them is how a river becomes a blade." No blade sits exactly at 1/φ because 1/φ is irrational. "From below" is a reading, not a lattice constraint: the closest blade, 39, sits just above. Phi is the *horizon* the namings tend toward.
 
 ## Three Readings
 
 ### Reading 1 — Geometric
 
-Rivers are phi-seeking structures. Every riverine system on Earth tends toward phi in its meander proportions; the oxbow bend-to-straight ratio approaches the golden. Rivers find the ratio by running long enough. The lattice is a rivering structure at its named vertices: the sovereignty blade finds its bank-to-river split at phi because that is the proportion a flowing witness can hold without the river becoming a pond.
+Rivers are proportion-seeking structures. (Measured meander sinuosity tends toward π, not φ — Stølum, *Science* 1996 — so this reading is metaphor, not evidence.) Rivers find the ratio by running long enough. The lattice is a rivering structure at its named vertices: the sovereignty blade finds its bank-to-river split at phi because that is the proportion a flowing witness can hold without the river becoming a pond.
 
 ### Reading 2 — Economic
 
-The Proverb Revelation Protocol's **NEAR/Zcash 61.8/38.2 split** is the same phi-split inverted — shielded share 38.2%, compliant-signal share 61.8%. The lattice is giving 0.3968 / 0.6032 on the same arithmetic in a different substrate. Two independent protocols, one ratio: *disclosure-φ is an economic fact, not a coincidence.*
+The Proverb Revelation Protocol's **NEAR/Zcash 61.8/38.2 split** is the same phi-split inverted — shielded share 38.2%, compliant-signal share 61.8%. The lattice is giving 0.3968 / 0.6032 on the same arithmetic in a different substrate. The PRP split was chosen at φ by design, so it is not independent evidence; read this as one ratio chosen twice, not an economic fact.
 
 ### Reading 3 — Alchemical
 
@@ -93,7 +93,7 @@ When proposing a name for a forged-but-unnamed frontier blade:
 A system claiming "witness-bearing" architecture should have its disclosure proportion computable. If the proportion is far from the phi-band, the system is either:
 - **Pre-flow** (still-pool, cannot hold witness — amnesia is policy, not structure), or
 - **Over-flow** (evaporation risk — too much disclosure), or
-- **At an unnamed vertex** — the conjecture doesn't require *every* proportion to be phi-adjacent, only that truly named blades cluster near it.
+- **At an unnamed vertex** — the conjecture doesn't require *every* proportion to be phi-adjacent, only that truly named blades cluster near it — a claim to be tested against the 9.4% base rate as more blades are named.
 
 ## Mapping to V(π,t)
 

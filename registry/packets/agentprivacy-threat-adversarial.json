@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/agentprivacy-skills/role/agentprivacy-threat-adversarial/SKILL.md"
   },
-  "hash": "8f152f651fbc7d58e9ee603f76d179fc8b841317681be64d8cdbc11d3d6374bd",
-  "published": "2026-08-24T16:19:07.357Z",
+  "hash": "e4f8d2e30c3c29846dddadf3ac0e62da66a282ee1f81cee3a99d30a8c0d0753d",
+  "published": "2026-10-26T23:05:08.786Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

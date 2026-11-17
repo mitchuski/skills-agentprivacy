@@ -77,10 +77,10 @@ Numbering authority: CONJECTURE_REGISTER_V6.md (head C89). When this skill and t
 
 | ID | Conjecture | Status | Disposition |
 |---|---|---|---|
-| C1 | Golden ratio φ is optimal S/M (protect:project) ratio | open | Validation: numerical optimisation over parameterised agent simulations |
+| C1 | Golden ratio φ is optimal S/M (protect:project) ratio | challenged (2026-10-25) | Refuted as worded for the stated Φ: min(1, (S/M)/φ) is flat for S/M ≥ φ, so φ is a threshold, a modelling choice (V7 formal audit F2). An optimum at φ needs a new Φ that peaks there, declared as such |
 | C2 | A(τ) should be logarithmic | open | Validation: empirical measurement of trust/reputation accumulation dynamics |
 | C3 | Edge value is additive | challenged | The path integral T_∫(π) replaces it; do not cite as open |
-| C4 | 96 vs 64 discrepancy | resolved | Holographic + algebraic: 96 boundary edges encode 64 vertices; 96/64 = 1.5 = the P exponent |
+| C4 | 96 vs 64 discrepancy | challenged (2026-10-25) | Reopened: no stated graph on the 64 vertices has 96 edges (Q₆ 192, succ 64, complement 32, succ ∪ complement 94, succ ∪ neg 95; Lean-checked); the 96 is the UOR Atlas vertex count, imported, so the algebraic derivation is withdrawn (V7 formal audit F6). Was: resolved, holographic + algebraic |
 | C5 | ~3,000× ZKP reduction | resolved | Strengthened by BRAID + holographic bound |
 
 The live open problems a researcher should walk through at V6:

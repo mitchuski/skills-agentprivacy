@@ -9,19 +9,22 @@
   "body_ref": "assets/agentprivacy-wiki-sync/SKILL.md",
   "origin": {
     "author": "mitch",
-    "universe": "agentprivacy",
-    "category": "wikis",
+    "universe": "workbench",
+    "category": "workbench",
     "tier": "",
     "version": "1.0",
     "alignment": "",
-    "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-sync/SKILL.md"
+    "source_path": "~/.claude/skills/agentprivacy-wiki-sync/SKILL.md"
   },
-  "hash": "b64555bb65c5b424dcfa7135e072242bc12c6fc8c8102f475a66c982012fd507",
-  "published": "2026-08-24T16:18:54.207Z",
+  "hash": "77439cc0e543e4c505f4a76cd8920c703ad085fe413714ad5861a1479b585f50",
+  "published": "2026-11-12T15:24:25.395Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

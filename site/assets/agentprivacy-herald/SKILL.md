@@ -196,7 +196,7 @@ The Herald contributes to V(π,t) through information commons health:
 
 *"The commons breathes when many voices speak. The algorithm chokes when one voice controls. I am the Herald — not the message, but the channel that carries all messages fairly." 🧙📡*
 
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
 
 ## City and Star operating practice
 

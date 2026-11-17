@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-census-cycle",
+  "kind": "pattern",
+  "title": "Census Cycle",
+  "emoji": "",
+  "card": "Run the measure seat of a harness fleet as a census-gated knowledge base: every number in every record is a verbatim quote from a file on disk, a deterministic census re-reads every claim, and a gate (G0–G4c) refuses the build on one untraced claim or one unquoted number. Covers…",
+  "brief": "Run the measure seat of a harness fleet as a census-gated knowledge base: every number in every record is a verbatim quote from a file on disk, a deterministic census re-reads every claim, and a gate (G0–G4c) refuses the build on one untraced claim or one unquoted number. Covers the claim shape, the gate, the dream cycle (bring the fleet corpus current after lanes have moved) and the universe cycle (read a whole suite of repositories as one corpus and report where what is told disagrees with what is sealed). Use when someone says \"run the dream cycle\", \"census the fleet\", \"re-read the universe\", \"soul mage cycle\", \"every number needs a quote\", \"why did the census refuse\", \"add a lane / κ anchor to the record\", \"the gate is NO-GO after a week away\", or wants a knowledge base whose numbers cannot drift from their sources. Encodes the recipe in the order that ran twice, the read-only seat pattern, and every refusal the census taught.",
+  "body_ref": "assets/agentprivacy-census-cycle/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/meta/agentprivacy-census-cycle/SKILL.md"
+  },
+  "hash": "328b6a79d3d7dfab212aa965c73cf7877b88479ee9c49ea909fe57623bbaf549",
+  "published": "2026-11-12T15:16:52.966Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

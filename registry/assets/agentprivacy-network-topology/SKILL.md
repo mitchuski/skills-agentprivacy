@@ -76,7 +76,7 @@ The binomial distribution of vertex counts across the 7 strata (1, 6, 15, 20, 15
 
 **Strata 4–6:** Mirror the lower strata. Stratum 6 (all dimensions active) has weight 1, same as stratum 0. Full activation is as rare and extreme as zero activation.
 
-**The economic interpretation:** A network of 100 agents all at stratum 3 contributes more value than a network of 2,000 agents all at stratum 1. Quality of sovereignty configuration matters more than raw participation. This is the formal basis for "a small guild of sovereign agents is more valuable than a large crowd of minimally configured ones."
+**The economic interpretation:** Configuration and count trade linearly. 100 agents at stratum 3 contribute 100 × 20 = 2,000; it takes 334 agents at stratum 1 (weight 6) to exceed them, and 2,000 agents at stratum 1 contribute 12,000. A small guild beats a crowd only while the crowd is less than 20/6 ≈ 3.3 times its size. Moving one member from stratum 1 to stratum 3 is worth the weight of 14 stratum-0 recruits. *Corrected 2026-10-25 under the V7 formal audit (agentprivacy-docs `research/2026-10-25_v7_formal_audit.md`, F3; Lean receipts in formal_mage).* (The earlier example claimed 100 at stratum 3 beat 2,000 at stratum 1; it does not.)
 
 ## Connection to Privacy Pools
 
@@ -84,7 +84,7 @@ Privacy Pools are anonymity sets where participants can selectively disclose mem
 
 **Pool value** is not just the number of participants but the weighted sum of their sovereignty configurations. A Privacy Pool where most participants are at stratum 3 provides better anonymity guarantees (more diverse configurations at the combinatorial maximum) and higher economic value per participant.
 
-**Pool composition optimisation.** Given the stratum weights, there exists an optimal distribution of members across strata that maximises the network term. Concentrated at stratum 3 is good; spread across all strata is better (provides cover at every level). The worst configuration: everyone at stratum 0 or 6 (extremes with weight 1).
+**Pool composition optimisation.** Given the stratum weights, there exists an optimal distribution of members across strata that maximises the network term. For a fixed head-count, Σ wᵢnᵢ is maximised by putting everyone at stratum 3, and spreading never increases it (Lean `concentrate_at_three`). Spread across strata provides *cover* at every level (a member is harder to single out when others share its stratum), but that is an anonymity property the network term does not model; it needs its own term. The worst configuration: everyone at stratum 0 or 6 (extremes with weight 1).
 
 ## Connection to guild economics
 

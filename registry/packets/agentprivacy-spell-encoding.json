@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/agentprivacy-skills/role/agentprivacy-spell-encoding/SKILL.md"
   },
-  "hash": "6d00fb171a9a01a1093d858799848036a84ff3e97215d433fb3d63e0bf259895",
-  "published": "2026-04-07T11:50:41.897Z",
+  "hash": "5b0c52cf08d65c7ba66cd5988aa42db016d8696f5ea31f9f93c9d91b4e09f0ba",
+  "published": "2026-10-26T23:05:08.789Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

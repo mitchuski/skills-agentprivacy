@@ -3,7 +3,7 @@ name: agentprivacy-blade-forge
 description: >
   Blade configuration mechanics for the spellweb forge. Activates when
   discussing blade creation, 6D configuration space (d1Hide through d6Delegate),
-  64 vertices from 2^6 combinations, 96 edges forming holographic boundary,
+  64 vertices from 2^6 combinations, 192 edges (6-regular hypercube),
   forge operations, or blade verification through understanding.
 license: Apache-2.0
 metadata:
@@ -73,15 +73,15 @@ Vertex 63 = (1,1,1,1,1,1) = full sovereignty (乾 The Creative)
 
 Between the extremes lie 62 intermediate vertices, each a valid sovereignty posture.
 
-### 96 Edges
+### 192 Edges
 
-The 6-dimensional hypercube has 96 edges connecting adjacent vertices:
+The 6-dimensional hypercube has 192 edges connecting adjacent vertices; every vertex has degree 6:
 
 ```
-Edges = 6 × 2^5 = 6 × 32 = 192 / 2 = 96
+Edges = 64 × 6 / 2 = 6 × 2^5 = 192
 ```
 
-**The 96 edges ARE the holographic boundary.** They encode the full volume through their connectivity pattern.
+*Corrected 2026-10-25 under the V7 formal audit (agentprivacy-docs `research/2026-10-25_v7_formal_audit.md`, F5, F6; Lean `q6_edge_count`, `q6_regular`).* The earlier text divided 192 by 2 a second time. No stated graph on the 64 vertices has 96 edges; the 96 of the holographic reading is the UOR Atlas vertex count, imported, and C4 is reopened.
 
 ### The Holographic Property
 
@@ -89,13 +89,13 @@ Edges = 6 × 2^5 = 6 × 32 = 192 / 2 = 96
 ∂M = 96 on 64
 ```
 
-The boundary (96 edges) encodes the volume (64 vertices). This is the same ratio that appears in the holographic bound:
+The holographic reading sets a 96-element boundary against the 64-vertex volume, the same ratio as P^1.5:
 
 ```
 P^1.5 ↔ 96/64 = 1.5
 ```
 
-The forge geometry IS the privacy value geometry.
+That this ratio is structural is a conjecture (C6, open), pending a declared 96-edge graph on the lattice.
 
 ## Blade Creation Protocol
 
@@ -226,7 +226,7 @@ The first **named frontier blade** beyond the inherited canon. Vertex ⟨1,0,0,1
 |---------------|----------|
 | 6 dimensions | Six terms of V(π,t) |
 | 64 vertices | Sovereignty lattice nodes |
-| 96 edges | Holographic boundary |
+| 192 edges | Single-dimension transitions (96/64 holographic reading: C4 reopened) |
 | Blade configuration | Privacy posture vector |
 | Hexagram mapping | Compressed classification |
 | Tier classification | Pascal strata |

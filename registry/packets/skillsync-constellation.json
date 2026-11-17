@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/skill sync/skill/skillsync-constellation/SKILL.md"
   },
-  "hash": "d1535da1afdbec7cbeb7ee32831190f1250ee4541c75785de07f569e7a29e0b9",
-  "published": "2026-08-24T13:09:28.053Z",
+  "hash": "3f05e2329077b60d33e4c9be888b5d27aa2c4c32ae40add01e729628d65bbf24",
+  "published": "2026-08-24T17:01:56.561Z",
   "listing": "featured",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

@@ -31,7 +31,7 @@ metadata:
 
 The 64-vertex sovereignty lattice ({0,1}⁶) used in PVM-V4 exhibits a conjectured structural correspondence with the UOR Foundation's toroidal algebraic structure. If this correspondence holds, the sovereignty lattice is not an arbitrary mathematical convenience but a fragment of a deeper geometric object — a compact manifold with periodic boundary conditions that constrain the possible value flows and create natural compactification of the sovereignty configuration space.
 
-This is the most speculative element of PVM-V4. The correspondence is observed but unproven. The 96-versus-64 edge count is resolved: they don't need to match. The 96-edge surface IS the holographic encoding of the 64-vertex bulk — 96/64 = 1.5 is not a discrepancy but the holographic principle expressing itself in discrete lattice geometry (boundary-encodes-volume; the C6 thread; see `agentprivacy-holographic-bound`) (corrected 2026-07-10 per the register; OBS-GPT56-014, L125/D5). The separate 96-versus-192 edge-count question treated below remains open. This skill file is for mathematicians who can either prove the correspondence, explain that remaining discrepancy, or demonstrate that it is a structural mismatch rather than an encoding feature.
+This is the most speculative element of PVM-V4. The correspondence is observed but unproven. The 96-versus-64 question was marked resolved on 2026-07-10 and is reopened (2026-10-25, V7 formal audit F6, agentprivacy-docs `research/2026-10-25_v7_formal_audit.md`): no stated graph on the 64 vertices has 96 edges (Q₆ has 192, succ ∪ complement 94, succ ∪ neg 95), and the 96 is the UOR Atlas vertex count, imported. The holographic reading (boundary-encodes-volume; C6, now open; see `agentprivacy-holographic-bound`) is kept as a conjecture. The separate 96-versus-192 edge-count question treated below remains open. This skill file is for mathematicians who can either prove the correspondence, explain that remaining discrepancy, or demonstrate that it is a structural mismatch rather than an encoding feature.
 
 ## The lattice structure
 
@@ -47,7 +47,7 @@ The 64 vertices of the sovereignty lattice sit on a torus. The 192 edges of the 
 
 ## The discrepancy
 
-The sovereignty lattice has 192 undirected edges. The UOR structure has 96 edges. This is a factor of 2, which suggests several possible explanations:
+The sovereignty lattice has 192 undirected edges. The UOR structure has 96 edges. This is a factor of 2, which suggests several possible explanations. *(Note 2026-10-25, audit F6: in the UOR Atlas the 96 counts vertices, and the succ cycle on Z/64 has 64 edges, so the explanations below compare an edge count with a vertex count.)*
 
 **Edge encoding.** The 96 UOR edges may be directed, with each directed edge corresponding to two undirected edges in the sovereignty lattice (or vice versa). If UOR edges are directed and the sovereignty lattice edges are undirected, 96 directed × 2 directions = 192, resolving the discrepancy exactly.
 

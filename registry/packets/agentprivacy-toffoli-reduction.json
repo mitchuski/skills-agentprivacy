@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-toffoli-reduction",
+  "kind": "skill",
+  "title": "Toffoli Reduction",
+  "emoji": "",
+  "card": "Reduce the Toffoli / T-gate / non-Clifford count of a reversible or quantum circuit: the expensive, magic-state-bound resource that dominates error-corrected runtime. Use whenever someone wants to \"cut the T-count\", \"lower the Toffoli count\", \"reduce non-Clifford gates\", \"need f…",
+  "brief": "Reduce the Toffoli / T-gate / non-Clifford count of a reversible or quantum circuit: the expensive, magic-state-bound resource that dominates error-corrected runtime. Use whenever someone wants to \"cut the T-count\", \"lower the Toffoli count\", \"reduce non-Clifford gates\", \"need fewer magic states\", \"my carry uncomputation is half my gates\", or improve the gate factor of a qubits×Toffoli score. Covers venting carry-uncompute into measurement + phase fixups, conditional/measured replay so gates only execute on the branch that needs them, fused adders and folds, cross-block algebraic fusion of modular add/negate chains, witness-first dataflow, ancilla-free majority, skipping provably redundant cleanup, avoiding full materialisation, and better arithmetic at the dominant cost centre; distinguishes emitted vs average-executed gate counts and value-exact vs support-exact levers. For the QUBIT/width axis use agentprivacy-peak-qubit-reduction; for correctness use agentprivacy-reversible-circuit-validation.",
+  "body_ref": "assets/agentprivacy-toffoli-reduction/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/role/agentprivacy-toffoli-reduction/SKILL.md"
+  },
+  "hash": "30e62ecbba9a409c15d50eb4ddaa73a34baca3b358a553782e80a802ce36d6a7",
+  "published": "2026-11-12T15:16:53.269Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

@@ -54,7 +54,7 @@ Plurality's concept of plural property — assets that exist partially rather th
 
 Full ownership = all four forces controlled by one entity = Σ is diagonal (no entanglement). Full commons = all four forces entangled = det(Σ) → 0 (complete collapse). Plural property occupies the space between these extremes — partial sharing that maintains positive det(Σ) while allowing productive entanglement along specific force pairs.
 
-The golden ratio conjecture suggests an optimal balance point for protect-to-project ownership. In plural property terms: the owner should maintain approximately φ times more control over protection (boundary-setting) than projection (use-delegation). Retain more sovereignty over who can access than over how it is used.
+The golden ratio enters Φ(Σ) as a threshold for protect-to-project ownership, not an optimum: ratios below φ are penalised and every ratio at or above φ scores the same (C1 challenged, V7 formal audit F2). In plural property terms: the owner should maintain approximately φ times more control over protection (boundary-setting) than projection (use-delegation). Retain more sovereignty over who can access than over how it is used.
 
 ## Collaborative technology stack mapping
 
@@ -68,7 +68,7 @@ Plurality's seven technologies map onto PVM-V4 terms:
 2. How does the stratum-weighted network effect interact with quadratic funding — does optimal funding allocation follow the binomial coefficient distribution?
 3. Can the separation matrix Σ serve as a health metric for plural organisations — measuring governance quality through force independence?
 4. What is the minimum privacy strength P required for cooperative mechanisms to be non-manipulable?
-5. Can the golden ratio φ be derived from the optimal balance between individual sovereignty and collective cooperation in plural property systems?
+5. Can a threshold at the golden ratio φ be derived from the balance between individual sovereignty and collective cooperation in plural property systems?
 
 ---
 

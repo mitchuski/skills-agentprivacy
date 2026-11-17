@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-three-axis-separation/SKILL.md"
   },
-  "hash": "c3585847ed2b40b731edf256a290338325b9d73757a1427e19b01559bd0ef7a0",
-  "published": "2026-06-10T19:42:54.509Z",
+  "hash": "663dd5258f01b5fc995343a4318519c5bbe4fffe04df187f6503fd4dd632b141",
+  "published": "2026-10-25T22:52:54.336Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

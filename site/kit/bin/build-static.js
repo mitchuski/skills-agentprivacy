@@ -18,6 +18,26 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'skillsync.config.json'), 'utf8'));
+
+// The kit's docs and config template are published verbatim, so they get the SAME
+// neutralization the harvest gives every packet (pii.local.json replacements; URLs,
+// github.com/<login> and tailnet hosts guarded so links keep working). Code is copied as is.
+let KIT_PII = [];
+try {
+  KIT_PII = JSON.parse(fs.readFileSync(path.join(ROOT, 'pii.local.json'), 'utf8'))
+    .replacements.map(([re, fl, to]) => [new RegExp(re, fl), to]);
+} catch { console.warn('WARN: pii.local.json missing — the kit ships WITHOUT PII neutralization'); }
+function kitScrub(text) {
+  const guards = [];
+  const guard = m => { guards.push(m); return '\x00G' + (guards.length - 1) + '\x00'; };
+  let s = String(text)
+    .replace(/https?:[^\s)\]"']+/gi, guard)
+    .replace(/github\.com\/[\w.-]+/gi, guard)
+    .replace(/[\w-]+(?:\.[\w-]+)*\.(?:fish|ts\.net)\b/gi, guard);
+  for (const [re, to] of KIT_PII) s = s.replace(re, to);
+  return s.replace(/\x00G(\d+)\x00/g, (_, i) => guards[+i]);
+}
+const scrubCopy = (src, dst) => fs.writeFileSync(dst, kitScrub(fs.readFileSync(src, 'utf8')));
 const SITE = path.join(ROOT, 'site');
 fs.mkdirSync(path.join(SITE, 'data'), { recursive: true });
 
@@ -84,21 +104,21 @@ const cat = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'catalog.json
   const kit = path.join(SITE, 'kit');
   fs.mkdirSync(path.join(kit, 'bin'), { recursive: true });
   for (const f of fs.readdirSync(path.join(ROOT, 'bin'))) fs.copyFileSync(path.join(ROOT, 'bin', f), path.join(kit, 'bin', f));
-  fs.copyFileSync(path.join(ROOT, 'SPEC.md'), path.join(kit, 'SPEC.md'));
-  fs.copyFileSync(path.join(ROOT, 'README.md'), path.join(kit, 'README.md'));
-  fs.copyFileSync(path.join(ROOT, 'AGENT_ORIENTATION.md'), path.join(SITE, 'orientation.md'));
-  fs.copyFileSync(path.join(ROOT, 'AGENT_ORIENTATION.md'), path.join(kit, 'AGENT_ORIENTATION.md'));
+  scrubCopy(path.join(ROOT, 'SPEC.md'), path.join(kit, 'SPEC.md'));
+  scrubCopy(path.join(ROOT, 'README.md'), path.join(kit, 'README.md'));
+  scrubCopy(path.join(ROOT, 'AGENT_ORIENTATION.md'), path.join(SITE, 'orientation.md'));
+  scrubCopy(path.join(ROOT, 'AGENT_ORIENTATION.md'), path.join(kit, 'AGENT_ORIENTATION.md'));
   fs.mkdirSync(path.join(kit, 'librarian'), { recursive: true });
   fs.copyFileSync(path.join(ROOT, 'librarian', 'server.js'), path.join(kit, 'librarian', 'server.js'));
-  fs.copyFileSync(path.join(ROOT, 'librarian', 'README.md'), path.join(kit, 'librarian', 'README.md'));
+  scrubCopy(path.join(ROOT, 'librarian', 'README.md'), path.join(kit, 'librarian', 'README.md'));
   // the desk guide: build & host the Librarian's Desk on any knowledge pi —
   // served at /desk.md on every door, like /orientation.md
-  fs.copyFileSync(path.join(ROOT, 'librarian', 'DESK.md'), path.join(kit, 'librarian', 'DESK.md'));
-  fs.copyFileSync(path.join(ROOT, 'librarian', 'DESK.md'), path.join(SITE, 'desk.md'));
+  scrubCopy(path.join(ROOT, 'librarian', 'DESK.md'), path.join(kit, 'librarian', 'DESK.md'));
+  scrubCopy(path.join(ROOT, 'librarian', 'DESK.md'), path.join(SITE, 'desk.md'));
   const cfgTemplate = JSON.parse(JSON.stringify(cfg));
   cfgTemplate.member = '<your-handle>';
   cfgTemplate.sources = [{ root: '<path-to-your-skills>', dirs: ['.'], universe: '<your-universe>', kind_by_dir: { '.': 'skill' } }];
-  fs.writeFileSync(path.join(kit, 'skillsync.config.template.json'), JSON.stringify(cfgTemplate, null, 2));
+  fs.writeFileSync(path.join(kit, 'skillsync.config.template.json'), kitScrub(JSON.stringify(cfgTemplate, null, 2)));
   // ENGINE BRIDGE: serve a fedwiki-shaped sitemap so the guide's improbable engine
   // (guide.agentprivacy.ai/star-chart) can seat this whole skill space as a remote
   // site with one roster line — [{slug,title,date,links:{slug:count}}], links drawn

@@ -57,15 +57,17 @@ This is why the 4×4 matrix exists rather than the 2×2 matrix of earlier versio
 
 ## The tetrahedron as geometric object
 
-Four forces in mutual separation define a tetrahedron in 4-dimensional force space. The tetrahedron's volume is det(Σ). This volume measures how much independent variation exists across the forces — how much "room" the sovereignty architecture has to operate.
+*Corrected 2026-10-25 under the V7 formal audit (agentprivacy-docs `research/2026-10-25_v7_formal_audit.md`, F1, F2; Lean receipts in formal_mage).* The off-diagonal entries of Σ are **correlations** ρ_ij between forces, not separations; a separation score, where wanted, is σ_ij = 1 − |ρ_ij|. The earlier text had the orientation backwards (with every entry 1 the matrix is all ones and det Σ = 0).
 
-**Perfect separation (all σ_ij = 1, det(Σ) = 1).** Maximum volume. All four forces are orthogonal. The tetrahedron is regular. The architecture has maximum freedom — each force can vary independently without constraining the others.
+Four unit force vectors span a parallelotope in 4-dimensional force space; det(Σ) is its squared volume (a Gram determinant), and the simplex on the same vectors has volume √det(Σ)/4!. This volume measures how much independent variation exists across the forces — how much "room" the sovereignty architecture has to operate.
 
-**Partial entanglement (some σ_ij < 1, 0 < det(Σ) < 1).** Reduced volume. Some forces are correlated. The tetrahedron is compressed along certain axes. The architecture has constrained freedom — changes in one force propagate to correlated forces.
+**Perfect separation (all ρ_ij = 0, so Σ = I and det(Σ) = 1).** Maximum volume: for a positive semi-definite matrix with unit diagonal det(Σ) ≤ 1 (Hadamard), with equality only at Σ = I. All four forces are orthogonal. The architecture has maximum freedom — each force can vary independently without constraining the others.
 
-**Complete entanglement of any pair (any σ_ij = 0, det(Σ) → 0).** Volume collapse. Two forces are completely correlated — they carry the same information. The tetrahedron degenerates. The entire sovereignty multiplier collapses, taking total value to zero through multiplicative gating.
+**Partial entanglement (some 0 < |ρ_ij| < 1, 0 < det(Σ) < 1).** Reduced volume. Some forces are correlated. The tetrahedron is compressed along certain axes. The architecture has constrained freedom — changes in one force propagate to correlated forces.
 
-**The geometry teaches:** sovereignty is not a scalar. It is a shape. A healthy sovereignty architecture is not one where each force is strong but one where each force is independent. A system with extremely strong Protect but Protect completely entangled with Reflect (σ_PR = 0) has zero sovereignty volume despite having maximum protection.
+**Complete entanglement of any pair (any |ρ_ij| = 1, det(Σ) = 0).** Volume collapse. Two forces are completely correlated — they carry the same information. The tetrahedron degenerates. The entire sovereignty multiplier collapses, taking total value to zero through multiplicative gating.
+
+**The geometry teaches:** sovereignty is not a scalar. It is a shape. A healthy sovereignty architecture is not one where each force is strong but one where each force is independent. A system with extremely strong Protect but Protect completely entangled with Reflect (|ρ_SR| = 1) has zero sovereignty volume despite having maximum protection.
 
 ## Category-theoretic interpretation
 
@@ -88,7 +90,7 @@ No measurement methodology currently exists for the emergent forces' cross-separ
 1. Are Reflect and Connect genuinely emergent, or are they simply time-aggregations that can be fully predicted from the primary forces? What is the test for genuine emergence versus mere accumulation?
 2. Can the 4×4 separation matrix be extended to higher dimensions — are there fifth or sixth forces that emerge from Reflect and Connect through further sustained operation?
 3. What is the minimum operation time before Reflect and Connect become measurably distinct from noise? Is there a phase transition in the emergence?
-4. Does the tetrahedron's geometry constrain the possible value of the golden ratio — i.e., does the optimal protect/project ratio follow from the requirement that the tetrahedron be regular?
+4. In the stated Φ(Σ) = min(1, (S/M)/φ) · det(Σ), φ is a saturation threshold: every ratio S/M ≥ φ scores the same, so the formula has no optimum at φ (C1 challenged, audit F2). If an optimum at φ is intended, which peaked functional form should replace the min, and what would derive it?
 5. Can the category-theoretic interpretation be formalised enough to derive new properties — e.g., do natural transformations between sovereignty architectures preserve det(Σ)?
 
 ---

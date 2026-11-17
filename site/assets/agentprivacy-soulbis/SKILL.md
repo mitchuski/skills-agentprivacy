@@ -165,11 +165,15 @@ The sovereignty gap (17×–12,000×) collapses to 1× without the Swordsman. Pr
 
 **Total: 80 skills (V5.3)**
 
+## BRAID as a service (2026-09-12)
+
+SERV's Shadow Agent looks like a Swordsman: it judges a draft, sends it back, judges again. It is not one. It runs inside the Mage's call, on the vendor's side, tuned by the caller's own `hint`; the same party writes the proposal and the criterion. The Swordsman's seat in the dual-agent harness is the prover, a different model family from the proposer and preferably local, and the Gap it verifies is the engine's Fiat-Shamir draw, not a provider's loop. If SERV enters the harness at all, the prover is the seat it does not take.
+
 ---
 
 *"just another swordsman ⚔️"*
 
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
 
 ## City and Star operating practice
 

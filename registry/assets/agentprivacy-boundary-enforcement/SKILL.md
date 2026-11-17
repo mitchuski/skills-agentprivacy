@@ -117,6 +117,10 @@ This "System 2 thinking emulation" is the Swordsman as boundary verifier at the 
 
 For Swordsman deployment: generate BRAID boundary-checking graphs once (expensive), cache as holons, execute via nano-tier models for every access request (cheap). Real-time boundary enforcement becomes economically viable at millions of checks per day.
 
+### 2026-09-12 · BRAID as a service
+
+The terminal verification loop now ships as a product feature: SERV's `serv_shadow_agent` validates the draft against the request, requests a revision on failure, up to `max_iterations` (1–10, default 3), returns the last revision when exhausted and a 502 when the validator itself fails. It is a loop inside the provider's call, with the criterion supplied by the caller's `hint`. Swordsman boundary checks remain the sovereign's own loop, on the sovereign's own machine; a provider's loop can be a second opinion, never the gate.
+
 ---
 
 **Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)

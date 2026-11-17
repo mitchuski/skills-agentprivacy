@@ -14,8 +14,8 @@
   ],
   "shelf": {
     "site": "skillsync.localhost",
-    "farm_pages": "C:/Users/mitch/.wiki/skillsync.localhost/pages",
-    "farm_assets": "C:/Users/mitch/.wiki/skillsync.localhost/assets",
+    "farm_pages": "~/.wiki/skillsync.localhost/pages",
+    "farm_assets": "~/.wiki/skillsync.localhost/assets",
     "full_page_site": "skill.localhost"
   },
   "roster": [
@@ -65,11 +65,17 @@
     "^peak-qubit-reduction$",
     "^toffoli-reduction$",
     "^reversible-circuit-validation$",
-    "^benchmark-frontier-archaeology$"
+    "^benchmark-frontier-archaeology$",
+    "^mages-scroll-sync$"
   ],
   "public_desk": "proof",
   "self_urls": [
     "skills-agentprivacy.privacymage.workers.dev",
     "skills.agentprivacy.ai"
-  ]
+  ],
+  "license": {
+    "spdx": "CC-BY-NC-SA-4.0",
+    "attribution": "agentprivacy skills, by the Keeper / 0xagentprivacy",
+    "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+  }
 }

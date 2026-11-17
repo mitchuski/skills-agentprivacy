@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/agentprivacy-skills/role/agentprivacy-boundary-enforcement/SKILL.md"
   },
-  "hash": "e2823736c88dad02023a440bb39f1524d213c3a70db17dcfd124bb6ebdfa1ab6",
-  "published": "2026-02-26T23:07:30.502Z",
+  "hash": "b051b2bc2587a660197a62a3ade43811b49bac1d0584469c1aa9001b96b37af6",
+  "published": "2026-09-12T14:43:50.337Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

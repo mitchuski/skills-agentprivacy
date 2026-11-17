@@ -169,6 +169,10 @@ The conjectured ~3,000× proof size reduction (UNPROVEN) would make real-time ag
 
 **Total: 21 skills**
 
+## BRAID as a service (2026-09-12)
+
+Two of SERV's shipped checks sit on the Cipher's boundary. `serv_prompt_guard` evaluates the generated reasoning prompt against the user-controlled request and refuses injection attempts before the upstream call; `-serv-kronos` audits and repairs the generated reasoning prompt. Both are the vendor's checks on the vendor's artefact, reported in the vendor's console. The Cipher's posture: a check that cannot be replayed from bytes you hold is REPORTED tier, not a proof; the control is the raw-mode header (`x-openserv-disable-braid: true`), which makes the reasoning layer a variable rather than an assumption. The proof is the blade; a report is a description of a blade.
+
 ---
 
 *"The proof is the blade." 🗡️🔐*

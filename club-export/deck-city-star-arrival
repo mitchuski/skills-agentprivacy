@@ -1,0 +1,46 @@
+{
+  "title": "Deck City Star Arrival",
+  "story": [
+    {
+      "type": "markdown",
+      "id": "937abfb344777bea",
+      "text": "âœ§ **Deck City Star Arrival**\n\nEnter through the model, choose a Star reading, follow a scoped City task and return a reviewable receipt."
+    },
+    {
+      "type": "markdown",
+      "id": "48cb1aaaa0fcaad4",
+      "text": "- [[City Mcp Entry]]  — Guide an agent through City arrival using MCP discovery, private invitation drafting and existing Po\n- [[Key Journey]]  — Preserve original City Key journey evidence while importing, inspecting and idempotently folding art\n- [[City Mage Runtime]]  — Prepare and resume the City dual-agent harness instance with private City Key evidence and durable c\n- [[Mcp Browser Actions]]  — Prepare and integrate scoped MCP spell or sticker actions with a durable host ledger and actual arte\n- [[Star Companion]]  — Maintain the compact Star key-entry companion across City and agentprivacy while preserving appearan\n- [[Entry Kit Coherence]]  — Audit and align City, Labs and landing agent discovery instructions with actual MCP capabilities and\n- [[Review Receipts]]  — Bind review acknowledgment to exact content and destination, preserve review receipts, and distingui\n- [[Namekeeper Write Contract]]  — Prepare and validate VTA-authorized Namekeeper wiki writes with exact scope, revision preconditions,"
+    },
+    {
+      "type": "markdown",
+      "id": "cc8dc9d289b6cce9",
+      "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 8 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Deck City Star Arrival",
+        "story": [
+          {
+            "type": "markdown",
+            "id": "937abfb344777bea",
+            "text": "âœ§ **Deck City Star Arrival**\n\nEnter through the model, choose a Star reading, follow a scoped City task and return a reviewable receipt."
+          },
+          {
+            "type": "markdown",
+            "id": "48cb1aaaa0fcaad4",
+            "text": "- [[City Mcp Entry]]  — Guide an agent through City arrival using MCP discovery, private invitation drafting and existing Po\n- [[Key Journey]]  — Preserve original City Key journey evidence while importing, inspecting and idempotently folding art\n- [[City Mage Runtime]]  — Prepare and resume the City dual-agent harness instance with private City Key evidence and durable c\n- [[Mcp Browser Actions]]  — Prepare and integrate scoped MCP spell or sticker actions with a durable host ledger and actual arte\n- [[Star Companion]]  — Maintain the compact Star key-entry companion across City and agentprivacy while preserving appearan\n- [[Entry Kit Coherence]]  — Audit and align City, Labs and landing agent discovery instructions with actual MCP capabilities and\n- [[Review Receipts]]  — Bind review acknowledgment to exact content and destination, preserve review receipts, and distingui\n- [[Namekeeper Write Contract]]  — Prepare and validate VTA-authorized Namekeeper wiki writes with exact scope, revision preconditions,"
+          },
+          {
+            "type": "markdown",
+            "id": "cc8dc9d289b6cce9",
+            "text": "To load this deck into an agent: fetch `assets/skillsync/catalog.json`, take the briefs for these 8 names, and pull full bodies only for the ones the task actually fires. Cards first, bodies on demand."
+          }
+        ]
+      },
+      "date": 1792983023574
+    }
+  ]
+}

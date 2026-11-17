@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "content-registry-divergence",
+  "kind": "skill",
+  "title": "Content Registry Divergence",
+  "emoji": "",
+  "card": "Give every page of a federated wiki (or any published set of documents) a name its content alone determines — the canonical hash of its title and story items, without the edit journal or item ids — fold the pages into per-site roots, a federation root and a chained registry root…",
+  "brief": "Give every page of a federated wiki (or any published set of documents) a name its content alone determines — the canonical hash of its title and story items, without the edit journal or item ids — fold the pages into per-site roots, a federation root and a chained registry root, and detect divergence between the living source and its published record by comparing like with like. Use when a wiki or document site should be checkable page by page, when snapshots should form a chain of their own, or when an edit in a fork should become dated, hashable evidence instead of noise.\n\nA wiki's history is usually a log of revisions you are asked to trust. Name each page by its content and the log becomes checkable: anyone holding two hashes can tell whether a page moved, without either side showing the words.\n\n- A published wiki, guide or document set should be verifiable page by page. - Each publication (snapshot) should commit to the one before it. - Someone edits their own copy and wants that edit to count as a signal against the published record.",
+  "body_ref": "assets/content-registry-divergence/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "drafted",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/drafts/content-registry-divergence/SKILL.md"
+  },
+  "hash": "379db168fd2eef412c6d6c01cc9dc19e73f00d65b37442405e046395940c3242",
+  "published": "2026-10-26T16:48:47.970Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

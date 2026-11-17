@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-cohere-sync",
+  "kind": "skill",
+  "title": "Wiki Cohere Sync",
+  "emoji": "",
+  "card": "Sync per-session answer pages from a source-of-truth FedWiki out to milestone subdomains with a coherence check that blocks rotten pages, and broker owner cookies so agents get delegated, host-scoped write permission without ever seeing the raw credential. Activates when distrib…",
+  "brief": "Sync per-session answer pages from a source-of-truth FedWiki out to milestone subdomains with a coherence check that blocks rotten pages, and broker owner cookies so agents get delegated, host-scoped write permission without ever seeing the raw credential. Activates when distributing or updating FedWiki pages across a federation of subdomains (e.g. *.timeline.ide.earth) from a local source, when an agent must push to a FedWiki it owns without the cookie entering its context, when backing up live subdomains into a local farm twin, or when retargeting the sync to a new project. Kept by the Librarian 🗃️; the broker is the Gatekeeper's door inside it.\n\n**🗃️🔗 Coherence-checked sync + the cookie broker** Keeper: the Librarian 🗃️ · Door: the Gatekeeper 🗡️👤 · Authored by the Chronicler 🧙📖 · Category: wikis · Layer: distribution\n\n> The shelf travels; the key stays home.\n\nTwo cooperating pieces:",
+  "body_ref": "assets/agentprivacy-wiki-cohere-sync/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "balanced",
+    "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-cohere-sync/SKILL.md"
+  },
+  "hash": "31fc54e3079ef004b7b271cdde79577bcb53fde80303eb435a330ee9e414a2fc",
+  "published": "2026-11-12T15:16:53.332Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

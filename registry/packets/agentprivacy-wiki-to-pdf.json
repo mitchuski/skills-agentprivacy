@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-to-pdf",
+  "kind": "skill",
+  "title": "Wiki To Pdf",
+  "emoji": "",
+  "card": "Pull FedWiki timeline pages and render formal executive-brief PDFs — one brief per timeline plus a combined dossier whose \"Unified Summary\" layer is built from the In-brief summaries. Use when turning the *.timeline.ide.earth subdomain wikis (or any same-shaped FedWiki answer pa…",
+  "brief": "Pull FedWiki timeline pages and render formal executive-brief PDFs — one brief per timeline plus a combined dossier whose \"Unified Summary\" layer is built from the In-brief summaries. Use when turning the *.timeline.ide.earth subdomain wikis (or any same-shaped FedWiki answer pages) into shareable, executive-style PDF documents, or when re-rendering offline from a cached model. ReportLab only — no LaTeX, GTK or browser engine. Kept by the Librarian 🗃️; the Unified Summary is the Chronicler's compression.\n\n**🗃️📄 Wiki to PDF — the federation, bound for people who read on paper** Keeper: the Librarian 🗃️ · Authored by the Chronicler 🧙📖 · Category: wikis · Layer: distribution\n\n> One core, many bindings: the brief is the wiki folded small.\n\nTurns the federated timeline wikis into formal PDF documents. Source of truth is the **live** `*.timeline.ide.earth` subdomains, read over public GET (no cookie needed).",
+  "body_ref": "assets/agentprivacy-wiki-to-pdf/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "mage",
+    "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-to-pdf/SKILL.md"
+  },
+  "hash": "751f0977af09b9d67e126f1c3346e8ebd67dbb4695206ffd744c5cf324902880",
+  "published": "2026-11-12T15:16:53.472Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

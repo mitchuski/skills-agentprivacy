@@ -123,7 +123,12 @@ for (const src of cfg.sources) {
         published: stat.mtime.toISOString(),
         listing: archRes.some(re => re.test(name)) ? 'archive' : (deckMembers.has(name) ? 'featured' : 'listed'),
         requires: [],
-        trust: { adoptions: 0, attested_runs: 0 }
+        trust: { adoptions: 0, attested_runs: 0 },
+        // the terms travel with the packet (additive since 2026-09-13): an SPDX id, the credit line,
+        // and where a commercial licence is obtained. Absent (null) = all rights reserved by origin.author.
+        license: cfg.license?.spdx ?? null,
+        attribution: cfg.license?.attribution ?? null,
+        commercial: cfg.license?.commercial ?? null
       };
       // stage the full body as an asset
       const aDir = path.join(asDir, name);
@@ -154,6 +159,10 @@ const catalog = {
   member: cfg.member,
   updated: new Date().toISOString(),
   count: packets.length,
+  // catalogue-level terms (additive since 2026-09-13); each packet repeats them so a packet copied alone still carries its terms
+  license: cfg.license?.spdx ?? null,
+  attribution: cfg.license?.attribution ?? null,
+  commercial: cfg.license?.commercial ?? null,
   packets: packets.map(p => ({ ...p, brief: undefined }))  // catalog = cards only; briefs live in packets/
 };
 fs.writeFileSync(path.join(regDir, 'catalog.json'), JSON.stringify(catalog, null, 2));

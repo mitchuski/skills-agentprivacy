@@ -17,11 +17,14 @@
     "source_path": "~/agentprivacy-skills/meta/agentprivacy-dual-agent-harness/SKILL.md"
   },
   "hash": "ba7719267e1cff415fd9eddfa9771288bd931a112f17de3362e2f428a885179a",
-  "published": "2026-08-24T16:19:06.672Z",
+  "published": "2026-11-17T15:49:27.537Z",
   "listing": "featured",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

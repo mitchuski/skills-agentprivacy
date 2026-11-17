@@ -178,7 +178,9 @@ Step 64: neg(bnot(63)) = neg(0) = 0 (back to start)
 
 ## The Complement Edge — A Distinguished Structure
 
-Of the 192/2 = 96 edges in the 6-hypercube, the **complement edges** (those produced by `bnot`) are uniquely characterised among all operations. For any vertex `x` and its complement `bnot(x)`:
+*Corrected 2026-10-25 under the V7 formal audit (agentprivacy-docs `research/2026-10-25_v7_formal_audit.md`, F5; Lean receipts in formal_mage).* The 6-hypercube has 192 edges, and a complement pair is not one of them: x and bnot(x) are at Hamming distance 6.
+
+The **complement pairs** (those produced by `bnot`, 32 of them) are uniquely characterised among all operations. For any vertex `x` and its complement `bnot(x)`:
 
 ```
 and(x, bnot(x)) = 0          (the ⊥ — they share zero dimensions)
@@ -186,7 +188,7 @@ xor(x, bnot(x)) = 63         (the ⿻ — together they span the full blade)
 bnot(bnot(x))    = x          (involution)
 ```
 
-No other edge in the lattice satisfies both `and = 0` AND `xor = 63` simultaneously. This makes the complement edge the **unique antipodal traverse**: one step in Hamming distance terms, but a maximal transformation in sovereignty terms — every lit dimension goes dark, every dormant dimension lights up.
+No other pair of vertices satisfies both `and = 0` AND `xor = 63` simultaneously. This makes the complement the **unique antipodal traverse**: one *operation* (a single application of bnot) but the maximal Hamming distance, 6 — every lit dimension goes dark, every dormant dimension lights up.
 
 ### The First Named Complement Pair (ZK Tale 31)
 

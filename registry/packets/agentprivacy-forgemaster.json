@@ -16,12 +16,15 @@
     "alignment": "swordsman",
     "source_path": "~/agentprivacy-skills/persona/agentprivacy-forgemaster/SKILL.md"
   },
-  "hash": "62461d6b8f84e862cfcdc459716001b3b1593b4e221068de26d82625d64e4c81",
-  "published": "2026-06-12T02:40:35.382Z",
+  "hash": "5bf74288d2f8a1baeb031f76c963aa2a0bfbb02f332a0f526ac7a1fc64b4c8f1",
+  "published": "2026-10-25T22:52:54.240Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

@@ -5,20 +5,26 @@
   "title": "Star Companion",
   "emoji": "",
   "card": "Maintain the compact Star key-entry companion across City and agentprivacy while preserving appearance, evidence and authorisation boundaries.",
-  "brief": "Maintain the compact Star key-entry companion across City and agentprivacy while preserving appearance, evidence and authorisation boundaries.\n\nReuse the keeper-approved bottom-right floating Star: click for a compact key picker, Customise Star link and minimal connection state. Leave fuller explanation to the extension and linked guide. Avoid another large homepage onboarding panel or conflicting status widget. Preserve the existing wandering-orb game and casting economy.\r\n\r\nUse allowlisted palette projection, optional key commitment verification and tab-session storage. Never retain a full private key/bundle in the page merely to style it. Unknown imported authentication flags cannot set verified state. Handle storage failure, forgetting, reload, keyboard focus/Escape, reduced motion and stacking independently of the decorative scene.\r\n\r\nCity sources: site/star-arrival.mjs, star-appearance.mjs and star-arrival.css. Landing: src/components/StarCompanion.tsx and its CSS module. The extension implementation now lives in `star-key` (public source: https://github.com/the-keeper/star-key). Inspect its current `packages/extension/src/star-journey.tsx` and `star-registry.ts` before dupli",
+  "brief": "Maintain the compact Star key-entry companion across City and agentprivacy while preserving appearance, evidence and authorisation boundaries.\n\nReuse the keeper-approved bottom-right floating Star: click for a compact key picker, Customise Star link and minimal connection state. Leave fuller explanation to the extension and linked guide. Avoid another large homepage onboarding panel or conflicting status widget. Preserve the existing wandering-orb game and casting economy.\n\nUse allowlisted palette projection, optional key commitment verification and tab-session storage. Never retain a full private key/bundle in the page merely to style it. Unknown imported authentication flags cannot set verified state. Handle storage failure, forgetting, reload, keyboard focus/Escape, reduced motion and stacking independently of the decorative scene.\n\nCity sources: site/star-arrival.mjs, star-appearance.mjs and star-arrival.css. Landing: src/components/StarCompanion.tsx and its CSS module. The extension implementation now lives in `star-key` (public source: https://github.com/mitchuski/star-key). Inspect its current `packages/extension/src/star-journey.tsx` and `star-registry.ts` before duplicati…",
   "body_ref": "assets/agentprivacy-star-companion/SKILL.md",
   "origin": {
     "author": "mitch",
     "universe": "agentprivacy",
     "category": "role",
-    "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/role/agentprivacy-star-companion/SKILL.md"
+    "tier": "",
+    "version": "0.1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/role/agentprivacy-star-companion/SKILL.md"
   },
-  "hash": "db14e1c5a70bd098a83d25529a1639cbc94d19adcba9a2400a92e627dbfdb414",
+  "hash": "ae8ccfcb2ab8573befdac41beab5110bbf123ea3c44f5405e9f90d55ee3d2378",
   "published": "2026-09-08T15:09:34.270Z",
   "listing": "featured",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

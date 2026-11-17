@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-city-builder",
+  "kind": "pattern",
+  "title": "City Builder",
+  "emoji": "",
+  "card": "Stand up a Verifiable Trust Community on OpenVTC on your own machine as the community's core node — a VTA that mints and issues, a mediator, a DID host and the community itself, behind a tunnel, run as service units — with a keeper and an agent walking it together, the keeper ty…",
+  "brief": "Stand up a Verifiable Trust Community on OpenVTC on your own machine as the community's core node — a VTA that mints and issues, a mediator, a DID host and the community itself, behind a tunnel, run as service units — with a keeper and an agent walking it together, the keeper typing every secret and the agent preparing, checking and recording. Use when someone wants to \"build their own city\", \"set up a VTC\", \"deploy OpenVTC\", \"run a VTA / mediator / DID host / VTC\", \"connect Star Key\" or \"the VTA browser wallet\", \"issue invitations\", \"attach a community\" to Mages City, or asks what the City did on 8–9 October 2026 and what broke. Encodes the shape, the order of work with who types what and the done-when per phase, every gotcha met on the first walk with its fix, the community's shape (criteria, profile, description), the attach path, and the refusals. The kit is `deploy/vti/` in github.com/mitchuski/mages.city.",
+  "body_ref": "assets/agentprivacy-city-builder/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/meta/agentprivacy-city-builder/SKILL.md"
+  },
+  "hash": "119b12c9122921b4f572d52dcef97f120c86d913a8e49608a43df651ab0a691f",
+  "published": "2026-10-09T00:30:04.027Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

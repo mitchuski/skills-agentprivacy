@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "evidence-scroll",
+  "kind": "skill",
+  "title": "Evidence Scroll",
+  "emoji": "",
+  "card": "Write a body of sealed work as a scroll of nothing but its hashes — one book per sealed root, each record followed by the threads drawn from it, beside a 64-vertex star that places every hash by its first six bits — on a page of its own, listed with every other scroll and resolv…",
+  "brief": "Write a body of sealed work as a scroll of nothing but its hashes — one book per sealed root, each record followed by the threads drawn from it, beside a 64-vertex star that places every hash by its first six bits — on a page of its own, listed with every other scroll and resolvable in a seal checker. Use when a lane, a mage's census, a proof library or a wiki's content registry is sealed and should be shown in public without showing what it says, or when new bundles have been minted and the existing scrolls and chain pages need to be synced.\n\nA chain page shows a lane's work as a tree you can check. A **scroll** shows a body of work as one long spell of its names: the hashes alone, in the order they were sealed. Nothing a record states is written. What the reader gets is the shape of the work (how many records, how they thread, when each root was sealed) and the ability to check any one hash against the community's ledger.",
+  "body_ref": "assets/evidence-scroll/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "drafted",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/drafts/evidence-scroll/SKILL.md"
+  },
+  "hash": "7f5b5c84437f6b105fbfb9dcaf854e6b3e641654d6fd76f052220f08ac54871a",
+  "published": "2026-10-26T16:48:47.869Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

@@ -3,32 +3,32 @@
   "story": [
     {
       "type": "markdown",
-      "id": "bb11c8b6a5124118",
+      "id": "8d129bd7454546b1",
       "text": "🤖 **Using Skill Sync from your agent** — recipes for the community. Everything below is GET/POST against tailnet URLs; no credentials, no SDK."
     },
     {
       "type": "markdown",
-      "id": "4fa3accac4b95889",
+      "id": "6ae3c98a20e32409",
       "text": "# Read the shelf\n\n1. `GET <shelf>/assets/skillsync/catalog.json` — every packet as a card (name, kind, emoji, card, hash, published)\n2. Pick a deck first: [[Loadout Deck]] lists five curated hands. Load the briefs from `catalog-full.json` for just those names.\n3. Pull a full body only when the task fires: `GET <shelf>/assets/skillsync/<name>/SKILL.md`"
     },
     {
       "type": "markdown",
-      "id": "042e1c3420d3e914",
+      "id": "187210ef59521ffc",
       "text": "# Prepare a fresh model\n\nPaste it the **first-contact** deck: seven briefs ≈ a page of text, instead of 186 skills. The deck page explains the order. This is the whole reason the system exists."
     },
     {
       "type": "markdown",
-      "id": "414465c931719e65",
+      "id": "23c1f91b735a5def",
       "text": "# Watch for new skills\n\nRun your own dream loop against this shelf (the `skillsync-dreamloop` skill shows the shape: diff the catalog by `hash`, treat first sight as baseline), or subscribe your phone to marvin: ntfy server `http://02-pi4:2586`, topic `skillsync-discoveries`."
     },
     {
       "type": "markdown",
-      "id": "e3b46ab7d6b2b637",
+      "id": "7ee445e8a9f2ccb0",
       "text": "# Publish your own\n\nPut a `skillsync/catalog.json` under YOUR site assets with the same packet shape ([[How Skill Sync Works]] has the spec) and ask the keeper to add your farm to the roster. Your skills then appear in everyone’s [[Recent Discoveries]] and notifications."
     },
     {
       "type": "markdown",
-      "id": "dcd5ac2d16cc0b86",
+      "id": "6efec13617b3d25b",
       "text": "# Adopt and grow\n\nFork the card page into your farm, then record it at the [[Librarian Desk]]: `POST http://pi5:4242/adopt {\"member\":\"you\",\"packet\":\"<name>\",\"from\":\"<author>\"}`. Attest a real run with `POST /attest` (+ a one-line trace ref). Points go to the AUTHOR — the game rewards making skills others keep."
     }
   ],
@@ -40,37 +40,37 @@
         "story": [
           {
             "type": "markdown",
-            "id": "bb11c8b6a5124118",
+            "id": "8d129bd7454546b1",
             "text": "🤖 **Using Skill Sync from your agent** — recipes for the community. Everything below is GET/POST against tailnet URLs; no credentials, no SDK."
           },
           {
             "type": "markdown",
-            "id": "4fa3accac4b95889",
+            "id": "6ae3c98a20e32409",
             "text": "# Read the shelf\n\n1. `GET <shelf>/assets/skillsync/catalog.json` — every packet as a card (name, kind, emoji, card, hash, published)\n2. Pick a deck first: [[Loadout Deck]] lists five curated hands. Load the briefs from `catalog-full.json` for just those names.\n3. Pull a full body only when the task fires: `GET <shelf>/assets/skillsync/<name>/SKILL.md`"
           },
           {
             "type": "markdown",
-            "id": "042e1c3420d3e914",
+            "id": "187210ef59521ffc",
             "text": "# Prepare a fresh model\n\nPaste it the **first-contact** deck: seven briefs ≈ a page of text, instead of 186 skills. The deck page explains the order. This is the whole reason the system exists."
           },
           {
             "type": "markdown",
-            "id": "414465c931719e65",
+            "id": "23c1f91b735a5def",
             "text": "# Watch for new skills\n\nRun your own dream loop against this shelf (the `skillsync-dreamloop` skill shows the shape: diff the catalog by `hash`, treat first sight as baseline), or subscribe your phone to marvin: ntfy server `http://02-pi4:2586`, topic `skillsync-discoveries`."
           },
           {
             "type": "markdown",
-            "id": "e3b46ab7d6b2b637",
+            "id": "7ee445e8a9f2ccb0",
             "text": "# Publish your own\n\nPut a `skillsync/catalog.json` under YOUR site assets with the same packet shape ([[How Skill Sync Works]] has the spec) and ask the keeper to add your farm to the roster. Your skills then appear in everyone’s [[Recent Discoveries]] and notifications."
           },
           {
             "type": "markdown",
-            "id": "dcd5ac2d16cc0b86",
+            "id": "6efec13617b3d25b",
             "text": "# Adopt and grow\n\nFork the card page into your farm, then record it at the [[Librarian Desk]]: `POST http://pi5:4242/adopt {\"member\":\"you\",\"packet\":\"<name>\",\"from\":\"<author>\"}`. Attest a real run with `POST /attest` (+ a one-line trace ref). Points go to the AUTHOR — the game rewards making skills others keep."
           }
         ]
       },
-      "date": 1787592246528
+      "date": 1792983023581
     }
   ]
 }

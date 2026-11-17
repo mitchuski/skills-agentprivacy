@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-benchmark-frontier-archaeology",
+  "kind": "skill",
+  "title": "Benchmark Frontier Archaeology",
+  "emoji": "",
+  "card": "Reverse-engineer a competitive optimization benchmark's advancing frontier: when a competitor or new SOTA submission beats your score and the winning entries are visible (a git history of accepted submissions, public leaderboard solutions, released configs), extract exactly whic…",
+  "brief": "Reverse-engineer a competitive optimization benchmark's advancing frontier: when a competitor or new SOTA submission beats your score and the winning entries are visible (a git history of accepted submissions, public leaderboard solutions, released configs), extract exactly which lever drove the improvement and whether it transfers to you. Use whenever \"a new SOTA was submitted, analyse it\", \"diff the new leaderboard winner\", \"what did they change / what lever did they use\", \"reverse-engineer their improvement\", \"figure out what drove the score jump\", or you need to learn from a competitor's accepted entry on a benchmark you are optimizing. Covers diffing consecutive winners, walking every intermediate submission (not just endpoints), re-measuring the metrics yourself, decomposing a multi-factor score delta, separating a transferable lever from a non-transferable search artifact, and tracking the moving bottleneck so you know the next target. For DOING the optimization on circuits, use agentprivacy-peak-qubit-reduction / agentprivacy-toffoli-reduction; this skill is the forensic analysis that feeds them.",
+  "body_ref": "assets/agentprivacy-benchmark-frontier-archaeology/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/role/agentprivacy-benchmark-frontier-archaeology/SKILL.md"
+  },
+  "hash": "3f62f38c93bf5483780739d31f4a06d57f188708edf906a41d5d9a5d433c4c95",
+  "published": "2026-11-12T15:16:53.151Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

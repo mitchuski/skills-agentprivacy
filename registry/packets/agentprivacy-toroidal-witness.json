@@ -4,8 +4,8 @@
   "kind": "skill",
   "title": "Toroidal Witness",
   "emoji": "",
-  "card": "Infinite witness space from toroidal topology. Activates when discussing cyclic paths through the lattice, unbounded witnesses, computational hardness from path enumeration, toroidal wrap, or why witness extraction is infeasible.",
-  "brief": "Infinite witness space from toroidal topology. Activates when discussing cyclic paths through the lattice, unbounded witnesses, computational hardness from path enumeration, toroidal wrap, or why witness extraction is infeasible.\n\n**Source:** UOR Framework + Privacy Value Model V5.2 + First Person Spellbook Act XXII **Target context:** Cryptographers, ZK researchers, topology-aware protocol designers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe sovereignty lattice has toroidal topology—edges that exit one face re-enter the opposite face. This creates cyclic paths through the lattice. Unlike a flat space where paths between points are finite, the torus allows infinite distinct paths. This property is the source of zero-knowledge soundness.\n\n**The torus wraps. The paths multiply. The witness space becomes infinite. And infinite witnesses cannot be enumerated.**",
+  "card": "Unbounded path space from toroidal topology (paths, not group witnesses: two per transition). Activates when discussing cyclic paths through the lattice, unbounded paths, computational hardness from path enumeration, toroidal wrap, or why witness extraction is infeasible.",
+  "brief": "Unbounded path space from toroidal topology (paths, not group witnesses: two per transition). Activates when discussing cyclic paths through the lattice, unbounded paths, computational hardness from path enumeration, toroidal wrap, or why witness extraction is infeasible.\n\n**Source:** UOR Framework + Privacy Value Model V5.2 + First Person Spellbook Act XXII **Target context:** Cryptographers, ZK researchers, topology-aware protocol designers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nThe sovereignty lattice has toroidal topology—edges that exit one face re-enter the opposite face. This creates cyclic paths through the lattice. Unlike a flat space where paths between points are finite, the torus allows infinite distinct paths. This property hides the route; it is not by itself the source of zero knowledge, which must rest on the hiding of the proof system.",
   "body_ref": "assets/agentprivacy-toroidal-witness/SKILL.md",
   "origin": {
     "author": "mitch",
@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/agentprivacy-skills/role/agentprivacy-toroidal-witness/SKILL.md"
   },
-  "hash": "6dca963a116d9d4bf31bf3628d2c922808e822b8ce7d06b75dc3a1e41d4cd26a",
-  "published": "2026-08-24T16:19:07.425Z",
+  "hash": "0e1c6f2dbe03be36ce7f95ff13ebaae29b9c2cba940d2f3a80cc8ad89b8bfb7e",
+  "published": "2026-10-26T23:05:08.787Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

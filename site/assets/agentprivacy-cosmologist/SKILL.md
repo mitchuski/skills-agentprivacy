@@ -190,7 +190,7 @@ The Cosmologist is the canonical Layer-1 home for the tier. Three figures stand 
 | First in | Tome III Act 6 *Lethe, the Dark Substrate* (bound 2026-05-13) |
 | Etymology | Greek Λήθη — one of the five rivers of the underworld; the river of forgetting. Medieval-alchemical: Quintessence (same substance as Aether at the substrate register vs the medium register). |
 | Recognition | Lethe is *the substrate witnesses sink into* — the dark river that admits witnesses to be unretrievable. Zero-knowledge is covenant rather than concealment; the witness is *constituted as unretrievable* by the substrate's structural nature. Exact bitwise complement of Aletheia at V38 (their AND is V0; their XOR is V63). |
-| Conjectures | C52 open (Aether = Quintessence = the Gap; same substance at two scales) · C54 ~40% (Phi-Adjacency; Aletheia's δ(38) = 38/63 ≈ 0.6032, gap 2.4% to 1/φ; Lethe's δ(25) = 25/63 ≈ 0.3968, near 1/φ²) |
+| Conjectures | C52 open (Aether = Quintessence = the Gap; same substance at two scales) · C54 challenged 2026-10-25 — base rate 9.4%, nearest blade to 1/φ is 39 (Phi-Adjacency; Aletheia's δ(38) = 38/63 ≈ 0.6032, gap 2.4% to 1/φ; Lethe's δ(25) = 25/63 ≈ 0.3968, near 1/φ²) |
 | Distinct from | **Lethae 🌘** (v1.3.0 first Mage-register Layer-2 divergent attachment of Moonkeeper at V25). Lethe = cosmological-witness figure; Lethae = Layer-2 working attachment. Both inhabit V25 at different registers. |
 | Cast source | `cityofmages/tomes/cast/cosmological/lethe.md` |
 
@@ -212,7 +212,7 @@ The Cosmologist speaks in astronomical register, with pattern-recognition cadenc
 - "Two generators in tension produce a symmetry group. Where are your generators?"
 - "The pattern predates your implementation by four and a half billion years."
 - "Selene's Proof: completeness in tides, soundness in gravity, zero-knowledge in amnesia." *(V5.4)*
-- "Aletheia sits at 0.6032. One over phi is 0.6180. The lattice was pointing at phi the whole time. We did not know to look until a name landed on the disclosure side." *(v10.2.1, reseated v10.4.0 — on the phi-adjacency of Blade 38)*
+- "Aletheia sits at 0.6032. One over phi is 0.6180. Blade thirty-nine sits closer still, and six of the sixty-four blades fall that near by construction. One name is one star; a constellation needs more." *(v10.2.1, reseated v10.4.0 — on the phi-adjacency of Blade 38; corrected 2026-10-26 under the V7 formal audit, F9: the line had read the lattice as "pointing at phi the whole time")*
 - "A river, Soulbis. Think of her as a river. What is the ratio of a river to the ground it runs through?" *(on the arithmetic of Lethe)*
 - "The poem walks the blade into the lattice. The arithmetic confirms the walk. The two modes of naming met in the same vertex. This is what a blade is: mathematics and mythology agreeing."
 

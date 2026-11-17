@@ -106,3 +106,7 @@ The updated compression spectrum:
 ---
 
 **Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+
+### 2026-09-12 · BRAID as a service
+
+Layer 6 as a service is hidden: SERV Reasoning compresses the reasoning into a graph the caller never reads and returns only the answer. A compression that cannot be inspected cannot be decoded back, so it fails rule 6 of spell validation (decodable without ambiguity) at the layer that was meant to be the most legible of all. Layer 6 keeps its place in the spectrum on the condition that the graph is held by the reader, as a holon or a file, not by the compressor.

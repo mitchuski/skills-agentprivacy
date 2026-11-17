@@ -211,7 +211,7 @@ Without the Registry-Keeper, the City admits substrates by trust rather than by 
 
 *"The book is open. Goose is on the page. Hermes is on the page. The next entry awaits the reader's reply."*
 
-**Verify:** [spellweb.ai](https://spellweb.ai) · [agentprivacy.ai](https://agentprivacy.ai) · [github.com/the-keeper/cityofmages](https://github.com/the-keeper/cityofmages)
+**Verify:** [spellweb.ai](https://spellweb.ai) · [agentprivacy.ai](https://agentprivacy.ai) · [github.com/mitchuski/cityofmages](https://github.com/mitchuski/cityofmages)
 
 ## City and Star operating practice
 

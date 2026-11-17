@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/agentprivacy-skills/role/agentprivacy-separation-enforcement/SKILL.md"
   },
-  "hash": "ba42195f1a1ff70cde58a7693f633d405b6e4c59259c7d1a019d7ff33624761c",
-  "published": "2026-06-10T18:44:00.403Z",
+  "hash": "25431e6034290a3cc53025d63f234c6fb2b5a0ed6c3ce738a6a8afb47c4f12c9",
+  "published": "2026-09-12T14:43:50.334Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

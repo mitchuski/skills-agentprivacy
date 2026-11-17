@@ -196,4 +196,8 @@ Shared reasoning libraries (shared-parent pattern) work because they're compress
 
 ---
 
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+
+### 2026-09-12 · C8 gets its test
+
+BRAID now ships as an API with an off switch (`x-openserv-disable-braid: true`), which makes the compression a variable. The test for C8 is a harness round: same instance, same seat, same model, raw versus SERV, the census as the gate, tokens emitted under each recorded in the lane's own file. Until that round runs, C8 stays at 45%; when it runs, the number lives in the run's files, not in the vendor's console.

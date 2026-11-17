@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-understanding-compression",
+  "kind": "pattern",
+  "title": "Understanding Compression",
+  "emoji": "",
+  "card": "Take a unified semantic core (e.g. the In-brief summaries a wiki-to-pdf dossier produces) and re-express it for a plurality of communities, while proving every re-expression compresses back to the SAME invariant. Use when the same content must be told different ways to different…",
+  "brief": "Take a unified semantic core (e.g. the In-brief summaries a wiki-to-pdf dossier produces) and re-express it for a plurality of communities, while proving every re-expression compresses back to the SAME invariant. Use when the same content must be told different ways to different audiences (developers, funders, artists, institutions) without drifting in meaning: one truth into many tellings, and back. Compressions: maths / principles / actions. Expansions: markets / plurality / intents. Encodes the card format, the authoring rules for each axis, the round-trip recheck that closes the loop, and a stdlib cohere gate that blocks publication on any gap or drift.\n\nOne meaning, many tellings, provably the same. This skill formalises a recursion:\n\n- **Compressions** discard audience and surface; they keep only what is invariant, expressed as a   *number/formula* (maths), a *law/axiom* (principles), or a *minimal doable* (actions). - **Expansions** add audience back: a *value/incentive* framing (markets), a set of   *community-specific tellings* (plurality, ≥ 2), and the *goals/why* (intents). - The loop **closes** with a re-compression check: take one expansion, compress it again, and   a…",
+  "body_ref": "assets/agentprivacy-understanding-compression/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/meta/agentprivacy-understanding-compression/SKILL.md"
+  },
+  "hash": "864423c7bab52e85d77259c56cd0b0c1f47c0caff7076900fba767d00bda3458",
+  "published": "2026-11-12T15:16:53.111Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

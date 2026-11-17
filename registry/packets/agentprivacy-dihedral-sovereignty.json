@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-dihedral-sovereignty/SKILL.md"
   },
-  "hash": "6f93e8e89e5fe325c044e7c3930c64a12bb59a7e2676d812015bb004a51d5fca",
-  "published": "2026-04-22T13:39:43.307Z",
+  "hash": "027479e725a8e27dc0cc0cb95241793705dae99e9fac37224ac68429824935fb",
+  "published": "2026-10-26T23:07:27.198Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

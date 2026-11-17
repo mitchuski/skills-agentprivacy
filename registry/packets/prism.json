@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "prism",
+  "kind": "skill",
+  "title": "Prism",
+  "emoji": "",
+  "card": "Build a new Prism app from one sentence and publish it, or load, run, inspect and verify a holo, the Prism package that carries its own proof and provenance. Use when asked to build, start or ship a Prism app, when a task mentions Prism, LexLean, a .holo file or prism-code, or w…",
+  "brief": "Build a new Prism app from one sentence and publish it, or load, run, inspect and verify a holo, the Prism package that carries its own proof and provenance. Use when asked to build, start or ship a Prism app, when a task mentions Prism, LexLean, a .holo file or prism-code, or when it asks whether an application can be trusted before it runs.\n\nPrism works like Docker. A model is built into a holo, an immutable package addressed by its digest, like an image. A runtime runs the holo, like a container runtime runs an image, and every run starts from a loaded, verified instance, like a container. A holo carries its own proof and provenance, so you check it before anything runs.\n\n| Docker | Prism | | --- | --- | | Dockerfile | model | | image, tag and digest | holo | | container | instance | | base image pinned in `FROM` | SDK image pinned in the lockfile | | `docker run` | `prism-code run` | | `docker inspect` | `prism-code inspect` |",
+  "body_ref": "assets/prism/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "workbench",
+    "category": "workbench",
+    "tier": "",
+    "version": "",
+    "alignment": "",
+    "source_path": "~/.claude/skills/prism/SKILL.md"
+  },
+  "hash": "a0902b2e1abd4117268e48650688d62695526cf630a71215d54a761c6f2d61ca",
+  "published": "2026-11-12T14:37:15.361Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

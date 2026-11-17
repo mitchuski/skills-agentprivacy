@@ -1,11 +1,11 @@
 {
   "spec": "skill-packet/0.1",
   "name": "agentprivacy-compression-defence",
-  "kind": "pattern",
+  "kind": "skill",
   "title": "Compression Defence",
   "emoji": "",
   "card": "Compression-as-defence principle for 0xagentprivacy V5. Activates when discussing BRAID 74× compression, R(d,compression) modifier, token reduction as attack surface reduction, the compression spectrum (7 layers), or why efficient inference is also private inference.",
-  "brief": "Compression-as-defence principle for 0xagentprivacy V5. Activates when discussing BRAID 74× compression, R(d,compression) modifier, token reduction as attack surface reduction, the compression spectrum (7 layers), or why efficient inference is also private inference.\n\n**Source:** Privacy Value Model V5 + First Person Spellbook Act XXIV (The Holographic Bound)\r\n**Target context:** AI system builders, privacy engineers, efficiency researchers\r\n**Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\r\n\r\n---\r\n\r\n\r\nBRAID demonstrated 74× inference compression while maintaining performance. The conjecture in this skill is that this is not only efficiency but also a privacy property.\r\n\r\n**Every token not sent is a token that cannot be intercepted.** That much is plain. What it is *not* is a statement about how much the tokens you *did* send reveal about the protected variable.\r\n\r\nCompression reduces the volume of transmitted material available to inference-layer surveillance. Whether it reduces *disclosure* is the open question this skill exists to work on.\r\n\r\n\r\n> **Register status: C8 — \"BRAID",
+  "brief": "Compression-as-defence principle for 0xagentprivacy V5. Activates when discussing BRAID 74× compression, R(d,compression) modifier, token reduction as attack surface reduction, the compression spectrum (7 layers), or why efficient inference is also private inference.\n\n**Source:** Privacy Value Model V5 + First Person Spellbook Act XXIV (The Holographic Bound) **Target context:** AI system builders, privacy engineers, efficiency researchers **Architecture:** [agentprivacy.ai](https://agentprivacy.ai) · **Sync:** [sync.soulbis.com](https://sync.soulbis.com) · **Contact:** mage@agentprivacy.ai\n\nBRAID demonstrated 74× inference compression while maintaining performance. The conjecture in this skill is that this is not only efficiency but also a privacy property.\n\n**Every token not sent is a token that cannot be intercepted.** That much is plain. What it is *not* is a statement about how much the tokens you *did* send reveal about the protected variable.",
   "body_ref": "assets/agentprivacy-compression-defence/SKILL.md",
   "origin": {
     "author": "mitch",
@@ -14,14 +14,17 @@
     "tier": "",
     "version": "5.0",
     "alignment": "",
-    "source_path": "https://github.com/mitchuski/agentprivacy-skills/blob/main/privacy-layer/agentprivacy-compression-defence/SKILL.md"
+    "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-compression-defence/SKILL.md"
   },
-  "hash": "761a61a4789b4cdfaadcadaca7e63cf5c5646f88ade20a702dbf57d42d33a292",
-  "published": "2026-09-07T12:42:04.001Z",
+  "hash": "6b73ac0395c6a0cd31fb4b8a9f6a1a88243121a40fdcb2f8b1530c1b161939a3",
+  "published": "2026-09-12T14:43:50.337Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

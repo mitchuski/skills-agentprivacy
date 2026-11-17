@@ -34,7 +34,7 @@ V4 flagged a discrepancy: the UOR torus has 96 edges while the lattice has 64 ve
 
 **V5 Resolution:** They don't need to match. The 96-edge surface IS the holographic encoding of the 64-vertex bulk. In holographic physics, a boundary of dimension n encodes a volume of dimension n+1. The ratio 96/64 = 1.5 is not a discrepancy — it is the holographic principle expressing itself in discrete lattice geometry.
 
-**C4 is RESOLVED.**
+**C4 was marked RESOLVED; it is reopened.** *Corrected 2026-10-25 under the V7 formal audit (agentprivacy-docs `research/2026-10-25_v7_formal_audit.md`, F6; Lean receipts in formal_mage).* No stated graph on the 64 vertices has 96 edges: Q₆ has 192, the succ cycle 64, the complement pairs 32, succ ∪ complement 94 and succ ∪ neg 95. In the UOR Atlas, 96 counts *vertices*. The 96 is imported, not derived, and "a boundary of dimension n encodes dimension n+1" does not fit edges over vertices. The reading below is kept as a conjecture, pending a declared 96-edge graph on the lattice (a 3-regular graph on 64 vertices has 96 edges, but it must be named and motivated).
 
 ## The Holographic Principle
 
@@ -74,7 +74,7 @@ P^1.5 has been in the equation since V2. The superlinear exponent means privacy 
 
 Now observe: 96/64 = 1.5.
 
-The boundary-to-volume ratio equals the superlinear privacy exponent. This is flagged as **C6 — speculative**: we have numerical coincidence but no derivation from first principles.
+The boundary-to-volume ratio equals the superlinear privacy exponent. This is flagged as **C6 — open (speculative)**, with the convergence claim withdrawn alongside C4's algebraic row: we have numerical coincidence but no derivation from first principles.
 
 If C6 holds, the entire equation is an expression of the holographic principle applied to sovereignty architecture.
 

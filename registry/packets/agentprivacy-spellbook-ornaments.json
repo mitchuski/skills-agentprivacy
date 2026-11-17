@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-spellbook-ornaments",
+  "kind": "pattern",
+  "title": "Spellbook Ornaments",
+  "emoji": "",
+  "card": "Draw, extend, and render the engraving ornaments of the Privacymage Grimoire (Selene's Spellbook): the nine glyphs, the two figure engravings, and the promise-theoretic sparkle field. Use when adding or editing a glyph or engraving, building the ornament proof sheet, or keeping…",
+  "brief": "Draw, extend, and render the engraving ornaments of the Privacymage Grimoire (Selene's Spellbook): the nine glyphs, the two figure engravings, and the promise-theoretic sparkle field. Use when adding or editing a glyph or engraving, building the ornament proof sheet, or keeping new poem art in the same hand. Encodes the three-grey palette, the line-weight law, polarity-as-promise (the `+`/`−` sparkle ratio), the new-glyph and new-engraving protocols, the cross-references to plant, and a function template. The generator is ReportLab/Python; the visual canon is the book's STYLE_GUIDE.md.\n\n> The work lives in two greys and the white of the page. Everything else is restraint.\n\nThe art generator of *Selene's Spellbook*, first built as a claude.ai artifact and reconstructed locally so the ornaments can be rendered, edited and extended in step with the poems. It is the executable form of the book's `STYLE_GUIDE.md`: the guide is the single visual source; this skill executes it. New ornaments extend the guide (§9/§10); they never start a parallel style.",
+  "body_ref": "assets/agentprivacy-spellbook-ornaments/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/meta/agentprivacy-spellbook-ornaments/SKILL.md"
+  },
+  "hash": "946e4b859b2266468ed845d02df2612c2b67f2aa29226b9646cbdc93da27e69a",
+  "published": "2026-11-12T15:16:53.072Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

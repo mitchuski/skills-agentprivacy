@@ -62,7 +62,7 @@ Sybil resistance: Multi-party locks require real counterparties. A Sybil army ca
 **🐉 Dragon (Tier 3) — Ecosystem trust.**
 Full sovereignty. The Swordsman operates as a recognised trust anchor in the wider ecosystem. Guild membership. VRC chains spanning multiple counterparties. The agent's trajectory T(π) is a verifiable credential in itself. Cross-chain operations via chain signatures. The agent can delegate to other agents (Mage-class) through VRC-mediated channels.
 
-Equation mapping: All terms active. Full Φ(Σ) measurement. T(π) reflects a complex trajectory with both vertical and lateral transitions. The agent contributes maximum network weight at stratum 3–5.
+Equation mapping: All terms active. Full Φ(Σ) measurement. T(π) reflects a complex trajectory with vertical edges and two-edge lateral moves. The agent contributes maximum network weight at stratum 3 (weights 20, 15, 6 across strata 3–5).
 
 Lattice position: Stratum 4–6. The agent has traversed multiple strata and its edge value T(π) is high.
 

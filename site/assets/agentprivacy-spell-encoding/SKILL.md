@@ -61,7 +61,7 @@ Every spell follows a three-clause structure separated by the therefore operator
 | `∃!` | Unique existence | there exists exactly one | ∃!🛡️ (exactly one shield exists) |
 | `∀` | Universal | for all | ∀L:P(L)>0 (for all layers, protection positive) |
 | `Σ` | Summation | aggregate of, combined total | Σ(layers) (sum of all layers) |
-| `φ` | Golden ratio | optimal balance ≈ 1.618 | ⊗🧙·φ (tensioned at golden ratio) |
+| `φ` | Golden ratio | balance threshold ≈ 1.618 (a threshold in Φ, not an optimum; C1 challenged) | ⊗🧙·φ (tensioned at golden ratio) |
 
 ## Moon Phase Notation
 

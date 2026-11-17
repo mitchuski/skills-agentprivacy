@@ -95,7 +95,7 @@ The Algebraist loads mathematics-focused skills:
 - `blade-forge` — Applied ring algebra
 
 **Supporting skills (4):**
-- `holographic-bound` — Why 96 edges on 64 vertices
+- `holographic-bound` — The 96/64 reading (C4 reopened: the 96 is the Atlas vertex count, not a lattice edge count)
 - `uor-toroidal` — Toroidal structure
 - `path-integral` — Traversal as ring composition
 - `hexagram-convergence` — Stratum as classification

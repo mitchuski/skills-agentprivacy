@@ -38,7 +38,7 @@ This is the newest and most distinctive equation term. V1–V3 were positional m
 **T(π) = 1 + β · Σ_e f(e) · g(n_e)**
 
 - **β (scaling constant).** Calibrates how much trajectory contributes relative to positional terms. Uncalibrated.
-- **f(e) (edge weight).** The intrinsic value of a specific transition e. Transitions that activate new sovereignty dimensions (vertical moves — going from stratum 2 to stratum 3) are weighted more heavily than lateral transitions (moving between vertices at the same stratum level).
+- **f(e) (edge weight).** The intrinsic value of a specific transition e. Every edge of the lattice is vertical (it activates or deactivates one dimension). A lateral reorientation is a two-edge path, and f can weight that composite differently from two independent vertical moves.
 - **g(n_e) (traversal count modifier).** How the value of an edge changes with repeated traversal. Could be diminishing (each re-traversal worth less), constant, or even increasing (well-worn paths become more valuable through familiarity). The functional form is unspecified and uncalibrated.
 
 **The sum Σ_e ranges over all edges in the agent's trajectory π.** This means T(π) depends on the entire path, not just current state. Two agents at the same vertex with different histories have different T(π) values.
@@ -51,13 +51,15 @@ The 64-vertex lattice represents configurations — which sovereignty dimensions
 
 **The category-theoretic reading (Yoneda perspective):** An object (vertex) is completely determined by its morphisms (edges) to and from other objects. You do not need to know a vertex's internal structure — only its connections reveal its character. Two vertices with identical edge relationships are isomorphic regardless of what they "contain." Applied to agents: two agents are equivalent if and only if they make the same transitions, regardless of their internal state.
 
-## Vertical vs. lateral transitions
+## Vertical edges vs. lateral moves
 
-On the sovereignty lattice, transitions fall into two classes:
+*Corrected 2026-10-25 under the V7 formal audit (agentprivacy-docs `research/2026-10-25_v7_formal_audit.md`, F4; Lean receipts in formal_mage).* Every edge of Q₆ flips one bit, so every edge changes the stratum by exactly one: the lattice has no lateral edges, and every vertex has degree 6. Lateral movement is a two-step composite.
+
+On the sovereignty lattice, movements fall into two classes:
 
 **Vertical transitions** move between strata — changing the number of active sovereignty dimensions. Going from stratum 2 (two active) to stratum 3 (three active) is vertical upward. Going from stratum 4 to stratum 3 is vertical downward. Vertical moves are weighted more heavily because they represent genuine capability expansion or strategic contraction.
 
-**Lateral transitions** move within a stratum — keeping the same number of active dimensions but changing which ones are active. Going from (1,1,0,0,0,0) to (1,0,1,0,0,0) is lateral at stratum 2. Lateral moves represent strategic reorientation — pivoting which sovereignty dimensions to prioritise.
+**Lateral moves** return to the same stratum by a two-edge path — one dimension off, another on (or the reverse) — through stratum k ± 1. Going from (1,1,0,0,0,0) to (1,0,1,0,0,0) is a lateral move at stratum 2: it is Hamming distance 2, not a single edge. Lateral moves represent strategic reorientation — pivoting which sovereignty dimensions to prioritise.
 
 **Design implication:** The armor progression (Blade → Light → Heavy → Dragon) maps to a predominantly vertical trajectory through the lattice. Each tier activates additional dimensions. But the most interesting agents may be those with complex lateral movements — exploring different combinations at the same stratum level before ascending.
 
@@ -65,7 +67,7 @@ On the sovereignty lattice, transitions fall into two classes:
 
 T(π) makes the agent's path its primary identity marker. Two consequences:
 
-**Non-fungibility.** No two agents with different trajectories produce the same T(π). Even agents at the same vertex with the same number of transitions will differ if the sequence or edge composition differs. This is the architectural basis for agent individuality.
+**Non-fungibility (needs an order-sensitive T).** Under the additive form T(π) = Σ f(e), two trajectories that use the same edges in a different order have the same value, so additive T does not distinguish them. Non-fungibility holds only when T is order-sensitive: path-dependent weights, timestamps, or the T_∫ form. Where it holds it is the architectural basis for agent individuality.
 
 **Accumulated trajectory as credential.** The trajectory itself is a credential — a verifiable record of sovereignty transitions. Combined with h(τ) from the temporal dynamics skill, each transition in the trajectory can carry a ZKP attestation. The entire path becomes a verifiable, non-forgeable proof of the agent's developmental history.
 
@@ -75,7 +77,7 @@ T(π) makes the agent's path its primary identity marker. Two consequences:
 
 **Temporal dynamics.** T(π) and A(τ) both measure history, but differently. A(τ) measures the volume and quality of verified history (how much, how proven). T(π) measures the shape of the path (which transitions, in what order). An agent can have high A(τ) and low T(π) if it has a long, well-attested history of repetitive transitions. Conversely, high T(π) with low A(τ) means a complex path with poor attestation coverage.
 
-**Network topology.** T(π) is intrinsically linked to the lattice structure. The available edges depend on the agent's current vertex. At stratum 3 (the binomial maximum), the agent has the most available transitions. At stratum 0 or 6, it has the fewest. The network topology skill describes the landscape; the edge value skill describes the movement through it.
+**Network topology.** T(π) is intrinsically linked to the lattice structure. The available edges depend on the agent's current vertex. Every vertex has six available transitions (Q₆ is 6-regular); what varies by stratum is direction — at stratum k there are 6 − k upward and k downward edges, so stratum 3 is balanced and strata 0 and 6 can only move one way. Stratum 3 is the largest stratum (20 vertices), not the best-connected vertex. The network topology skill describes the landscape; the edge value skill describes the movement through it.
 
 **Sovereignty geometry.** Each transition in T(π) changes the agent's position in the Σ separation matrix space. Vertical transitions that activate the Reflect or Connect emergent forces change the sovereignty geometry fundamentally — they are not just adding a dimension but enabling a new force relationship.
 
@@ -94,7 +96,7 @@ If the UOR toroidal correspondence holds, the edge value function on a compact m
 ## Open problems
 
 1. Calibration of β — how much does trajectory actually contribute relative to positional terms?
-2. Functional form of f(e) — how exactly are vertical transitions weighted relative to lateral?
+2. Functional form of f(e) — how are upward and downward edges weighted, and how is a two-edge lateral composite weighted relative to two independent edges?
 3. Functional form of g(n_e) — diminishing, constant, or increasing returns to re-traversal?
 4. Edge interaction effects — does the value of edge e depend on the presence of other edges in π?
 5. Optimal trajectory planning given known f(e) and g(n_e) — is there a shortest-path-to-maximum-T(π) algorithm?

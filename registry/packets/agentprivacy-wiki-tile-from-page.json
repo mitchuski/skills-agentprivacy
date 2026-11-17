@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-tile-from-page",
+  "kind": "skill",
+  "title": "Wiki Tile From Page",
+  "emoji": "",
+  "card": "Read a FedWiki page's content, semantically choose a glyph + color + category for it, and write a `tileglyph` navigation tile (the wiki-plugin-tileglyph item type) into a destination page — matching a Root Tiles registry for federation-wide consistency, or minting a new canonica…",
+  "brief": "Read a FedWiki page's content, semantically choose a glyph + color + category for it, and write a `tileglyph` navigation tile (the wiki-plugin-tileglyph item type) into a destination page — matching a Root Tiles registry for federation-wide consistency, or minting a new canonical entry. Use when turning pages or sites into colored glyph navigation tiles, building a tile wall or index, adding a page to a plugin lab, or extending the Root Tiles vocabulary. The judgement is the agent's; the disk work is tile.js. Kept by the Librarian 🗃️ with the Topologist's hand on the chart.\n\n**🗃️🧭 Tile from page — the semantic half of TileGlyph** Keeper: the Librarian 🗃️ · Authored by the Chronicler 🧙📖 · Category: wikis · Layer: onboarding\n\n> The same meaning wears the same glyph on every shelf.\n\nThe plugin (`wiki-plugin-tileglyph`, item type `tileglyph`) only *renders* tiles; it cannot read content or call a skill in the browser. This skill is where an agent reads a page, **decides** what glyph / color / category fit it, and writes the tile. The mechanical disk work is in `tile.js`; the judgement is yours.",
+  "body_ref": "assets/agentprivacy-wiki-tile-from-page/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "mage",
+    "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-tile-from-page/SKILL.md"
+  },
+  "hash": "711d81bf9d93459a06084bb7e8750f04a64aee55dcdbe5c72ba39d1872006f1d",
+  "published": "2026-11-12T15:16:53.425Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

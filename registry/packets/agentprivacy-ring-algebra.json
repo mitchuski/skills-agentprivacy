@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-ring-algebra/SKILL.md"
   },
-  "hash": "6719f7784cd2eaaa8c150e45ee5e9801d85d6b3056c0027f51bc2e28a34d2f13",
-  "published": "2026-06-12T02:46:13.655Z",
+  "hash": "72b76ecc346283055a3549224fb8a59e4798b74def44b77445de95aeb727f605",
+  "published": "2026-10-25T15:51:57.964Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

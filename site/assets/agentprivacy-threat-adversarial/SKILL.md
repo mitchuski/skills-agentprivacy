@@ -79,7 +79,7 @@ The PPT adversary above is a snapshot. V6 indexes the adversary by time and adds
 
 PVM V6 is explicitly falsifiable. Any of these demonstrated empirically requires fundamental revision:
 
-**Breaking condition 1 (retired at V6, replaced): three-axis multiplicative failure.** The original condition here was UOR structural incompatibility; C4 (the 96 vs 64 discrepancy) is resolved at the register (holographic + algebraic), so that condition is closed. The live falsification frontier is C7 (~30%): if the multiplicative three-axis form fails at its boundary cases (partial collapse, axis correlation under composition, time dependence), the gating claim needs its register-bound corrections (additive-with-floor, min(), the det(Σ) form, or the differential form). Impact: the collapse-any-axis-collapse-everything story weakens to a softer degradation law.
+**Breaking condition 1 (retired at V6, replaced): three-axis multiplicative failure.** The original condition here was UOR structural incompatibility; C4 (the 96 vs 64 discrepancy) was marked resolved at the register (holographic + algebraic) and is reopened under the 25 October 2026 ruling (V7 formal audit F6: no stated graph on the lattice has 96 edges); the condition stays retired, replaced as below. The live falsification frontier is C7 (~30%): if the multiplicative three-axis form fails at its boundary cases (partial collapse, axis correlation under composition, time dependence), the gating claim needs its register-bound corrections (additive-with-floor, min(), the det(Σ) form, or the differential form). Impact: the collapse-any-axis-collapse-everything story weakens to a softer degradation law.
 
 **Breaking condition 2: ε > 0.1 in practice.** If real implementations cannot achieve conditional independence ε < 0.1 between Swordsman and Mage agents, the reconstruction ceiling no longer holds. The agents leak too much mutual information, and the adversary can triangulate. Impact: Dual-agent separation is a theoretical result without practical realisability. Alternative separation mechanisms would be needed.
 
@@ -89,9 +89,9 @@ PVM V6 is explicitly falsifiable. Any of these demonstrated empirically requires
 
 ## The open conjectures (register-corrected)
 
-Beyond the breaking conditions, the register (CONJECTURE_REGISTER_V6.md, head C89) supersedes any earlier list here. C3 (edge additivity) is challenged, replaced by the path integral; C4 (96 vs 64) and C5 (~3,000× ZKP reduction) are resolved. The live set a red team should track:
+Beyond the breaking conditions, the register (CONJECTURE_REGISTER_V6.md, head C89) supersedes any earlier list here. C3 (edge additivity) is challenged, replaced by the path integral; C5 (~3,000× ZKP reduction) is resolved; C4 (96 vs 64) was resolved and is reopened, and C1, C4, C14 and C54 are challenged under the 25 October 2026 ruling. The live set a red team should track:
 
-1. **C1 (open).** Golden ratio φ ≈ 1.618 as optimal protect/project balance. No proof that φ is the optimum rather than merely a good ratio.
+1. **C1 (challenged).** Golden ratio φ ≈ 1.618 as optimal protect/project balance. In the stated Φ(Σ) = min(1, (S/M)/φ) · det(Σ) the factor is flat for S/M ≥ φ, so φ is a threshold, not an optimum (V7 formal audit F2); an optimum at φ would need a different, declared functional form.
 2. **C2 (open).** Logarithmic growth of temporal memory. Could be sub- or super-logarithmic.
 3. **C7 (~30%).** Three-axis separation is multiplicative. The V6 falsification frontier: break it at partial collapse, axis correlation, or time dependence.
 4. **C18 (~25%).** Strange attractor dynamics on the sovereignty path (λ > 0). λ is unmeasured; a red team that measures it moves the model either way.
@@ -111,7 +111,7 @@ Four quantities the model requires but cannot currently measure:
 
 **M3: Network exponent k.** Sub-, linear, or superlinear? Requires comparative measurement across networks of different sizes and sovereignty quality distributions.
 
-**M4: Edge weight f(e).** How much more valuable are vertical transitions than lateral transitions? No empirical basis for the weighting.
+**M4: Edge weight f(e).** How much more valuable are upward than downward edges, and how is a two-edge lateral composite weighted (the lattice has no lateral edges; audit F4)? No empirical basis for the weighting.
 
 ## The cheapest attacks
 

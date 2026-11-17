@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "evidence-wave-fold",
+  "kind": "skill",
+  "title": "Evidence Wave Fold",
+  "emoji": "",
+  "card": "Fold a benchmark re-entry wave (many submissions across several tracks or families, each with a gate verdict) into one evidence lane whose rows are verdicts under gates, cross-referencing each family's own bundle by root, keeping refuted and rejected entries as rows beside the a…",
+  "brief": "Fold a benchmark re-entry wave (many submissions across several tracks or families, each with a gate verdict) into one evidence lane whose rows are verdicts under gates, cross-referencing each family's own bundle by root, keeping refuted and rejected entries as rows beside the accepted ones, and drawing the wave as a tree where failed branches stay. Use when a solver lane submits in bulk to a judged board, when negatives need equal standing with wins, when a public page must show verdict counts and roots but no scores, or when someone asks what the lane binds and what it does not. Encodes the row kinds, the tally check, the gate before the mint, the superseded-not-edited rule and the public drawing rules.\n\nA wave is a week of submissions, not a single shot: several families, a sweep over round counts in each, a verdict per entry. Most lanes keep the wins and let the misses fall out of the record. This method keeps every verdict as a row, binds each row to the bytes it judged, and draws the whole thing as a tree that keeps its dead branches.",
+  "body_ref": "assets/evidence-wave-fold/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "drafted",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/drafts/evidence-wave-fold/SKILL.md"
+  },
+  "hash": "d1af062897a4e4b30d2ff319969baf9119e2d60e462af367fadefbbc58eeb876",
+  "published": "2026-10-20T02:38:40.778Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

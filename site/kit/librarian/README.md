@@ -1,6 +1,6 @@
 # Deploying the network pieces — marvin (02-pi4) and pi5
 
-Nothing here has been deployed. These are the exact steps for when Mitch opens the doors.
+Nothing here has been deployed. These are the exact steps for when the Keeper opens the doors.
 
 ## marvin — the herald (02-pi4): ntfy
 

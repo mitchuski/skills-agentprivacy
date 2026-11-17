@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-peak-qubit-reduction",
+  "kind": "skill",
+  "title": "Peak Qubit Reduction",
+  "emoji": "",
+  "card": "Reduce the peak (maximum simultaneous) qubit count, the \"width\", of a reversible or quantum circuit. Use whenever a circuit uses too many qubits/ancilla/scratch, when optimizing circuit width or a qubits-times-gates score, when an arithmetic or Shor-style circuit needs to fit a…",
+  "brief": "Reduce the peak (maximum simultaneous) qubit count, the \"width\", of a reversible or quantum circuit. Use whenever a circuit uses too many qubits/ancilla/scratch, when optimizing circuit width or a qubits-times-gates score, when an arithmetic or Shor-style circuit needs to fit a smaller machine, or when someone asks how to \"shave qubits\", \"lower the qubit count\", \"reduce ancilla\", \"free scratch earlier\", or \"trade gates for qubits\". Trigger even on informal phrasing (\"this adder needs way fewer wires\", \"where's all my space going\", \"can I reuse that register\"). Provides a left-to-right timeline analysis: find the tallest moment, inventory the qubits alive there, decide whether the peak is a single binder or a multi-phase plateau, and cut it with uncompute-early/recompute-later holes, live-range shortening, truncation, transcript compression, and coordinated co-binder reductions, priced by the qubit↔gate exchange rate. For the GATE axis use agentprivacy-toffoli-reduction; for correctness use agentprivacy-reversible-circuit-validation.",
+  "body_ref": "assets/agentprivacy-peak-qubit-reduction/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "role",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/role/agentprivacy-peak-qubit-reduction/SKILL.md"
+  },
+  "hash": "32c9935526d090b3f48eb63e3a0a47236ceb36acd283684f44e7aeab42d5778e",
+  "published": "2026-11-12T15:16:53.191Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

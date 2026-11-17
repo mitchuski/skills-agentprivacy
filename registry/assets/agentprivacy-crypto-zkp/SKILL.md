@@ -72,7 +72,7 @@ Surveillance architectures produce 17×–12,000× less value than sovereign arc
 1. Can sovereignty-class lattice constraints actually reduce proof size by ~3,000×? What is the real circuit complexity?
 2. What is the minimum ZKP throughput needed for h(τ) to remain above 0.9 in real-time agent operation?
 3. Can the separation matrix Σ be verified on-chain without revealing the individual σ_ij values?
-4. Does the UOR toroidal structure map cleanly to recursive SNARK composition? (96 vs. 64 edge discrepancy)
+4. Does the UOR toroidal structure map cleanly to recursive SNARK composition? (the 96/64 question: C4 reopened, since no stated graph on the 64 vertices has 96 edges)
 
 ---
 

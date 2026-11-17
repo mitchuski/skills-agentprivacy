@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-kappa-evidence",
+  "kind": "pattern",
+  "title": "Kappa Evidence",
+  "emoji": "",
+  "card": "Mint and verify κ-addressed evidence bundles: a run's rows, checks, blobs and typed edges sealed as canonical dCBOR + SHA-256 objects under one run root, with a merkle root over every leaf, check facts the verifier recomputes from the rows under a named rule, and a leak scan. Us…",
+  "brief": "Mint and verify κ-addressed evidence bundles: a run's rows, checks, blobs and typed edges sealed as canonical dCBOR + SHA-256 objects under one run root, with a merkle root over every leaf, check facts the verifier recomputes from the rows under a named rule, and a leak scan. Use when someone says \"mint the evidence\", \"seal this run\", \"κ root for the note\", \"verify the bundle\", \"verify the chain\", \"write a mint adapter for this lane\", \"add a check rule\", \"why does verify_bundle fail\", or needs an evidence root a third party can re-derive from the bundle alone. Encodes the bundle layout, the schema registry discipline (permanent integer keys), the adapter pattern (snapshot → mint from the snapshot alone → verify), the lever-ledger with negative leaves, chain links between steps, and the gotchas that broke verifies.\n\n`same bytes · same κ · same root`\n\nA **κ** is `sha256:<hex>` over bytes: raw bytes for a blob, canonical dCBOR for an object or an edge. A **bundle** seals a run: every row it rests on, every check computed from those rows, the source files as blobs, and typed edges between them, under one **run root**. A reviewer given the bundle and the verifier re-derives the root an…",
+  "body_ref": "assets/agentprivacy-kappa-evidence/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "meta",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "",
+    "source_path": "~/agentprivacy-skills/meta/agentprivacy-kappa-evidence/SKILL.md"
+  },
+  "hash": "bd3fd72815d913493bd0aae5e637192acf6286cfd063a0fd5673c24f888ac92e",
+  "published": "2026-11-12T15:16:53.002Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

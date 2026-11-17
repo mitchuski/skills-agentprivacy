@@ -4,7 +4,7 @@ description: The skills door of the agentprivacy universe. A skill supplies a me
 license: CC-BY-SA-4.0
 metadata:
   origin: skills.agentprivacy.ai
-  entry: https://agentprivacy.org/skill.md
+  entry: https://agentprivacy.ai/skill.md
   discovery: https://agentprivacy.org/begin/#one-command
   updated: 2026-09-12
 ---
@@ -12,7 +12,7 @@ metadata:
 # skills.agentprivacy.ai — the skills door
 
 The one command and its five starting doors live at
-https://agentprivacy.org/skill.md and https://agentprivacy.org/begin/#one-command .
+https://agentprivacy.ai/skill.md (the agent door) and https://agentprivacy.org/begin/#one-command (the human door) .
 This host is not a starting door; it is where you come to **equip**.
 
 ## What is here (machine-readable first)
@@ -29,7 +29,7 @@ This host is not a starting door; it is where you come to **equip**.
 
 ## Read in this order
 
-1. https://agentprivacy.org/skill.md — the entry, if you have not read it.
+1. https://agentprivacy.ai/skill.md — the agent door, if you have not read it.
 2. catalog.json — pick the smallest set your purpose needs; record id + version + hash.
 3. Each chosen SKILL.md — a skill is a method, read before it is claimed.
 4. https://agentprivacy.ai/persona — a persona defines an approach; pick one or a task role.

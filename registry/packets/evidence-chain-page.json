@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "evidence-chain-page",
+  "kind": "skill",
+  "title": "Evidence Chain Page",
+  "emoji": "",
+  "card": "Turn any directory of content-addressed evidence bundles (root.json + graph.json per bundle) into a public chain page that re-derives every root in the reader's browser, draws the chain as a tree on a 64-vertex lattice, writes it out as seals, plays it as sound, and veils what e…",
+  "brief": "Turn any directory of content-addressed evidence bundles (root.json + graph.json per bundle) into a public chain page that re-derives every root in the reader's browser, draws the chain as a tree on a 64-vertex lattice, writes it out as seals, plays it as sound, and veils what each try found behind a members' build. Use when a research lane, benchmark lane or agent run has minted bundles and needs a page people can check without being asked to trust it, or when adding a new lane to an existing family of chain pages.\n\nYou have bundles; you want a page a stranger can check. The page is a **reader of the work, never part of it**: it names the root it was generated from and re-derives everything below that root on load.\n\n- A lane has minted one bundle per entry, step or package (one `root.json` + `graph.json` each). - Someone asks \"show this work\", \"give this lane a page\", \"add this chain to the others\". - An existing engine builds several chains and a new lane should join without a code change.",
+  "body_ref": "assets/evidence-chain-page/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "drafted",
+    "tier": "",
+    "version": "0.1",
+    "alignment": "",
+    "source_path": "~/skill sync/drafts/evidence-chain-page/SKILL.md"
+  },
+  "hash": "fa92206a0b3bf2e25cc3234f44c1b0ecc60b049d80bd071a7ac8e0be74254855",
+  "published": "2026-10-26T16:49:03.480Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

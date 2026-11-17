@@ -172,6 +172,10 @@ Each axis strengthens the others. Agent separation is cheaper when inference sep
 
 **V(π,t) — privacy value.** The 31,000× privacy value premium over surveillance depends entirely on det(Σ) ≠ 0. In a surveillance architecture (det(Σ) = 0), V collapses to V_surv. In the privacy architecture (det(Σ) ≠ 0), V compounds superlinearly through all terms. The separation is not a feature — it is the difference between the two architectures.
 
+### 2026-09-12 · BRAID as a service
+
+The inference-layer row above gains a caveat now that BRAID ships as an API (SERV Reasoning). Generator ⊥ Solver behind one provider is a separation of models, not of observers: the intermediary that generates the graph also forwards the solver's prompt and reads both. `I(G;S|task) ≤ δ` must be evaluated over who can read, not over which model id answered. In the dual-agent harness this is the rule "SERV may hold one seat, never both, never the default"; `phiInference` in `run.json` is honest only when the two seats are on different observers.
+
 ---
 
 **Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)

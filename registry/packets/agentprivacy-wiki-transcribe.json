@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-transcribe",
+  "kind": "skill",
+  "title": "Wiki Transcribe",
+  "emoji": "",
+  "card": "Transcribe video/audio assets hosted on a FedWiki (Smallest Federated Wiki) page using local whisper.cpp, then turn the transcripts into wiki pages. Use when pointed at a FedWiki page or assets folder (e.g. http://<wiki-host>/view/<page>) and asked for transcripts or subtitles.…",
+  "brief": "Transcribe video/audio assets hosted on a FedWiki (Smallest Federated Wiki) page using local whisper.cpp, then turn the transcripts into wiki pages. Use when pointed at a FedWiki page or assets folder (e.g. http://<wiki-host>/view/<page>) and asked for transcripts or subtitles. Enumerates the assets folder through the assets plugin's hidden list endpoint, streams each file over the network, extracts 16 kHz mono audio with ffmpeg, runs whisper.cpp (large-v3-turbo) to produce .txt/.srt/.vtt, and assembles video pages, answer pages, hub cards, an index and a workshop page. Local only — no audio leaves the machine. Kept by the Librarian 🗃️.\n\n**🗃️🎙️ FedWiki video transcription — local, streamed, shelved** Keeper: the Librarian 🗃️ · Authored by the Chronicler 🧙📖 · Category: wikis · Layer: onboarding\n\n> The recording stays where it was; the words come home.\n\nEnd-to-end flow: **FedWiki assets folder → list files → stream audio (ffmpeg) → transcribe (whisper.cpp) → .txt/.srt/.vtt → wiki pages**. Everything runs on your machine; nothing is uploaded to a transcription service.",
+  "body_ref": "assets/agentprivacy-wiki-transcribe/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "mage",
+    "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-transcribe/SKILL.md"
+  },
+  "hash": "4d240a5dba48f9e33dd2b7fd20594f904295d21401a8b8f71d7629b3e9e79090",
+  "published": "2026-11-12T15:16:53.518Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

@@ -40,7 +40,7 @@ The farm serves `skillsync.localhost` once the wiki farm is running (port 3030).
 
 ## Machines & roles
 
-- **this machine (mitchie)** — source of truth: harvest + shelf build + dream loop.
+- **this machine (the keeper’s machine)** — source of truth: harvest + shelf build + dream loop.
 - **marvin (02-pi4)** — the herald. Runs [ntfy](https://ntfy.sh) (self-hosted); the dream
   loop POSTs to `http://02-pi4:2586/<topic>` when a new skill/spell appears anywhere on
   the roster. Install: see `librarian/README.md`.
@@ -52,12 +52,12 @@ The farm serves `skillsync.localhost` once the wiki farm is running (port 3030).
 
 ## Doors
 
-1. **Tailnet lane — OPEN (2026-08-24, on Mitch's ask)**: `http://skills.mitch.private.fish`
+1. **Tailnet lane — OPEN (2026-08-24, on the Keeper's ask)**: `http://skills.mitch.private.fish`
    serves the shelf to the community over the existing :80 front door (alias added to
    `~/.wiki/_tailnet_proxy.js` ALIASES; allowlist re-verified — other hosts still refused).
    Agents point at `http://skills.mitch.private.fish/assets/skillsync/catalog.json`.
 2. **skill.fedwiki.club** — `club-export/` holds forkable pages; pushing them into the
    club space (or asking David) is a keeper act. Nothing written externally.
-3. **pi5 deploy** — `librarian/server.js` + README are ready; scp + systemd unit = Mitch.
+3. **pi5 deploy** — `librarian/server.js` + README are ready; scp + systemd unit = the Keeper.
 4. **marvin ntfy install** — one docker/apt step on 02-pi4; config already points there.
-5. **git** — this directory is not a repo yet; `git init` + any push = Mitch.
+5. **git** — this directory is not a repo yet; `git init` + any push = the Keeper.

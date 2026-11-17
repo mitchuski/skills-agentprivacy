@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-skillsync-spell-search",
+  "kind": "skill",
+  "title": "Skillsync Spell Search",
+  "emoji": "",
+  "card": "Observe the directories a keeper has been working in, find the ones rich with un-minted skills (written methods that actually ran), draft SKILL.md packets from their evidence, and publish them into Skill Sync after review. Use when asked for a \"spell search\", to \"survey my direc…",
+  "brief": "Observe the directories a keeper has been working in, find the ones rich with un-minted skills (written methods that actually ran), draft SKILL.md packets from their evidence, and publish them into Skill Sync after review. Use when asked for a \"spell search\", to \"survey my directories for skills\", \"mine this repo for skills\", \"make a skill out of this project/method\", or when a project's method docs + run history deserve to become a shareable skill. Drafting is agent work; publishing rides the existing harvest → shelf → tailnet pipeline with its leak scan and PII neutralization. Vendored work is never ours to mint. Kept by the Librarian 🗃️; drafted in the Chronicler's hand.\n\n**🧙📖🔍 Spell search — skills are spells that already worked** Keeper: the Librarian 🗃️ · Authored by the Chronicler 🧙📖 · Category: wikis · Layer: onboarding\n\n> A spell is not what was planned; it is what was cast and held.",
+  "body_ref": "assets/agentprivacy-skillsync-spell-search/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "mage",
+    "source_path": "~/agentprivacy-skills/wikis/agentprivacy-skillsync-spell-search/SKILL.md"
+  },
+  "hash": "b0887d6390cfe364be3c0d011e148446766c4d2b2f658422919cdd351f95567f",
+  "published": "2026-11-12T15:20:16.534Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

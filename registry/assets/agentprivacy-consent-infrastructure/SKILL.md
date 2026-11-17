@@ -119,6 +119,10 @@ BRAID's deterministic branching principle (arXiv:2512.15959) provides external v
 5. Legacy compatibility — how does MyTerms-based consent coexist with existing GDPR consent mechanisms?
 6. The cold start problem — how does the system work before critical mass of sites accept MyTerms?
 
+### 2026-09-12 · BRAID as a service
+
+Deterministic branching for rulebooks now ships as a model-id suffix (`-serv-multipath`), and the vendor draws the same line this skill draws: Multipath "transforms reasoning only, does not execute branches or authorise actions"; business logic and permissions remain the application's. Consent decisions therefore stay where IEEE 7012 and MyTerms put them, in the agreement layer, with the reasoning layer as an aid to reading a rulebook, not as the party that grants.
+
 ---
 
 **Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)

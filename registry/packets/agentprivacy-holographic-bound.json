@@ -16,12 +16,15 @@
     "alignment": "",
     "source_path": "~/agentprivacy-skills/privacy-layer/agentprivacy-holographic-bound/SKILL.md"
   },
-  "hash": "5e1d691c63a465cb3cbff2bdbe17cfd39ac5bc8a45400895ad0a0b049dfc3c47",
-  "published": "2026-04-22T13:39:43.314Z",
+  "hash": "5f628aba01891039da1ec15d60d3e711fad616c5c823b6aae6f2dfab34838641",
+  "published": "2026-10-25T15:51:57.965Z",
   "listing": "listed",
   "requires": [],
   "trust": {
     "adoptions": 0,
     "attested_runs": 0
-  }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
 }

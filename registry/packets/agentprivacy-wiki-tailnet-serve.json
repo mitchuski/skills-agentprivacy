@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-wiki-tailnet-serve",
+  "kind": "skill",
+  "title": "Wiki Tailnet Serve",
+  "emoji": "",
+  "card": "Start a local FedWiki farm and serve it on a Tailscale tailnet — private, WireGuard-encrypted, never public — and SYNC the full farm roster onto per-site hostnames under a private DNS zone: \"review my local wikis and give them to the network\". Use when asked to start the wiki fa…",
+  "brief": "Start a local FedWiki farm and serve it on a Tailscale tailnet — private, WireGuard-encrypted, never public — and SYNC the full farm roster onto per-site hostnames under a private DNS zone: \"review my local wikis and give them to the network\". Use when asked to start the wiki farm, serve the wikis on the tailnet, share local wikis with peers, sync the farm to the network, or report what is currently shared. Covers start/status/sync/off/peers, the three-door architecture (pinned ts.net ports, a Host-routed front door, an optional token-grant lane), verification probes, and the encoding/startup gotchas. Kept by the Librarian 🗃️; the front-door allowlist is the Sentinel's wall.\n\n**🗃️🕸️ Tailnet Wiki Serve — the farm, given to the network you chose** Keeper: the Librarian 🗃️ · Wall: the Sentinel 🗡️🛡️ · Authored by the Chronicler 🧙📖 · Category: wikis · Layer: distribution\n\n> Shared is not published: the tailnet is a room with a door, not a street.",
+  "body_ref": "assets/agentprivacy-wiki-tailnet-serve/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "balanced",
+    "source_path": "~/agentprivacy-skills/wikis/agentprivacy-wiki-tailnet-serve/SKILL.md"
+  },
+  "hash": "6564e009e9cc4022d0239b70a4bda771360a93929811ba5bb8668e2f6b50840c",
+  "published": "2026-11-12T15:20:16.447Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

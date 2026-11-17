@@ -1,0 +1,30 @@
+{
+  "spec": "skill-packet/0.1",
+  "name": "agentprivacy-skillsync-dreamloop",
+  "kind": "skill",
+  "title": "Skillsync Dreamloop",
+  "emoji": "",
+  "card": "Run the Skill Sync dream loop from a keeper's own machine — discover new skills, spells and personas published across the tailnet fedwiki farms and the fedwiki.club roster, notify through the herald's ntfy, refresh the Recent Discoveries shelf page on the local farm, and (when a…",
+  "brief": "Run the Skill Sync dream loop from a keeper's own machine — discover new skills, spells and personas published across the tailnet fedwiki farms and the fedwiki.club roster, notify through the herald's ntfy, refresh the Recent Discoveries shelf page on the local farm, and (when asked) recommend discoveries for adoption or record adoptions with the librarian. Use when asked to \"run the dream loop\", \"any new skills on the farms?\", \"check the skill roster\", \"what did the network publish\", or for recurring skill discovery (pair with /loop). Read-only against every remote farm. The keeper-side pass that skillsync-herald runs headless.\n\n**🗃️🌙 The dream loop — what the network published while you were away** Keeper: the Librarian 🗃️ · Voice: the Herald 📯 · Authored by the Chronicler 🧙📖 · Category: wikis · Layer: onboarding\n\n> Discover everything, adopt nothing on your own: the loop dreams, the keeper chooses.",
+  "body_ref": "assets/agentprivacy-skillsync-dreamloop/SKILL.md",
+  "origin": {
+    "author": "mitch",
+    "universe": "agentprivacy",
+    "category": "wikis",
+    "tier": "",
+    "version": "1.0",
+    "alignment": "mage",
+    "source_path": "~/agentprivacy-skills/wikis/agentprivacy-skillsync-dreamloop/SKILL.md"
+  },
+  "hash": "3a5a465133aee8776ff60f618df09a97038ccd326b4ffc42304660be6956ca1f",
+  "published": "2026-11-12T15:20:16.499Z",
+  "listing": "listed",
+  "requires": [],
+  "trust": {
+    "adoptions": 0,
+    "attested_runs": 0
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "agentprivacy skills, by Mitchell Travers / 0xagentprivacy",
+  "commercial": "https://github.com/mitchuski/skills-agentprivacy/blob/main/COMMERCIAL.md"
+}

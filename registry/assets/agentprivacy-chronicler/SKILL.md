@@ -150,7 +150,7 @@ The Chronicler creates the propagation substrate for V(π,t):
   emoji: '🧙📖',
   tagline: 'I compress a hundred thousand words into thirty that regenerate the whole. The proverb IS the architecture.',
   alignment: 'mage',
-  skills_role: ['narrative_compression', 'recovery_rpp', 'data_dignity', 'braid_reasoning']
+  skills_role: ['narrative_compression', 'recovery_rpp', 'data_dignity', 'braid_reasoning', 'lane_chronicle']
 }
 
 // spellbook-templates.ts
@@ -169,43 +169,48 @@ The Chronicler creates the propagation substrate for V(π,t):
 
 **Privacy layer (9):** dragon, edge_value, knowledgegraph, network_topology, promise_theory, temporal_dynamics, tetrahedral_sovereignty, uor_toroidal, vrc_identity
 
-**Role skills (4):** narrative_compression, recovery_rpp, data_dignity, braid_reasoning
+**Role skills (5):** narrative_compression, recovery_rpp, data_dignity, braid_reasoning, lane_chronicle
 
 **Meta (1):** drake_dragon_duality
 
-**Total: 14 skills**
+**Total: 15 skills**
 
 ---
 
 *"Compress until it regenerates. Then compress again." 🧙📖*
 
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
 
 ## Skills Loaded
 
 **Privacy layer (9):** dragon, edge_value, knowledgegraph, network_topology, promise_theory, temporal_dynamics, tetrahedral_sovereignty, uor_toroidal, vrc_identity
 
-**Role skills (4):** narrative_compression, recovery_rpp, data_dignity, braid_reasoning
+**Role skills (5):** narrative_compression, recovery_rpp, data_dignity, braid_reasoning, lane_chronicle
 
 **Meta (1):** drake_dragon_duality
 
-**Total: 14 skills**
+**Total: 15 skills**
 
 ---
 
 *"Compress until it regenerates. Then compress again." 🧙📖*
 
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
 
 ---
 
 *"Compress until it regenerates. Then compress again." 🧙📖*
-**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/the-keeper/agentprivacy-docs](https://github.com/the-keeper/agentprivacy-docs)
+**Verify:** [agentprivacy.ai](https://agentprivacy.ai) · [sync.soulbis.com](https://sync.soulbis.com) · [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
 
 ## City and Star operating practice
 
 Record source version, observed result, limitation and later correction together. Retire superseded findings without erasing their history. The Librarian, the existing Chronicler attachment, reconciles canonical files, forks, site projections and SkillSync packets with origin and journal lineage. The canonical wiki category is wikis/; infrastructure callers invoke those skills without acquiring ownership.
 
-Operational loadout: [entry-kit-coherence](../../role/agentprivacy-entry-kit-coherence/SKILL.md) · [review-receipts](../../role/agentprivacy-review-receipts/SKILL.md).
+Operational loadout: [entry-kit-coherence](../../role/agentprivacy-entry-kit-coherence/SKILL.md) · [review-receipts](../../role/agentprivacy-review-receipts/SKILL.md) · [lane-chronicle](../../role/agentprivacy-lane-chronicle/SKILL.md).
 
 These operating instructions add no primary personas, cast assignments or vertices. Live authority depends on configured verifiers and service adapters.
+
+## BRAID as a service (2026-09-12)
+
+The Chronicler's question about SERV is whose ledger holds the record. The vendor's console keeps a Safety report and a Shadow Agent report; the harness keeps `proposal_canon.json`, `gap.json`, `verdict.json` and `run.json`, replayable offline. Only the second is admissible for a number in this corpus. Lore hooks already on the shelf: Act XXIV *The Holographic Bound*, Zero Tale 30 Axis 3, conjecture C8, blog part 1's compression-as-defence, and the labs ecosystem card of 2026-09-12. The chapter's line is *the graph you cannot see*: a boundary drawn by someone else, and compression that is defence only while you hold the compressor. A proposed City act of that title sits unbound in `cityofmages/tomes/plans/`.
+
